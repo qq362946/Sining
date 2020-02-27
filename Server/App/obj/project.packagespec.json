@@ -1,0 +1,59 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/Users/sining/Code/Sining/Server/App/Server.App.csproj",
+    "projectName": "Server.App",
+    "projectPath": "/Users/sining/Code/Sining/Server/App/Server.App.csproj",
+    "outputPath": "/Users/sining/Code/Sining/Server/App/obj/",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "netcoreapp3.1"
+    ],
+    "sources": {
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "projectReferences": {
+          "/Users/sining/Code/Sining/Server/Hotfix/Server.Hotfix.csproj": {
+            "projectPath": "/Users/sining/Code/Sining/Server/Hotfix/Server.Hotfix.csproj"
+          },
+          "/Users/sining/Code/Sining/Server/Model/Server.Model.csproj": {
+            "projectPath": "/Users/sining/Code/Sining/Server/Model/Server.Model.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp3.1": {
+      "dependencies": {
+        "NLog": {
+          "target": "Package",
+          "version": "[4.6.8, )"
+        }
+      },
+      "imports": [
+        "net461",
+        "net462",
+        "net47",
+        "net471",
+        "net472",
+        "net48"
+      ],
+      "assetTargetFallback": true,
+      "warn": true,
+      "frameworkReferences": {
+        "Microsoft.NETCore.App": {
+          "privateAssets": "all"
+        }
+      },
+      "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+    }
+  }
+}

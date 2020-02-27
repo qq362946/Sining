@@ -1,0 +1,26 @@
+2020-02-27 10:19:46.3359 0001 WARN (TCPChannelComponent.cs:167) Likely to be attacked IP: 127.0.0.1:61038 System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values.
+   at Sining.Network.PacketParser.Parse(Memory`1 memory, ValueTuple`3& packet) in /Users/sining/Code/Sining/Server/Core/Module/Network/PacketParser.cs:line 93
+   at Sining.Network.TCPChannelComponent.OnRecvComplete(SocketAsyncEventArgs asyncEventArgs) in /Users/sining/Code/Sining/Server/Core/Module/Network/TCP/TCPChannelComponent.cs:line 167
+2020-02-27 10:34:01.4334 0001 WARN (TCPChannelComponent.cs:167) Likely to be attacked IP:  System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values.
+   at Sining.Network.PacketParser.Parse(Memory`1 memory, ValueTuple`3& packet) in /Users/sining/Code/Sining/Server/Core/Module/Network/PacketParser.cs:line 80
+   at Sining.Network.TCPChannelComponent.OnRecvComplete(SocketAsyncEventArgs asyncEventArgs) in /Users/sining/Code/Sining/Server/Core/Module/Network/TCP/TCPChannelComponent.cs:line 167
+2020-02-27 10:38:09.2965 0001 WARN (TCPChannelComponent.cs:167) Likely to be attacked IP: 127.0.0.1:62156 System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values. (Parameter 'value')
+   at System.BitConverter.ToInt32(ReadOnlySpan`1 value)
+   at Sining.Network.PacketParser.Parse(Memory`1 memory, ValueTuple`3& packet) in /Users/sining/Code/Sining/Server/Core/Module/Network/PacketParser.cs:line 80
+   at Sining.Network.TCPChannelComponent.OnRecvComplete(SocketAsyncEventArgs asyncEventArgs) in /Users/sining/Code/Sining/Server/Core/Module/Network/TCP/TCPChannelComponent.cs:line 167
+2020-02-27 14:49:00.3161 0001 WARN (TCPChannelComponent.cs:174) Likely to be attacked IP: 127.0.0.1:62057 System.ArgumentOutOfRangeException: value must be non-negative and at most 2147483647 (Parameter 'value')
+   at Microsoft.IO.RecyclableMemoryStream.SetLength(Int64 value) in /Users/sining/Code/Sining/Server/Core/Base/Tools/RecyclableMemoryStream/RecyclableMemoryStream.cs:line 804
+   at Sining.Network.PacketParser.Parse() in /Users/sining/Code/Sining/Server/Core/Module/Network/PacketParser.cs:line 47
+   at Sining.Network.TCPChannelComponent.OnRecvComplete(SocketAsyncEventArgs asyncEventArgs) in /Users/sining/Code/Sining/Server/Core/Module/Network/TCP/TCPChannelComponent.cs:line 174
+2020-02-27 23:03:40.6081 0001 WARN (HttpComponent.cs:97) Likely to be attacked IP: 127.0.0.1 System.NotSupportedException: This stream does not support seek operations.
+   at System.Net.HttpRequestStream.get_Length()
+   at Sining.Network.PacketParser.Parse(Stream stream) in /Users/sining/Code/Sining/Server/Core/Module/Network/PacketParser.cs:line 29
+   at Sining.Network.HttpComponent.Request(HttpListenerContext context) in /Users/sining/Code/Sining/Server/Core/Module/Network/Http/HttpComponent.cs:line 97
+2020-02-27 23:04:04.6485 0001 WARN (HttpComponent.cs:97) Likely to be attacked IP: 127.0.0.1 System.NotSupportedException: This stream does not support seek operations.
+   at System.Net.HttpRequestStream.get_Length()
+   at Sining.Network.PacketParser.Parse(Stream stream) in /Users/sining/Code/Sining/Server/Core/Module/Network/PacketParser.cs:line 29
+   at Sining.Network.HttpComponent.Request(HttpListenerContext context) in /Users/sining/Code/Sining/Server/Core/Module/Network/Http/HttpComponent.cs:line 97
+2020-02-27 23:13:24.0149 0001 WARN (HttpComponent.cs:95) Likely to be attacked IP: 127.0.0.1 System.NotSupportedException: This stream does not support seek operations.
+   at System.Net.HttpRequestStream.get_Length()
+   at Sining.Network.PacketParser.Parse(Stream stream) in /Users/sining/Code/Sining/Server/Core/Module/Network/PacketParser.cs:line 31
+   at Sining.Network.HttpComponent.Request(HttpListenerContext context) in /Users/sining/Code/Sining/Server/Core/Module/Network/Http/HttpComponent.cs:line 95

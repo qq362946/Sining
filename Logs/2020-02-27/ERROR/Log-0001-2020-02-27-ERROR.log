@@ -1,0 +1,338 @@
+2020-02-27 10:34:01.4081 0001 ERROR (Session.cs:95) code: 0 1 System.ArgumentNullException: Value cannot be null. (Parameter 'type')
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic, Boolean wrapExceptions)
+   at System.Activator.CreateInstance(Type type)
+   at Sining.Tools.ProtobufHelper.DeserializeFrom(Type type, MemoryStream stream) in /Users/sining/Code/Sining/Server/Model/Base/Tools/ProtobufHelper.cs:line 21
+   at Sining.Network.ProtobufMessagePacker.DeserializeFrom(Type type, MemoryStream stream) in /Users/sining/Code/Sining/Server/Model/Base/Network/MessageProtocol/ProtobufMessagePacker.cs:line 21
+   at Sining.Module.Session.Receive(Memory`1 memory, UInt16 code) in /Users/sining/Code/Sining/Server/Core/Module/Session.cs:line 95, ip: 127.0.0.1:61886
+2020-02-27 10:34:01.4321 0001 ERROR (TCPChannelComponent.cs:190) System.NullReferenceException: Object reference not set to an instance of an object.
+   at Sining.Network.TCPChannelComponent.OnRecvComplete(SocketAsyncEventArgs asyncEventArgs) in /Users/sining/Code/Sining/Server/Core/Module/Network/TCP/TCPChannelComponent.cs:line 190
+2020-02-27 15:44:16.1557 0001 ERROR (Session.cs:83) code: 0 1 System.ArgumentNullException: Value cannot be null. (Parameter 'type')
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic, Boolean wrapExceptions)
+   at System.Activator.CreateInstance(Type type)
+   at Sining.Tools.ProtobufHelper.DeserializeFrom(Type type, MemoryStream stream) in /Users/sining/Code/Sining/Server/Model/Base/Tools/ProtobufHelper.cs:line 21
+   at Sining.Network.ProtobufMessagePacker.DeserializeFrom(Type type, MemoryStream stream) in /Users/sining/Code/Sining/Server/Model/Base/Network/MessageProtocol/ProtobufMessagePacker.cs:line 21
+   at Sining.Module.Session.Receive(MemoryStream memoryStream) in /Users/sining/Code/Sining/Server/Core/Module/Session.cs:line 83, ip: 
+2020-02-27 15:44:16.1618 0001 ERROR (Session.cs:135) System.NullReferenceException: Object reference not set to an instance of an object.
+   at Sining.Network.MessageDispatcher.Handle(Session session, Object obj) in /Users/sining/Code/Sining/Server/Core/Base/Event/Message/MessageDispatcher.cs:line 24
+   at Sining.Module.Session.Dispatcher(Object message) in /Users/sining/Code/Sining/Server/Core/Module/Session.cs:line 135
+2020-02-27 16:54:05.0997 0001 ERROR (WebSocketChannelComponent.cs:69) System.ArgumentException: Only Uris starting with 'ws://' or 'wss://' are supported. (Parameter 'uri')
+   at System.Net.WebSockets.ClientWebSocket.ConnectAsync(Uri uri, CancellationToken cancellationToken)
+   at Sining.Network.WebSocketChannelComponent.ConnectAsync(String url) in /Users/sining/Code/Sining/Server/Core/Module/Network/WebSocket/WebSocketChannelComponent.cs:line 69
+2020-02-27 16:58:27.4777 0001 ERROR (WebSocketChannelComponent.cs:69) System.Net.WebSockets.WebSocketException (0x80004005): Unable to connect to the remote server
+ ---> System.Net.Http.HttpRequestException: Connection refused
+ ---> System.Net.Sockets.SocketException (61): Connection refused
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.WebSockets.WebSocketHandle.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken, ClientWebSocketOptions options)
+   at System.Net.WebSockets.WebSocketHandle.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken, ClientWebSocketOptions options)
+   at System.Net.WebSockets.ClientWebSocket.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken)
+   at Sining.Network.WebSocketChannelComponent.ConnectAsync(String url) in /Users/sining/Code/Sining/Server/Core/Module/Network/WebSocket/WebSocketChannelComponent.cs:line 69
+2020-02-27 17:02:29.5715 0001 ERROR (WebSocketChannelComponent.cs:69) System.Net.WebSockets.WebSocketException (488964096): Unable to connect to the remote server ---> System.Net.Http.HttpRequestException: Connection refused
+ ---> System.Net.Sockets.SocketException (61): Connection refused
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.WebSockets.WebSocketHandle.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken, ClientWebSocketOptions options)
+   at System.Net.WebSockets.WebSocketHandle.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken, ClientWebSocketOptions options)
+   at System.Net.WebSockets.ClientWebSocket.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken)
+   at Sining.Network.WebSocketChannelComponent.ConnectAsync(String url) in /Users/sining/Code/Sining/Server/Core/Module/Network/WebSocket/WebSocketChannelComponent.cs:line 69
+2020-02-27 17:04:29.7064 0001 ERROR (WebSocketChannelComponent.cs:69) System.Net.WebSockets.WebSocketException (0x80004005): Unable to connect to the remote server
+ ---> System.Net.Http.HttpRequestException: Connection refused
+ ---> System.Net.Sockets.SocketException (61): Connection refused
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.WebSockets.WebSocketHandle.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken, ClientWebSocketOptions options)
+   at System.Net.WebSockets.WebSocketHandle.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken, ClientWebSocketOptions options)
+   at System.Net.WebSockets.ClientWebSocket.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken)
+   at Sining.Network.WebSocketChannelComponent.ConnectAsync(String url) in /Users/sining/Code/Sining/Server/Core/Module/Network/WebSocket/WebSocketChannelComponent.cs:line 69
+2020-02-27 17:04:47.9652 0001 ERROR (Session.cs:102) code: 0 1 System.ArgumentNullException: Value cannot be null. (Parameter 'type')
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic, Boolean wrapExceptions)
+   at System.Activator.CreateInstance(Type type)
+   at Sining.Tools.ProtobufHelper.DeserializeFrom(Type type, MemoryStream stream) in /Users/sining/Code/Sining/Server/Model/Base/Tools/ProtobufHelper.cs:line 21
+   at Sining.Network.ProtobufMessagePacker.DeserializeFrom(Type type, MemoryStream stream) in /Users/sining/Code/Sining/Server/Model/Base/Network/MessageProtocol/ProtobufMessagePacker.cs:line 21
+   at Sining.Module.Session.Receive(UInt16 code, MemoryStream memoryStream) in /Users/sining/Code/Sining/Server/Core/Module/Session.cs:line 102, ip: 
+2020-02-27 17:14:32.2012 0001 ERROR (WebSocketChannelComponent.cs:69) System.Net.WebSockets.WebSocketException (0x80004005): Unable to connect to the remote server
+ ---> System.Net.Http.HttpRequestException: Connection refused
+ ---> System.Net.Sockets.SocketException (61): Connection refused
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.WebSockets.WebSocketHandle.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken, ClientWebSocketOptions options)
+   at System.Net.WebSockets.WebSocketHandle.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken, ClientWebSocketOptions options)
+   at System.Net.WebSockets.ClientWebSocket.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken)
+   at Sining.Network.WebSocketChannelComponent.ConnectAsync(String url) in /Users/sining/Code/Sining/Server/Core/Module/Network/WebSocket/WebSocketChannelComponent.cs:line 69
+2020-02-27 17:14:47.3520 0001 ERROR (Session.cs:79) code: 0 1 System.ArgumentNullException: Value cannot be null. (Parameter 'type')
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic, Boolean wrapExceptions)
+   at System.Activator.CreateInstance(Type type)
+   at Sining.Tools.ProtobufHelper.DeserializeFrom(Type type, MemoryStream stream) in /Users/sining/Code/Sining/Server/Model/Base/Tools/ProtobufHelper.cs:line 21
+   at Sining.Network.ProtobufMessagePacker.DeserializeFrom(Type type, MemoryStream stream) in /Users/sining/Code/Sining/Server/Model/Base/Network/MessageProtocol/ProtobufMessagePacker.cs:line 21
+   at Sining.Module.Session.Receive(UInt16 code, MemoryStream memoryStream) in /Users/sining/Code/Sining/Server/Core/Module/Session.cs:line 79, ip: 
+2020-02-27 17:17:33.0588 0001 ERROR (WebSocketChannelComponent.cs:69) System.Net.WebSockets.WebSocketException (473171544): Unable to connect to the remote server ---> System.Net.Http.HttpRequestException: Connection refused
+ ---> System.Net.Sockets.SocketException (61): Connection refused
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.WebSockets.WebSocketHandle.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken, ClientWebSocketOptions options)
+   at System.Net.WebSockets.WebSocketHandle.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken, ClientWebSocketOptions options)
+   at System.Net.WebSockets.ClientWebSocket.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken)
+   at Sining.Network.WebSocketChannelComponent.ConnectAsync(String url) in /Users/sining/Code/Sining/Server/Core/Module/Network/WebSocket/WebSocketChannelComponent.cs:line 69
+2020-02-27 17:20:35.0445 0001 ERROR (WebSocketChannelComponent.cs:69) System.Net.WebSockets.WebSocketException (65545): Unable to connect to the remote server ---> System.Net.Http.HttpRequestException: Connection refused
+ ---> System.Net.Sockets.SocketException (61): Connection refused
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.WebSockets.WebSocketHandle.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken, ClientWebSocketOptions options)
+   at System.Net.WebSockets.WebSocketHandle.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken, ClientWebSocketOptions options)
+   at System.Net.WebSockets.ClientWebSocket.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken)
+   at Sining.Network.WebSocketChannelComponent.ConnectAsync(String url) in /Users/sining/Code/Sining/Server/Core/Module/Network/WebSocket/WebSocketChannelComponent.cs:line 69
+2020-02-27 17:27:28.5917 0001 ERROR (WebSocketChannelComponent.cs:72) System.Net.WebSockets.WebSocketException (237571888): Unable to connect to the remote server ---> System.Net.Http.HttpRequestException: Connection refused
+ ---> System.Net.Sockets.SocketException (61): Connection refused
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.WebSockets.WebSocketHandle.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken, ClientWebSocketOptions options)
+   at System.Net.WebSockets.WebSocketHandle.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken, ClientWebSocketOptions options)
+   at System.Net.WebSockets.ClientWebSocket.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken)
+   at Sining.Network.WebSocketChannelComponent.ConnectAsync(String url) in /Users/sining/Code/Sining/Server/Core/Module/Network/WebSocket/WebSocketChannelComponent.cs:line 72
+2020-02-27 17:30:33.8922 0001 ERROR (WebSocketChannelComponent.cs:75) System.Net.WebSockets.WebSocketException (149514440): Unable to connect to the remote server ---> System.Net.Http.HttpRequestException: Connection refused
+ ---> System.Net.Sockets.SocketException (61): Connection refused
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.WebSockets.WebSocketHandle.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken, ClientWebSocketOptions options)
+   at System.Net.WebSockets.WebSocketHandle.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken, ClientWebSocketOptions options)
+   at System.Net.WebSockets.ClientWebSocket.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken)
+   at Sining.Network.WebSocketChannelComponent.ConnectAsync(String url) in /Users/sining/Code/Sining/Server/Core/Module/Network/WebSocket/WebSocketChannelComponent.cs:line 75
+2020-02-27 17:37:25.0597 0001 ERROR (WebSocketChannelComponent.cs:74) System.Net.WebSockets.WebSocketException (65545): Unable to connect to the remote server ---> System.Net.Http.HttpRequestException: Connection refused
+ ---> System.Net.Sockets.SocketException (61): Connection refused
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.WebSockets.WebSocketHandle.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken, ClientWebSocketOptions options)
+   at System.Net.WebSockets.WebSocketHandle.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken, ClientWebSocketOptions options)
+   at System.Net.WebSockets.ClientWebSocket.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken)
+   at Sining.Network.WebSocketChannelComponent.ConnectAsync(String url) in /Users/sining/Code/Sining/Server/Core/Module/Network/WebSocket/WebSocketChannelComponent.cs:line 74
+2020-02-27 17:41:03.2436 0001 ERROR (WebSocketChannelComponent.cs:74) System.Net.WebSockets.WebSocketException (5): Unable to connect to the remote server ---> System.Net.Http.HttpRequestException: Connection refused
+ ---> System.Net.Sockets.SocketException (61): Connection refused
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.WebSockets.WebSocketHandle.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken, ClientWebSocketOptions options)
+   at System.Net.WebSockets.WebSocketHandle.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken, ClientWebSocketOptions options)
+   at System.Net.WebSockets.ClientWebSocket.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken)
+   at Sining.Network.WebSocketChannelComponent.ConnectAsync(String url) in /Users/sining/Code/Sining/Server/Core/Module/Network/WebSocket/WebSocketChannelComponent.cs:line 74
+2020-02-27 17:45:15.1298 0001 ERROR (WebSocketChannelComponent.cs:73) System.Net.WebSockets.WebSocketException (1062834774): Unable to connect to the remote server ---> System.Net.Http.HttpRequestException: Connection refused
+ ---> System.Net.Sockets.SocketException (61): Connection refused
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.WebSockets.WebSocketHandle.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken, ClientWebSocketOptions options)
+   at System.Net.WebSockets.WebSocketHandle.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken, ClientWebSocketOptions options)
+   at System.Net.WebSockets.ClientWebSocket.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken)
+   at Sining.Network.WebSocketChannelComponent.ConnectAsync(String url) in /Users/sining/Code/Sining/Server/Core/Module/Network/WebSocket/WebSocketChannelComponent.cs:line 73
+2020-02-27 17:45:23.0036 0001 ERROR (WebSocketChannelComponent.cs:102) System.Net.WebSockets.WebSocketException (0x80004005): The remote party closed the WebSocket connection without completing the close handshake.
+ ---> System.Net.WebSockets.WebSocketException (0x80004005): The remote party closed the WebSocket connection without completing the close handshake.
+   at System.Net.WebSockets.ManagedWebSocket.ThrowIfEOFUnexpected(Boolean throwOnPrematureClosure)
+   at System.Net.WebSockets.ManagedWebSocket.EnsureBufferContainsAsync(Int32 minimumRequiredBytes, CancellationToken cancellationToken, Boolean throwOnPrematureClosure)
+   at System.Net.WebSockets.ManagedWebSocket.ReceiveAsyncPrivate[TWebSocketReceiveResultGetter,TWebSocketReceiveResult](Memory`1 payloadBuffer, CancellationToken cancellationToken, TWebSocketReceiveResultGetter resultGetter)
+   at System.Net.WebSockets.ManagedWebSocket.ReceiveAsyncPrivate[TWebSocketReceiveResultGetter,TWebSocketReceiveResult](Memory`1 payloadBuffer, CancellationToken cancellationToken, TWebSocketReceiveResultGetter resultGetter)
+   at Sining.Network.WebSocketChannelComponent.StartRecvAsync() in /Users/sining/Code/Sining/Server/Core/Module/Network/WebSocket/WebSocketChannelComponent.cs:line 102
+2020-02-27 17:45:23.0036 0001 ERROR (WebSocketChannelComponent.cs:102) System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+   at System.Net.Http.CancellationHelper.ThrowOperationCanceledException(Exception innerException, CancellationToken cancellationToken)
+   at System.Net.Http.CancellationHelper.ThrowIfCancellationRequested(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnection.RawConnectionStream.ReadAsync(Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Net.WebSockets.ManagedWebSocket.EnsureBufferContainsAsync(Int32 minimumRequiredBytes, CancellationToken cancellationToken, Boolean throwOnPrematureClosure)
+   at System.Net.WebSockets.ManagedWebSocket.ReceiveAsyncPrivate[TWebSocketReceiveResultGetter,TWebSocketReceiveResult](Memory`1 payloadBuffer, CancellationToken cancellationToken, TWebSocketReceiveResultGetter resultGetter)
+   at Sining.Network.WebSocketChannelComponent.StartRecvAsync() in /Users/sining/Code/Sining/Server/Core/Module/Network/WebSocket/WebSocketChannelComponent.cs:line 102
+2020-02-27 17:47:47.5941 0001 ERROR (WebSocketChannelComponent.cs:73) System.Net.WebSockets.WebSocketException (345052832): Unable to connect to the remote server ---> System.Net.Http.HttpRequestException: Connection refused
+ ---> System.Net.Sockets.SocketException (61): Connection refused
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.WebSockets.WebSocketHandle.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken, ClientWebSocketOptions options)
+   at System.Net.WebSockets.WebSocketHandle.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken, ClientWebSocketOptions options)
+   at System.Net.WebSockets.ClientWebSocket.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken)
+   at Sining.Network.WebSocketChannelComponent.ConnectAsync(String url) in /Users/sining/Code/Sining/Server/Core/Module/Network/WebSocket/WebSocketChannelComponent.cs:line 73
+2020-02-27 17:47:57.2679 0001 ERROR (WebSocketChannelComponent.cs:108) System.Net.WebSockets.WebSocketException (0x80004005): The remote party closed the WebSocket connection without completing the close handshake.
+ ---> System.Net.WebSockets.WebSocketException (0x80004005): The remote party closed the WebSocket connection without completing the close handshake.
+   at System.Net.WebSockets.ManagedWebSocket.ThrowIfEOFUnexpected(Boolean throwOnPrematureClosure)
+   at System.Net.WebSockets.ManagedWebSocket.EnsureBufferContainsAsync(Int32 minimumRequiredBytes, CancellationToken cancellationToken, Boolean throwOnPrematureClosure)
+   at System.Net.WebSockets.ManagedWebSocket.ReceiveAsyncPrivate[TWebSocketReceiveResultGetter,TWebSocketReceiveResult](Memory`1 payloadBuffer, CancellationToken cancellationToken, TWebSocketReceiveResultGetter resultGetter)
+   at System.Net.WebSockets.ManagedWebSocket.ReceiveAsyncPrivate[TWebSocketReceiveResultGetter,TWebSocketReceiveResult](Memory`1 payloadBuffer, CancellationToken cancellationToken, TWebSocketReceiveResultGetter resultGetter)
+   at Sining.Network.WebSocketChannelComponent.StartRecvAsync() in /Users/sining/Code/Sining/Server/Core/Module/Network/WebSocket/WebSocketChannelComponent.cs:line 108
+2020-02-27 17:47:57.2826 0001 ERROR (WebSocketChannelComponent.cs:108) System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: Unable to read data from the transport connection: Operation canceled.
+ ---> System.Net.Sockets.SocketException (89): Operation canceled
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.ReadBufferedAsyncCore(Memory`1 destination)
+   at System.Net.Http.HttpConnection.RawConnectionStream.ReadAsync(Memory`1 buffer, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.RawConnectionStream.ReadAsync(Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Net.WebSockets.ManagedWebSocket.EnsureBufferContainsAsync(Int32 minimumRequiredBytes, CancellationToken cancellationToken, Boolean throwOnPrematureClosure)
+   at System.Net.WebSockets.ManagedWebSocket.ReceiveAsyncPrivate[TWebSocketReceiveResultGetter,TWebSocketReceiveResult](Memory`1 payloadBuffer, CancellationToken cancellationToken, TWebSocketReceiveResultGetter resultGetter)
+   at Sining.Network.WebSocketChannelComponent.StartRecvAsync() in /Users/sining/Code/Sining/Server/Core/Module/Network/WebSocket/WebSocketChannelComponent.cs:line 108
+2020-02-27 17:53:07.0160 0001 ERROR (WebSocketChannelComponent.cs:73) System.Net.WebSockets.WebSocketException (65545): Unable to connect to the remote server ---> System.Net.Http.HttpRequestException: Connection refused
+ ---> System.Net.Sockets.SocketException (61): Connection refused
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.WebSockets.WebSocketHandle.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken, ClientWebSocketOptions options)
+   at System.Net.WebSockets.WebSocketHandle.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken, ClientWebSocketOptions options)
+   at System.Net.WebSockets.ClientWebSocket.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken)
+   at Sining.Network.WebSocketChannelComponent.ConnectAsync(String url) in /Users/sining/Code/Sining/Server/Core/Module/Network/WebSocket/WebSocketChannelComponent.cs:line 73
+2020-02-27 17:53:32.2389 0001 ERROR (WebSocketChannelComponent.cs:104) System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: Unable to read data from the transport connection: Operation canceled.
+ ---> System.Net.Sockets.SocketException (89): Operation canceled
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.ReadBufferedAsyncCore(Memory`1 destination)
+   at System.Net.Http.HttpConnection.RawConnectionStream.ReadAsync(Memory`1 buffer, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.RawConnectionStream.ReadAsync(Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Net.WebSockets.ManagedWebSocket.EnsureBufferContainsAsync(Int32 minimumRequiredBytes, CancellationToken cancellationToken, Boolean throwOnPrematureClosure)
+   at System.Net.WebSockets.ManagedWebSocket.ReceiveAsyncPrivate[TWebSocketReceiveResultGetter,TWebSocketReceiveResult](Memory`1 payloadBuffer, CancellationToken cancellationToken, TWebSocketReceiveResultGetter resultGetter)
+   at Sining.Network.WebSocketChannelComponent.StartRecvAsync() in /Users/sining/Code/Sining/Server/Core/Module/Network/WebSocket/WebSocketChannelComponent.cs:line 104
+2020-02-27 17:54:45.2881 0001 ERROR (AsyncSVoidMethodBuilder.cs:29) System.Exception: session has been Disposed
+   at Sining.Module.Session.Send(IMessage message) in /Users/sining/Code/Sining/Server/Core/Module/Session.cs:line 41
+   at Sining.Program.Test(Session session) in /Users/sining/Code/Sining/Server/App/Program.cs:line 32
+2020-02-27 17:56:25.6801 0001 ERROR (WebSocketChannelComponent.cs:73) System.Net.WebSockets.WebSocketException (494799792): Unable to connect to the remote server ---> System.Net.Http.HttpRequestException: Connection refused
+ ---> System.Net.Sockets.SocketException (61): Connection refused
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.WebSockets.WebSocketHandle.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken, ClientWebSocketOptions options)
+   at System.Net.WebSockets.WebSocketHandle.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken, ClientWebSocketOptions options)
+   at System.Net.WebSockets.ClientWebSocket.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken)
+   at Sining.Network.WebSocketChannelComponent.ConnectAsync(String url) in /Users/sining/Code/Sining/Server/Core/Module/Network/WebSocket/WebSocketChannelComponent.cs:line 73
+2020-02-27 17:56:39.9226 0001 ERROR (AsyncSVoidMethodBuilder.cs:29) System.Exception: session has been Disposed
+   at Sining.Module.Session.Send(IMessage message) in /Users/sining/Code/Sining/Server/Core/Module/Session.cs:line 41
+   at Sining.Program.Test(Session session) in /Users/sining/Code/Sining/Server/App/Program.cs:line 32
+2020-02-27 18:54:27.6897 0001 ERROR (WebSocketComponent.cs:45) System.Net.WebSockets.WebSocketException (0x80004005): The ValidateWebSocketHeaders operation was called on an incoming request that did not specify a 'Connection: Upgrade' header or the Upgrade header not contain 'websocket'. Upgrade specified by the client was ''.
+   at System.Net.WebSockets.HttpWebSocket.ValidateWebSocketHeaders(HttpListenerContext context)
+   at System.Net.WebSockets.HttpWebSocket.AcceptWebSocketAsyncCore(HttpListenerContext context, String subProtocol, Int32 receiveBufferSize, TimeSpan keepAliveInterval, Nullable`1 internalBuffer)
+   at Sining.Network.WebSocketComponent.<>c__DisplayClass3_0.<<Awake>b__0>d.MoveNext() in /Users/sining/Code/Sining/Server/Core/Module/Network/WebSocket/WebSocketComponent.cs:line 45
+2020-02-27 22:38:50.2682 0001 ERROR (Session.cs:39) System.NullReferenceException: Object reference not set to an instance of an object.
+   at Sining.Module.Session.Unpack(IMessage message) in /Users/sining/Code/Sining/Server/Core/Module/Session.cs:line 93
+   at Sining.Module.Session.SendToHttp(IMessage message) in /Users/sining/Code/Sining/Server/Core/Module/Session.cs:line 39
+2020-02-27 22:39:37.7029 0001 ERROR (Session.cs:41) System.NullReferenceException: Object reference not set to an instance of an object.
+   at Sining.Module.Session.Unpack(IMessage message) in /Users/sining/Code/Sining/Server/Core/Module/Session.cs:line 100
+   at Sining.Module.Session.SendToHttp(IMessage message) in /Users/sining/Code/Sining/Server/Core/Module/Session.cs:line 41
+2020-02-27 22:45:24.9509 0001 ERROR (WebSocketChannelComponent.cs:75) System.Net.WebSockets.WebSocketException (501184136): Unable to connect to the remote server ---> System.Net.Http.HttpRequestException: Connection refused
+ ---> System.Net.Sockets.SocketException (61): Connection refused
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.WebSockets.WebSocketHandle.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken, ClientWebSocketOptions options)
+   at System.Net.WebSockets.WebSocketHandle.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken, ClientWebSocketOptions options)
+   at System.Net.WebSockets.ClientWebSocket.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken)
+   at Sining.Network.WebSocketChannelComponent.ConnectAsync(String url) in /Users/sining/Code/Sining/Server/Core/Module/Network/WebSocket/WebSocketChannelComponent.cs:line 75
+2020-02-27 23:10:54.8629 0001 ERROR (HttpComponent.cs:99) 无法解析的数据包
+2020-02-27 23:34:18.5379 0001 ERROR (WebSocketChannelComponent.cs:75) System.Net.WebSockets.WebSocketException (356021896): Unable to connect to the remote server ---> System.Net.Http.HttpRequestException: Connection refused
+ ---> System.Net.Sockets.SocketException (61): Connection refused
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.WebSockets.WebSocketHandle.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken, ClientWebSocketOptions options)
+   at System.Net.WebSockets.WebSocketHandle.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken, ClientWebSocketOptions options)
+   at System.Net.WebSockets.ClientWebSocket.ConnectAsyncCore(Uri uri, CancellationToken cancellationToken)
+   at Sining.Network.WebSocketChannelComponent.ConnectAsync(String url) in /Users/sining/Code/Sining/Server/Core/Module/Network/WebSocket/WebSocketChannelComponent.cs:line 75
+2020-02-27 23:36:04.0635 0001 ERROR (Session.cs:39) System.NullReferenceException: Object reference not set to an instance of an object.
+   at Sining.Module.Session.Unpack(IMessage message) in /Users/sining/Code/Sining/Server/Core/Module/Session.cs:line 87
+   at Sining.Module.Session.SendToHttp(IMessage message) in /Users/sining/Code/Sining/Server/Core/Module/Session.cs:line 39
+2020-02-27 23:36:39.2225 0001 ERROR (Session.cs:39) System.NullReferenceException: Object reference not set to an instance of an object.
+   at Sining.Module.Session.Unpack(IMessage message) in /Users/sining/Code/Sining/Server/Core/Module/Session.cs:line 87
+   at Sining.Module.Session.SendToHttp(IMessage message) in /Users/sining/Code/Sining/Server/Core/Module/Session.cs:line 39
+2020-02-27 23:38:38.2517 0001 ERROR (Session.cs:39) System.NullReferenceException: Object reference not set to an instance of an object.
+   at Sining.Module.Session.Unpack(IMessage message) in /Users/sining/Code/Sining/Server/Core/Module/Session.cs:line 89
+   at Sining.Module.Session.SendToHttp(IMessage message) in /Users/sining/Code/Sining/Server/Core/Module/Session.cs:line 39
+2020-02-27 23:41:08.0106 0001 ERROR (Session.cs:39) System.NullReferenceException: Object reference not set to an instance of an object.
+   at Sining.Module.Session.Unpack(IMessage message) in /Users/sining/Code/Sining/Server/Core/Module/Session.cs:line 91
+   at Sining.Module.Session.SendToHttp(IMessage message) in /Users/sining/Code/Sining/Server/Core/Module/Session.cs:line 39
+2020-02-27 23:41:30.8379 0001 ERROR (Session.cs:49) System.NullReferenceException: Object reference not set to an instance of an object.
+   at Sining.Module.Session.Dispose() in /Users/sining/Code/Sining/Server/Core/Module/Session.cs:line 216
+   at Sining.Module.Session.SendToHttp(IMessage message) in /Users/sining/Code/Sining/Server/Core/Module/Session.cs:line 49

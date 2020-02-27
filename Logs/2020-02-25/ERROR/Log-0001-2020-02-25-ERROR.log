@@ -1,0 +1,48 @@
+2020-02-25 18:09:05.7830 0001 ERROR (WebSocketComponent.cs:33) System.ArgumentException: Only Uri prefixes ending in '/' are allowed. (Parameter 'uriPrefix')
+   at System.Net.HttpListener.AddPrefix(String uriPrefix)
+   at System.Net.HttpListenerPrefixCollection.Add(String uriPrefix)
+   at Sining.Network.WebSocketComponent.<>c__DisplayClass2_0.<<Awake>b__0>d.MoveNext() in /Users/sining/Code/Sining/Server/Core/Module/Network/WebSocket/WebSocketComponent.cs:line 33
+2020-02-25 18:09:25.6253 0001 ERROR (WebSocketComponent.cs:33) System.ArgumentException: Only Uri prefixes starting with 'http://' or 'https://' are supported. (Parameter 'uriPrefix')
+   at System.Net.HttpListener.AddPrefix(String uriPrefix)
+   at System.Net.HttpListenerPrefixCollection.Add(String uriPrefix)
+   at Sining.Network.WebSocketComponent.<>c__DisplayClass2_0.<<Awake>b__0>d.MoveNext() in /Users/sining/Code/Sining/Server/Core/Module/Network/WebSocket/WebSocketComponent.cs:line 33
+2020-02-25 18:09:43.2633 0001 ERROR (WebSocketComponent.cs:33) System.ArgumentException: Only Uri prefixes ending in '/' are allowed. (Parameter 'uriPrefix')
+   at System.Net.HttpListener.AddPrefix(String uriPrefix)
+   at System.Net.HttpListenerPrefixCollection.Add(String uriPrefix)
+   at Sining.Network.WebSocketComponent.<>c__DisplayClass2_0.<<Awake>b__0>d.MoveNext() in /Users/sining/Code/Sining/Server/Core/Module/Network/WebSocket/WebSocketComponent.cs:line 33
+2020-02-25 22:42:39.1562 0001 ERROR (Session.cs:84) code: 12849 1 System.ArgumentNullException: Value cannot be null. (Parameter 'type')
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic, Boolean wrapExceptions)
+   at System.Activator.CreateInstance(Type type)
+   at Sining.Tools.ProtobufHelper.DeserializeFrom(Type type, MemoryStream stream) in /Users/sining/Code/Sining/Server/Model/Base/Tools/ProtobufHelper.cs:line 21
+   at Sining.Network.ProtobufMessagePacker.DeserializeFrom(Type type, MemoryStream stream) in /Users/sining/Code/Sining/Server/Model/Base/Network/MessageProtocol/ProtobufMessagePacker.cs:line 21
+   at Sining.Module.Session.Receive(MemoryStream memoryStream) in /Users/sining/Code/Sining/Server/Core/Module/Session.cs:line 84, ip: 
+2020-02-25 22:42:39.1612 0001 ERROR (Session.cs:136) System.NullReferenceException: Object reference not set to an instance of an object.
+   at Sining.Network.MessageDispatcher.Handle(Session session, Object obj) in /Users/sining/Code/Sining/Server/Core/Base/Event/Message/MessageDispatcher.cs:line 24
+   at Sining.Module.Session.Dispatcher(Object message) in /Users/sining/Code/Sining/Server/Core/Module/Session.cs:line 136
+2020-02-25 22:53:00.2247 0001 ERROR (Session.cs:84) code: 12593 1 System.ArgumentNullException: Value cannot be null. (Parameter 'type')
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic, Boolean wrapExceptions)
+   at System.Activator.CreateInstance(Type type)
+   at Sining.Tools.ProtobufHelper.DeserializeFrom(Type type, MemoryStream stream) in /Users/sining/Code/Sining/Server/Model/Base/Tools/ProtobufHelper.cs:line 21
+   at Sining.Network.ProtobufMessagePacker.DeserializeFrom(Type type, MemoryStream stream) in /Users/sining/Code/Sining/Server/Model/Base/Network/MessageProtocol/ProtobufMessagePacker.cs:line 21
+   at Sining.Module.Session.Receive(MemoryStream memoryStream) in /Users/sining/Code/Sining/Server/Core/Module/Session.cs:line 84, ip: 
+2020-02-25 22:53:00.3166 0001 ERROR (Session.cs:136) System.NullReferenceException: Object reference not set to an instance of an object.
+   at Sining.Network.MessageDispatcher.Handle(Session session, Object obj) in /Users/sining/Code/Sining/Server/Core/Base/Event/Message/MessageDispatcher.cs:line 24
+   at Sining.Module.Session.Dispatcher(Object message) in /Users/sining/Code/Sining/Server/Core/Module/Session.cs:line 136
+2020-02-25 23:20:15.8831 0001 ERROR (Session.cs:84) code: 0 1 System.ArgumentNullException: Value cannot be null. (Parameter 'type')
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic, Boolean wrapExceptions)
+   at System.Activator.CreateInstance(Type type)
+   at Sining.Tools.ProtobufHelper.DeserializeFrom(Type type, MemoryStream stream) in /Users/sining/Code/Sining/Server/Model/Base/Tools/ProtobufHelper.cs:line 21
+   at Sining.Network.ProtobufMessagePacker.DeserializeFrom(Type type, MemoryStream stream) in /Users/sining/Code/Sining/Server/Model/Base/Network/MessageProtocol/ProtobufMessagePacker.cs:line 21
+   at Sining.Module.Session.Receive(MemoryStream memoryStream) in /Users/sining/Code/Sining/Server/Core/Module/Session.cs:line 84, ip: 
+2020-02-25 23:20:15.9773 0001 ERROR (Session.cs:136) System.NullReferenceException: Object reference not set to an instance of an object.
+   at Sining.Network.MessageDispatcher.Handle(Session session, Object obj) in /Users/sining/Code/Sining/Server/Core/Base/Event/Message/MessageDispatcher.cs:line 24
+   at Sining.Module.Session.Dispatcher(Object message) in /Users/sining/Code/Sining/Server/Core/Module/Session.cs:line 136
+2020-02-25 23:21:43.5688 0001 ERROR (Session.cs:84) code: 0 1 System.ArgumentNullException: Value cannot be null. (Parameter 'type')
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic, Boolean wrapExceptions)
+   at System.Activator.CreateInstance(Type type)
+   at Sining.Tools.ProtobufHelper.DeserializeFrom(Type type, MemoryStream stream) in /Users/sining/Code/Sining/Server/Model/Base/Tools/ProtobufHelper.cs:line 21
+   at Sining.Network.ProtobufMessagePacker.DeserializeFrom(Type type, MemoryStream stream) in /Users/sining/Code/Sining/Server/Model/Base/Network/MessageProtocol/ProtobufMessagePacker.cs:line 21
+   at Sining.Module.Session.Receive(MemoryStream memoryStream) in /Users/sining/Code/Sining/Server/Core/Module/Session.cs:line 84, ip: 
+2020-02-25 23:21:43.6580 0001 ERROR (Session.cs:136) System.NullReferenceException: Object reference not set to an instance of an object.
+   at Sining.Network.MessageDispatcher.Handle(Session session, Object obj) in /Users/sining/Code/Sining/Server/Core/Base/Event/Message/MessageDispatcher.cs:line 24
+   at Sining.Module.Session.Dispatcher(Object message) in /Users/sining/Code/Sining/Server/Core/Module/Session.cs:line 136

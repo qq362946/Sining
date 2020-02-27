@@ -1,0 +1,15 @@
+/Users/sining/Code/Sining/Sining.Plugin/Google.Protobuf/bin/Debug/netcoreapp3.1/Google.Protobuf.deps.json
+/Users/sining/Code/Sining/Sining.Plugin/Google.Protobuf/bin/Debug/netcoreapp3.1/Google.Protobuf.dll
+/Users/sining/Code/Sining/Sining.Plugin/Google.Protobuf/bin/Debug/netcoreapp3.1/Google.Protobuf.pdb
+/Users/sining/Code/Sining/Sining.Plugin/Google.Protobuf/obj/Debug/netcoreapp3.1/Google.Protobuf.AssemblyInfoInputs.cache
+/Users/sining/Code/Sining/Sining.Plugin/Google.Protobuf/obj/Debug/netcoreapp3.1/Google.Protobuf.AssemblyInfo.cs
+/Users/sining/Code/Sining/Sining.Plugin/Google.Protobuf/obj/Debug/netcoreapp3.1/Google.Protobuf.dll
+/Users/sining/Code/Sining/Sining.Plugin/Google.Protobuf/obj/Debug/netcoreapp3.1/Google.Protobuf.pdb
+/Users/sining/Code/Sining/Server/ThirdPartyPlugin/Google.Protobuf/bin/Debug/netcoreapp3.1/Google.Protobuf.deps.json
+/Users/sining/Code/Sining/Server/ThirdPartyPlugin/Google.Protobuf/bin/Debug/netcoreapp3.1/Google.Protobuf.dll
+/Users/sining/Code/Sining/Server/ThirdPartyPlugin/Google.Protobuf/bin/Debug/netcoreapp3.1/Google.Protobuf.pdb
+/Users/sining/Code/Sining/Server/ThirdPartyPlugin/Google.Protobuf/obj/Debug/netcoreapp3.1/Google.Protobuf.AssemblyInfoInputs.cache
+/Users/sining/Code/Sining/Server/ThirdPartyPlugin/Google.Protobuf/obj/Debug/netcoreapp3.1/Google.Protobuf.AssemblyInfo.cs
+/Users/sining/Code/Sining/Server/ThirdPartyPlugin/Google.Protobuf/obj/Debug/netcoreapp3.1/Google.Protobuf.dll
+/Users/sining/Code/Sining/Server/ThirdPartyPlugin/Google.Protobuf/obj/Debug/netcoreapp3.1/Google.Protobuf.pdb
+/Users/sining/Code/Sining/Server/ThirdPartyPlugin/Google.Protobuf/obj/Debug/netcoreapp3.1/Google.Protobuf.csprojAssemblyReference.cache

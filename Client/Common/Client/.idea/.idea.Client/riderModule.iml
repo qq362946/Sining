@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="RIDER_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$/../.." />
+    <content url="file://$MODULE_DIR$/../../../../../Server/Core/Base/ComponentBase/ComponentFactory.cs" />
+    <content url="file://$MODULE_DIR$/../../../../../Server/Core/Base/DataStructure" />
+    <content url="file://$MODULE_DIR$/../../../../../Server/Core/Base/Event/EventManagement.cs" />
+    <content url="file://$MODULE_DIR$/../../../../../Server/Core/Base/Tools/AtomicLock.cs" />
+    <content url="file://$MODULE_DIR$/../../../../../Server/Core/Base/Tools/IdFactory.cs" />
+    <content url="file://$MODULE_DIR$/../../../../../Server/Core/Base/Tools/NetworkHelper.cs" />
+    <content url="file://$MODULE_DIR$/../../../../../Server/Core/Base/Tools/ObjectPool.cs" />
+    <content url="file://$MODULE_DIR$/../../../../../Server/Core/Base/Tools/RecyclableMemoryStream" />
+    <content url="file://$MODULE_DIR$/../../../../../Server/Core/Base/Tools/TimeHelper.cs" />
+    <content url="file://$MODULE_DIR$/../../../../../Server/Core/Module/Network/Base/IMessageHandler.cs" />
+    <content url="file://$MODULE_DIR$/../../../../../Server/Core/Module/Network/Base/AMessagePacker.cs" />
+    <content url="file://$MODULE_DIR$/../../../../../Server/Core/Module/Network/Base/MessagePacker.cs" />
+    <content url="file://$MODULE_DIR$/../../../../../Server/Core/Module/Network/Base/NetworkChannel.cs" />
+    <content url="file://$MODULE_DIR$/../../../../../Server/Core/Module/Network/Base/NetworkProtocol.cs" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

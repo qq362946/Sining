@@ -1,0 +1,6 @@
+2020-02-27 14:49:02.1009 0001 FATAL (Program.cs:36) System.Exception: session has been Disposed
+   at Sining.Module.Session.Send(IMessage message) in /Users/sining/Code/Sining/Server/Core/Module/Session.cs:line 43
+   at Sining.Program.Main(String[] args) in /Users/sining/Code/Sining/Server/App/Program.cs:line 36
+2020-02-27 16:47:56.4537 0001 FATAL (Program.cs:54) System.NullReferenceException: Object reference not set to an instance of an object.
+   at Sining.Module.NetworkComponent.Create(String address) in /Users/sining/Code/Sining/Server/Core/Module/Network/NetworkComponent.cs:line 59
+   at Sining.Program.Main(String[] args) in /Users/sining/Code/Sining/Server/App/Program.cs:line 54

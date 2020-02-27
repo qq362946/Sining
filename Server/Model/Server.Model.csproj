@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Core\Server.Core.csproj" />
+      <ProjectReference Include="..\ThirdPartyPlugin\Google.Protobuf\Google.Protobuf.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Base\Network\Interface" />
+      <Folder Include="Base\Network\MessageProtocol" />
+      <Folder Include="Base\Network\Message\Interface" />
+    </ItemGroup>
+
+</Project>

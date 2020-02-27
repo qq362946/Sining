@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+    <PropertyGroup>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>TRACE;DEBUG;NETCOREAPP2_0;SERVER</DefineConstants>
+    <OutputPath>..\..\Bin\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DefineConstants>TRACE;RELEASE;NETCOREAPP2_0;SERVER</DefineConstants>
+    <OutputPath>..\..\Bin\</OutputPath>
+  </PropertyGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\Hotfix\Server.Hotfix.csproj" />
+      <ProjectReference Include="..\Model\Server.Model.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="NLog" Version="4.6.8" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="NLog.config">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+</Project>

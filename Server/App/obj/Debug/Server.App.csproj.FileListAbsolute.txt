@@ -1,0 +1,13 @@
+/Users/sining/Code/Sining/Bin/Server.App
+/Users/sining/Code/Sining/Bin/NLog.config
+/Users/sining/Code/Sining/Bin/Server.App.deps.json
+/Users/sining/Code/Sining/Bin/Server.App.runtimeconfig.json
+/Users/sining/Code/Sining/Bin/Server.App.runtimeconfig.dev.json
+/Users/sining/Code/Sining/Bin/Server.App.dll
+/Users/sining/Code/Sining/Bin/Server.App.pdb
+/Users/sining/Code/Sining/Server/App/obj/Debug/Server.App.csprojAssemblyReference.cache
+/Users/sining/Code/Sining/Server/App/obj/Debug/Server.App.AssemblyInfoInputs.cache
+/Users/sining/Code/Sining/Server/App/obj/Debug/Server.App.AssemblyInfo.cs
+/Users/sining/Code/Sining/Server/App/obj/Debug/Server.App.csproj.CopyComplete
+/Users/sining/Code/Sining/Server/App/obj/Debug/Server.App.dll
+/Users/sining/Code/Sining/Server/App/obj/Debug/Server.App.pdb

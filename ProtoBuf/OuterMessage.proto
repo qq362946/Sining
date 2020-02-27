@@ -1,0 +1,34 @@
+syntax = "proto3";
+package Sining.Message;
+
+// 测试框架协议
+message TestMessage // IMessage   
+{
+  string Name = 1;
+  int32 Number = 2;
+  int32 Page = 3;
+} 
+// 登录协议
+message LoginRequest // IMessage
+{
+	string UserName = 1;
+	string PassWord = 2;
+}
+// 注册协议
+message RegRequest // IMessage
+{
+	string Account = 1;
+	string Date = 2;
+}
+// 获取一个值
+message GetNameRequest // IRequest
+{
+	int32 RpcId = 90;
+	string Name = 1;	
+}
+message GetNameResponse // IResponse
+{
+	int32 RpcId = 90;
+	int32 ErrorCode = 91;
+	string Name = 1;
+}

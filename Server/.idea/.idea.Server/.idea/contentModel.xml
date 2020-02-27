@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$/../bin" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="App" t="IncludeRecursive">
+        <e p="NLog.config" t="Include" />
+        <e p="NLog.xsd" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="Server.App.AssemblyInfo.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Server.App.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="Core" t="IncludeRecursive">
+        <e p="App.cs" t="Include" />
+        <e p="Base" t="Include">
+          <e p="Actor" t="Include">
+            <e p="Actor.cs" t="Include" />
+          </e>
+          <e p="Async" t="Include">
+            <e p="Builder" t="Include">
+              <e p="AsyncSTaskMethodBuilder.cs" t="Include" />
+              <e p="AsyncSVoidMethodBuilder.cs" t="Include" />
+            </e>
+            <e p="IAwaiter.cs" t="Include" />
+            <e p="Task" t="Include">
+              <e p="STask.cs" t="Include" />
+              <e p="STaskAwaiter.cs" t="Include" />
+              <e p="STaskCompletionSource.cs" t="Include" />
+            </e>
+            <e p="Void" t="Include">
+              <e p="SVoid.cs" t="Include" />
+              <e p="SVoidAwaiter.cs" t="Include" />
+            </e>
+          </e>
+          <e p="ComponentBase" t="Include">
+            <e p="Component.cs" t="Include" />
+            <e p="ComponentFactory.cs" t="Include" />
+          </e>
+          <e p="DataStructure" t="Include">
+            <e p="CircularBuffer.cs" t="Include" />
+            <e p="DoubleMapDIc.cs" t="Include" />
+            <e p="OneToManyDic.cs" t="Include" />
+            <e p="OneToManyHashSet.cs" t="Include" />
+            <e p="OneToManyList.cs" t="Include" />
+            <e p="OneToManyQueue.cs" t="Include" />
+          </e>
+          <e p="Event" t="Include">
+            <e p="Attribute" t="Include">
+              <e p="BaseAttribute.cs" t="Include" />
+              <e p="ComponentSystemAttribute.cs" t="Include" />
+              <e p="EventSystemAttribute.cs" t="Include" />
+              <e p="MessageSystemAttribute.cs" t="Include" />
+            </e>
+            <e p="Component" t="Include">
+              <e p="AwakeSystem.cs" t="Include" />
+              <e p="DestroySystem.cs" t="Include" />
+            </e>
+            <e p="EventHandlerSystem.cs" t="Include" />
+            <e p="EventManagement.cs" t="Include" />
+            <e p="IEvent.cs" t="Include" />
+            <e p="Message" t="Include">
+              <e p="HttpMessageHandler.cs" t="Include" />
+              <e p="MessageDispatcher.cs" t="Include" />
+              <e p="MessageHandler.cs" t="Include" />
+              <e p="RpcMessageHandler.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Task" t="Include">
+            <e p="TaskProcessingComponent.cs" t="Include" />
+          </e>
+          <e p="Tools" t="Include">
+            <e p="IdFactory.cs" t="Include" />
+            <e p="Log.cs" t="Include" />
+            <e p="NetworkHelper.cs" t="Include" />
+            <e p="ObjectPool.cs" t="Include" />
+            <e p="RecyclableMemoryStream" t="Include">
+              <e p="Events.cs" t="Include" />
+              <e p="MemoryStreamPool.cs" t="Include" />
+              <e p="RecyclableMemoryStream.cs" t="Include" />
+              <e p="RecyclableMemoryStreamManager.cs" t="Include" />
+            </e>
+            <e p="TimeHelper.cs" t="Include" />
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Module" t="Include">
+          <e p="Network" t="Include">
+            <e p="Base" t="Include">
+              <e p="AMessagePacker.cs" t="Include" />
+              <e p="IMessageHandler.cs" t="Include" />
+              <e p="MessageAttribute.cs" t="Include" />
+              <e p="MessagePacker.cs" t="Include" />
+              <e p="NetworkChannel.cs" t="Include" />
+              <e p="NetworkProtocol.cs" t="Include" />
+            </e>
+            <e p="ErrorCode.cs" t="Include" />
+            <e p="HTTP" t="Include">
+              <e p="HttpComponent.cs" t="Include" />
+            </e>
+            <e p="Interface" t="Include">
+              <e p="IMessage.cs" t="Include" />
+            </e>
+            <e p="NetworkComponent.cs" t="Include" />
+            <e p="NetworkProtocolManage.cs" t="Include" />
+            <e p="PacketParser.cs" t="Include" />
+            <e p="TCP" t="Include">
+              <e p="SocketAsyncEventArgsPool.cs" t="Include" />
+              <e p="TCPChannelComponent.cs" t="Include" />
+              <e p="TCPComponent.cs" t="Include" />
+            </e>
+            <e p="WebSocket" t="Include">
+              <e p="WebSocketChannelComponent.cs" t="Include" />
+              <e p="WebSocketComponent.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Scene.cs" t="Include" />
+          <e p="Session.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Server.Core.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Server.Core.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="Hotfix" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Server.Hotfix.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Server.Hotfix.csproj" t="IncludeRecursive" />
+        <e p="TestMessageHandler.cs" t="Include" />
+      </e>
+      <e p="Model" t="IncludeRecursive">
+        <e p="Base" t="Include">
+          <e p="Network" t="Include">
+            <e p="Interface" t="Include" />
+            <e p="Message" t="Include">
+              <e p="Interface" t="Include" />
+              <e p="OuterMessage.cs" t="Include" />
+              <e p="OuterOpcode.cs" t="Include" />
+            </e>
+            <e p="MessageProtocol" t="Include">
+              <e p="ProtobufMessagePacker.cs" t="Include" />
+            </e>
+            <e p="NetInnerComponent.cs" t="Include" />
+            <e p="NetOuterComponent.cs" t="Include" />
+          </e>
+          <e p="Tools" t="Include">
+            <e p="ProtobufHelper.cs" t="Include" />
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Server.Model.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Server.Model.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Server.sln" t="IncludeFlat" />
+      <e p="ThirdPartyPlugin" t="Include">
+        <e p="Google.Protobuf" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="ByteArray.cs" t="Include" />
+          <e p="ByteString.cs" t="Include" />
+          <e p="CodedInputStream.cs" t="Include" />
+          <e p="CodedOutputStream.ComputeSize.cs" t="Include" />
+          <e p="CodedOutputStream.cs" t="Include" />
+          <e p="Collections" t="Include">
+            <e p="Lists.cs" t="Include" />
+            <e p="MapField.cs" t="Include" />
+            <e p="ProtobufEqualityComparers.cs" t="Include" />
+            <e p="ReadOnlyDictionary.cs" t="Include" />
+            <e p="RepeatedField.cs" t="Include" />
+          </e>
+          <e p="Compatibility" t="Include">
+            <e p="MethodInfoExtensions.cs" t="Include" />
+            <e p="PropertyInfoExtensions.cs" t="Include" />
+            <e p="StreamExtensions.cs" t="Include" />
+            <e p="TypeExtensions.cs" t="Include" />
+          </e>
+          <e p="Extension.cs" t="Include" />
+          <e p="ExtensionRegistry.cs" t="Include" />
+          <e p="ExtensionSet.cs" t="Include" />
+          <e p="ExtensionValue.cs" t="Include" />
+          <e p="FieldCodec.cs" t="Include" />
+          <e p="FieldMaskTree.cs" t="Include" />
+          <e p="FrameworkPortability.cs" t="Include" />
+          <e p="Google.Protobuf.csproj" t="IncludeRecursive" />
+          <e p="ICustomDiagnosticMessage.cs" t="Include" />
+          <e p="IDeepCloneable.cs" t="Include" />
+          <e p="IExtendableMessage.cs" t="Include" />
+          <e p="IMessage.cs" t="Include" />
+          <e p="InvalidJsonException.cs" t="Include" />
+          <e p="InvalidProtocolBufferException.cs" t="Include" />
+          <e p="JsonFormatter.cs" t="Include" />
+          <e p="JsonParser.cs" t="Include" />
+          <e p="JsonToken.cs" t="Include" />
+          <e p="JsonTokenizer.cs" t="Include" />
+          <e p="LimitedInputStream.cs" t="Include" />
+          <e p="MessageExtensions.cs" t="Include" />
+          <e p="MessageParser.cs" t="Include" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="Google.Protobuf.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="ObjectIntPair.cs" t="Include" />
+          <e p="ProtoPreconditions.cs" t="Include" />
+          <e p="Reflection" t="Include">
+            <e p="CustomOptions.cs" t="Include" />
+            <e p="Descriptor.cs" t="Include" />
+            <e p="DescriptorBase.cs" t="Include" />
+            <e p="DescriptorDeclaration.cs" t="Include" />
+            <e p="DescriptorPool.cs" t="Include" />
+            <e p="DescriptorUtil.cs" t="Include" />
+            <e p="DescriptorValidationException.cs" t="Include" />
+            <e p="EnumDescriptor.cs" t="Include" />
+            <e p="EnumValueDescriptor.cs" t="Include" />
+            <e p="ExtensionAccessor.cs" t="Include" />
+            <e p="ExtensionCollection.cs" t="Include" />
+            <e p="FieldAccessorBase.cs" t="Include" />
+            <e p="FieldDescriptor.cs" t="Include" />
+            <e p="FieldType.cs" t="Include" />
+            <e p="FileDescriptor.cs" t="Include" />
+            <e p="GeneratedClrTypeInfo.cs" t="Include" />
+            <e p="IDescriptor.cs" t="Include" />
+            <e p="IFieldAccessor.cs" t="Include" />
+            <e p="MapFieldAccessor.cs" t="Include" />
+            <e p="MessageDescriptor.cs" t="Include" />
+            <e p="MethodDescriptor.cs" t="Include" />
+            <e p="OneofAccessor.cs" t="Include" />
+            <e p="OneofDescriptor.cs" t="Include" />
+            <e p="OriginalNameAttribute.cs" t="Include" />
+            <e p="PackageDescriptor.cs" t="Include" />
+            <e p="ReflectionUtil.cs" t="Include" />
+            <e p="RepeatedFieldAccessor.cs" t="Include" />
+            <e p="ServiceDescriptor.cs" t="Include" />
+            <e p="SingleFieldAccessor.cs" t="Include" />
+            <e p="TypeRegistry.cs" t="Include" />
+          </e>
+          <e p="UnknownField.cs" t="Include" />
+          <e p="UnknownFieldSet.cs" t="Include" />
+          <e p="WellKnownTypes" t="Include">
+            <e p="Any.cs" t="Include" />
+            <e p="AnyPartial.cs" t="Include" />
+            <e p="Api.cs" t="Include" />
+            <e p="Duration.cs" t="Include" />
+            <e p="DurationPartial.cs" t="Include" />
+            <e p="Empty.cs" t="Include" />
+            <e p="FieldMask.cs" t="Include" />
+            <e p="FieldMaskPartial.cs" t="Include" />
+            <e p="SourceContext.cs" t="Include" />
+            <e p="Struct.cs" t="Include" />
+            <e p="TimeExtensions.cs" t="Include" />
+            <e p="Timestamp.cs" t="Include" />
+            <e p="TimestampPartial.cs" t="Include" />
+            <e p="Type.cs" t="Include" />
+            <e p="ValuePartial.cs" t="Include" />
+            <e p="Wrappers.cs" t="Include" />
+            <e p="WrappersPartial.cs" t="Include" />
+          </e>
+          <e p="WireFormat.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Tools" t="Include" />
+    </e>
+    <e p="$PROJECT_DIR$/../Tools/ProtoBufTool" t="IncludeRecursive">
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive">
+        <e p="Debug" t="Include">
+          <e p="netcoreapp3.1" t="Include">
+            <e p="ProtoBufTool.AssemblyInfo.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="ProcessHelper.cs" t="Include" />
+      <e p="Program.cs" t="Include" />
+      <e p="ProtoBufTool.csproj" t="IncludeRecursive" />
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2019.3/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.3/resharper-host/local/Transient/ReSharperHost/v193/SolutionCaches/_Server.856679761.00" t="ExcludeRecursive" />
+  </component>
+</project>

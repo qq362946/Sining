@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Core\Server.Core.csproj" />
+      <ProjectReference Include="..\Model\Server.Model.csproj" />
+      <ProjectReference Include="..\ThirdPartyPlugin\Google.Protobuf\Google.Protobuf.csproj" />
+    </ItemGroup>
+
+</Project>

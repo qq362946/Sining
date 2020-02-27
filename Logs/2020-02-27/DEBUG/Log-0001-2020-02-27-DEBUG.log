@@ -1,0 +1,1301 @@
+2020-02-27 17:31:02.9957 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:02.9957 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:02.9964 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:02.9979 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:03.1633 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:03.1636 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:03.1636 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:03.1650 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:03.4133 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:03.4133 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:03.4133 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:03.4154 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:03.5807 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:03.5807 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:03.5807 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:03.5825 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:03.7476 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:03.7476 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:03.7476 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:03.7495 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:03.9161 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:03.9165 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:03.9165 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:03.9180 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:04.1685 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:04.1685 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:04.1685 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:04.1701 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:04.4205 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:04.4205 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:04.4205 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:04.4222 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:04.6708 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:04.6708 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:04.6708 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:04.6725 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:04.9219 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:04.9219 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:04.9264 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:04.9337 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:05.1718 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:05.1718 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:05.1718 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:05.1732 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:05.4236 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:05.4236 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:05.4236 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:05.4252 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:05.5899 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:05.5899 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:05.5899 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:05.5915 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:05.8432 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:05.8434 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:05.8434 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:05.8448 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:06.0099 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:06.0099 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:06.0099 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:06.0114 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:06.2630 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:06.2630 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:06.2630 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:06.2645 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:06.5138 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:06.5138 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:06.5138 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:06.5153 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:06.6813 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:06.6815 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:06.6815 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:06.6829 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:06.8504 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:06.8504 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:06.8504 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:06.8519 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:07.1014 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:07.1014 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:07.1014 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:07.1029 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:07.2678 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:07.2678 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:07.2678 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:07.2693 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:07.5201 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:07.5201 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:07.5201 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:07.5215 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:07.7706 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:07.7706 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:07.7706 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:07.7720 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:07.9349 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:07.9349 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:07.9349 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:07.9363 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:08.1025 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:08.1025 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:08.1025 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:08.1042 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:08.3556 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:08.3556 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:08.3556 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:08.3571 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:08.5219 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:08.5219 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:08.5219 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:08.5234 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:08.7722 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:08.7724 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:08.7724 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:08.7738 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:09.0240 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:09.0240 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:09.0240 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:09.0255 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:09.2759 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:09.2759 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:09.2759 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:09.2774 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:09.5273 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:09.5275 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:09.5275 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:09.5288 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:09.7792 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:09.7794 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:09.7794 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:09.7807 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:10.0307 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:10.0307 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:10.0307 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:10.0322 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:10.2826 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:10.2826 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:10.2826 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:10.2841 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:10.5340 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:10.5340 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:10.5340 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:10.5356 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:10.7855 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:10.7855 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:10.7855 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:10.7869 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:10.9531 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:10.9531 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:10.9534 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:10.9546 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:11.2052 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:11.2054 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:11.2054 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:11.2066 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:15.2165 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:15.2165 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:15.2165 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:15.2180 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:15.4679 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:15.4679 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:15.4679 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:15.4694 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:15.7182 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:15.7184 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:15.7184 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:15.7198 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:15.9705 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:15.9705 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:15.9705 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:15.9720 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:16.2217 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:16.2217 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:16.2217 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:16.2231 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:16.4727 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:16.4727 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:16.4727 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:16.4741 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:16.7252 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:16.7255 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:16.7255 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:16.7268 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:16.9768 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:16.9768 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:16.9768 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:16.9782 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:17.2278 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:17.2278 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:17.2278 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:17.2292 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:17.4799 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:17.4799 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:17.4799 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:17.4814 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:17.7303 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:17.7305 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:17.7305 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:17.7318 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:17.9814 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:17.9814 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:17.9814 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:17.9830 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:18.1500 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:18.1500 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:18.1500 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:18.1515 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:18.4021 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:18.4024 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:18.4024 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:18.4036 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:18.6546 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:18.6546 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:18.6546 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:18.6561 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:18.9062 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:18.9064 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:18.9064 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:18.9077 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:19.1572 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:19.1574 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:19.1574 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:19.1587 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:19.4095 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:19.4095 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:19.4095 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:19.4111 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:19.5780 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:19.5780 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:19.5780 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:19.5796 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:19.8276 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:19.8276 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:19.8276 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:19.8291 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:23.5771 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:23.5771 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:23.5771 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:23.5784 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:24.1636 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:24.1636 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:24.1636 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:24.1650 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:24.4150 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:24.4150 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:24.4150 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:24.4166 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:24.6661 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:24.6661 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:24.6661 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:24.6676 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:24.8356 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:24.8356 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:24.8356 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:24.8372 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:25.0879 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:25.0879 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:25.0879 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:25.0894 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:25.3384 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:25.3386 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:25.3386 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:25.3399 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:25.5878 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:25.5900 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:25.5900 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:25.5913 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:25.8386 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:25.8386 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:25.8386 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:25.8402 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:26.0891 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:26.0891 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:26.0891 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:26.0907 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:26.3424 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:26.3424 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:26.3424 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:26.3439 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:26.5944 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:26.5946 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:26.5946 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:26.5959 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:26.8466 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:26.8466 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:26.8466 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:26.8481 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:27.0968 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:27.0968 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:27.0968 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:27.0983 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:27.2634 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:27.2634 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:27.2634 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:27.2649 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:27.5149 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:27.5149 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:27.5149 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:27.5163 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:27.6826 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:27.6826 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:27.6826 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:27.6841 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:27.9347 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:27.9347 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:27.9347 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:27.9362 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:28.1874 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:28.1876 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:28.1876 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:28.1888 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:28.3541 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:28.3541 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:28.3541 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:28.3555 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:28.6044 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:28.6046 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:28.6046 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:28.6058 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:28.7706 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:28.7706 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:28.7706 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:28.7720 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:29.0217 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:29.0217 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:29.0217 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:29.0232 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:29.2735 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:29.2735 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:29.2735 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:29.2750 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:29.5268 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:29.5268 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:29.5268 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:29.5282 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:29.7792 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:29.7792 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:29.7794 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:29.7806 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:30.0308 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:30.0308 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:30.0308 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:30.0325 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:30.2827 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:30.2827 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:30.2827 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:30.2843 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:30.5354 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:30.5356 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:30.5356 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:30.5369 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:31:30.7874 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:31:30.7876 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:13
+2020-02-27 17:31:30.7876 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:13
+2020-02-27 17:31:30.7889 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:37:44.1095 0001 DEBUG (WebSocketChannelComponent.cs:229) 收到一个连接完成 ThreadId:11
+2020-02-27 17:37:44.1095 0001 DEBUG (WebSocketChannelComponent.cs:229) 收到一个连接完成 ThreadId:6
+2020-02-27 17:41:08.9673 0001 DEBUG (WebSocketChannelComponent.cs:229) 收到一个连接完成127.0.0.1 ThreadId:4
+2020-02-27 17:41:08.9673 0001 DEBUG (WebSocketChannelComponent.cs:229) 收到一个连接完成 ThreadId:10
+2020-02-27 17:42:21.0094 0001 DEBUG (WebSocketChannelComponent.cs:228) 收到一个连接完成127.0.0.1:8888 ThreadId:7
+2020-02-27 17:42:21.0099 0001 DEBUG (WebSocketChannelComponent.cs:228) 收到一个连接完成 ThreadId:9
+2020-02-27 17:42:25.7841 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:25.7902 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:25.7914 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:25.7946 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:27.1397 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:27.1414 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:27.1427 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:27.1474 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:27.3911 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:27.3917 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:27.3917 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:27.3932 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:27.6420 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:27.6420 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:27.6428 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:27.6445 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:27.8099 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:27.8099 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:27.8106 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:27.8120 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:27.9776 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:27.9776 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:27.9776 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:27.9794 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:28.2292 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:28.2297 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:28.2297 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:28.2313 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:28.3969 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:28.3969 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:28.3969 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:28.3987 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:28.6487 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:28.6487 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:28.6487 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:28.6508 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:29.6910 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:29.6910 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:29.6916 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:29.6930 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:30.3617 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:30.3617 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:30.3617 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:30.3635 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:30.7508 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:30.7508 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:30.7508 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:30.7525 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:31.0975 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:31.0978 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:31.0978 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:31.0991 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:31.4545 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:31.4547 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:31.4547 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:31.4562 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:32.1224 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:32.1226 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:32.1226 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:32.1241 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:32.2904 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:32.2906 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:32.2937 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:32.2950 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:32.5432 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:32.5432 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:32.5436 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:32.5450 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:32.7112 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:32.7112 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:32.7116 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:32.7128 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:32.9621 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:32.9621 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:32.9621 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:32.9638 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:33.2150 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:33.2150 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:33.2150 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:33.2166 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:33.4680 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:33.4680 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:33.4680 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:33.4695 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:33.7206 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:33.7208 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:33.7208 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:33.7222 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:33.9724 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:33.9726 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:33.9726 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:33.9740 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:34.2241 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:34.2241 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:34.2241 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:34.2256 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:34.4753 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:34.4753 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:34.4753 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:34.4767 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:34.7275 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:34.7277 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:34.7277 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:34.7291 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:34.9797 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:34.9797 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:34.9797 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:34.9812 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:35.2309 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:35.2309 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:35.2309 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:35.2323 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:35.4829 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:35.4829 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:35.4829 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:35.4843 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:35.6519 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:35.6519 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:35.6519 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:35.6535 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:35.9037 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:35.9037 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:35.9037 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:35.9052 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:36.1543 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:36.1543 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:36.1543 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:36.1557 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:36.3205 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:36.3207 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:36.3207 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:36.3219 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:36.4882 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:36.4882 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:36.4882 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:36.4896 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:36.7400 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:36.7400 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:36.7400 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:36.7415 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:36.9915 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:36.9917 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:36.9917 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:36.9930 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:37.2421 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:37.2421 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:37.2421 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:37.2435 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:37.4919 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:37.4919 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:37.4919 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:37.4934 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:37.6596 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:37.6596 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:37.6596 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:37.6611 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:37.8274 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:37.8276 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:37.8276 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:37.8290 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:38.0796 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:38.0796 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:38.0796 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:38.0810 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:38.3306 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:38.3306 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:38.3306 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:38.3321 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:38.5818 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:38.5818 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:38.5818 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:38.5834 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:38.8320 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:38.8320 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:38.8320 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:38.8334 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:39.0826 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:39.0826 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:39.0826 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:39.0840 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:39.3329 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:39.3329 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:39.3329 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:39.3343 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:39.5860 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:39.5860 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:39.5860 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:39.5874 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:39.8388 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:39.8388 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:39.8388 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:39.8403 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:40.0906 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:40.0907 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:40.0907 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:40.0921 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:40.3421 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:40.3421 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:40.3421 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:40.3435 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:40.5936 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:40.5937 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:40.5937 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:40.5950 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:40.8456 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:40.8457 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:40.8457 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:40.8470 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:41.0975 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:41.0976 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:41.0976 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:41.0989 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:41.3487 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:41.3487 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:41.3487 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:41.3501 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:41.6002 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:41.6002 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:41.6002 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:41.6017 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:41.7682 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:41.7682 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:41.7682 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:41.7698 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:42.0209 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:42.0209 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:42.0209 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:42.0225 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:42.2713 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:42.2713 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:42.2713 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:42.2728 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:42.9367 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:42.9367 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:42.9367 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:42.9382 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:43.4227 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:43.4227 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:43.4227 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:43.4241 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:43.8462 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:43.8462 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:43.8462 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:43.8477 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:44.2856 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:44.2858 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:44.2858 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:44.2871 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:44.6647 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:44.6647 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:44.6647 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:44.6662 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:45.0626 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:45.0628 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:45.0628 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:45.0644 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:45.3966 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:45.3968 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:45.3968 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:45.3981 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:45.7426 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:45.7427 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:45.7427 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:45.7440 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:46.1086 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:46.1086 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:46.1086 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:46.1101 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:46.4906 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:46.4908 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:46.4908 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:46.4921 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:46.8684 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:46.8687 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:46.8687 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:46.8699 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:47.2595 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:47.2597 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:47.2597 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:47.2610 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:47.6418 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:47.6418 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:47.6418 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:47.6432 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:48.0435 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:48.0458 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:48.0458 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:48.0472 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:48.4557 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:48.4557 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:48.4557 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:48.4572 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:48.8465 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:48.8467 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:48.8467 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:48.8480 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:49.2145 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:49.2147 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:49.2147 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:49.2159 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:52.0955 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:52.0957 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:52.0957 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:52.0969 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:53.0045 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:53.0047 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:53.0047 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:53.0058 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:53.7788 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:53.7788 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:53.7788 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:53.7802 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:54.5846 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:54.5847 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:54.5847 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:54.5861 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:55.4335 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:55.4337 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:55.4337 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:55.4349 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:58.2721 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:58.2721 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:58.2721 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:58.2735 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:58.9275 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:58.9277 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:58.9277 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:58.9289 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:42:59.5328 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:42:59.5328 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:42:59.5328 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:42:59.5342 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:43:00.1650 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:43:00.1650 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:43:00.1650 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:43:00.1665 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:43:00.8391 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:43:00.8391 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:43:00.8391 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:43:00.8406 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:43:02.1703 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:43:02.1703 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:43:02.1703 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:43:02.1716 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:43:02.8723 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:43:02.8723 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:43:02.8723 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:43:02.8738 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:43:03.5205 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:43:03.5205 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:43:03.5207 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:43:03.5220 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:43:04.2283 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:43:04.2283 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:43:04.2283 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:43:04.2297 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:43:04.8642 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:43:04.8642 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:43:04.8642 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:43:04.8656 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:43:05.5442 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:43:05.5442 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:43:05.5442 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:43:05.5456 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:43:06.1547 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:43:06.1548 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:43:06.1548 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:43:06.1561 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:43:06.7729 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:43:06.7729 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:43:06.7729 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:43:06.7745 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:43:07.2869 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:43:07.2869 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:43:07.2869 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:43:07.2884 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:43:08.7614 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:43:08.7614 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:43:08.7614 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:43:08.7628 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:43:13.9635 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:43:13.9635 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:43:13.9635 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:43:13.9650 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:43:14.5696 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:43:14.5696 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:43:14.5698 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:43:14.5710 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:43:15.0200 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:43:15.0200 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:43:15.0209 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:43:15.0223 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:43:15.6621 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:43:15.6621 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:43:15.6621 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:43:15.6635 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:43:18.0488 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:43:18.0488 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:43:18.0488 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:43:18.0504 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:43:18.6924 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:43:18.6924 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:43:18.6924 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:43:18.6939 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:43:19.2491 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:43:19.2491 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:43:19.2491 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:43:19.2505 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:43:19.9134 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:43:19.9134 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:43:19.9134 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:43:19.9149 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:43:20.7227 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:43:20.7228 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:43:20.7228 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:43:20.7243 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:43:21.5525 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:43:21.5525 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:11
+2020-02-27 17:43:21.5525 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:11
+2020-02-27 17:43:21.5538 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:45:21.6156 0001 DEBUG (WebSocketChannelComponent.cs:228) 收到一个连接完成 ThreadId:6
+2020-02-27 17:45:21.6152 0001 DEBUG (WebSocketChannelComponent.cs:228) 收到一个连接完成127.0.0.1:8888 ThreadId:11
+2020-02-27 17:45:22.9997 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:7
+2020-02-27 17:47:54.6780 0001 DEBUG (WebSocketChannelComponent.cs:234) 收到一个连接完成 ThreadId:7
+2020-02-27 17:47:54.6780 0001 DEBUG (WebSocketChannelComponent.cs:234) 收到一个连接完成127.0.0.1:8888 ThreadId:11
+2020-02-27 17:47:57.2679 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:12
+2020-02-27 17:53:29.3821 0001 DEBUG (WebSocketChannelComponent.cs:236) 收到一个连接完成127.0.0.1:8888 ThreadId:10
+2020-02-27 17:53:29.3821 0001 DEBUG (WebSocketChannelComponent.cs:236) 收到一个连接完成 ThreadId:9
+2020-02-27 17:53:32.2277 0001 DEBUG (WebSocketChannelComponent.cs:240) 断开了连接
+2020-02-27 17:53:32.2335 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:11
+2020-02-27 17:54:32.2298 0001 DEBUG (WebSocketChannelComponent.cs:236) 收到一个连接完成127.0.0.1:8888 ThreadId:12
+2020-02-27 17:54:32.2298 0001 DEBUG (WebSocketChannelComponent.cs:236) 收到一个连接完成 ThreadId:8
+2020-02-27 17:54:34.1856 0001 DEBUG (WebSocketChannelComponent.cs:240) 断开了连接
+2020-02-27 17:54:34.1849 0001 DEBUG (WebSocketChannelComponent.cs:240) 断开了连接
+2020-02-27 17:54:34.1888 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:13
+2020-02-27 17:56:34.3537 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:12
+2020-02-27 17:57:07.4206 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:10
+2020-02-27 17:57:07.4258 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:10
+2020-02-27 17:57:07.4278 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:10
+2020-02-27 17:57:07.4308 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:57:08.9423 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:10
+2020-02-27 17:57:08.9444 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:10
+2020-02-27 17:57:08.9452 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:10
+2020-02-27 17:57:08.9512 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:57:09.5695 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:10
+2020-02-27 17:57:09.5695 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:10
+2020-02-27 17:57:09.5703 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:10
+2020-02-27 17:57:09.5724 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:57:09.9913 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:10
+2020-02-27 17:57:09.9913 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:10
+2020-02-27 17:57:09.9913 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:10
+2020-02-27 17:57:09.9936 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:57:10.3460 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:10
+2020-02-27 17:57:10.3465 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:10
+2020-02-27 17:57:10.3465 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:10
+2020-02-27 17:57:10.3485 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:57:10.7296 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:10
+2020-02-27 17:57:10.7296 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:10
+2020-02-27 17:57:10.7303 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:10
+2020-02-27 17:57:10.7319 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:57:11.0579 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:10
+2020-02-27 17:57:11.0583 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:10
+2020-02-27 17:57:11.0583 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:10
+2020-02-27 17:57:11.0599 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:57:11.4013 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:10
+2020-02-27 17:57:11.4013 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:10
+2020-02-27 17:57:11.4013 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:10
+2020-02-27 17:57:11.4035 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:57:11.7647 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:10
+2020-02-27 17:57:11.7647 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:10
+2020-02-27 17:57:11.7647 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:10
+2020-02-27 17:57:11.7663 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:57:12.1530 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:10
+2020-02-27 17:57:12.1533 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:10
+2020-02-27 17:57:12.1533 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:10
+2020-02-27 17:57:12.1546 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:57:12.7561 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:10
+2020-02-27 17:57:12.7561 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:10
+2020-02-27 17:57:12.7561 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:10
+2020-02-27 17:57:12.7578 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:57:13.1379 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:10
+2020-02-27 17:57:13.1381 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:10
+2020-02-27 17:57:13.1381 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:10
+2020-02-27 17:57:13.1395 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:57:13.9962 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:10
+2020-02-27 17:57:13.9962 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:10
+2020-02-27 17:57:13.9962 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:10
+2020-02-27 17:57:13.9978 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:57:14.4160 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:10
+2020-02-27 17:57:14.4162 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:10
+2020-02-27 17:57:14.4162 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:10
+2020-02-27 17:57:14.4176 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:57:14.8200 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:10
+2020-02-27 17:57:14.8203 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:10
+2020-02-27 17:57:14.8203 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:10
+2020-02-27 17:57:14.8219 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:57:15.2448 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:10
+2020-02-27 17:57:15.2448 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:10
+2020-02-27 17:57:15.2452 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:10
+2020-02-27 17:57:15.2465 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:57:15.6569 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:10
+2020-02-27 17:57:15.6573 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:10
+2020-02-27 17:57:15.6573 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:10
+2020-02-27 17:57:15.6588 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:57:16.0522 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:10
+2020-02-27 17:57:16.0522 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:10
+2020-02-27 17:57:16.0522 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:10
+2020-02-27 17:57:16.0539 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:57:16.3988 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:10
+2020-02-27 17:57:16.3988 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:10
+2020-02-27 17:57:16.3988 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:10
+2020-02-27 17:57:16.4004 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:57:16.8198 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:10
+2020-02-27 17:57:16.8198 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:10
+2020-02-27 17:57:16.8198 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:10
+2020-02-27 17:57:16.8214 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:57:17.2575 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:10
+2020-02-27 17:57:17.2575 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:10
+2020-02-27 17:57:17.2608 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:10
+2020-02-27 17:57:17.2621 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:57:17.7158 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:10
+2020-02-27 17:57:17.7158 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:10
+2020-02-27 17:57:17.7158 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:10
+2020-02-27 17:57:17.7172 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:57:18.1578 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:10
+2020-02-27 17:57:18.1578 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:10
+2020-02-27 17:57:18.1581 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:10
+2020-02-27 17:57:18.1593 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 17:57:18.5179 0001 DEBUG (TestMessageHandler.cs:15) 接收到一个消息：Name:张三 Number:1 Page:666 ThreadId:10
+2020-02-27 17:57:18.5179 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:10
+2020-02-27 17:57:18.5183 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张五 ThreadId:10
+2020-02-27 17:57:18.5196 0001 DEBUG (Program.cs:38) GetNameRequest:张五
+2020-02-27 19:03:14.6237 0001 DEBUG (HttpComponent.cs:77) http://127.0.0.1:8888/1111
+2020-02-27 19:06:21.8719 0001 DEBUG (HttpComponent.cs:77) http://127.0.0.1:8888/1111
+2020-02-27 19:08:39.2550 0001 DEBUG (HttpComponent.cs:77) http://127.0.0.1:8888/1111
+2020-02-27 19:08:59.0418 0001 DEBUG (HttpComponent.cs:77) http://127.0.0.1:8888/
+2020-02-27 19:10:30.8119 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111
+2020-02-27 19:10:30.8145 0001 DEBUG (HttpComponent.cs:88) 收到POST数据：
+
+2020-02-27 19:16:18.2518 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111
+2020-02-27 19:16:18.2537 0001 DEBUG (HttpComponent.cs:88) 收到POST数据：
+
+2020-02-27 19:17:51.5527 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111
+2020-02-27 19:17:51.5539 0001 DEBUG (HttpComponent.cs:88) 收到POST数据：
+
+2020-02-27 19:18:19.9745 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111
+2020-02-27 19:18:20.0034 0001 DEBUG (HttpComponent.cs:88) 收到POST数据：
+
+2020-02-27 19:19:07.7849 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111
+2020-02-27 19:19:07.7872 0001 DEBUG (HttpComponent.cs:88) 收到POST数据：
+
+2020-02-27 19:19:13.2491 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111
+2020-02-27 19:19:13.2491 0001 DEBUG (HttpComponent.cs:88) 收到POST数据：
+
+2020-02-27 19:19:15.7789 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111
+2020-02-27 19:19:15.7805 0001 DEBUG (HttpComponent.cs:88) 收到POST数据：
+
+2020-02-27 19:19:16.9242 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111
+2020-02-27 19:19:16.9250 0001 DEBUG (HttpComponent.cs:88) 收到POST数据：
+
+2020-02-27 19:19:17.7124 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111
+2020-02-27 19:19:17.7130 0001 DEBUG (HttpComponent.cs:88) 收到POST数据：
+
+2020-02-27 19:19:18.8090 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111
+2020-02-27 19:19:18.8090 0001 DEBUG (HttpComponent.cs:88) 收到POST数据：
+
+2020-02-27 19:19:19.7271 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111
+2020-02-27 19:19:19.7281 0001 DEBUG (HttpComponent.cs:88) 收到POST数据：
+
+2020-02-27 19:19:20.7328 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111
+2020-02-27 19:19:20.7328 0001 DEBUG (HttpComponent.cs:88) 收到POST数据：
+
+2020-02-27 19:19:22.9306 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111
+2020-02-27 19:19:22.9312 0001 DEBUG (HttpComponent.cs:88) 收到POST数据：
+
+2020-02-27 19:19:23.7387 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111
+2020-02-27 19:19:23.7387 0001 DEBUG (HttpComponent.cs:88) 收到POST数据：
+
+2020-02-27 19:19:24.5059 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111
+2020-02-27 19:19:24.5059 0001 DEBUG (HttpComponent.cs:88) 收到POST数据：
+
+2020-02-27 19:19:25.4477 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111
+2020-02-27 19:19:25.4477 0001 DEBUG (HttpComponent.cs:88) 收到POST数据：
+
+2020-02-27 19:19:26.2243 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111
+2020-02-27 19:19:26.2243 0001 DEBUG (HttpComponent.cs:88) 收到POST数据：
+
+2020-02-27 19:19:26.9420 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111
+2020-02-27 19:19:26.9420 0001 DEBUG (HttpComponent.cs:88) 收到POST数据：
+
+2020-02-27 19:19:27.8193 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111
+2020-02-27 19:19:27.8193 0001 DEBUG (HttpComponent.cs:88) 收到POST数据：
+
+2020-02-27 19:19:35.5363 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111
+2020-02-27 19:19:35.5363 0001 DEBUG (HttpComponent.cs:88) 收到POST数据：
+
+2020-02-27 19:19:36.7481 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111
+2020-02-27 19:19:36.7481 0001 DEBUG (HttpComponent.cs:88) 收到POST数据：
+
+2020-02-27 19:19:55.0356 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111
+2020-02-27 19:19:55.0370 0001 DEBUG (HttpComponent.cs:88) 收到POST数据：
+2020-02-27 19:19:55.6869 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111
+2020-02-27 19:19:55.6869 0001 DEBUG (HttpComponent.cs:88) 收到POST数据：
+2020-02-27 19:19:56.3844 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111
+2020-02-27 19:19:56.3857 0001 DEBUG (HttpComponent.cs:88) 收到POST数据：
+2020-02-27 19:19:57.1254 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111
+2020-02-27 19:19:57.1261 0001 DEBUG (HttpComponent.cs:88) 收到POST数据：
+2020-02-27 19:19:57.7842 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111
+2020-02-27 19:19:57.7842 0001 DEBUG (HttpComponent.cs:88) 收到POST数据：
+2020-02-27 19:19:58.4662 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111
+2020-02-27 19:19:58.4662 0001 DEBUG (HttpComponent.cs:88) 收到POST数据：
+2020-02-27 19:19:59.3778 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111
+2020-02-27 19:19:59.3781 0001 DEBUG (HttpComponent.cs:88) 收到POST数据：
+2020-02-27 19:20:03.8228 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111
+2020-02-27 19:20:03.8231 0001 DEBUG (HttpComponent.cs:88) 收到POST数据：
+2020-02-27 19:20:04.6490 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111
+2020-02-27 19:20:04.6490 0001 DEBUG (HttpComponent.cs:88) 收到POST数据：
+2020-02-27 19:20:05.3756 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111
+2020-02-27 19:20:05.3756 0001 DEBUG (HttpComponent.cs:88) 收到POST数据：
+2020-02-27 19:20:06.2448 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111
+2020-02-27 19:20:06.2451 0001 DEBUG (HttpComponent.cs:88) 收到POST数据：
+2020-02-27 19:20:06.9750 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111
+2020-02-27 19:20:06.9750 0001 DEBUG (HttpComponent.cs:88) 收到POST数据：
+2020-02-27 19:23:35.5094 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111
+2020-02-27 19:23:35.5112 0001 DEBUG (HttpComponent.cs:88) 收到POST数据：
+2020-02-27 19:23:36.4203 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111
+2020-02-27 19:23:36.4209 0001 DEBUG (HttpComponent.cs:88) 收到POST数据：
+2020-02-27 19:23:37.3207 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111
+2020-02-27 19:23:37.3226 0001 DEBUG (HttpComponent.cs:88) 收到POST数据：
+2020-02-27 19:23:38.3274 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111
+2020-02-27 19:23:38.3281 0001 DEBUG (HttpComponent.cs:88) 收到POST数据：
+2020-02-27 19:23:39.2409 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111
+2020-02-27 19:23:39.2409 0001 DEBUG (HttpComponent.cs:88) 收到POST数据：
+2020-02-27 19:23:40.4544 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111
+2020-02-27 19:23:40.4549 0001 DEBUG (HttpComponent.cs:88) 收到POST数据：
+2020-02-27 19:24:02.8631 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111
+2020-02-27 19:24:02.8631 0001 DEBUG (HttpComponent.cs:88) 收到POST数据：
+2020-02-27 19:24:04.6104 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111
+2020-02-27 19:24:04.6104 0001 DEBUG (HttpComponent.cs:88) 收到POST数据：
+2020-02-27 19:26:27.5408 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111
+2020-02-27 19:26:27.5449 0001 DEBUG (HttpComponent.cs:88) 接口地址http://127.0.0.1:8888/111111
+2020-02-27 19:26:27.5449 0001 DEBUG (HttpComponent.cs:89) 收到POST数据：
+2020-02-27 19:27:57.4950 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111/222/333/123.sining
+2020-02-27 19:27:57.4966 0001 DEBUG (HttpComponent.cs:88) 接口地址/111111/222/333/123.sining
+2020-02-27 19:27:57.4966 0001 DEBUG (HttpComponent.cs:89) 收到POST数据：
+2020-02-27 19:29:39.1105 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111/222/333/123.sining
+2020-02-27 19:29:39.1105 0001 DEBUG (HttpComponent.cs:88) 接口地址/111111/222/333/123.sining
+2020-02-27 19:29:39.1115 0001 DEBUG (HttpComponent.cs:89) 收到POST数据：
+2020-02-27 19:29:39.9615 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111/222/333/123.sining
+2020-02-27 19:29:39.9628 0001 DEBUG (HttpComponent.cs:88) 接口地址/111111/222/333/123.sining
+2020-02-27 19:29:39.9642 0001 DEBUG (HttpComponent.cs:89) 收到POST数据：
+2020-02-27 19:29:40.6929 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111/222/333/123.sining
+2020-02-27 19:29:40.6953 0001 DEBUG (HttpComponent.cs:88) 接口地址/111111/222/333/123.sining
+2020-02-27 19:29:40.6959 0001 DEBUG (HttpComponent.cs:89) 收到POST数据：
+2020-02-27 19:29:41.3532 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111/222/333/123.sining
+2020-02-27 19:29:41.3538 0001 DEBUG (HttpComponent.cs:88) 接口地址/111111/222/333/123.sining
+2020-02-27 19:29:41.3538 0001 DEBUG (HttpComponent.cs:89) 收到POST数据：
+2020-02-27 19:30:38.2109 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111
+2020-02-27 19:30:38.2109 0001 DEBUG (HttpComponent.cs:88) 接口地址/111
+2020-02-27 19:30:38.2109 0001 DEBUG (HttpComponent.cs:89) 收到POST数据：
+2020-02-27 19:30:39.1922 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111
+2020-02-27 19:30:39.1922 0001 DEBUG (HttpComponent.cs:88) 接口地址/111
+2020-02-27 19:30:39.1928 0001 DEBUG (HttpComponent.cs:89) 收到POST数据：
+2020-02-27 19:30:40.0688 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111
+2020-02-27 19:30:40.0688 0001 DEBUG (HttpComponent.cs:88) 接口地址/111
+2020-02-27 19:30:40.0688 0001 DEBUG (HttpComponent.cs:89) 收到POST数据：
+2020-02-27 19:30:40.8589 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111
+2020-02-27 19:30:40.8589 0001 DEBUG (HttpComponent.cs:88) 接口地址/111
+2020-02-27 19:30:40.8589 0001 DEBUG (HttpComponent.cs:89) 收到POST数据：
+2020-02-27 19:30:42.3179 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111
+2020-02-27 19:30:42.3179 0001 DEBUG (HttpComponent.cs:88) 接口地址/111
+2020-02-27 19:30:42.3179 0001 DEBUG (HttpComponent.cs:89) 收到POST数据：
+2020-02-27 19:30:43.6147 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111
+2020-02-27 19:30:43.6149 0001 DEBUG (HttpComponent.cs:88) 接口地址/111
+2020-02-27 19:30:43.6149 0001 DEBUG (HttpComponent.cs:89) 收到POST数据：
+2020-02-27 19:30:45.1243 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111
+2020-02-27 19:30:45.1243 0001 DEBUG (HttpComponent.cs:88) 接口地址/111
+2020-02-27 19:30:45.1243 0001 DEBUG (HttpComponent.cs:89) 收到POST数据：
+2020-02-27 19:30:46.5131 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111
+2020-02-27 19:30:46.5131 0001 DEBUG (HttpComponent.cs:88) 接口地址/111
+2020-02-27 19:30:46.5131 0001 DEBUG (HttpComponent.cs:89) 收到POST数据：
+2020-02-27 19:30:48.9820 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111
+2020-02-27 19:30:48.9820 0001 DEBUG (HttpComponent.cs:88) 接口地址/111
+2020-02-27 19:30:48.9820 0001 DEBUG (HttpComponent.cs:89) 收到POST数据：
+2020-02-27 19:30:49.8790 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111
+2020-02-27 19:30:49.8790 0001 DEBUG (HttpComponent.cs:88) 接口地址/111
+2020-02-27 19:30:49.8790 0001 DEBUG (HttpComponent.cs:89) 收到POST数据：
+2020-02-27 19:30:52.0033 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111
+2020-02-27 19:30:52.0033 0001 DEBUG (HttpComponent.cs:88) 接口地址/111
+2020-02-27 19:30:52.0033 0001 DEBUG (HttpComponent.cs:89) 收到POST数据：
+2020-02-27 19:30:54.1149 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111
+2020-02-27 19:30:54.1149 0001 DEBUG (HttpComponent.cs:88) 接口地址/111
+2020-02-27 19:30:54.1149 0001 DEBUG (HttpComponent.cs:89) 收到POST数据：
+2020-02-27 19:30:55.6197 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111
+2020-02-27 19:30:55.6197 0001 DEBUG (HttpComponent.cs:88) 接口地址/111
+2020-02-27 19:30:55.6199 0001 DEBUG (HttpComponent.cs:89) 收到POST数据：
+2020-02-27 19:30:57.1662 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111
+2020-02-27 19:30:57.1662 0001 DEBUG (HttpComponent.cs:88) 接口地址/111
+2020-02-27 19:30:57.1662 0001 DEBUG (HttpComponent.cs:89) 收到POST数据：
+2020-02-27 19:30:58.8482 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111
+2020-02-27 19:30:58.8482 0001 DEBUG (HttpComponent.cs:88) 接口地址/111
+2020-02-27 19:30:58.8482 0001 DEBUG (HttpComponent.cs:89) 收到POST数据：
+2020-02-27 19:31:00.2822 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111
+2020-02-27 19:31:00.2822 0001 DEBUG (HttpComponent.cs:88) 接口地址/111
+2020-02-27 19:31:00.2822 0001 DEBUG (HttpComponent.cs:89) 收到POST数据：
+2020-02-27 19:31:02.3440 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111
+2020-02-27 19:31:02.3440 0001 DEBUG (HttpComponent.cs:88) 接口地址/111
+2020-02-27 19:31:02.3440 0001 DEBUG (HttpComponent.cs:89) 收到POST数据：
+2020-02-27 19:31:04.0403 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111
+2020-02-27 19:31:04.0403 0001 DEBUG (HttpComponent.cs:88) 接口地址/111
+2020-02-27 19:31:04.0403 0001 DEBUG (HttpComponent.cs:89) 收到POST数据：
+2020-02-27 19:39:10.0038 0001 DEBUG (HttpComponent.cs:80) http://127.0.0.1:8888/111111/222/333/123.sining
+2020-02-27 19:39:10.0052 0001 DEBUG (HttpComponent.cs:88) 接口地址/111111/222/333/123.sining
+2020-02-27 19:39:10.0052 0001 DEBUG (HttpComponent.cs:89) 接口地址123.sining
+2020-02-27 19:39:10.0059 0001 DEBUG (HttpComponent.cs:90) 收到POST数据：
+2020-02-27 19:56:15.2802 0001 DEBUG (HttpComponent.cs:81) 11
+2020-02-27 19:56:15.2828 0001 DEBUG (HttpComponent.cs:82) http://127.0.0.1:8888/111111/222/333/123.sining
+2020-02-27 19:56:15.2853 0001 DEBUG (HttpComponent.cs:90) 接口地址/111111/222/333/123.sining
+2020-02-27 19:56:15.2853 0001 DEBUG (HttpComponent.cs:91) 接口地址123.sining
+2020-02-27 19:56:15.2859 0001 DEBUG (HttpComponent.cs:92) 收到POST数据：
+2020-02-27 19:56:16.3563 0001 DEBUG (HttpComponent.cs:81) 8
+2020-02-27 19:56:16.3570 0001 DEBUG (HttpComponent.cs:82) http://127.0.0.1:8888/111111/222/333/123.sining
+2020-02-27 19:56:16.3570 0001 DEBUG (HttpComponent.cs:90) 接口地址/111111/222/333/123.sining
+2020-02-27 19:56:16.3570 0001 DEBUG (HttpComponent.cs:91) 接口地址123.sining
+2020-02-27 19:56:16.3570 0001 DEBUG (HttpComponent.cs:92) 收到POST数据：
+2020-02-27 19:56:17.0746 0001 DEBUG (HttpComponent.cs:81) 8
+2020-02-27 19:56:17.0768 0001 DEBUG (HttpComponent.cs:82) http://127.0.0.1:8888/111111/222/333/123.sining
+2020-02-27 19:56:17.0779 0001 DEBUG (HttpComponent.cs:90) 接口地址/111111/222/333/123.sining
+2020-02-27 19:56:17.0790 0001 DEBUG (HttpComponent.cs:91) 接口地址123.sining
+2020-02-27 19:56:17.0790 0001 DEBUG (HttpComponent.cs:92) 收到POST数据：
+2020-02-27 19:56:22.6223 0001 DEBUG (HttpComponent.cs:81) 6
+2020-02-27 19:56:22.6228 0001 DEBUG (HttpComponent.cs:82) http://127.0.0.1:8888/111111/222/333/123.sining
+2020-02-27 19:56:22.6228 0001 DEBUG (HttpComponent.cs:90) 接口地址/111111/222/333/123.sining
+2020-02-27 19:56:22.6228 0001 DEBUG (HttpComponent.cs:91) 接口地址123.sining
+2020-02-27 19:56:22.6239 0001 DEBUG (HttpComponent.cs:92) 收到POST数据：
+2020-02-27 19:56:23.0790 0001 DEBUG (HttpComponent.cs:81) 8
+2020-02-27 19:56:23.0790 0001 DEBUG (HttpComponent.cs:82) http://127.0.0.1:8888/111111/222/333/123.sining
+2020-02-27 19:56:23.0798 0001 DEBUG (HttpComponent.cs:90) 接口地址/111111/222/333/123.sining
+2020-02-27 19:56:23.0798 0001 DEBUG (HttpComponent.cs:91) 接口地址123.sining
+2020-02-27 19:56:23.0798 0001 DEBUG (HttpComponent.cs:92) 收到POST数据：
+2020-02-27 19:56:25.1817 0001 DEBUG (HttpComponent.cs:81) 6
+2020-02-27 19:56:25.1820 0001 DEBUG (HttpComponent.cs:82) http://127.0.0.1:8888/111111/222/333/123.sining
+2020-02-27 19:56:25.1820 0001 DEBUG (HttpComponent.cs:90) 接口地址/111111/222/333/123.sining
+2020-02-27 19:56:25.1820 0001 DEBUG (HttpComponent.cs:91) 接口地址123.sining
+2020-02-27 19:56:25.1828 0001 DEBUG (HttpComponent.cs:92) 收到POST数据：
+2020-02-27 19:56:25.9279 0001 DEBUG (HttpComponent.cs:81) 12
+2020-02-27 19:56:25.9279 0001 DEBUG (HttpComponent.cs:82) http://127.0.0.1:8888/111111/222/333/123.sining
+2020-02-27 19:56:25.9279 0001 DEBUG (HttpComponent.cs:90) 接口地址/111111/222/333/123.sining
+2020-02-27 19:56:25.9279 0001 DEBUG (HttpComponent.cs:91) 接口地址123.sining
+2020-02-27 19:56:25.9279 0001 DEBUG (HttpComponent.cs:92) 收到POST数据：
+2020-02-27 19:56:32.8166 0001 DEBUG (HttpComponent.cs:81) 8
+2020-02-27 19:56:32.8174 0001 DEBUG (HttpComponent.cs:82) http://127.0.0.1:8888/111111/222/333/123.sining
+2020-02-27 19:56:32.8188 0001 DEBUG (HttpComponent.cs:90) 接口地址/111111/222/333/123.sining
+2020-02-27 19:56:32.8188 0001 DEBUG (HttpComponent.cs:91) 接口地址123.sining
+2020-02-27 19:56:32.8188 0001 DEBUG (HttpComponent.cs:92) 收到POST数据：
+2020-02-27 19:56:34.4803 0001 DEBUG (HttpComponent.cs:81) 7
+2020-02-27 19:56:34.4803 0001 DEBUG (HttpComponent.cs:82) http://127.0.0.1:8888/111111/222/333/123.sining
+2020-02-27 19:56:34.4803 0001 DEBUG (HttpComponent.cs:90) 接口地址/111111/222/333/123.sining
+2020-02-27 19:56:34.4803 0001 DEBUG (HttpComponent.cs:91) 接口地址123.sining
+2020-02-27 19:56:34.4803 0001 DEBUG (HttpComponent.cs:92) 收到POST数据：
+2020-02-27 19:56:35.2619 0001 DEBUG (HttpComponent.cs:81) 6
+2020-02-27 19:56:35.2619 0001 DEBUG (HttpComponent.cs:82) http://127.0.0.1:8888/111111/222/333/123.sining
+2020-02-27 19:56:35.2619 0001 DEBUG (HttpComponent.cs:90) 接口地址/111111/222/333/123.sining
+2020-02-27 19:56:35.2619 0001 DEBUG (HttpComponent.cs:91) 接口地址123.sining
+2020-02-27 19:56:35.2619 0001 DEBUG (HttpComponent.cs:92) 收到POST数据：
+2020-02-27 19:57:34.3424 0001 DEBUG (HttpComponent.cs:82) 6
+2020-02-27 19:57:34.3443 0001 DEBUG (HttpComponent.cs:83) http://127.0.0.1:8888/111111/222/333/123.sining
+2020-02-27 19:57:34.3456 0001 DEBUG (HttpComponent.cs:91) 接口地址/111111/222/333/123.sining
+2020-02-27 19:57:34.3456 0001 DEBUG (HttpComponent.cs:92) 接口地址123.sining
+2020-02-27 19:57:34.3461 0001 DEBUG (HttpComponent.cs:93) 收到POST数据：
+2020-02-27 19:57:35.2080 0001 DEBUG (HttpComponent.cs:82) 7
+2020-02-27 19:57:35.2085 0001 DEBUG (HttpComponent.cs:83) http://127.0.0.1:8888/111111/222/333/123.sining
+2020-02-27 19:57:35.2085 0001 DEBUG (HttpComponent.cs:91) 接口地址/111111/222/333/123.sining
+2020-02-27 19:57:35.2085 0001 DEBUG (HttpComponent.cs:92) 接口地址123.sining
+2020-02-27 19:57:35.2085 0001 DEBUG (HttpComponent.cs:93) 收到POST数据：
+2020-02-27 19:57:36.0287 0001 DEBUG (HttpComponent.cs:82) 7
+2020-02-27 19:57:36.0297 0001 DEBUG (HttpComponent.cs:83) http://127.0.0.1:8888/111111/222/333/123.sining
+2020-02-27 19:57:36.0305 0001 DEBUG (HttpComponent.cs:91) 接口地址/111111/222/333/123.sining
+2020-02-27 19:57:36.0341 0001 DEBUG (HttpComponent.cs:92) 接口地址123.sining
+2020-02-27 19:57:36.0355 0001 DEBUG (HttpComponent.cs:93) 收到POST数据：
+2020-02-27 19:57:36.7644 0001 DEBUG (HttpComponent.cs:82) 11
+2020-02-27 19:57:36.7644 0001 DEBUG (HttpComponent.cs:83) http://127.0.0.1:8888/111111/222/333/123.sining
+2020-02-27 19:57:36.7652 0001 DEBUG (HttpComponent.cs:91) 接口地址/111111/222/333/123.sining
+2020-02-27 19:57:36.7652 0001 DEBUG (HttpComponent.cs:92) 接口地址123.sining
+2020-02-27 19:57:36.7652 0001 DEBUG (HttpComponent.cs:93) 收到POST数据：
+2020-02-27 19:57:41.5616 0001 DEBUG (HttpComponent.cs:82) 7
+2020-02-27 19:57:41.5621 0001 DEBUG (HttpComponent.cs:83) http://127.0.0.1:8888/111111/222/333/123.sining
+2020-02-27 19:57:41.5621 0001 DEBUG (HttpComponent.cs:91) 接口地址/111111/222/333/123.sining
+2020-02-27 19:57:41.5630 0001 DEBUG (HttpComponent.cs:92) 接口地址123.sining
+2020-02-27 19:57:41.5630 0001 DEBUG (HttpComponent.cs:93) 收到POST数据：
+2020-02-27 19:57:42.2858 0001 DEBUG (HttpComponent.cs:82) 6
+2020-02-27 19:57:42.2858 0001 DEBUG (HttpComponent.cs:83) http://127.0.0.1:8888/111111/222/333/123.sining
+2020-02-27 19:57:42.2861 0001 DEBUG (HttpComponent.cs:91) 接口地址/111111/222/333/123.sining
+2020-02-27 19:57:42.2861 0001 DEBUG (HttpComponent.cs:92) 接口地址123.sining
+2020-02-27 19:57:42.2861 0001 DEBUG (HttpComponent.cs:93) 收到POST数据：
+2020-02-27 19:57:43.0707 0001 DEBUG (HttpComponent.cs:82) 4
+2020-02-27 19:57:43.0707 0001 DEBUG (HttpComponent.cs:83) http://127.0.0.1:8888/111111/222/333/123.sining
+2020-02-27 19:57:43.0711 0001 DEBUG (HttpComponent.cs:91) 接口地址/111111/222/333/123.sining
+2020-02-27 19:57:43.0711 0001 DEBUG (HttpComponent.cs:92) 接口地址123.sining
+2020-02-27 19:57:43.0711 0001 DEBUG (HttpComponent.cs:93) 收到POST数据：
+2020-02-27 19:57:43.7188 0001 DEBUG (HttpComponent.cs:82) 4
+2020-02-27 19:57:43.7194 0001 DEBUG (HttpComponent.cs:83) http://127.0.0.1:8888/111111/222/333/123.sining
+2020-02-27 19:57:43.7205 0001 DEBUG (HttpComponent.cs:91) 接口地址/111111/222/333/123.sining
+2020-02-27 19:57:43.7205 0001 DEBUG (HttpComponent.cs:92) 接口地址123.sining
+2020-02-27 19:57:43.7205 0001 DEBUG (HttpComponent.cs:93) 收到POST数据：
+2020-02-27 19:57:44.4488 0001 DEBUG (HttpComponent.cs:82) 6
+2020-02-27 19:57:44.4488 0001 DEBUG (HttpComponent.cs:83) http://127.0.0.1:8888/111111/222/333/123.sining
+2020-02-27 19:57:44.4491 0001 DEBUG (HttpComponent.cs:91) 接口地址/111111/222/333/123.sining
+2020-02-27 19:57:44.4491 0001 DEBUG (HttpComponent.cs:92) 接口地址123.sining
+2020-02-27 19:57:44.4491 0001 DEBUG (HttpComponent.cs:93) 收到POST数据：
+2020-02-27 19:57:45.1154 0001 DEBUG (HttpComponent.cs:82) 6
+2020-02-27 19:57:45.1154 0001 DEBUG (HttpComponent.cs:83) http://127.0.0.1:8888/111111/222/333/123.sining
+2020-02-27 19:57:45.1154 0001 DEBUG (HttpComponent.cs:91) 接口地址/111111/222/333/123.sining
+2020-02-27 19:57:45.1154 0001 DEBUG (HttpComponent.cs:92) 接口地址123.sining
+2020-02-27 19:57:45.1154 0001 DEBUG (HttpComponent.cs:93) 收到POST数据：
+2020-02-27 19:57:49.2304 0001 DEBUG (HttpComponent.cs:82) 10
+2020-02-27 19:57:49.2304 0001 DEBUG (HttpComponent.cs:83) http://127.0.0.1:8888/111111/222/333/123.sining
+2020-02-27 19:57:49.2304 0001 DEBUG (HttpComponent.cs:91) 接口地址/111111/222/333/123.sining
+2020-02-27 19:57:49.2304 0001 DEBUG (HttpComponent.cs:92) 接口地址123.sining
+2020-02-27 19:57:49.2304 0001 DEBUG (HttpComponent.cs:93) 收到POST数据：
+2020-02-27 19:57:49.8390 0001 DEBUG (HttpComponent.cs:82) 4
+2020-02-27 19:57:49.8392 0001 DEBUG (HttpComponent.cs:83) http://127.0.0.1:8888/111111/222/333/123.sining
+2020-02-27 19:57:49.8392 0001 DEBUG (HttpComponent.cs:91) 接口地址/111111/222/333/123.sining
+2020-02-27 19:57:49.8392 0001 DEBUG (HttpComponent.cs:92) 接口地址123.sining
+2020-02-27 19:57:49.8392 0001 DEBUG (HttpComponent.cs:93) 收到POST数据：
+2020-02-27 21:27:58.9857 0001 DEBUG (HttpComponent.cs:82) 8
+2020-02-27 21:27:58.9887 0001 DEBUG (HttpComponent.cs:83) http://127.0.0.1:8888/111111/222/333/123.sining
+2020-02-27 21:27:58.9915 0001 DEBUG (HttpComponent.cs:91) 接口地址/111111/222/333/123.sining
+2020-02-27 21:27:58.9915 0001 DEBUG (HttpComponent.cs:92) 接口地址123.sining
+2020-02-27 21:27:58.9915 0001 DEBUG (HttpComponent.cs:93) 收到POST数据：
+2020-02-27 21:28:00.6268 0001 DEBUG (HttpComponent.cs:82) 6
+2020-02-27 21:28:00.6274 0001 DEBUG (HttpComponent.cs:83) http://127.0.0.1:8888/111111/222/333/123.sining
+2020-02-27 21:28:00.6274 0001 DEBUG (HttpComponent.cs:91) 接口地址/111111/222/333/123.sining
+2020-02-27 21:28:00.6274 0001 DEBUG (HttpComponent.cs:92) 接口地址123.sining
+2020-02-27 21:28:00.6274 0001 DEBUG (HttpComponent.cs:93) 收到POST数据：
+2020-02-27 21:28:01.6935 0001 DEBUG (HttpComponent.cs:82) 8
+2020-02-27 21:28:01.6947 0001 DEBUG (HttpComponent.cs:83) http://127.0.0.1:8888/111111/222/333/123.sining
+2020-02-27 21:28:01.6947 0001 DEBUG (HttpComponent.cs:91) 接口地址/111111/222/333/123.sining
+2020-02-27 21:28:01.6967 0001 DEBUG (HttpComponent.cs:92) 接口地址123.sining
+2020-02-27 21:28:01.6991 0001 DEBUG (HttpComponent.cs:93) 收到POST数据：
+2020-02-27 21:28:09.8515 0001 DEBUG (HttpComponent.cs:82) 6
+2020-02-27 21:28:09.8524 0001 DEBUG (HttpComponent.cs:83) http://127.0.0.1:8888/111111/222/333/123.sining
+2020-02-27 21:28:09.8524 0001 DEBUG (HttpComponent.cs:91) 接口地址/111111/222/333/123.sining
+2020-02-27 21:28:09.8537 0001 DEBUG (HttpComponent.cs:92) 接口地址123.sining
+2020-02-27 21:28:09.8547 0001 DEBUG (HttpComponent.cs:93) 收到POST数据：
+2020-02-27 21:28:10.7381 0001 DEBUG (HttpComponent.cs:82) 4
+2020-02-27 21:28:10.7381 0001 DEBUG (HttpComponent.cs:83) http://127.0.0.1:8888/111111/222/333/123.sining
+2020-02-27 21:28:10.7384 0001 DEBUG (HttpComponent.cs:91) 接口地址/111111/222/333/123.sining
+2020-02-27 21:28:10.7384 0001 DEBUG (HttpComponent.cs:92) 接口地址123.sining
+2020-02-27 21:28:10.7384 0001 DEBUG (HttpComponent.cs:93) 收到POST数据：
+2020-02-27 21:28:11.7688 0001 DEBUG (HttpComponent.cs:82) 8
+2020-02-27 21:28:11.7695 0001 DEBUG (HttpComponent.cs:83) http://127.0.0.1:8888/111111/222/333/123.sining
+2020-02-27 21:28:11.7695 0001 DEBUG (HttpComponent.cs:91) 接口地址/111111/222/333/123.sining
+2020-02-27 21:28:11.7695 0001 DEBUG (HttpComponent.cs:92) 接口地址123.sining
+2020-02-27 21:28:11.7695 0001 DEBUG (HttpComponent.cs:93) 收到POST数据：
+2020-02-27 21:28:23.1093 0001 DEBUG (HttpComponent.cs:82) 4
+2020-02-27 21:28:23.1096 0001 DEBUG (HttpComponent.cs:83) http://127.0.0.1:8888/111111/222/333/123.sining
+2020-02-27 21:28:23.1096 0001 DEBUG (HttpComponent.cs:91) 接口地址/111111/222/333/123.sining
+2020-02-27 21:28:23.1096 0001 DEBUG (HttpComponent.cs:92) 接口地址123.sining
+2020-02-27 21:28:23.1096 0001 DEBUG (HttpComponent.cs:93) 收到POST数据：
+2020-02-27 21:28:24.1418 0001 DEBUG (HttpComponent.cs:82) 6
+2020-02-27 21:28:24.1418 0001 DEBUG (HttpComponent.cs:83) http://127.0.0.1:8888/111111/222/333/123.sining
+2020-02-27 21:28:24.1418 0001 DEBUG (HttpComponent.cs:91) 接口地址/111111/222/333/123.sining
+2020-02-27 21:28:24.1418 0001 DEBUG (HttpComponent.cs:92) 接口地址123.sining
+2020-02-27 21:28:24.1418 0001 DEBUG (HttpComponent.cs:93) 收到POST数据：
+2020-02-27 21:28:25.2335 0001 DEBUG (HttpComponent.cs:82) 8
+2020-02-27 21:28:25.2336 0001 DEBUG (HttpComponent.cs:83) http://127.0.0.1:8888/111111/222/333/123.sining
+2020-02-27 21:28:25.2336 0001 DEBUG (HttpComponent.cs:91) 接口地址/111111/222/333/123.sining
+2020-02-27 21:28:25.2336 0001 DEBUG (HttpComponent.cs:92) 接口地址123.sining
+2020-02-27 21:28:25.2336 0001 DEBUG (HttpComponent.cs:93) 收到POST数据：
+2020-02-27 21:28:35.2252 0001 DEBUG (HttpComponent.cs:82) 8
+2020-02-27 21:28:35.2252 0001 DEBUG (HttpComponent.cs:83) http://127.0.0.1:8888/111111/222/333/123.sining
+2020-02-27 21:28:35.2256 0001 DEBUG (HttpComponent.cs:91) 接口地址/111111/222/333/123.sining
+2020-02-27 21:28:35.2256 0001 DEBUG (HttpComponent.cs:92) 接口地址123.sining
+2020-02-27 21:28:35.2256 0001 DEBUG (HttpComponent.cs:93) 收到POST数据：
+2020-02-27 21:28:39.4283 0001 DEBUG (HttpComponent.cs:82) 12
+2020-02-27 21:28:39.4283 0001 DEBUG (HttpComponent.cs:83) http://127.0.0.1:8888/111111/222/333/123.sining
+2020-02-27 21:28:39.4287 0001 DEBUG (HttpComponent.cs:91) 接口地址/111111/222/333/123.sining
+2020-02-27 21:28:39.4287 0001 DEBUG (HttpComponent.cs:92) 接口地址123.sining
+2020-02-27 21:28:39.4287 0001 DEBUG (HttpComponent.cs:93) 收到POST数据：
+2020-02-27 21:28:41.2877 0001 DEBUG (HttpComponent.cs:82) 4
+2020-02-27 21:28:41.2877 0001 DEBUG (HttpComponent.cs:83) http://127.0.0.1:8888/111111/222/333/123.sining
+2020-02-27 21:28:41.2877 0001 DEBUG (HttpComponent.cs:91) 接口地址/111111/222/333/123.sining
+2020-02-27 21:28:41.2877 0001 DEBUG (HttpComponent.cs:92) 接口地址123.sining
+2020-02-27 21:28:41.2877 0001 DEBUG (HttpComponent.cs:93) 收到POST数据：
+2020-02-27 21:28:43.8055 0001 DEBUG (HttpComponent.cs:82) 4
+2020-02-27 21:28:43.8057 0001 DEBUG (HttpComponent.cs:83) http://127.0.0.1:8888/111111/222/333/123.sining
+2020-02-27 21:28:43.8057 0001 DEBUG (HttpComponent.cs:91) 接口地址/111111/222/333/123.sining
+2020-02-27 21:28:43.8057 0001 DEBUG (HttpComponent.cs:92) 接口地址123.sining
+2020-02-27 21:28:43.8057 0001 DEBUG (HttpComponent.cs:93) 收到POST数据：
+2020-02-27 22:40:41.2086 0001 DEBUG (Session.cs:52) OK
+2020-02-27 22:42:26.1097 0001 DEBUG (Session.cs:52) OK
+2020-02-27 22:42:59.8780 0001 DEBUG (Session.cs:52) OK
+2020-02-27 22:45:24.9684 0001 DEBUG (Session.cs:51) OK
+2020-02-27 22:48:10.6517 0001 DEBUG (Session.cs:50) OK
+2020-02-27 23:24:23.8133 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:9
+2020-02-27 23:27:25.9082 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:8
+2020-02-27 23:29:53.4191 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:9
+2020-02-27 23:30:22.5159 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:9
+2020-02-27 23:31:26.4294 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:10
+2020-02-27 23:32:11.7205 0001 DEBUG (TestMessageHandler.cs:24) 接收到一个消息：UserName:张四 PassWord:shilianla ThreadId:9
+2020-02-27 23:34:18.5571 0001 DEBUG (Session.cs:50) OK
+2020-02-27 23:34:42.1422 0001 DEBUG (Session.cs:50) OK
+2020-02-27 23:36:04.0604 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张九 ThreadId:10
+2020-02-27 23:36:39.2184 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张九 ThreadId:7
+2020-02-27 23:38:38.2456 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张九 ThreadId:8
+2020-02-27 23:39:42.0822 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张九 ThreadId:13
+2020-02-27 23:41:08.0058 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张九 ThreadId:10
+2020-02-27 23:41:30.8310 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张九 ThreadId:8
+2020-02-27 23:42:31.3817 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张九 ThreadId:12
+2020-02-27 23:42:37.8995 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张九 ThreadId:12
+2020-02-27 23:42:38.8594 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张九 ThreadId:12
+2020-02-27 23:43:06.1146 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张九 ThreadId:7
+2020-02-27 23:43:12.5482 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张九 ThreadId:7
+2020-02-27 23:43:15.2551 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张九 ThreadId:7
+2020-02-27 23:43:17.6844 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张九 ThreadId:7
+2020-02-27 23:43:20.7057 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张九 ThreadId:7
+2020-02-27 23:43:23.2081 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张九 ThreadId:7
+2020-02-27 23:43:25.7065 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张九 ThreadId:7
+2020-02-27 23:43:28.4815 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张九 ThreadId:7
+2020-02-27 23:43:31.5819 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张九 ThreadId:7
+2020-02-27 23:43:34.0979 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张九 ThreadId:7
+2020-02-27 23:43:36.7347 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张九 ThreadId:7
+2020-02-27 23:43:37.1146 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张九 ThreadId:7
+2020-02-27 23:43:38.6768 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张九 ThreadId:7
+2020-02-27 23:43:39.6533 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张九 ThreadId:7
+2020-02-27 23:43:40.5934 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张九 ThreadId:7
+2020-02-27 23:43:41.6792 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张九 ThreadId:7
+2020-02-27 23:43:47.6368 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张九 ThreadId:7
+2020-02-27 23:49:37.2779 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张九 ThreadId:12
+2020-02-27 23:49:39.8074 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张九 ThreadId:12
+2020-02-27 23:49:44.7499 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张九 ThreadId:12
+2020-02-27 23:49:47.0930 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张九 ThreadId:12
+2020-02-27 23:49:49.7894 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张九 ThreadId:12
+2020-02-27 23:49:52.2336 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张九 ThreadId:12
+2020-02-27 23:49:55.0032 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张九 ThreadId:12
+2020-02-27 23:49:57.0879 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张九 ThreadId:12
+2020-02-27 23:50:01.9632 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张九 ThreadId:12
+2020-02-27 23:50:05.6892 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张九 ThreadId:12
+2020-02-27 23:50:25.9688 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张九 ThreadId:12
+2020-02-27 23:50:29.9287 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张九 ThreadId:12
+2020-02-27 23:50:33.1654 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张九 ThreadId:12
+2020-02-27 23:50:37.3782 0001 DEBUG (TestMessageHandler.cs:35) 接收到一个消息：GetNameRequest:张九 ThreadId:12

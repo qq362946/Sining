@@ -1,0 +1,1338 @@
+2020-02-27 13:44:43.5818  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5818  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5818  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5823  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5823  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5823  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5823  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5823  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5823  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5823  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5835  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5835  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5835  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5835  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5835  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5843  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5843  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5843  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5843  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5843  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5843  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5843  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5855  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5855  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5855  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5855  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5855  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5864  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5864  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5864  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5864  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5874  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5874  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5874  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5874  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5874  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5874  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5885  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5885  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5885  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5885  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5885  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5894  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5894  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5894  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5894  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5894  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5894  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5894  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5904  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5904  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5904  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5904  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5916  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5929  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5939  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5958  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5977  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.5993  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6015  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6033  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6038  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6044  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6044  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6044  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6044  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6055  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6055  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6055  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6072  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6075  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6075  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6075  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6075  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6075  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6084  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6084  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6084  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6084  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6084  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6084  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6084  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6094  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6094  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6094  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6094  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6094  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6094  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6104  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6104  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6104  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6104  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6104  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6114  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6114  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6114  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6114  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6114  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6123  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6123  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6123  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6123  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6123  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6123  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6123  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6134  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6134  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6134  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6134  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6134  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6134  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6134  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6134  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6144  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6144  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6144  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6144  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6154  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6225  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6225  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6233  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6245  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6258  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6274  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6291  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6300  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6305  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6305  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6305  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6305  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6325  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6338  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6343  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6343  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6343  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6343  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6343  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6343  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6343  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6354  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6354  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6354  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6354  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6354  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6364  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6364  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6364  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6503  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6513  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6518  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6526  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6550  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6550  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6554  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6554  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6554  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6554  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6554  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6554  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6563  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6563  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6563  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6563  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6563  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6587  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6587  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6587  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6587  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6593  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6593  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6593  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6603  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6603  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6603  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6603  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6603  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6603  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6603  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6614  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6614  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6614  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6614  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6614  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6614  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6633  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6633  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6633  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6644  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6644  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6644  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6644  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6644  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6644  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6654  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6654  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6654  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6654  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6654  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6664  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6664  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6664  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6664  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6664  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6664  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6673  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6673  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6673  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6673  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6673  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6673  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6673  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6685  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6685  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6685  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6685  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6685  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6694  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6694  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6694  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6715  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6733  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6762  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6768  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6768  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6768  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6768  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6773  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6773  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6773  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6773  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6773  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6773  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6773  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6773  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6785  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6785  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6785  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6785  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6785  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6785  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6795  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6795  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6795  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6795  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6803  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6803  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6803  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6803  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6803  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6803  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6815  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6815  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6815  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6815  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6815  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6815  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6815  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6824  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6824  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6824  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6824  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6824  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6833  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6844  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6844  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6844  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6844  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6853  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6853  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6853  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6853  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6853  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6865  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6865  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6879  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6886  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6900  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6916  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6925  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6925  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6925  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6925  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6935  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6944  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6944  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6955  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6970  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6976  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6976  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.6996  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.7019  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.7051  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.7054  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.7054  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.7054  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.7054  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.7054  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.7054  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.7054  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.7054  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.7064  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.7064  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.7064  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.7064  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.7064  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.7075  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.7075  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.7075  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.7075  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.7075  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.7075  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.7084  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.7084  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.7084  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.7084  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.7094  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.7094  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.7094  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.7094  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.7104  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.7104  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.7177  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.7203  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.7221  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.7240  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.7261  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.7279  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.7296  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.7310  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.7327  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.7394  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.7421  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 13:44:43.7423  ERROR (Actor.cs:46) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(MyClass myClassComponent, TaskCompletionSource`1 tcs) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 46
+2020-02-27 14:19:44.8479  ERROR (Actor.cs:75) System.InvalidOperationException: An attempt was made to transition a task to a final state when it had already completed.
+   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
+   at Sining.ActorTask`1.Return() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 34
+   at Sining.Program.<>c__DisplayClass1_0.<Main>b__1(ActorTask`1 actorTask, MyClass myClassComponent) in /Users/sining/Code/Sining/Server/App/Program.cs:line 45
+   at Sining.ActorTask`1.Handler() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 27
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 75

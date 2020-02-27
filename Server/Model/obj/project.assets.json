@@ -1,0 +1,150 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "NLog/4.6.8": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/NLog.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {}
+        }
+      },
+      "Google.Protobuf/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Google.Protobuf.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Google.Protobuf.dll": {}
+        }
+      },
+      "Server.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "NLog": "4.6.8"
+        },
+        "compile": {
+          "bin/placeholder/Server.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Server.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NLog/4.6.8": {
+      "sha512": "LKB0uN5naOTxdNz++iapk6arNYv2asE8FPRBAmQZ1fe8y8C1Zm6sldh/w9TP/w5s7FGK8s0x6ny0og5ytFK1oQ==",
+      "type": "package",
+      "path": "nlog/4.6.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid44/NLog.dll",
+        "lib/monoandroid44/NLog.xml",
+        "lib/net35/NLog.dll",
+        "lib/net35/NLog.xml",
+        "lib/net40-client/NLog.dll",
+        "lib/net40-client/NLog.xml",
+        "lib/net45/NLog.dll",
+        "lib/net45/NLog.xml",
+        "lib/netstandard1.3/NLog.dll",
+        "lib/netstandard1.3/NLog.xml",
+        "lib/netstandard1.5/NLog.dll",
+        "lib/netstandard1.5/NLog.xml",
+        "lib/netstandard2.0/NLog.dll",
+        "lib/netstandard2.0/NLog.xml",
+        "lib/sl4/NLog.dll",
+        "lib/sl4/NLog.xml",
+        "lib/sl5/NLog.dll",
+        "lib/sl5/NLog.xml",
+        "lib/wp8/NLog.dll",
+        "lib/wp8/NLog.xml",
+        "lib/xamarinios10/NLog.dll",
+        "lib/xamarinios10/NLog.xml",
+        "nlog.4.6.8.nupkg.sha512",
+        "nlog.nuspec"
+      ]
+    },
+    "Google.Protobuf/1.0.0": {
+      "type": "project",
+      "path": "../ThirdPartyPlugin/Google.Protobuf/Google.Protobuf.csproj",
+      "msbuildProject": "../ThirdPartyPlugin/Google.Protobuf/Google.Protobuf.csproj"
+    },
+    "Server.Core/1.0.0": {
+      "type": "project",
+      "path": "../Core/Server.Core.csproj",
+      "msbuildProject": "../Core/Server.Core.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "Google.Protobuf >= 1.0.0",
+      "Server.Core >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/sining/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/sining/Code/Sining/Server/Model/Server.Model.csproj",
+      "projectName": "Server.Model",
+      "projectPath": "/Users/sining/Code/Sining/Server/Model/Server.Model.csproj",
+      "packagesPath": "/Users/sining/.nuget/packages/",
+      "outputPath": "/Users/sining/Code/Sining/Server/Model/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/sining/.config/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "/Users/sining/Code/Sining/Server/Core/Server.Core.csproj": {
+              "projectPath": "/Users/sining/Code/Sining/Server/Core/Server.Core.csproj"
+            },
+            "/Users/sining/Code/Sining/Server/ThirdPartyPlugin/Google.Protobuf/Google.Protobuf.csproj": {
+              "projectPath": "/Users/sining/Code/Sining/Server/ThirdPartyPlugin/Google.Protobuf/Google.Protobuf.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

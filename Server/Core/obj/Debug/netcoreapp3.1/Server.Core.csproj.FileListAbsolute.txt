@@ -1,0 +1,8 @@
+/Users/sining/Code/Sining/Server/Core/bin/Debug/netcoreapp3.1/Server.Core.deps.json
+/Users/sining/Code/Sining/Server/Core/bin/Debug/netcoreapp3.1/Server.Core.dll
+/Users/sining/Code/Sining/Server/Core/bin/Debug/netcoreapp3.1/Server.Core.pdb
+/Users/sining/Code/Sining/Server/Core/obj/Debug/netcoreapp3.1/Server.Core.csprojAssemblyReference.cache
+/Users/sining/Code/Sining/Server/Core/obj/Debug/netcoreapp3.1/Server.Core.AssemblyInfoInputs.cache
+/Users/sining/Code/Sining/Server/Core/obj/Debug/netcoreapp3.1/Server.Core.AssemblyInfo.cs
+/Users/sining/Code/Sining/Server/Core/obj/Debug/netcoreapp3.1/Server.Core.dll
+/Users/sining/Code/Sining/Server/Core/obj/Debug/netcoreapp3.1/Server.Core.pdb

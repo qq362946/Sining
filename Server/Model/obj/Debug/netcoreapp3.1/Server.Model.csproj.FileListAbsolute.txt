@@ -1,0 +1,13 @@
+/Users/sining/Code/Sining/Server/Model/bin/Debug/netcoreapp3.1/Server.Model.deps.json
+/Users/sining/Code/Sining/Server/Model/bin/Debug/netcoreapp3.1/Server.Model.dll
+/Users/sining/Code/Sining/Server/Model/bin/Debug/netcoreapp3.1/Server.Model.pdb
+/Users/sining/Code/Sining/Server/Model/bin/Debug/netcoreapp3.1/Server.Core.dll
+/Users/sining/Code/Sining/Server/Model/bin/Debug/netcoreapp3.1/Server.Core.pdb
+/Users/sining/Code/Sining/Server/Model/obj/Debug/netcoreapp3.1/Server.Model.csprojAssemblyReference.cache
+/Users/sining/Code/Sining/Server/Model/obj/Debug/netcoreapp3.1/Server.Model.AssemblyInfoInputs.cache
+/Users/sining/Code/Sining/Server/Model/obj/Debug/netcoreapp3.1/Server.Model.AssemblyInfo.cs
+/Users/sining/Code/Sining/Server/Model/obj/Debug/netcoreapp3.1/Server.Model.csproj.CopyComplete
+/Users/sining/Code/Sining/Server/Model/obj/Debug/netcoreapp3.1/Server.Model.dll
+/Users/sining/Code/Sining/Server/Model/obj/Debug/netcoreapp3.1/Server.Model.pdb
+/Users/sining/Code/Sining/Server/Model/bin/Debug/netcoreapp3.1/Google.Protobuf.dll
+/Users/sining/Code/Sining/Server/Model/bin/Debug/netcoreapp3.1/Google.Protobuf.pdb

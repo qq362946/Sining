@@ -1,0 +1,36 @@
+2020-02-26 13:48:56.9582  ERROR (AsyncSVoidMethodBuilder.cs:29) System.NullReferenceException: Object reference not set to an instance of an object.
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 50
+2020-02-26 13:49:37.4679  ERROR (AsyncSVoidMethodBuilder.cs:29) System.NullReferenceException: Object reference not set to an instance of an object.
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 50
+2020-02-26 13:51:21.5934  ERROR (AsyncSVoidMethodBuilder.cs:29) System.NullReferenceException: Object reference not set to an instance of an object.
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 50
+2020-02-26 13:57:37.0385  ERROR (AsyncSVoidMethodBuilder.cs:29) System.NullReferenceException: Object reference not set to an instance of an object.
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 55
+2020-02-26 13:57:54.2280  ERROR (AsyncSVoidMethodBuilder.cs:29) System.NullReferenceException: Object reference not set to an instance of an object.
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 55
+2020-02-26 13:59:49.6975  ERROR (AsyncSVoidMethodBuilder.cs:29) System.NullReferenceException: Object reference not set to an instance of an object.
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+   at Sining.STaskCompletionSource.RunAction() in /Users/sining/Code/Sining/Server/Core/Base/Async/Task/STaskCompletionSource.cs:line 48
+   at Sining.STaskCompletionSource.SetResult() in /Users/sining/Code/Sining/Server/Core/Base/Async/Task/STaskCompletionSource.cs:line 20
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 60
+2020-02-26 14:36:48.9665  ERROR (AsyncSVoidMethodBuilder.cs:29) System.NullReferenceException: Object reference not set to an instance of an object.
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 61
+2020-02-26 14:53:36.0111  ERROR (AsyncSVoidMethodBuilder.cs:29) System.NullReferenceException: Object reference not set to an instance of an object.
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 69
+2020-02-26 14:57:43.7144  ERROR (AsyncSVoidMethodBuilder.cs:29) System.NullReferenceException: Object reference not set to an instance of an object.
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+   at Sining.STaskCompletionSource`1.RunAction() in /Users/sining/Code/Sining/Server/Core/Base/Async/Task/STaskCompletionSource.cs:line 119
+   at Sining.STaskCompletionSource`1.SetResult(T result) in /Users/sining/Code/Sining/Server/Core/Base/Async/Task/STaskCompletionSource.cs:line 89
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 70
+2020-02-26 14:58:24.9905  ERROR (AsyncSVoidMethodBuilder.cs:29) System.NullReferenceException: Object reference not set to an instance of an object.
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+   at Sining.STaskCompletionSource`1.RunAction() in /Users/sining/Code/Sining/Server/Core/Base/Async/Task/STaskCompletionSource.cs:line 119
+   at Sining.STaskCompletionSource`1.SetResult(T result) in /Users/sining/Code/Sining/Server/Core/Base/Async/Task/STaskCompletionSource.cs:line 89
+   at Sining.Actor`1.Start() in /Users/sining/Code/Sining/Server/Core/Base/Actor/Actor.cs:line 70
