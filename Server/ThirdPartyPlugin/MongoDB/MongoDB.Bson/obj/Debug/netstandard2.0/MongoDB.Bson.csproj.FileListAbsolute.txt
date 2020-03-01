@@ -1,0 +1,4 @@
+/Users/sining/Code/Sining/Server/ThirdPartyPlugin/MongoDBTool/MongoDB.Bson/obj/Debug/netstandard2.0/MongoDB.Bson.csprojAssemblyReference.cache
+/Users/sining/Code/Sining/Server/ThirdPartyPlugin/MongoDBTool/MongoDB.Bson/obj/Debug/netstandard2.0/MongoDB.Bson.AssemblyInfoInputs.cache
+/Users/sining/Code/Sining/Server/ThirdPartyPlugin/MongoDBTool/MongoDB.Bson/obj/Debug/netstandard2.0/MongoDB.Bson.AssemblyInfo.cs
+/Users/sining/Code/Sining/Server/ThirdPartyPlugin/MongoDBTool/MongoDB.Bson/obj/Debug/netstandard2.0/MongoDB.Bson.xml

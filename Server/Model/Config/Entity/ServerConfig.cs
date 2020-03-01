@@ -1,0 +1,18 @@
+using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
+
+namespace Sining.Config
+{
+	public partial class ServerConfig : IConfig, IBson
+	{
+		public int Id { get; set; }
+		[BsonDefaultValue("")]
+		public string ServerType { get; set; }
+		[BsonDefaultValue("")]
+		public string InnerIP { get; set; }
+		[BsonDefaultValue(0)]
+		public int InnerPort { get; set; }
+		[BsonDefaultValue("")]
+		public string OuterIP { get; set; }
+	}
+}

@@ -1,0 +1,54 @@
+﻿{
+  "version": "0.0.0-local",
+  "restore": {
+    "projectUniqueName": "/Users/sining/Code/Sining/Server/ThirdPartyPlugin/MongoDB/MongoDB.Driver.Legacy/MongoDB.Driver.Legacy.csproj",
+    "projectName": "mongocsharpdriver",
+    "projectPath": "/Users/sining/Code/Sining/Server/ThirdPartyPlugin/MongoDB/MongoDB.Driver.Legacy/MongoDB.Driver.Legacy.csproj",
+    "outputPath": "/Users/sining/Code/Sining/Server/ThirdPartyPlugin/MongoDB/MongoDB.Driver.Legacy/obj/",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "netcoreapp3.1"
+    ],
+    "sources": {
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "projectReferences": {
+          "/Users/sining/Code/Sining/Server/ThirdPartyPlugin/MongoDB/MongoDB.Bson/MongoDB.Bson.csproj": {
+            "projectPath": "/Users/sining/Code/Sining/Server/ThirdPartyPlugin/MongoDB/MongoDB.Bson/MongoDB.Bson.csproj"
+          },
+          "/Users/sining/Code/Sining/Server/ThirdPartyPlugin/MongoDB/MongoDB.Driver.Core/MongoDB.Driver.Core.csproj": {
+            "projectPath": "/Users/sining/Code/Sining/Server/ThirdPartyPlugin/MongoDB/MongoDB.Driver.Core/MongoDB.Driver.Core.csproj"
+          },
+          "/Users/sining/Code/Sining/Server/ThirdPartyPlugin/MongoDB/MongoDB.Driver/MongoDB.Driver.csproj": {
+            "projectPath": "/Users/sining/Code/Sining/Server/ThirdPartyPlugin/MongoDB/MongoDB.Driver/MongoDB.Driver.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "allWarningsAsErrors": true
+    }
+  },
+  "frameworks": {
+    "netcoreapp3.1": {
+      "imports": [
+        "net461",
+        "net462",
+        "net47",
+        "net471",
+        "net472",
+        "net48"
+      ],
+      "assetTargetFallback": true,
+      "warn": true,
+      "frameworkReferences": {
+        "Microsoft.NETCore.App": {
+          "privateAssets": "all"
+        }
+      },
+      "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+    }
+  }
+}

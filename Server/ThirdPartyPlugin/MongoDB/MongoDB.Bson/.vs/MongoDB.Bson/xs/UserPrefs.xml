@@ -1,0 +1,27 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="ObjectModel/BsonBinaryData.cs">
+    <Files>
+      <File FileName="ObjectModel/BsonValue.cs" Line="179" Column="23" />
+      <File FileName="ObjectModel/BsonBinaryData.cs" Line="169" Column="23" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MongoDB.Bson" expanded="True">
+            <Node name="MongoDB.Bson" expanded="True">
+              <Node name="ObjectModel" expanded="True">
+                <Node name="BsonBinaryData.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

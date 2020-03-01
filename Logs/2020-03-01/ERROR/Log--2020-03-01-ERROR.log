@@ -1,0 +1,9 @@
+2020-03-01 21:11:16.2692  ERROR (EventManagement.cs:66) SceneConfigData
+2020-03-01 23:48:09.6303  ERROR (ComponentFactory.cs:102) System.NullReferenceException: Object reference not set to an instance of an object.
+   at Sining.ComponentFactory.Create[T](Component parent, Boolean isChild, Boolean eventSystem) in /Users/sining/Code/Sining/Server/Core/Base/Component/ComponentFactory.cs:line 102
+2020-03-01 23:48:09.6303  ERROR (ComponentFactory.cs:102) System.NullReferenceException: Object reference not set to an instance of an object.
+   at Sining.ComponentFactory.Create[T](Component parent, Boolean isChild, Boolean eventSystem) in /Users/sining/Code/Sining/Server/Core/Base/Component/ComponentFactory.cs:line 102
+2020-03-01 23:48:09.6303  ERROR (ComponentFactory.cs:102) System.NullReferenceException: Object reference not set to an instance of an object.
+   at Sining.ComponentFactory.Create[T](Component parent, Boolean isChild, Boolean eventSystem) in /Users/sining/Code/Sining/Server/Core/Base/Component/ComponentFactory.cs:line 102
+2020-03-01 23:48:09.7154  ERROR (ComponentFactory.cs:102) System.NullReferenceException: Object reference not set to an instance of an object.
+   at Sining.ComponentFactory.Create[T](Component parent, Boolean isChild, Boolean eventSystem) in /Users/sining/Code/Sining/Server/Core/Base/Component/ComponentFactory.cs:line 102
