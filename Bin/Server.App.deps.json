@@ -16,6 +16,14 @@
           "Server.App.dll": {}
         }
       },
+      "CommandLineParser/2.7.82": {
+        "runtime": {
+          "lib/netstandard2.0/CommandLine.dll": {
+            "assemblyVersion": "2.7.82.0",
+            "fileVersion": "2.7.82.0"
+          }
+        }
+      },
       "NLog/4.6.8": {
         "runtime": {
           "lib/netstandard2.0/NLog.dll": {
@@ -29,8 +37,14 @@
           "Google.Protobuf.dll": {}
         }
       },
+      "MongoDB.Bson/0.0.0-local": {
+        "runtime": {
+          "MongoDB.Bson.dll": {}
+        }
+      },
       "Server.Core/1.0.0": {
         "dependencies": {
+          "MongoDB.Bson": "0.0.0-local",
           "NLog": "4.6.8"
         },
         "runtime": {
@@ -49,6 +63,7 @@
       },
       "Server.Model/1.0.0": {
         "dependencies": {
+          "CommandLineParser": "2.7.82",
           "Google.Protobuf": "1.0.0",
           "Server.Core": "1.0.0"
         },
@@ -64,6 +79,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "CommandLineParser/2.7.82": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JnjxBu4++EDnYtDzHskiPrPJ9hAna8amu8qlQx8J+2oZnPddDnkR/0FFtQMDz0Cs0YF2lbyW3OmYfRmIrLNY0A==",
+      "path": "commandlineparser/2.7.82",
+      "hashPath": "commandlineparser.2.7.82.nupkg.sha512"
+    },
     "NLog/4.6.8": {
       "type": "package",
       "serviceable": true,
@@ -72,6 +94,11 @@
       "hashPath": "nlog.4.6.8.nupkg.sha512"
     },
     "Google.Protobuf/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MongoDB.Bson/0.0.0-local": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

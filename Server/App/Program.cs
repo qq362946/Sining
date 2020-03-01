@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Threading;
-using System.Threading.Tasks;
-using Sining.Core;
-using Sining.Event;
-using Sining.Message;
-using Sining.Module;
+using CommandLine;
+using Sining.Config;
+using Sining.Tools;
 
 namespace Sining
 {
@@ -15,19 +11,26 @@ namespace Sining
         {
             try
             {
-                App.Id = 1;
-                // 事件初始化
-                EventManagement.Initialization();
-                // 任务消息处理组件
-                App.Scene.AddComponent<TaskProcessingComponent>();
-                // 服务器外网服务组件
-                var netOuterComponent = App.Scene.AddComponent<NetOuterComponent, string>("http://127.0.0.1:8888/");
+                Parser.Default.ParseArguments<Options>(args)
+                    .WithNotParsed(error => throw new Exception("Command line format error!"))
+                    .WithParsed(option => option.Initialization());
+                
+                // 系统初始化
+                SiningSystem.Init();
+
+                // App.Id = 1;
+                // // 事件初始化
+                // EventManagement.Initialization();
+                // // 任务消息处理组件
+                // App.Scene.AddComponent<TaskProcessingComponent>();
+                // // 服务器外网服务组件
+                // var netOuterComponent = App.Scene.AddComponent<NetOuterComponent, string>("http://127.0.0.1:8888/");
                 // 测试外网消息包
                 // var session = App.Scene.AddComponent<Scene>().AddComponent<NetOuterComponent>()
                 //     .Create("ws://127.0.0.1:8888/");
                 //var netOuterComponent = App.Scene.AddComponent<NetOuterComponent, string>("http://127.0.0.1:8888/");
 
-                Log.Info("服务器运行中...");
+                //Log.Info("Server startup completed!");
 
                 for (;;) Console.ReadKey();
             }

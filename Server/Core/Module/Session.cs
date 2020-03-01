@@ -139,7 +139,7 @@ namespace Sining.Module
             try
             {
                 var message = Network.MessagePacker.DeserializeFrom(
-                    NetworkProtocolManage.GetType(code), memoryStream);
+                    NetworkProtocolManagement.Instance.GetType(code), memoryStream);
 
                 Dispatcher(message);
             }
@@ -171,7 +171,7 @@ namespace Sining.Module
                     return;
                 }
 
-                MessageDispatcher.Handle(this, message);
+                MessageDispatcherManagement.Instance.Handle(this, message);
             }
             catch (Exception e)
             {
@@ -193,7 +193,7 @@ namespace Sining.Module
                 throw new Exception("session has been Disposed");
             }
 
-            var opCode = NetworkProtocolManage.GetOpCode(message.GetType());
+            var opCode = NetworkProtocolManagement.Instance.GetOpCode(message.GetType());
 
             MemoryStream.Seek(PacketParser.PacketHeadLength, SeekOrigin.Begin);
             MemoryStream.SetLength(PacketParser.PacketHeadLength);

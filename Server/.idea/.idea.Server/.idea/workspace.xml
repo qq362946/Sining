@@ -1,198 +1,267 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1424daf-7838-458d-8755-4228d1578b41" name="Default Changelist" comment="" />
+    <list default="true" id="c1424daf-7838-458d-8755-4228d1578b41" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Bin/Server.App.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Bin/Server.App.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bin/Server.App.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Bin/Server.App.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Server/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/obj/Debug/Server.App.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/App/obj/Debug/Server.App.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/obj/Debug/Server.App.dll" beforeDir="false" afterPath="$PROJECT_DIR$/App/obj/Debug/Server.App.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/obj/Debug/Server.App.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/App/obj/Debug/Server.App.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Module/Network/TCP/TCPChannelComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Module/Network/TCP/TCPChannelComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotfix/obj/Debug/netcoreapp3.1/Server.Hotfix.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Hotfix/obj/Debug/netcoreapp3.1/Server.Hotfix.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/obj/Debug/netcoreapp3.1/Server.Model.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Model/obj/Debug/netcoreapp3.1/Server.Model.csprojAssemblyReference.cache" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Core/Base/Tools/ObjectPool.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ThirdPartyPlugin/Google.Protobuf/CodedInputStream.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/41/02eb6183/MemoryStream.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ThirdPartyPlugin/Google.Protobuf/MessageExtensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Base/Tools/NetworkHelper.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/0f/3f93d50a/ICriticalNotifyCompletion.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Base/Tools/TimeHelper.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Base/Tools/IdFactory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Base/Event/EventManagement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ThirdPartyPlugin/Google.Protobuf/CodedOutputStream.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/App/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/44/80fa8589/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Core/Module/Network/ErrorCode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/3a/0653ebf3/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Base/Event/IEvent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/fe/43c439e2/IDisposable.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Base/Event/EventHandlerSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/19/3f7d8397/CancellationTokenSource.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/88/82254a0d/MemoryManager`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/85FA3ED1-E7FC-4F7A-86B8-42D68E915D73/c9/bfd16c34/ValueWebSocketReceiveResult.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/8b/95063f15/IMemoryOwner`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/47012A33-F2AB-4B31-A24D-9559936DEBEC/9a/70a2db83/SocketAsyncEventArgs.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Module/Network/Http/HttpComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/e1/3b2c6ad0/ArraySegment`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/eb/6fb6bc1e/Stream.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B3818D5D-B8A8-4B31-BEF0-BE5C8E498118/92/55f33217/HttpListener.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/18E31696-CC8C-4198-BEE5-82A980E04EA5/0f/56af632a/ArrayMemoryPool`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/85FA3ED1-E7FC-4F7A-86B8-42D68E915D73/a1/ae6013bc/WebSocket.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/5e/1df2c4c8/Task.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/bd/60300079/Memory`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/18E31696-CC8C-4198-BEE5-82A980E04EA5/6d/f6902133/MemoryPool`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Base/ComponentBase/Component.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Module/Network/WebSocket/WebSocketChannelComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A10A6727-AB3E-4490-B96B-59DAC42C9FB3/4d/febfce46/ImmutableInterlocked.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Base/Async/IAwaiter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F2CCEC16-F647-4471-9CB2-501021C1AE02/82/8e105c63/Process.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Base/Async/Task/STaskCompletionSource.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Base/Tools/RecyclableMemoryStream/MemoryStreamPool.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Base/Async/Task/STaskAwaiter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/47012A33-F2AB-4B31-A24D-9559936DEBEC/e8/fdd7e079/SocketAsyncEventArgs.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Base/Async/Task/STask.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Base/Async/Void/SVoidAwaiter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/ce/448a414b/Span`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Base/Async/Void/SVoid.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B3818D5D-B8A8-4B31-BEF0-BE5C8E498118/07/0fc81d9b/HttpWebSocket.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Base/Async/Builder/AsyncSVoidMethodBuilder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Base/Async/Builder/AsyncSTaskMethodBuilder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/a7/60bf17ee/UInt16.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B3818D5D-B8A8-4B31-BEF0-BE5C8E498118/cc/8cf00548/HttpListenerContext.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Base/Tools/RecyclableMemoryStream/RecyclableMemoryStreamManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Tools/ProtoBufTool/ProcessHelper.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Base/Tools/RecyclableMemoryStream/RecyclableMemoryStream.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Base/Tools/RecyclableMemoryStream/Events.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Module/Network/WebSocket/WebSocketComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/85FA3ED1-E7FC-4F7A-86B8-42D68E915D73/29/566ac122/WebSocketReceiveResult.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/59BDA191-8811-43F5-BD39-6A73CAA913C8/f9/21bfc6fa/EvaluateException.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Model/Base/Tools/ProtobufHelper.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/8b/7704d5f7/TaskCompletionSource`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Base/DataStructure/CircularBuffer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B29DAA0D-8DF3-450D-AA4B-DE0133942F36/32/1f5dfa24/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Module/Network/TCP/TCPChannelComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Module/Network/Base/NetworkProtocol.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Module/Network/Base/NetworkChannel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B3818D5D-B8A8-4B31-BEF0-BE5C8E498118/49/51f19dfb/HttpListenerRequest.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/e0/6d5a4585/Stream.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Module/Network/PacketParser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ThirdPartyPlugin/MongoDB/MongoDB.Bson/IO/BsonWriter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Module/Network/NetworkProtocolManagement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Core/Module/Network/TCP/TCPComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F2CCEC16-F647-4471-9CB2-501021C1AE02/a1/1a5e9d00/ProcessStartInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Hotfix/TestMessageHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Model/Base/Network/Message/OuterMessage.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Model/Base/Network/Message/OuterOpcode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Base/Task/TaskProcessingComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Base/Event/Attribute/MessageSystemAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/41/02eb6183/MemoryStream.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A3D312E5-43CA-4BF2-94F0-0CE87AEE86AF/e1/83098f5f/AssemblyMetadata.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Module/Network/TCP/TCPChannelComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Core/Module/Network/Base/IMessageHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/85FA3ED1-E7FC-4F7A-86B8-42D68E915D73/8d/8bba8443/WebSocketCloseStatus.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1E680FFA-6D7E-4E5B-AC0A-59A8559254AB/a2/50c74a2a/LogManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Module/Network/Base/AMessagePacker.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/d4/352adbda/ValueTuple.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Base/Event/Message/MessageDispatcher.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Base/Event/Message/MessageHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Module/Network/Base/MessageAttribute.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Module/Session.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/99/f3086f02/Thread.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Module/Network/NetworkComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B3818D5D-B8A8-4B31-BEF0-BE5C8E498118/68/fa290561/HttpListenerResponse.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Model/Base/Network/MessageProtocol/ProtobufMessagePacker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/0f/3f93d50a/ICriticalNotifyCompletion.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Core/Module/Network/Base/MessagePacker.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/App/obj/Debug/Server.App.AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/App/Properties/launchSettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Module/Network/Base/NetworkChannel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Module/Network/Base/NetworkProtocol.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/3a/0653ebf3/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Module/Network/Base/MessageAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Module/Network/Base/AMessagePacker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Module/Network/Http/HttpComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/fe/43c439e2/IDisposable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Core/Module/Network/Interface/IMessage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Base/Event/Message/HttpMessageHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Module/Network/WebSocket/WebSocketChannelComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Module/Network/WebSocket/WebSocketComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/19/3f7d8397/CancellationTokenSource.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/88/82254a0d/MemoryManager`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ThirdPartyPlugin/MongoDB/MongoDB.Driver/UpdateResult.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/85FA3ED1-E7FC-4F7A-86B8-42D68E915D73/c9/bfd16c34/ValueWebSocketReceiveResult.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/8b/95063f15/IMemoryOwner`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/47012A33-F2AB-4B31-A24D-9559936DEBEC/9a/70a2db83/SocketAsyncEventArgs.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/e1/3b2c6ad0/ArraySegment`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/eb/6fb6bc1e/Stream.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/18E31696-CC8C-4198-BEE5-82A980E04EA5/0f/56af632a/ArrayMemoryPool`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/0d/24caafb8/PropertyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A10A6727-AB3E-4490-B96B-59DAC42C9FB3/4d/febfce46/ImmutableInterlocked.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F2CCEC16-F647-4471-9CB2-501021C1AE02/82/8e105c63/Process.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/ce/448a414b/Span`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Model/Base/ServerType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B3818D5D-B8A8-4B31-BEF0-BE5C8E498118/07/0fc81d9b/HttpWebSocket.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Model/Base/Tools/ProtobufHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B3818D5D-B8A8-4B31-BEF0-BE5C8E498118/cc/8cf00548/HttpListenerContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Tools/ProtoBufTool/ProcessHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Model/Base/Network/NetInnerComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Model/Base/Network/NetOuterComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ThirdPartyPlugin/MongoDB/MongoDB.Driver/TargetFramework.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Model/Config/Data/SceneConfigData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/85FA3ED1-E7FC-4F7A-86B8-42D68E915D73/29/566ac122/WebSocketReceiveResult.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Model/Base/Network/Message/OuterMessage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Model/Config/Data/ServerConfigData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Base/DataStructure/DoubleMapDIc.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Base/Tools/Log.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Module/Network/NetworkProtocolManage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Model/Base/Network/Message/OuterOpcode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/36/5e87d026/Activator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Model/Config/Entity/SceneConfig.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DD1E3E13-C81A-433D-9994-4E2AEDD51E30/60/3a11cac8/CodeDomProvider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Model/Config/Entity/ServerConfig.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Model/Base/Network/MessageProtocol/ProtobufMessagePacker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/59BDA191-8811-43F5-BD39-6A73CAA913C8/f9/21bfc6fa/EvaluateException.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Base/Config/IConfig.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/8b/7704d5f7/TaskCompletionSource`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ThirdPartyPlugin/MongoDB/MongoDB.Driver/DeleteResult.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ThirdPartyPlugin/MongoDB/MongoDB.Driver/ReplaceOneResult.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hotfix/TestMessageHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B29DAA0D-8DF3-450D-AA4B-DE0133942F36/32/1f5dfa24/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Model/Base/CommandLine/Options.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Tools/ExcelToCS/LoadCsFile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F2CCEC16-F647-4471-9CB2-501021C1AE02/a1/1a5e9d00/ProcessStartInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Model/Base/SceneType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1E680FFA-6D7E-4E5B-AC0A-59A8559254AB/a2/50c74a2a/LogManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C5262990-2D17-4B2E-BB2A-C48B327BCF0D/90/cc8bf397/CSharpCodeGenerator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ThirdPartyPlugin/MongoDB/MongoDB.Driver.Core/Core/Operations/BulkWriteOperationResult.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/d4/352adbda/ValueTuple.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/99/f3086f02/Thread.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/f7/754a72f5/MemberInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/.nuget/packages/nlog.config/4.6.8/contentFiles/any/any/NLog.config" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/App/NLog.config" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Module/Network/PacketParser.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/0b/99d9f1bd/EventHandler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Base/Tools/SerializationHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0407203A-0357-4D6F-93DC-882BE5488512/4c/8bf15363/Stopwatch.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/c4/eab5b297/Task.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/7f/ac95f452/TaskCompletionSource`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Base/Event/Message/RpcMessageHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ThirdPartyPlugin/Google.Protobuf/MessageExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/f8/3cedf45d/IDisposable.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Base/DataStructure/OneToManyDic.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Model/Base/Network/NetInnerComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/44/80fa8589/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Model/Base/Network/NetOuterComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Module/Scene.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/App.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/9a/1630dd64/MemoryExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Base/Event/Component/AwakeSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/e2/cbfbedac/TaskCreationOptions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B3818D5D-B8A8-4B31-BEF0-BE5C8E498118/49/51f19dfb/HttpListenerRequest.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Base/Event/Component/DestroySystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Base/Event/Attribute/ComponentSystemAttribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/0e/1233af5b/MemoryStream.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Base/Event/Attribute/BaseAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/App/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ThirdPartyPlugin/Google.Protobuf/CodedOutputStream.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/App/NLog.config" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/48/df2dea02/Type.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Tools/ExcelToCS/ExcelHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Tools/ExcelToCS/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ThirdPartyPlugin/MongoDB/MongoDB.Driver.Core/TargetFramework.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ThirdPartyPlugin/Google.Protobuf/CodedInputStream.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4D99A906-C9F9-4A03-8E7B-A508CDAD20B1/e0/5e78cf13/ExpandoObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/App/obj/Debug/Server.App.AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Tools/ExcelToCS/TemplateConst.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Base/Config/AConfig.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Base/Config/ConfigAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ThirdPartyPlugin/MongoDB/MongoDB.Bson/BsonExtensionMethods.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/App/Properties/launchSettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ThirdPartyPlugin/MongoDB/MongoDB.Driver.GridFS/TargetFramework.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/a4/a4f62aae/StreamWriter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/App.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ThirdPartyPlugin/MongoDB/MongoDB.Driver/BulkWriteResult.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/42/c5f1ac30/Encoding.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ThirdPartyPlugin/MongoDB/MongoDB.Driver.Legacy/GeoNearPoint.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/8b/c195e4b9/FileStream.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Module/ConfigManagementComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Base/Task/TaskProcessingComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Base/Actor/Actor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Base/Async/IAwaiter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Base/Async/Task/STaskCompletionSource.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Base/Async/Task/STask.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Base/Async/Task/STaskAwaiter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Base/Async/Void/SVoid.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Base/Async/Void/SVoidAwaiter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Base/Async/Builder/AsyncSVoidMethodBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Module/SystemEventComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Base/Async/Builder/AsyncSTaskMethodBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Module/ComponentManagement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Base/Tools/SiningSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Base/Event/IEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Base/Tools/AssemblyManagement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/47012A33-F2AB-4B31-A24D-9559936DEBEC/e8/fdd7e079/SocketAsyncEventArgs.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Base/Event/EventHandlerSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9E8FCC4E-4D72-447D-ADA5-85D2B67E19D2/7/ExcelReaderFactory.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Base/Event/Message/RpcMessageHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/18E31696-CC8C-4198-BEE5-82A980E04EA5/6d/f6902133/MemoryPool`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Base/Event/Message/HttpMessageHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Base/Event/Message/MessageHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Base/Event/Message/MessageDispatcherManagement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Base/Event/Attribute/ComponentSystemAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/a7/60bf17ee/UInt16.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ThirdPartyPlugin/MongoDB/MongoDB.Driver.Legacy/TargetFramework.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Core/Base/Event/Attribute/EventSystemAttribute.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/e0/6d5a4585/Stream.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Base/DataStructure/OneToManyList.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Base/Event/Attribute/BaseAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/7f/ac95f452/TaskCompletionSource`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Base/Event/Attribute/MessageSystemAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C78B911A-C5E5-4AED-95B8-0262097A7BE4/95/72cfec4f/ContractlessStandardResolver.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Base/Event/Component/AwakeSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Base/Event/Component/DestroySystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/e2/cbfbedac/TaskCreationOptions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Base/Tools/TimeHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9E8FCC4E-4D72-447D-ADA5-85D2B67E19D2/ab/563e0402/ExcelReaderConfiguration.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Base/Tools/IdFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/bd/60300079/Memory`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C78B911A-C5E5-4AED-95B8-0262097A7BE4/13/3236d6a7/MessagePackSerializer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Base/Tools/NetworkHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Base/Tools/Log.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Base/Tools/ObjectPool.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/9a/1630dd64/MemoryExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Base/Tools/RecyclableMemoryStream/MemoryStreamPool.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Base/Tools/RecyclableMemoryStream/RecyclableMemoryStream.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0407203A-0357-4D6F-93DC-882BE5488512/7f/7c237ad4/StringWriter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Base/Tools/RecyclableMemoryStream/Events.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Base/Tools/RecyclableMemoryStream/RecyclableMemoryStreamManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/85FA3ED1-E7FC-4F7A-86B8-42D68E915D73/a1/ae6013bc/WebSocket.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Base/Component/ComponentFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9E8FCC4E-4D72-447D-ADA5-85D2B67E19D2/64/5a72af72/LeaveOpenStream.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Base/Component/Component.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Base/DataStructure/OneToManyDic.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/85FA3ED1-E7FC-4F7A-86B8-42D68E915D73/8d/8bba8443/WebSocketCloseStatus.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Base/DataStructure/CircularBuffer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Base/Component/IBson.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Core/Base/DataStructure/OneToManyQueue.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Base/DataStructure/OneToManyList.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/5e/1df2c4c8/Task.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Base/DataStructure/DoubleMapDIc.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Core/Base/DataStructure/OneToManyHashSet.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core/Base/ComponentBase/ComponentFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Module/Scene.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B3818D5D-B8A8-4B31-BEF0-BE5C8E498118/92/55f33217/HttpListener.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Module/ProcessWatcherComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Module/Session.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B3818D5D-B8A8-4B31-BEF0-BE5C8E498118/68/fa290561/HttpListenerResponse.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Module/Network/NetworkComponent.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Core/Module/Network/NetworkProtocolManage.cs" />
-        <option value="$PROJECT_DIR$/Core/Module/Network/Base/MessagePacker.cs" />
-        <option value="$PROJECT_DIR$/ThirdPartyPlugin/Google.Protobuf/MessageExtensions.cs" />
-        <option value="$PROJECT_DIR$/ThirdPartyPlugin/Google.Protobuf/CodedOutputStream.cs" />
-        <option value="$PROJECT_DIR$/Core/Base/Event/EventManagement.cs" />
-        <option value="$PROJECT_DIR$/Core/Base/Tcs.cs" />
-        <option value="$PROJECT_DIR$/Core/Base/Async/Void/SVoid.cs" />
-        <option value="$PROJECT_DIR$/Core/Base/Async/Builder/AsyncSTaskMethodBuilder.cs" />
-        <option value="$PROJECT_DIR$/Core/Base/Async/IAwaiter.cs" />
-        <option value="$PROJECT_DIR$/../Tools/ProtoBufTool/Program.cs" />
-        <option value="$PROJECT_DIR$/Model/Base/Network/Interface.cs" />
-        <option value="$PROJECT_DIR$/Core/Module/Network/Interface/IMessage.cs" />
-        <option value="$PROJECT_DIR$/Core/Module/Network/Base/MessageDispatcher.cs" />
-        <option value="$PROJECT_DIR$/Core/Base/Async/Builder/AsyncSVoidMethodBuilder.cs" />
-        <option value="$PROJECT_DIR$/Core/Base/Async/Task/STask.cs" />
-        <option value="$PROJECT_DIR$/Core/Base/Async/Void/SVoidAwaiter.cs" />
-        <option value="$PROJECT_DIR$/Core/Base/Async/Task/STaskAwaiter.cs" />
-        <option value="$PROJECT_DIR$/Hotfix/OnGetMessage.cs" />
-        <option value="$PROJECT_DIR$/Core/Base/Event/Message/RPCMessageHandler.cs" />
-        <option value="$PROJECT_DIR$/Core/Module/Network/ErrorCode.cs" />
-        <option value="$PROJECT_DIR$/Hotfix/GetNameRequestHandler.cs" />
-        <option value="$PROJECT_DIR$/Model/Base/Network/NetInnerComponent.cs" />
-        <option value="$PROJECT_DIR$/Core/Base/Task/TaskProcessingComponent.cs" />
-        <option value="$PROJECT_DIR$/Core/Base/Tools/ProtobufHelper.cs" />
-        <option value="$PROJECT_DIR$/Model/Base/Tools/ProtobufHelper.cs" />
-        <option value="$PROJECT_DIR$/Model/Base/Network/MessageProtocol/ProtobufMessagePacker.cs" />
-        <option value="$PROJECT_DIR$/App/NLog.config" />
-        <option value="$PROJECT_DIR$/Core/Base/Async/Pool/STaskCompletionSourcePool.cs" />
-        <option value="$PROJECT_DIR$/Core/Base/ComponentBase/Component.cs" />
-        <option value="$PROJECT_DIR$/Core/Base/Async/Task/STaskCompletionSource.cs" />
-        <option value="$PROJECT_DIR$/Core/Base/Tools/ObjectPool.cs" />
-        <option value="$PROJECT_DIR$/Core/Module/Network/TCP/SocketAsyncEventArgsPool.cs" />
+        <option value="$PROJECT_DIR$/Core/Base/Tools/JsonHelper.cs" />
+        <option value="$PROJECT_DIR$/../Tools/ExcelToCS/ExcelHelper.cs" />
+        <option value="$PROJECT_DIR$/Core/Base/Tools/Log.cs" />
+        <option value="$PROJECT_DIR$/Core/Base/Tools/adad.cs" />
+        <option value="$PROJECT_DIR$/ThirdPartyPlugin/MongoDB/MongoDB.Bson/IO/BsonStreamAdapter.cs" />
+        <option value="$PROJECT_DIR$/ThirdPartyPlugin/MongoDB/MongoDB.Bson/TargetFramework.cs" />
+        <option value="$PROJECT_DIR$/ThirdPartyPlugin/MongoDB/MongoDB.Bson/Exceptions/DuplicateBsonMemberMapAttributeException.cs" />
+        <option value="$PROJECT_DIR$/ThirdPartyPlugin/MongoDBTool/MongoDB.Bson/TargetFramework.cs" />
+        <option value="$PROJECT_DIR$/ThirdPartyPlugin/MongoDBTool/MongoDB.Bson/Exceptions/DuplicateBsonMemberMapAttributeException.cs" />
+        <option value="$PROJECT_DIR$/ThirdPartyPlugin/MongoDBTool/MongoDB.Bson/ObjectModel/BsonBinaryData.cs" />
+        <option value="$PROJECT_DIR$/ThirdPartyPlugin/MongoDB/MongoDB.Driver.GridFS/TargetFramework.cs" />
+        <option value="$PROJECT_DIR$/ThirdPartyPlugin/MongoDB/MongoDB.Driver.Legacy/TargetFramework.cs" />
+        <option value="$PROJECT_DIR$/ThirdPartyPlugin/MongoDB/MongoDB.Driver.Legacy/GeoNearPoint.cs" />
+        <option value="$PROJECT_DIR$/ThirdPartyPlugin/MongoDB/MongoDB.Driver.Core/Core/Operations/BulkWriteOperationResult.cs" />
+        <option value="$PROJECT_DIR$/ThirdPartyPlugin/MongoDB/MongoDB.Driver/BulkWriteResult.cs" />
+        <option value="$PROJECT_DIR$/ThirdPartyPlugin/MongoDB/MongoDB.Driver/DeleteResult.cs" />
+        <option value="$PROJECT_DIR$/ThirdPartyPlugin/MongoDB/MongoDB.Driver/ReplaceOneResult.cs" />
+        <option value="$PROJECT_DIR$/ThirdPartyPlugin/MongoDB/MongoDB.Driver/TargetFramework.cs" />
+        <option value="$PROJECT_DIR$/ThirdPartyPlugin/MongoDB/MongoDB.Driver/UpdateResult.cs" />
+        <option value="$PROJECT_DIR$/ThirdPartyPlugin/MongoDB/MongoDB.Driver.Core/TargetFramework.cs" />
+        <option value="$PROJECT_DIR$/Model/Config/ServerConfig.cs" />
+        <option value="$PROJECT_DIR$/Model/Config/SceneConfig.cs" />
+        <option value="$PROJECT_DIR$/Core/Base/Config/IConfig.cs" />
+        <option value="$PROJECT_DIR$/../Tools/ExcelToCS/LoadCsFile.cs" />
+        <option value="$PROJECT_DIR$/Core/Base/Config/ConfigAttribute.cs" />
+        <option value="$PROJECT_DIR$/Model/Config/Data/SceneConfigData.cs" />
+        <option value="$PROJECT_DIR$/Model/Config/Data/ServerConfigData.cs" />
+        <option value="$PROJECT_DIR$/Model/Config/Entity/ServerConfig.cs" />
+        <option value="$PROJECT_DIR$/Core/Base/Config/BinaryFileClass.cs" />
         <option value="$PROJECT_DIR$/Core/Base/Actor/Actor.cs" />
-        <option value="$PROJECT_DIR$/Core/Module/Network/Base/NetworkChannel.cs" />
-        <option value="$PROJECT_DIR$/Core/Base/Event/Message/MessageDispatcher.cs" />
-        <option value="$PROJECT_DIR$/Core/Base/Event/Message/RpcMessageHandler.cs" />
-        <option value="$PROJECT_DIR$/Core/Base/Event/Message/MessageHandler.cs" />
-        <option value="$PROJECT_DIR$/Core/Module/Network/WebSocket/WebSocketComponent.cs" />
-        <option value="$PROJECT_DIR$/Core/Module/Network/HTTP/HttpComponent.cs" />
-        <option value="$PROJECT_DIR$/Core/Module/Network/NetworkComponent.cs" />
-        <option value="$PROJECT_DIR$/Core/Module/Network/Base/IMessageHandler.cs" />
-        <option value="$PROJECT_DIR$/Core/Module/Network/TCP/TCPChannelComponent.cs" />
-        <option value="$PROJECT_DIR$/Core/Module/Network/TCP/TCPComponent.cs" />
-        <option value="$PROJECT_DIR$/Core/Module/Network/WebSocket/WebSocketChannelComponent.cs" />
-        <option value="$PROJECT_DIR$/Core/Base/Event/Message/HttpMessageHandler.cs" />
-        <option value="$PROJECT_DIR$/App/Program.cs" />
-        <option value="$PROJECT_DIR$/Model/Base/Network/NetOuterComponent.cs" />
-        <option value="$PROJECT_DIR$/Hotfix/TestMessageHandler.cs" />
+        <option value="$PROJECT_DIR$/Core/Base/Component/IBson.cs" />
+        <option value="$PROJECT_DIR$/Model/Config/Entity/SceneConfig.cs" />
+        <option value="$PROJECT_DIR$/../Tools/ExcelToCS/TemplateConst.cs" />
+        <option value="$PROJECT_DIR$/Core/Module/ComponentEventComponent.cs" />
+        <option value="$PROJECT_DIR$/Core/Module/ComponentEventManagement.cs" />
+        <option value="$PROJECT_DIR$/Core/Base/Tools/SerializationHelper.cs" />
+        <option value="$PROJECT_DIR$/Core/Base/Event/EventManagement.cs" />
+        <option value="$PROJECT_DIR$/Core/Module/ComponentManagement.cs" />
+        <option value="$PROJECT_DIR$/Core/Base/Event/Message/MessageDispatcherManagement.cs" />
+        <option value="$PROJECT_DIR$/Core/Module/SystemEventComponent.cs" />
+        <option value="$PROJECT_DIR$/Core/Module/Network/NetworkProtocolManagement.cs" />
+        <option value="$PROJECT_DIR$/Core/Base/Component/Component.cs" />
+        <option value="$PROJECT_DIR$/Core/Base/Component/ComponentFactory.cs" />
         <option value="$PROJECT_DIR$/Core/Module/Session.cs" />
-        <option value="$PROJECT_DIR$/Core/Module/Network/PacketParser.cs" />
-        <option value="$PROJECT_DIR$/Core/Module/Network/Http/HttpComponent.cs" />
+        <option value="$PROJECT_DIR$/Core/Base/Tools/AssemblyManagement.cs" />
+        <option value="$PROJECT_DIR$/Model/Base/Config/AConfig.cs" />
+        <option value="$PROJECT_DIR$/Core/Module/ConfigManagement.cs" />
+        <option value="$PROJECT_DIR$/Core/Module/ConfigManagementComponent.cs" />
+        <option value="$PROJECT_DIR$/../Tools/ExcelToCS/Program.cs" />
+        <option value="$PROJECT_DIR$/Core/Base/Tools/SiningSystem.cs" />
+        <option value="$PROJECT_DIR$/App/Program.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1XnihWVkx3OZWd1b4UXqTbRDVhM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -201,9 +270,11 @@
   <component name="PropertiesComponent">
     <property name="Rider.SolutionExplorerActivator" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TWShift.3" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="SolutionBuilderGeneralOptionsPageId" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected=".NET Project.Server.App">
     <configuration name="Server.App" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/../Bin/Server.App.dll" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -222,6 +293,29 @@
         <option name="Build" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Tools\ExcelToCS" type="DotNetProject" factoryName=".NET Project" temporary="true">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../Tools/ExcelToCS/bin/Debug/netcoreapp3.1/ExcelToCS.dll" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Tools/ExcelToCS/bin/Debug/netcoreapp3.1" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/../Tools/ExcelToCS/ExcelToCS.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v3.1" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue=".NET Project.Tools\ExcelToCS" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -248,6 +342,9 @@
       <workItem from="1581688380332" duration="12174000" />
       <workItem from="1581739015474" duration="180452000" />
       <workItem from="1582599057762" duration="108972000" />
+      <workItem from="1582856423882" duration="2893000" />
+      <workItem from="1582961996676" duration="53108000" />
+      <workItem from="1583064007802" duration="14568000" />
     </task>
     <servers />
   </component>
@@ -256,6 +353,11 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+  </component>
   <component name="WindowStateProjectService">
     <state x="486" y="175" key="#Server.App" timestamp="1581739123089">
       <screen x="0" y="23" width="1680" height="947" />
@@ -265,109 +367,113 @@
       <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state x="304" y="158" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.947@0.23.1680.947" timestamp="1581739421373" />
-    <state x="121" y="200" key="#xdebugger.evaluate" timestamp="1582814834326">
+    <state x="121" y="200" width="1375" height="637" key="#xdebugger.evaluate" timestamp="1583065583094">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
-    <state x="121" y="200" key="#xdebugger.evaluate/0.23.1680.947@0.23.1680.947" timestamp="1582814834326" />
-    <state width="506" height="466" key="DebuggerActiveHint" timestamp="1582817027902">
+    <state x="121" y="200" width="1375" height="637" key="#xdebugger.evaluate/0.23.1680.947@0.23.1680.947" timestamp="1583065583094" />
+    <state width="543" height="466" key="DebuggerActiveHint" timestamp="1583078442307">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
-    <state width="506" height="466" key="DebuggerActiveHint/0.23.1680.947@0.23.1680.947" timestamp="1582817027902" />
-    <state width="1638" height="418" key="GridCell.Tab.0.bottom" timestamp="1582818643898">
+    <state width="543" height="466" key="DebuggerActiveHint/0.23.1680.947@0.23.1680.947" timestamp="1583078442307" />
+    <state width="1638" height="490" key="GridCell.Tab.0.bottom" timestamp="1583078443449">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
-    <state width="1638" height="418" key="GridCell.Tab.0.bottom/0.23.1680.947@0.23.1680.947" timestamp="1582818643898" />
-    <state width="1638" height="418" key="GridCell.Tab.0.center" timestamp="1582818643898">
+    <state width="1638" height="490" key="GridCell.Tab.0.bottom/0.23.1680.947@0.23.1680.947" timestamp="1583078443449" />
+    <state width="1638" height="490" key="GridCell.Tab.0.center" timestamp="1583078443448">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
-    <state width="1638" height="418" key="GridCell.Tab.0.center/0.23.1680.947@0.23.1680.947" timestamp="1582818643898" />
-    <state width="1638" height="418" key="GridCell.Tab.0.left" timestamp="1582818643897">
+    <state width="1638" height="490" key="GridCell.Tab.0.center/0.23.1680.947@0.23.1680.947" timestamp="1583078443448" />
+    <state width="1638" height="490" key="GridCell.Tab.0.left" timestamp="1583078443448">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
-    <state width="1638" height="418" key="GridCell.Tab.0.left/0.23.1680.947@0.23.1680.947" timestamp="1582818643897" />
-    <state width="1638" height="418" key="GridCell.Tab.0.right" timestamp="1582818643898">
+    <state width="1638" height="490" key="GridCell.Tab.0.left/0.23.1680.947@0.23.1680.947" timestamp="1583078443448" />
+    <state width="1638" height="490" key="GridCell.Tab.0.right" timestamp="1583078443448">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
-    <state width="1638" height="418" key="GridCell.Tab.0.right/0.23.1680.947@0.23.1680.947" timestamp="1582818643898" />
-    <state width="1638" height="554" key="GridCell.Tab.1.bottom" timestamp="1582818047452">
+    <state width="1638" height="490" key="GridCell.Tab.0.right/0.23.1680.947@0.23.1680.947" timestamp="1583078443448" />
+    <state width="1638" height="490" key="GridCell.Tab.1.bottom" timestamp="1583078443450">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
-    <state width="1638" height="554" key="GridCell.Tab.1.bottom/0.23.1680.947@0.23.1680.947" timestamp="1582818047452" />
-    <state width="1638" height="554" key="GridCell.Tab.1.center" timestamp="1582818047451">
+    <state width="1638" height="490" key="GridCell.Tab.1.bottom/0.23.1680.947@0.23.1680.947" timestamp="1583078443450" />
+    <state width="1638" height="490" key="GridCell.Tab.1.center" timestamp="1583078443449">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
-    <state width="1638" height="554" key="GridCell.Tab.1.center/0.23.1680.947@0.23.1680.947" timestamp="1582818047451" />
-    <state width="1638" height="554" key="GridCell.Tab.1.left" timestamp="1582818047451">
+    <state width="1638" height="490" key="GridCell.Tab.1.center/0.23.1680.947@0.23.1680.947" timestamp="1583078443449" />
+    <state width="1638" height="490" key="GridCell.Tab.1.left" timestamp="1583078443449">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
-    <state width="1638" height="554" key="GridCell.Tab.1.left/0.23.1680.947@0.23.1680.947" timestamp="1582818047451" />
-    <state width="1638" height="554" key="GridCell.Tab.1.right" timestamp="1582818047452">
+    <state width="1638" height="490" key="GridCell.Tab.1.left/0.23.1680.947@0.23.1680.947" timestamp="1583078443449" />
+    <state width="1638" height="490" key="GridCell.Tab.1.right" timestamp="1583078443450">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
-    <state width="1638" height="554" key="GridCell.Tab.1.right/0.23.1680.947@0.23.1680.947" timestamp="1582818047452" />
-    <state width="1638" height="554" key="GridCell.Tab.2.bottom" timestamp="1582818047452">
+    <state width="1638" height="490" key="GridCell.Tab.1.right/0.23.1680.947@0.23.1680.947" timestamp="1583078443450" />
+    <state width="1638" height="490" key="GridCell.Tab.2.bottom" timestamp="1583078443450">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
-    <state width="1638" height="554" key="GridCell.Tab.2.bottom/0.23.1680.947@0.23.1680.947" timestamp="1582818047452" />
-    <state width="1638" height="554" key="GridCell.Tab.2.center" timestamp="1582818047452">
+    <state width="1638" height="490" key="GridCell.Tab.2.bottom/0.23.1680.947@0.23.1680.947" timestamp="1583078443450" />
+    <state width="1638" height="490" key="GridCell.Tab.2.center" timestamp="1583078443450">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
-    <state width="1638" height="554" key="GridCell.Tab.2.center/0.23.1680.947@0.23.1680.947" timestamp="1582818047452" />
-    <state width="1638" height="554" key="GridCell.Tab.2.left" timestamp="1582818047452">
+    <state width="1638" height="490" key="GridCell.Tab.2.center/0.23.1680.947@0.23.1680.947" timestamp="1583078443450" />
+    <state width="1638" height="490" key="GridCell.Tab.2.left" timestamp="1583078443450">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
-    <state width="1638" height="554" key="GridCell.Tab.2.left/0.23.1680.947@0.23.1680.947" timestamp="1582818047452" />
-    <state width="1638" height="554" key="GridCell.Tab.2.right" timestamp="1582818047452">
+    <state width="1638" height="490" key="GridCell.Tab.2.left/0.23.1680.947@0.23.1680.947" timestamp="1583078443450" />
+    <state width="1638" height="490" key="GridCell.Tab.2.right" timestamp="1583078443450">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
-    <state width="1638" height="554" key="GridCell.Tab.2.right/0.23.1680.947@0.23.1680.947" timestamp="1582818047452" />
-    <state width="1638" height="554" key="GridCell.Tab.3.bottom" timestamp="1582818047453">
+    <state width="1638" height="490" key="GridCell.Tab.2.right/0.23.1680.947@0.23.1680.947" timestamp="1583078443450" />
+    <state width="1638" height="490" key="GridCell.Tab.3.bottom" timestamp="1583078443451">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
-    <state width="1638" height="554" key="GridCell.Tab.3.bottom/0.23.1680.947@0.23.1680.947" timestamp="1582818047453" />
-    <state width="1638" height="554" key="GridCell.Tab.3.center" timestamp="1582818047453">
+    <state width="1638" height="490" key="GridCell.Tab.3.bottom/0.23.1680.947@0.23.1680.947" timestamp="1583078443451" />
+    <state width="1638" height="490" key="GridCell.Tab.3.center" timestamp="1583078443451">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
-    <state width="1638" height="554" key="GridCell.Tab.3.center/0.23.1680.947@0.23.1680.947" timestamp="1582818047453" />
-    <state width="1638" height="554" key="GridCell.Tab.3.left" timestamp="1582818047453">
+    <state width="1638" height="490" key="GridCell.Tab.3.center/0.23.1680.947@0.23.1680.947" timestamp="1583078443451" />
+    <state width="1638" height="490" key="GridCell.Tab.3.left" timestamp="1583078443451">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
-    <state width="1638" height="554" key="GridCell.Tab.3.left/0.23.1680.947@0.23.1680.947" timestamp="1582818047453" />
-    <state width="1638" height="554" key="GridCell.Tab.3.right" timestamp="1582818047453">
+    <state width="1638" height="490" key="GridCell.Tab.3.left/0.23.1680.947@0.23.1680.947" timestamp="1583078443451" />
+    <state width="1638" height="490" key="GridCell.Tab.3.right" timestamp="1583078443451">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
-    <state width="1638" height="554" key="GridCell.Tab.3.right/0.23.1680.947@0.23.1680.947" timestamp="1582818047453" />
-    <state width="1638" height="554" key="GridCell.Tab.4.bottom" timestamp="1582818047454">
+    <state width="1638" height="490" key="GridCell.Tab.3.right/0.23.1680.947@0.23.1680.947" timestamp="1583078443451" />
+    <state width="1638" height="490" key="GridCell.Tab.4.bottom" timestamp="1583078443452">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
-    <state width="1638" height="554" key="GridCell.Tab.4.bottom/0.23.1680.947@0.23.1680.947" timestamp="1582818047454" />
-    <state width="1638" height="554" key="GridCell.Tab.4.center" timestamp="1582818047454">
+    <state width="1638" height="490" key="GridCell.Tab.4.bottom/0.23.1680.947@0.23.1680.947" timestamp="1583078443452" />
+    <state width="1638" height="490" key="GridCell.Tab.4.center" timestamp="1583078443451">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
-    <state width="1638" height="554" key="GridCell.Tab.4.center/0.23.1680.947@0.23.1680.947" timestamp="1582818047454" />
-    <state width="1638" height="554" key="GridCell.Tab.4.left" timestamp="1582818047453">
+    <state width="1638" height="490" key="GridCell.Tab.4.center/0.23.1680.947@0.23.1680.947" timestamp="1583078443451" />
+    <state width="1638" height="490" key="GridCell.Tab.4.left" timestamp="1583078443451">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
-    <state width="1638" height="554" key="GridCell.Tab.4.left/0.23.1680.947@0.23.1680.947" timestamp="1582818047453" />
-    <state width="1638" height="554" key="GridCell.Tab.4.right" timestamp="1582818047454">
+    <state width="1638" height="490" key="GridCell.Tab.4.left/0.23.1680.947@0.23.1680.947" timestamp="1583078443451" />
+    <state width="1638" height="490" key="GridCell.Tab.4.right" timestamp="1583078443451">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
-    <state width="1638" height="554" key="GridCell.Tab.4.right/0.23.1680.947@0.23.1680.947" timestamp="1582818047454" />
-    <state x="440" y="235" key="Rider.ProjectTemplateDialog.Size" timestamp="1582253509113">
+    <state width="1638" height="490" key="GridCell.Tab.4.right/0.23.1680.947@0.23.1680.947" timestamp="1583078443451" />
+    <state x="440" y="235" key="Rider.ProjectTemplateDialog.Size" timestamp="1582975586398">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
-    <state x="440" y="235" key="Rider.ProjectTemplateDialog.Size/0.23.1680.947@0.23.1680.947" timestamp="1582253509113" />
-    <state x="637" y="219" key="RiderGenerateDialog" timestamp="1582812618246">
+    <state x="440" y="235" key="Rider.ProjectTemplateDialog.Size/0.23.1680.947@0.23.1680.947" timestamp="1582975586398" />
+    <state x="637" y="219" key="RiderGenerateDialog" timestamp="1582974429614">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
-    <state x="637" y="219" key="RiderGenerateDialog/0.23.1680.947@0.23.1680.947" timestamp="1582812618246" />
+    <state x="637" y="219" key="RiderGenerateDialog/0.23.1680.947@0.23.1680.947" timestamp="1582974429614" />
+    <state x="341" y="135" key="SettingsEditor" timestamp="1583055970133">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state x="341" y="135" key="SettingsEditor/0.23.1680.947@0.23.1680.947" timestamp="1583055970133" />
     <state x="496" y="253" width="688" height="486" key="find.popup" timestamp="1582208855364">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state x="496" y="253" width="688" height="486" key="find.popup/0.23.1680.947@0.23.1680.947" timestamp="1582208855364" />
-    <state x="609" y="122" width="905" height="685" key="search.everywhere.popup" timestamp="1582797199496">
+    <state x="609" y="122" width="905" height="685" key="search.everywhere.popup" timestamp="1583075069214">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
-    <state x="609" y="122" width="905" height="685" key="search.everywhere.popup/0.23.1680.947@0.23.1680.947" timestamp="1582797199496" />
+    <state x="609" y="122" width="905" height="685" key="search.everywhere.popup/0.23.1680.947@0.23.1680.947" timestamp="1583075069214" />
   </component>
 </project>

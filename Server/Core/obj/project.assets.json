@@ -10,6 +10,16 @@
         "runtime": {
           "lib/netstandard2.0/NLog.dll": {}
         }
+      },
+      "MongoDB.Bson/0.0.0-local": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/MongoDB.Bson.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MongoDB.Bson.dll": {}
+        }
       }
     }
   },
@@ -46,10 +56,16 @@
         "nlog.4.6.8.nupkg.sha512",
         "nlog.nuspec"
       ]
+    },
+    "MongoDB.Bson/0.0.0-local": {
+      "type": "project",
+      "path": "../ThirdPartyPlugin/MongoDB/MongoDB.Bson/MongoDB.Bson.csproj",
+      "msbuildProject": "../ThirdPartyPlugin/MongoDB/MongoDB.Bson/MongoDB.Bson.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "MongoDB.Bson >= 0.0.0-local",
       "NLog >= 4.6.8"
     ]
   },
@@ -76,7 +92,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/sining/Code/Sining/Server/ThirdPartyPlugin/MongoDB/MongoDB.Bson/MongoDB.Bson.csproj": {
+              "projectPath": "/Users/sining/Code/Sining/Server/ThirdPartyPlugin/MongoDB/MongoDB.Bson/MongoDB.Bson.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

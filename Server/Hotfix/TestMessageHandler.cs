@@ -24,13 +24,13 @@ namespace Server.Hotfix
             Log.Debug($"接收到一个消息：UserName:{message.UserName} PassWord:{message.PassWord} ThreadId:{Thread.CurrentThread.ManagedThreadId}");
         }
     }
-    
+
     [MessageSystem]
-    public class GetNameRequestHandler : HttpMessageHandler<GetNameRequest,GetNameResponse>
+    public class GetNameRequestHandler : HttpMessageHandler<GetNameRequest, GetNameResponse>
     {
         protected override void Run(Session session, GetNameRequest request, GetNameResponse response)
         {
-            response.Name = request.Name+"1233444";
+            response.Name = request.Name + "1233444";
 
             Log.Debug($"接收到一个消息：GetNameRequest:{request.Name} ThreadId:{Thread.CurrentThread.ManagedThreadId}");
         }

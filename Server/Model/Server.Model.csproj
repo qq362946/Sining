@@ -4,15 +4,30 @@
         <TargetFramework>netcoreapp3.1</TargetFramework>
     </PropertyGroup>
 
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <OutputPath>../../Bin/</OutputPath>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+      <OutputPath>../../Bin/</OutputPath>
+    </PropertyGroup>
+
     <ItemGroup>
       <ProjectReference Include="..\Core\Server.Core.csproj" />
       <ProjectReference Include="..\ThirdPartyPlugin\Google.Protobuf\Google.Protobuf.csproj" />
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="Base\Config" />
       <Folder Include="Base\Network\Interface" />
       <Folder Include="Base\Network\MessageProtocol" />
       <Folder Include="Base\Network\Message\Interface" />
+      <Folder Include="Config\Data" />
+      <Folder Include="Config\Entity" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="CommandLineParser" Version="2.7.82" />
     </ItemGroup>
 
 </Project>

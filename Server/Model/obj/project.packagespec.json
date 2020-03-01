@@ -32,6 +32,12 @@
   },
   "frameworks": {
     "netcoreapp3.1": {
+      "dependencies": {
+        "CommandLineParser": {
+          "target": "Package",
+          "version": "[2.7.82, )"
+        }
+      },
       "imports": [
         "net461",
         "net462",

@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "CommandLineParser/2.7.82": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/CommandLine.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/CommandLine.dll": {}
+        }
+      },
       "NLog/4.6.8": {
         "type": "package",
         "compile": {
@@ -21,10 +30,21 @@
           "bin/placeholder/Google.Protobuf.dll": {}
         }
       },
+      "MongoDB.Bson/0.0.0-local": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/MongoDB.Bson.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MongoDB.Bson.dll": {}
+        }
+      },
       "Server.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "MongoDB.Bson": "0.0.0-local",
           "NLog": "4.6.8"
         },
         "compile": {
@@ -53,6 +73,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "CommandLineParser": "2.7.82",
           "Google.Protobuf": "1.0.0",
           "Server.Core": "1.0.0"
         },
@@ -66,6 +87,28 @@
     }
   },
   "libraries": {
+    "CommandLineParser/2.7.82": {
+      "sha512": "JnjxBu4++EDnYtDzHskiPrPJ9hAna8amu8qlQx8J+2oZnPddDnkR/0FFtQMDz0Cs0YF2lbyW3OmYfRmIrLNY0A==",
+      "type": "package",
+      "path": "commandlineparser/2.7.82",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CommandLine20.png",
+        "License.md",
+        "README.md",
+        "commandlineparser.2.7.82.nupkg.sha512",
+        "commandlineparser.nuspec",
+        "lib/net40/CommandLine.dll",
+        "lib/net40/CommandLine.xml",
+        "lib/net45/CommandLine.dll",
+        "lib/net45/CommandLine.xml",
+        "lib/net461/CommandLine.dll",
+        "lib/net461/CommandLine.xml",
+        "lib/netstandard2.0/CommandLine.dll",
+        "lib/netstandard2.0/CommandLine.xml"
+      ]
+    },
     "NLog/4.6.8": {
       "sha512": "LKB0uN5naOTxdNz++iapk6arNYv2asE8FPRBAmQZ1fe8y8C1Zm6sldh/w9TP/w5s7FGK8s0x6ny0og5ytFK1oQ==",
       "type": "package",
@@ -103,6 +146,11 @@
       "type": "project",
       "path": "../ThirdPartyPlugin/Google.Protobuf/Google.Protobuf.csproj",
       "msbuildProject": "../ThirdPartyPlugin/Google.Protobuf/Google.Protobuf.csproj"
+    },
+    "MongoDB.Bson/0.0.0-local": {
+      "type": "project",
+      "path": "../ThirdPartyPlugin/MongoDB/MongoDB.Bson/MongoDB.Bson.csproj",
+      "msbuildProject": "../ThirdPartyPlugin/MongoDB/MongoDB.Bson/MongoDB.Bson.csproj"
     },
     "Server.Core/1.0.0": {
       "type": "project",

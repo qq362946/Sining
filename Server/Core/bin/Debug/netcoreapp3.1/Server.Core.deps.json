@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v3.1": {
       "Server.Core/1.0.0": {
         "dependencies": {
+          "MongoDB.Bson": "0.0.0-local",
           "NLog": "4.6.8"
         },
         "runtime": {
@@ -20,6 +21,11 @@
             "assemblyVersion": "4.0.0.0",
             "fileVersion": "4.6.8.10751"
           }
+        }
+      },
+      "MongoDB.Bson/0.0.0-local": {
+        "runtime": {
+          "MongoDB.Bson.dll": {}
         }
       }
     }
@@ -36,6 +42,11 @@
       "sha512": "sha512-LKB0uN5naOTxdNz++iapk6arNYv2asE8FPRBAmQZ1fe8y8C1Zm6sldh/w9TP/w5s7FGK8s0x6ny0og5ytFK1oQ==",
       "path": "nlog/4.6.8",
       "hashPath": "nlog.4.6.8.nupkg.sha512"
+    },
+    "MongoDB.Bson/0.0.0-local": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
