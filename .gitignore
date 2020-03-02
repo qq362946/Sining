@@ -1,7 +1,36 @@
 # Specify filepatterns you want git to ignore.
+# MAC生成的一个文件
 *.DS_Store
+# 工程编译后的目录和日志
 /Bin
 /Logs
-bin
-obj
+# 其他工程下的bin文件夹
+/Tools/Excel2CS/bin
+/Tools/Export2Other/bin
+/Tools/ProtoBufTool/bin
+/Server/App/bin
+/Server/Core/bin
+/Server/Hotfix/bin
+/Server/Model/bin
+/Server/ThirdPartyPlugin/Google.Protobuf/bin
+/Server/ThirdPartyPlugin/MongoDB/MongoDB.Bson/bin
+/Server/ThirdPartyPlugin/MongoDB/MongoDB.Driver/bin
+/Server/ThirdPartyPlugin/MongoDB/MongoDB.Driver.Core/bin
+/Server/ThirdPartyPlugin/MongoDB/MongoDB.Driver.GridFS/bin
+/Server/ThirdPartyPlugin/MongoDB/MongoDB.Driver.Legacy/bin
+# 其他工程下的obj文件夹
+/Tools/Excel2CS/obj
+/Tools/Export2Other/obj
+/Tools/ProtoBufTool/obj
+/Server/App/obj
+/Server/Core/obj
+/Server/Hotfix/obj
+/Server/Model/obj
+/Server/ThirdPartyPlugin/Google.Protobuf/obj
+/Server/ThirdPartyPlugin/MongoDB/MongoDB.Bson/obj
+/Server/ThirdPartyPlugin/MongoDB/MongoDB.Driver/obj
+/Server/ThirdPartyPlugin/MongoDB/MongoDB.Driver.Core/obj
+/Server/ThirdPartyPlugin/MongoDB/MongoDB.Driver.GridFS/obj
+/Server/ThirdPartyPlugin/MongoDB/MongoDB.Driver.Legacy/obj
+# Rider生成的一个文件夹
 .idea
