@@ -40,25 +40,31 @@ namespace Sining.Core
                     {
                         for (;;)
                         {
-                            if (!_queue.TryDequeue(out var action))
+                            try
                             {
-                                Thread.Sleep(1);
-                                continue;
-                            }
+                                if (!_queue.TryDequeue(out var action))
+                                {
+                                    Thread.Sleep(1);
+                                    continue;
+                                }
 
-                            action();
+                                action();
+                            }
+                            catch (Exception e)
+                            {
+                                Log.Error(e);
+                            }
                         }
                     }
                     catch (Exception e)
                     {
-                        Console.WriteLine(e);
-                        throw;
+                        Log.Error(e);
                     }
                 })
                 {
                     IsBackground = true
                 };
-                
+
                 _taskThread.Start();
             }
             catch (Exception e)

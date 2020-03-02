@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Runtime.InteropServices;
 using System.Text;
+using Sining.Tools;
 
 namespace Sining.ProtoBufTool
 {
@@ -52,7 +53,7 @@ namespace Sining.ProtoBufTool
             ProcessHelper.Run(
                 Path.Combine(ProtoBufPath, protoToolName),
                 $"--proto_path=./ {OuterMessageName} --csharp_out={ServerPath}",
-                ProtoBufPath);
+                ProtoBufPath, true);
 
             OuterOpcode();
             

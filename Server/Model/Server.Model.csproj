@@ -1,8 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-    <PropertyGroup>
+    <PropertyGroup>        
         <TargetFramework>netcoreapp3.1</TargetFramework>
     </PropertyGroup>
+    <PropertyGroup>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
       <OutputPath>../../Bin/</OutputPath>
@@ -18,7 +21,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Base\Config" />
       <Folder Include="Base\Network\Interface" />
       <Folder Include="Base\Network\MessageProtocol" />
       <Folder Include="Base\Network\Message\Interface" />

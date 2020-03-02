@@ -68,7 +68,7 @@ namespace Sining.Module
             return GetChild<Session>(instanceId);
         }
 
-        public void Remove(long instanceId)
+        public virtual void Remove(long instanceId)
         {
             RemoveChild(instanceId);
         }

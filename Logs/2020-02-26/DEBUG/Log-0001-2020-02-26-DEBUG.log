@@ -1,4 +1,0 @@
-2020-02-26 18:10:25.3951 0001 DEBUG (TCPChannelComponent.cs:109) 收到一个连接完成127.0.0.1:53849 ThreadId:9
-2020-02-26 18:11:01.6856 0001 DEBUG (TCPChannelComponent.cs:109) 收到一个连接完成127.0.0.1:53892 ThreadId:5
-2020-02-26 18:13:12.6514 0001 DEBUG (TCPChannelComponent.cs:109) 收到一个连接完成127.0.0.1:53994 ThreadId:9
-2020-02-26 18:13:52.4384 0001 DEBUG (TCPChannelComponent.cs:109) 收到一个连接完成127.0.0.1:54080 ThreadId:10

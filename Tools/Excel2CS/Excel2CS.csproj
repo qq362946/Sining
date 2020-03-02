@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <RootNamespace>ExcelToCS</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="ExcelDataReader" Version="3.6.0" />
+      <PackageReference Include="ExcelDataReader.DataSet" Version="3.6.0" />
+      <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="3.4.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Server\Core\Server.Core.csproj" />
+      <ProjectReference Include="..\..\Server\Model\Server.Model.csproj" />
+      <ProjectReference Include="..\..\Server\ThirdPartyPlugin\Google.Protobuf\Google.Protobuf.csproj" />
+      <ProjectReference Include="..\..\Server\ThirdPartyPlugin\MongoDB\MongoDB.Bson\MongoDB.Bson.csproj" />
+    </ItemGroup>
+
+</Project>

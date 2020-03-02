@@ -5,10 +5,4 @@
         <TargetFramework>netcoreapp3.1</TargetFramework>
     </PropertyGroup>
 
-    <ItemGroup>
-      <Compile Include="..\..\Server\Core\Base\Tools\ProcessHelper.cs">
-        <Link>ProcessHelper.cs</Link>
-      </Compile>
-    </ItemGroup>
-
 </Project>

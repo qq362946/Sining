@@ -26,7 +26,7 @@ namespace Server.Hotfix
     }
 
     [MessageSystem]
-    public class GetNameRequestHandler : HttpMessageHandler<GetNameRequest, GetNameResponse>
+    public class GetNameRequestHandler : HTTPHandler<GetNameRequest, GetNameResponse>
     {
         protected override void Run(Session session, GetNameRequest request, GetNameResponse response)
         {

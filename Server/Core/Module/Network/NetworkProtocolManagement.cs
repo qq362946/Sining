@@ -12,7 +12,7 @@ namespace Server.Network
     {
         public static NetworkProtocolManagement Instance;
         
-        private readonly DoubleMapDIc<ushort, Type> _messageEvents = new DoubleMapDIc<ushort, Type>();
+        private readonly DoubleMapDictionary<ushort, Type> _messageEvents = new DoubleMapDictionary<ushort, Type>();
 
         public void Init()
         {

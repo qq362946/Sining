@@ -3,7 +3,7 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace Sining.Config
 {
-	public partial class ServerConfig : IConfig, IBson
+	public partial class ServerConfig : IConfig, IObject
 	{
 		public int Id { get; set; }
 		[BsonDefaultValue("")]

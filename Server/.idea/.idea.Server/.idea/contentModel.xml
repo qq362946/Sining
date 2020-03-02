@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="$PROJECT_DIR$/../bin" t="ExcludeRecursive">
-      <e p="netcoreapp3.1" t="ExcludeRecursive" />
-    </e>
+    <e p="$PROJECT_DIR$/../bin" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="App" t="IncludeRecursive">
         <e p="NLog.config" t="Include" />
@@ -20,7 +18,6 @@
         <e p="Server.App.csproj" t="IncludeRecursive" />
       </e>
       <e p="Core" t="IncludeRecursive">
-        <e p="App.cs" t="Include" />
         <e p="Base" t="Include">
           <e p="Actor" t="Include">
             <e p="Actor.cs" t="Include" />
@@ -44,16 +41,11 @@
           <e p="Component" t="Include">
             <e p="Component.cs" t="Include" />
             <e p="ComponentFactory.cs" t="Include" />
-            <e p="IBson.cs" t="Include" />
-          </e>
-          <e p="Config" t="Include">
-            <e p="AConfig.cs" t="Include" />
-            <e p="ConfigAttribute.cs" t="Include" />
-            <e p="IConfig.cs" t="Include" />
+            <e p="IObject.cs" t="Include" />
           </e>
           <e p="DataStructure" t="Include">
             <e p="CircularBuffer.cs" t="Include" />
-            <e p="DoubleMapDIc.cs" t="Include" />
+            <e p="DoubleMapDictionary.cs" t="Include" />
             <e p="OneToManyDic.cs" t="Include" />
             <e p="OneToManyHashSet.cs" t="Include" />
             <e p="OneToManyList.cs" t="Include" />
@@ -62,22 +54,9 @@
           <e p="Event" t="Include">
             <e p="Attribute" t="Include">
               <e p="BaseAttribute.cs" t="Include" />
-              <e p="ComponentSystemAttribute.cs" t="Include" />
-              <e p="EventSystemAttribute.cs" t="Include" />
-              <e p="MessageSystemAttribute.cs" t="Include" />
-            </e>
-            <e p="Component" t="Include">
-              <e p="AwakeSystem.cs" t="Include" />
-              <e p="DestroySystem.cs" t="Include" />
             </e>
             <e p="EventHandlerSystem.cs" t="Include" />
             <e p="IEvent.cs" t="Include" />
-            <e p="Message" t="Include">
-              <e p="HttpMessageHandler.cs" t="Include" />
-              <e p="MessageDispatcherManagement.cs" t="Include" />
-              <e p="MessageHandler.cs" t="Include" />
-              <e p="RpcMessageHandler.cs" t="Include" />
-            </e>
           </e>
           <e p="Task" t="Include">
             <e p="TaskProcessingComponent.cs" t="Include" />
@@ -88,6 +67,7 @@
             <e p="Log.cs" t="Include" />
             <e p="NetworkHelper.cs" t="Include" />
             <e p="ObjectPool.cs" t="Include" />
+            <e p="ProcessHelper.cs" t="Include" />
             <e p="RecyclableMemoryStream" t="Include">
               <e p="Events.cs" t="Include" />
               <e p="MemoryStreamPool.cs" t="Include" />
@@ -95,14 +75,29 @@
               <e p="RecyclableMemoryStreamManager.cs" t="Include" />
             </e>
             <e p="SerializationHelper.cs" t="Include" />
-            <e p="SiningSystem.cs" t="Include" />
             <e p="TimeHelper.cs" t="Include" />
           </e>
         </e>
-        <e p="bin" t="ExcludeRecursive" />
         <e p="Module" t="Include">
-          <e p="ComponentManagement.cs" t="Include" />
-          <e p="ConfigManagementComponent.cs" t="Include" />
+          <e p="ComponentManagement" t="Include">
+            <e p="AwakeSystem.cs" t="Include" />
+            <e p="ComponentManagement.cs" t="Include" />
+            <e p="ComponentSystemAttribute.cs" t="Include" />
+            <e p="DestroySystem.cs" t="Include" />
+          </e>
+          <e p="ConfigManagementComponent" t="Include">
+            <e p="AConfig.cs" t="Include" />
+            <e p="ConfigAttribute.cs" t="Include" />
+            <e p="ConfigManagementComponent.cs" t="Include" />
+            <e p="IConfig.cs" t="Include" />
+          </e>
+          <e p="MessageDispatcherManagement" t="Include">
+            <e p="HTTPHandler.cs" t="Include" />
+            <e p="MessageDispatcherManagement.cs" t="Include" />
+            <e p="MessageHandler.cs" t="Include" />
+            <e p="MessageSystemAttribute.cs" t="Include" />
+            <e p="RpcMessageHandler.cs" t="Include" />
+          </e>
           <e p="Network" t="Include">
             <e p="Base" t="Include">
               <e p="AMessagePacker.cs" t="Include" />
@@ -132,16 +127,15 @@
               <e p="WebSocketComponent.cs" t="Include" />
             </e>
           </e>
-          <e p="ProcessWatcherComponent.cs" t="Include" />
-          <e p="Scene.cs" t="Include" />
           <e p="Session.cs" t="Include" />
-          <e p="SystemEventComponent.cs" t="Include" />
+          <e p="SystemEventComponent" t="Include">
+            <e p="EventSystemAttribute.cs" t="Include" />
+            <e p="SystemEventComponent.cs" t="Include" />
+          </e>
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
-              <e p="Server.Core.AssemblyInfo.cs" t="Include" />
-            </e>
+            <e p="Server.Core.AssemblyInfo.cs" t="Include" />
           </e>
         </e>
         <e p="Server.Core.csproj" t="IncludeRecursive" />
@@ -149,9 +143,7 @@
       <e p="Hotfix" t="IncludeRecursive">
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
-              <e p="Server.Hotfix.AssemblyInfo.cs" t="Include" />
-            </e>
+            <e p="Server.Hotfix.AssemblyInfo.cs" t="Include" />
           </e>
         </e>
         <e p="Server.Hotfix.csproj" t="IncludeRecursive" />
@@ -162,7 +154,6 @@
           <e p="CommandLine" t="Include">
             <e p="Options.cs" t="Include" />
           </e>
-          <e p="Config" t="Include" />
           <e p="Network" t="Include">
             <e p="Interface" t="Include" />
             <e p="Message" t="Include">
@@ -173,13 +164,19 @@
             <e p="MessageProtocol" t="Include">
               <e p="ProtobufMessagePacker.cs" t="Include" />
             </e>
-            <e p="NetInnerComponent.cs" t="Include" />
-            <e p="NetOuterComponent.cs" t="Include" />
           </e>
-          <e p="SceneType.cs" t="Include" />
-          <e p="ServerType.cs" t="Include" />
+          <e p="Scene" t="Include">
+            <e p="Scene.cs" t="Include" />
+            <e p="SceneFactory.cs" t="Include" />
+            <e p="SceneType.cs" t="Include" />
+          </e>
+          <e p="Server" t="Include">
+            <e p="ServerFactory.cs" t="Include" />
+            <e p="ServerType.cs" t="Include" />
+          </e>
           <e p="Tools" t="Include">
             <e p="ProtobufHelper.cs" t="Include" />
+            <e p="SiningSystem.cs" t="Include" />
           </e>
         </e>
         <e p="Config" t="Include">
@@ -191,12 +188,19 @@
             <e p="SceneConfig.cs" t="Include" />
             <e p="ServerConfig.cs" t="Include" />
           </e>
+          <e p="Partial" t="Include">
+            <e p="SceneConfigData.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Module" t="Include">
+          <e p="App.cs" t="Include" />
+          <e p="NetInnerComponent.cs" t="Include" />
+          <e p="NetOuterComponent.cs" t="Include" />
+          <e p="ProcessWatcherComponent.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
-              <e p="Server.Model.AssemblyInfo.cs" t="Include" />
-            </e>
+            <e p="Server.Model.AssemblyInfo.cs" t="Include" />
           </e>
         </e>
         <e p="Server.Model.csproj" t="IncludeRecursive" />
@@ -1923,20 +1927,36 @@
       </e>
       <e p="Tools" t="Include" />
     </e>
-    <e p="$PROJECT_DIR$/../Tools/ExcelToCS" t="IncludeRecursive">
+    <e p="$PROJECT_DIR$/../Tools/Excel2CS" t="IncludeRecursive">
       <e p="bin" t="ExcludeRecursive" />
-      <e p="ExcelHelper.cs" t="Include" />
-      <e p="ExcelToCS.csproj" t="IncludeRecursive" />
-      <e p="LoadCsFile.cs" t="Include" />
+      <e p="Excel2CS.csproj" t="IncludeRecursive" />
+      <e p="ExcelCS" t="Include">
+        <e p="ExcelHelper.cs" t="Include" />
+        <e p="LoadCsFile.cs" t="Include" />
+        <e p="TemplateConst.cs" t="Include" />
+      </e>
       <e p="obj" t="ExcludeRecursive">
         <e p="Debug" t="Include">
           <e p="netcoreapp3.1" t="Include">
-            <e p="ExcelToCS.AssemblyInfo.cs" t="Include" />
+            <e p="Excel2CS.AssemblyInfo.cs" t="Include" />
           </e>
         </e>
       </e>
       <e p="Program.cs" t="Include" />
-      <e p="TemplateConst.cs" t="Include" />
+    </e>
+    <e p="$PROJECT_DIR$/../Tools/Export2Other" t="IncludeRecursive">
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="Export2Other.csproj" t="IncludeRecursive" />
+      <e p="obj" t="ExcludeRecursive">
+        <e p="Debug" t="Include">
+          <e p="netcoreapp3.1" t="Include">
+            <e p="Export2Other.AssemblyInfo.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Program.cs" t="Include" />
+      <e p="SceneConfigToEnum.cs" t="Include" />
+      <e p="ServerConfigToEnum.cs" t="Include" />
     </e>
     <e p="$PROJECT_DIR$/../Tools/ProtoBufTool" t="IncludeRecursive">
       <e p="bin" t="ExcludeRecursive" />
@@ -1947,7 +1967,6 @@
           </e>
         </e>
       </e>
-      <e p="ProcessHelper.cs" t="Include" />
       <e p="Program.cs" t="Include" />
       <e p="ProtoBufTool.csproj" t="IncludeRecursive" />
     </e>

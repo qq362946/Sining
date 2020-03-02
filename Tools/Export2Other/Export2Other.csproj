@@ -6,9 +6,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Compile Include="..\..\Server\Core\Base\Tools\ProcessHelper.cs">
-        <Link>ProcessHelper.cs</Link>
-      </Compile>
+      <ProjectReference Include="..\Excel2CS\Excel2CS.csproj" />
     </ItemGroup>
 
 </Project>

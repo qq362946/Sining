@@ -7,7 +7,7 @@ using Sining.Tools;
 
 namespace Sining
 {
-    public class Component : IDisposable, IBson
+    public class Component : IDisposable, IObject
     {
         #region MemberVariables
 
