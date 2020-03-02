@@ -30,11 +30,13 @@ namespace Sining
                     Log.Info("开始启动服务器，请稍等...");
                     App.Scene.AddComponent<ProcessWatcherComponent>();
                     App.Scene.AddComponent<NetInnerComponent, string>("127.0.0.1:8999");
-
-                    return;
                 }
-                // 创建服务器
-                ServerFactory.Create();
+                else
+                {
+                    // 创建服务器
+                    ServerFactory.Create();
+                }
+
                 // 防止主线程退出
                 for (;;) Console.ReadKey();
             }
