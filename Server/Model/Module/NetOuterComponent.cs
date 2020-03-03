@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Sining.Event;
 using Sining.Network;
 
@@ -22,6 +23,18 @@ namespace Sining.Module
             self.MessagePacker = self.AddComponent<ProtobufMessagePacker>();
             self.SetNetworkProtocol(networkProtocol);
             self.Awake(self.NetworkProtocolType, address);
+        }
+    }
+
+    [ComponentSystem]
+    public class
+        NetOuterComponentNetworkUrlsProtocolAwakeSystem : AwakeSystem<NetOuterComponent, IEnumerable<string>, string>
+    {
+        protected override void Awake(NetOuterComponent self, IEnumerable<string> urls, string networkProtocol)
+        {
+            self.MessagePacker = self.AddComponent<ProtobufMessagePacker>();
+            self.SetNetworkProtocol(networkProtocol);
+            self.Awake(self.NetworkProtocolType, urls);
         }
     }
 

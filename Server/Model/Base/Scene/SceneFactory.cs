@@ -6,21 +6,9 @@ namespace Sining
 {
     public static class SceneFactory
     {
-        public static void Create(SceneConfig sceneConfig)
+        public static void Create(Scene scene)
         {
-            var sceneType = (SceneType) sceneConfig.Id;
-            var scene = App.Scene.AddComponent<Scene, SceneType, SceneConfig>(sceneType, sceneConfig);
-
-            if (sceneConfig.OuterPort > 0 &&
-                !string.IsNullOrWhiteSpace(sceneConfig.NetworkProtocol) &&
-                !string.IsNullOrWhiteSpace(App.ServerConfig.OuterIP))
-            {
-                scene.AddComponent<NetOuterComponent, string, string>(
-                    $"{App.ServerConfig.OuterIP}:{sceneConfig.OuterPort}",
-                    sceneConfig.NetworkProtocol);
-            }
-
-            switch (sceneType)
+            switch (scene.SceneType)
             {
                 case SceneType.RealmAccount:
                     break;
@@ -31,7 +19,7 @@ namespace Sining
                 case SceneType.Location:
                     break;
                 default:
-                    throw new Exception($"No SceneType found for {sceneConfig.Id}");
+                    throw new Exception($"No SceneType found for {(int) scene.SceneType}");
             }
         }
     }

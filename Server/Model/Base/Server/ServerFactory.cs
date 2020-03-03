@@ -17,9 +17,11 @@ namespace Sining
 
             var scenes = SceneConfigData.Instance.GetByServer(App.Id);
 
+            if (scenes == null) return;
+            
             foreach (var sceneConfig in scenes)
             {
-                SceneFactory.Create(sceneConfig);
+                SceneManagementComponent.Instance.Create(sceneConfig);
             }
         }
     }

@@ -14,6 +14,8 @@ namespace Sining.Config
 		public int Zone { get; set; }
 		[BsonDefaultValue(0)]
 		public int OuterPort { get; set; }
+		[BsonDefaultValue(new string[] { })]
+		public string[] Urls { get; set; }
 		[BsonDefaultValue("")]
 		public string NetworkProtocol { get; set; }
 	}

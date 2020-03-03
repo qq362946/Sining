@@ -24,6 +24,8 @@ namespace Sining
                 App.Id = options.Server;
                 // 逻辑处理组件
                 App.Scene.AddComponent<TaskProcessingComponent>();
+                // 场景管理组件
+                App.Scene.AddComponent<SceneManagementComponent>();
                 // 启动服务器
                 if (App.Id == 0)
                 {

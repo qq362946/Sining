@@ -8,7 +8,7 @@ namespace ExcelToCS
             "namespace Sining.Config\n{";
 
         //public const string ConfigCsClassBsonKnownTypes = "[BsonKnownTypes(typeof(IConfig))]";
-        public const string ConfigCsClassName = "\tpublic partial class {0} : IConfig, IBson\n\t{{";
+        public const string ConfigCsClassName = "\tpublic partial class {0} : IConfig, IObject\n\t{{";
         public const string ConfigCsClassId = "\t\tpublic int Id { get; set; }";
         public const string FieldByFloat = "\t\t[BsonRepresentation(BsonType.Double, AllowTruncation = true)]";
         public const string FieldByBsonDefaultValue = "\t\t[BsonDefaultValue({0})]\n";
