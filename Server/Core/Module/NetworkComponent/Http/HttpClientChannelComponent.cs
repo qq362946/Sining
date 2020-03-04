@@ -43,12 +43,14 @@ namespace Sining.Network
         {
             var content = new ByteArrayContent(memoryStream.GetBuffer());
             var response = await _client.PostAsync(_url, content);
-            if (response.StatusCode != HttpStatusCode.OK)
+            switch (response.StatusCode)
             {
-                return;
+                case HttpStatusCode.NotFound:
+                    throw new Exception($"Unable to connect to server url {_url}");
+                case HttpStatusCode.OK:
+                    TaskProcessingComponent.Instance.Add(() => OnRecvComplete(response, session));
+                    break;
             }
-
-            TaskProcessingComponent.Instance.Add(() => OnRecvComplete(response, session));
         }
 
         private void OnRecvComplete(HttpResponseMessage response, Session session)

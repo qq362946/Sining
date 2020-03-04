@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Net;
+using Server.Network;
 using Sining.Core;
 using Sining.DataStructure;
 using Sining.Event;
@@ -73,7 +74,7 @@ namespace Sining.Network
 
             httpListener.BeginGetContext(Recv, httpListener);
         }
-        
+
         private void OnRecvComplete(HttpListenerContext context)
         {
             var stream = context.Request.InputStream;
@@ -98,17 +99,29 @@ namespace Sining.Network
 
             var session = _networkComponent.Create();
             var code = _parser.MessageProtocolCode;
-            _parser.Clear();
             session.Channel = this;
             session.MemoryStream = MemoryStream;
-            session.Receive(context, code, MemoryStream);
+            _parser.Clear();
+
+            var messageObj = session.Receive(context, code, MemoryStream);
+            if (messageObj == null) return;
+            if (!(messageObj is IRequest)) SendEmpty(session);
+        }
+
+        private void SendEmpty(Session session)
+        {
+            var context = session.Context;
+            context.Response.StatusCode = (int) HttpStatusCode.Accepted;
+            context.Response.Close();
+            session.Channel = null;
+            session.Dispose();
         }
 
         public override void Send(Session session, MemoryStream memoryStream)
         {
             var context = session.Context;
 
-            context.Response.StatusCode = 200;
+            context.Response.StatusCode = (int) HttpStatusCode.OK;
             context.Response.ContentType = "application/octet-stream";
             context.Response.OutputStream.Write(MemoryStream.GetBuffer());
             context.Response.Close();

@@ -43,9 +43,14 @@ namespace Client.App
             var httpSession = httpNetOuterComponent.Create("http://127.0.0.1:8888/");
             Run(httpSession).Coroutine();
             
+            
             for (;;)
             {
                 Console.ReadKey();
+                httpSession.Send(new TestMessage()
+                {
+                    Name = "大宁", Number = 123
+                });
             }
         }
 

@@ -19,9 +19,9 @@ namespace Sining.Network
         
         public Type Type() => typeof(TRequest);
 
-        protected abstract void Run(Session session, TRequest request, TResponse response);
+        protected abstract STask Run(Session session, TRequest request, TResponse response);
 
-        public void Handle(Session session, object message)
+        public async STask Handle(Session session, object message)
         {
             if (!(message is TRequest request))
             {
@@ -38,7 +38,7 @@ namespace Sining.Network
 
             try
             {
-                Run(session, request, _response);
+                await Run(session, request, _response);
             }
             catch (Exception e)
             {

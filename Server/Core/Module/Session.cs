@@ -79,32 +79,46 @@ namespace Sining.Module
         #region Receive
 
         [EditorBrowsable(EditorBrowsableState.Never)]
-        public void Receive(HttpListenerContext context, ushort code, MemoryStream memoryStream)
+        public object Receive(HttpListenerContext context, ushort code, MemoryStream memoryStream)
         {
             Context = context;
 
-            Receive(code, memoryStream);
+            return Receive(code, memoryStream);
         }
+
         [EditorBrowsable(EditorBrowsableState.Never)]
-        public void Receive(ushort code, MemoryStream memoryStream)
+        public object Receive(ushort code, MemoryStream memoryStream)
         {
+            if (IsDispose) return null;
+
             LastRecvTime = TimeHelper.Now;
+            object message;
 
             try
             {
-                var message = Network.MessagePacker.DeserializeFrom(
+                message = Network.MessagePacker.DeserializeFrom(
                     NetworkProtocolManagement.Instance.GetType(code), memoryStream);
-
-                Dispatcher(message);
             }
             catch (Exception e)
             {
                 // 解析失败表示有可能是其他人攻击
                 Log.Error($"code: {code} {Network.Count} {e}, ip: {Channel.RemoteAddress}");
                 Dispose();
+                return null;
             }
+
+            try
+            {
+                Dispatcher(message);
+            }
+            catch (Exception e)
+            {
+                Log.Error(e);
+            }
+
+            return message;
         }
-        
+
         private void Dispatcher(object message)
         {
             try

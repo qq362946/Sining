@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using Sining.DataStructure;
 using Sining.Event;
@@ -30,10 +31,19 @@ namespace Sining.Network
 
             Instance = this;
         }
-        public void AddHandler(Type type,IMessageHandler message)
+
+        public List<IMessageHandler> GetHandler(Type type)
+        {
+            _handlers.TryGetValue(type, out var list);
+
+            return list;
+        }
+
+        public void AddHandler(Type type, IMessageHandler message)
         {
             _handlers.Add(type, message);
         }
+
         public void Handle(Session session, object obj)
         {
             if (!_handlers.TryGetValue(obj.GetType(), out var list))
@@ -44,9 +54,10 @@ namespace Sining.Network
 
             foreach (var messageHandler in list)
             {
-                messageHandler.Handle(session, obj);
+                messageHandler.Handle(session, obj).GetAwaiter().GetResult();
             }
         }
+
         public void Clear()
         {
             _handlers.Clear();

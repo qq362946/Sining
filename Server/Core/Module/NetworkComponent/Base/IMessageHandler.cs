@@ -7,6 +7,6 @@ namespace Sining.Network
     {
         public Type Type();
         
-        void Handle(Session session, object message);
+        STask Handle(Session session, object message);
     }
 }
