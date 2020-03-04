@@ -1,0 +1,120 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Client.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Google.Protobuf": "1.0.0",
+          "MongoDB.Bson": "0.0.0-local"
+        },
+        "compile": {
+          "bin/placeholder/Client.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Client.Core.dll": {}
+        }
+      },
+      "Google.Protobuf/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Google.Protobuf.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Google.Protobuf.dll": {}
+        }
+      },
+      "MongoDB.Bson/0.0.0-local": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/MongoDB.Bson.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MongoDB.Bson.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Client.Core/1.0.0": {
+      "type": "project",
+      "path": "../Core/Client.Core.csproj",
+      "msbuildProject": "../Core/Client.Core.csproj"
+    },
+    "Google.Protobuf/1.0.0": {
+      "type": "project",
+      "path": "../../Server/ThirdPartyPlugin/Google.Protobuf/Google.Protobuf.csproj",
+      "msbuildProject": "../../Server/ThirdPartyPlugin/Google.Protobuf/Google.Protobuf.csproj"
+    },
+    "MongoDB.Bson/0.0.0-local": {
+      "type": "project",
+      "path": "../../Server/ThirdPartyPlugin/MongoDB/MongoDB.Bson/MongoDB.Bson.csproj",
+      "msbuildProject": "../../Server/ThirdPartyPlugin/MongoDB/MongoDB.Bson/MongoDB.Bson.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "Client.Core >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/sining/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/sining/Code/Sining/Client/Model/Client.Model.csproj",
+      "projectName": "Client.Model",
+      "projectPath": "/Users/sining/Code/Sining/Client/Model/Client.Model.csproj",
+      "packagesPath": "/Users/sining/.nuget/packages/",
+      "outputPath": "/Users/sining/Code/Sining/Client/Model/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/sining/.config/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "/Users/sining/Code/Sining/Client/Core/Client.Core.csproj": {
+              "projectPath": "/Users/sining/Code/Sining/Client/Core/Client.Core.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

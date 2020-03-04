@@ -1,0 +1,60 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Client.Model/1.0.0": {
+        "dependencies": {
+          "Client.Core": "1.0.0"
+        },
+        "runtime": {
+          "Client.Model.dll": {}
+        }
+      },
+      "Client.Core/1.0.0": {
+        "dependencies": {
+          "Google.Protobuf": "1.0.0",
+          "MongoDB.Bson": "0.0.0-local"
+        },
+        "runtime": {
+          "Client.Core.dll": {}
+        }
+      },
+      "Google.Protobuf/1.0.0": {
+        "runtime": {
+          "Google.Protobuf.dll": {}
+        }
+      },
+      "MongoDB.Bson/0.0.0-local": {
+        "runtime": {
+          "MongoDB.Bson.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Client.Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Client.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Google.Protobuf/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MongoDB.Bson/0.0.0-local": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

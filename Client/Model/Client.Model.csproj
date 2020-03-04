@@ -1,0 +1,77 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+    <PropertyGroup>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <DefineConstants>TRACE;DEBUG;NETCOREAPP2_0;SERVER;SiningClient</DefineConstants>
+      <OutputPath>../Bin</OutputPath>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+      <DefineConstants>TRACE;RELEASE;NETCOREAPP2_0;SERVER;SiningClient</DefineConstants>
+      <OutputPath>../Bin</OutputPath>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Core\Client.Core.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Include="..\..\Server\Model\Base\Network\MessageProtocol\ProtobufMessagePacker.cs">
+        <Link>Base\Network\MessageProtocol\ProtobufMessagePacker.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Network\Message\OuterMessage.cs">
+        <Link>Base\Network\Message\OuterMessage.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Network\Message\OuterOpcode.cs">
+        <Link>Base\Network\Message\OuterOpcode.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Scene\Scene.cs">
+        <Link>Base\Scene\Scene.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Scene\SceneFactory.cs">
+        <Link>Base\Scene\SceneFactory.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Scene\SceneType.cs">
+        <Link>Base\Scene\SceneType.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Server\ServerType.cs">
+        <Link>Base\Server\ServerType.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Tools\ProtobufHelper.cs">
+        <Link>Base\Tools\ProtobufHelper.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Config\Data\SceneConfigData.cs">
+        <Link>Config\Data\SceneConfigData.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Config\Data\ServerConfigData.cs">
+        <Link>Config\Data\ServerConfigData.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Config\Entity\SceneConfig.cs">
+        <Link>Config\Entity\SceneConfig.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Config\Entity\ServerConfig.cs">
+        <Link>Config\Entity\ServerConfig.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Config\Partial\SceneConfigData.cs">
+        <Link>Config\Partial\SceneConfigData.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Config\Partial\ServerConfigData.cs">
+        <Link>Config\Partial\ServerConfigData.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Module\NetOuterComponent.cs">
+        <Link>Module\NetOuterComponent.cs</Link>
+      </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="..\..\Server\Model\Base\Network\Message\Interface">
+        <Link>Base\Network\Message\Interface</Link>
+      </Folder>
+    </ItemGroup>
+
+</Project>
