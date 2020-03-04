@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -24,44 +25,20 @@ namespace Sining.Module
         public static int RpcId;
         public long LastRecvTime { get; private set; }
         public long LastSendTime { get; private set; }
-
         public NetworkChannel Channel;
         public MemoryStream MemoryStream;
         public NetworkComponent Network;
         public HttpListenerContext Context;
-        
-        private readonly Dictionary<int,Action<IResponse>> _requestCallback = new Dictionary<int, Action<IResponse>>();
 
-        #region Send
-
-        public void SendToHttp(IMessage message)
-        {
-            try
-            {
-                Unpack(message);
-
-                Context.Response.StatusCode = 200;
-
-                Context.Response.ContentType = "application/octet-stream";
-
-                Context.Response.OutputStream.Write(MemoryStream.GetBuffer());
-
-                Context.Response.Close();
-
-                Dispose();
-            }
-            catch (Exception e)
-            {
-                Log.Error(e);
-            }
-        }
+        private readonly Dictionary<int, Action<IResponse>>
+            _requestCallback = new Dictionary<int, Action<IResponse>>();
         public void Send(IMessage message)
         {
             try
             {
                 Unpack(message);
-                
-                Channel.Send(Channel.MemoryStream);
+
+                Channel.Send(this, Channel.MemoryStream);
 
                 LastSendTime = TimeHelper.Now;
             }
@@ -70,8 +47,6 @@ namespace Sining.Module
                 Log.Error(e);
             }
         }
-
-        #endregion
 
         #region Call
 
@@ -98,40 +73,19 @@ namespace Sining.Module
 
             return tcs.Task;
         }
-        public STask<IResponse> Call(IRequest request)
-        {
-            var rpcId = ++RpcId;
-
-            var tcs = new STaskCompletionSource<IResponse>();
-
-            _requestCallback[rpcId] = response =>
-            {
-                if (response is ErrorResponse)
-                {
-                    tcs.SetException(new Exception($"Rpc error errorCode: {response.ErrorCode}"));
-                    return;
-                }
-
-                tcs.SetResult(response);
-            };
-
-            request.RpcId = rpcId;
-
-            Send(request);
-
-            return tcs.Task;
-        }
 
         #endregion
 
         #region Receive
 
+        [EditorBrowsable(EditorBrowsableState.Never)]
         public void Receive(HttpListenerContext context, ushort code, MemoryStream memoryStream)
         {
             Context = context;
 
             Receive(code, memoryStream);
         }
+        [EditorBrowsable(EditorBrowsableState.Never)]
         public void Receive(ushort code, MemoryStream memoryStream)
         {
             LastRecvTime = TimeHelper.Now;
@@ -180,7 +134,6 @@ namespace Sining.Module
         }
 
         #endregion
-        
         private void Unpack(IMessage message)
         {
             if (message == null)

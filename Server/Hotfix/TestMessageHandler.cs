@@ -12,7 +12,12 @@ namespace Server.Hotfix
     {
         protected override void Run(Session session, TestMessage message)
         {
-            Log.Debug($"接收到一个消息：Name:{message.Name} Number:{message.Number} Page:{message.Page} ThreadId:{Thread.CurrentThread.ManagedThreadId}");
+            Log.Debug($"接收到一个消息：" +
+                      $"Name:{message.Name} " +
+                      $"Number:{message.Number} " +
+                      $"Page:{message.Page} " +
+                      $"ThreadId:{Thread.CurrentThread.ManagedThreadId} " +
+                      $"Server:{SApp.Id}");
         }
     }
     
@@ -26,7 +31,7 @@ namespace Server.Hotfix
     }
 
     [MessageSystem]
-    public class GetNameRequestHandler : HTTPHandler<GetNameRequest, GetNameResponse>
+    public class GetNameRequestHandler : RPCMessageHandler<GetNameRequest, GetNameResponse>
     {
         protected override void Run(Session session, GetNameRequest request, GetNameResponse response)
         {

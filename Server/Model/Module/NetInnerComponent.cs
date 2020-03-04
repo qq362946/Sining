@@ -12,6 +12,7 @@ namespace Sining.Module
         {
             self.MessagePacker = self.AddComponent<ProtobufMessagePacker>();
             self.Awake(self.NetworkProtocolType, address);
+            NetInnerComponent.Instance = self;
         }
     }
     
@@ -22,11 +23,13 @@ namespace Sining.Module
         {
             self.MessagePacker = self.AddComponent<ProtobufMessagePacker>();
             self.Awake(self.NetworkProtocolType);
+            NetInnerComponent.Instance = self;
         }
     }
     
     public class NetInnerComponent : NetworkComponent
     {
+        public static NetInnerComponent Instance;
         private readonly DoubleMapDictionary<string, Session> _sessions = new DoubleMapDictionary<string, Session>();
         public NetworkProtocolType NetworkProtocolType { get; } = NetworkProtocolType.TCP;
 
@@ -70,6 +73,7 @@ namespace Sining.Module
             }
             
             _sessions.Clear();
+            Instance = null;
             
             base.Dispose();
         }

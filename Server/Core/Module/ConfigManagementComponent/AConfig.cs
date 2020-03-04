@@ -11,7 +11,11 @@ namespace Sining.Config
 
     public abstract class AConfig<T> : IAConfig where T : class
     {
+#if SiningClient
+        private const string ConfigDirectory = "../../Config/";
+#else 
         private const string ConfigDirectory = "../Config/";
+#endif
         protected Dictionary<int, T> Configs;
 
         public T GetConfig(int id)

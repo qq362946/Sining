@@ -17,21 +17,21 @@ namespace Sining.Tools
             // 初始化组件事件
             var componentManagement = ComponentFactory.CreateOnly<ComponentManagement>(eventSystem: false);
             componentManagement.Init();
-            App.Scene.AddComponent(componentManagement);
+            SApp.Scene.AddComponent(componentManagement);
 
-            var taskList = new List<Task>
+            var tasks = new List<Task>
             {
                 // 初始化普通事件
-                Task.Run(() => App.Scene.AddComponent<SystemEventComponent>().Init()),
+                Task.Run(() => SApp.Scene.AddComponent<SystemEventComponent>().Init()),
                 // 初始化网络协议
-                Task.Run(() => App.Scene.AddComponent<NetworkProtocolManagement>().Init()),
+                Task.Run(() => SApp.Scene.AddComponent<NetworkProtocolManagement>().Init()),
                 // 初始化网络协议处理程序
-                Task.Run(() => App.Scene.AddComponent<MessageDispatcherManagement>().Init()),
+                Task.Run(() => SApp.Scene.AddComponent<MessageDispatcherManagement>().Init()),
                 // 初始化配置文件
-                Task.Run(() => App.Scene.AddComponent<ConfigManagementComponent>().Init())
+                Task.Run(() => SApp.Scene.AddComponent<ConfigManagementComponent>().Init())
             };
 
-            Task.WaitAll(taskList.ToArray());
+            Task.WaitAll(tasks.ToArray());
         }
     }
 }

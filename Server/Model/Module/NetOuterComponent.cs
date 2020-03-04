@@ -16,7 +16,19 @@ namespace Sining.Module
     }
 
     [ComponentSystem]
-    public class NetOuterComponentNetworkProtocolAwakeSystem : AwakeSystem<NetOuterComponent, string, string>
+    public class
+        NetOuterComponentNetworkProtocolAwakeSystem : AwakeSystem<NetOuterComponent, NetworkProtocolType>
+    {
+        protected override void Awake(NetOuterComponent self, NetworkProtocolType networkProtocol)
+        {
+            self.MessagePacker = self.AddComponent<ProtobufMessagePacker>();
+            self.SetNetworkProtocol(Enum.GetName(typeof(NetworkProtocolType), networkProtocol));
+            self.Awake(self.NetworkProtocolType);
+        }
+    }
+
+    [ComponentSystem]
+    public class NetOuterComponentNetworkProtocolStringAwakeSystem : AwakeSystem<NetOuterComponent, string, string>
     {
         protected override void Awake(NetOuterComponent self, string address, string networkProtocol)
         {

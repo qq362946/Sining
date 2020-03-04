@@ -28,7 +28,7 @@ namespace Sining
             if (IsDispose) return;
 
             SceneType = SceneType.None;
-            
+
             base.Dispose();
         }
     }
