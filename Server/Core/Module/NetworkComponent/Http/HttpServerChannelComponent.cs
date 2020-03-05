@@ -12,7 +12,7 @@ using Sining.Tools;
 namespace Sining.Network
 {
     [ComponentSystem]
-    public class HttpChannelComponentAwakeSystem : AwakeSystem<HttpServerChannelComponent,IEnumerable<string>>
+    public class HttpServerChannelComponentAwakeSystem : AwakeSystem<HttpServerChannelComponent, IEnumerable<string>>
     {
         protected override void Awake(HttpServerChannelComponent self, IEnumerable<string> urls)
         {
@@ -78,7 +78,7 @@ namespace Sining.Network
         private void OnRecvComplete(HttpListenerContext context)
         {
             var stream = context.Request.InputStream;
-
+            
             try
             {
                 if (!_parser.Parse(stream))

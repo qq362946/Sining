@@ -100,6 +100,8 @@ namespace Sining
                 }
 
                 if (eventSystem) ComponentManagement.Instance.Awake(component);
+
+                ComponentManagement.Instance.Register(component);
             }
             catch (Exception e)
             {

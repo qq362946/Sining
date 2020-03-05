@@ -349,6 +349,8 @@ namespace Sining
             {
                 _parent?.RemoveComponent(this);
             }
+            
+            ComponentManagement.Instance.Remove(InstanceId);
 
             _isChild = false;
             _parent = null;

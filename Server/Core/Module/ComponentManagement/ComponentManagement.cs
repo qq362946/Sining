@@ -1,5 +1,7 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using Sining.DataStructure;
 using Sining.Event;
 using Sining.Tools;
@@ -10,17 +12,20 @@ namespace Sining.Module
     {
         public static ComponentManagement Instance;
 
+        private readonly Dictionary<long, Component> _components = new Dictionary<long, Component>();
+
         private readonly OneToManyList<Type, IAwakeSystem> _awakeSystem = new OneToManyList<Type, IAwakeSystem>(0);
         
         private readonly OneToManyList<Type, IDestroySystem> _destroySystem = new OneToManyList<Type, IDestroySystem>(0);
 
+        private readonly ReaderWriterLockSlim _readerWriterLockSlim = new ReaderWriterLockSlim();
+        
         public void Init()
         {
-            foreach (var type in AssemblyManagement.AllType.Where(d =>
-                d.IsDefined(typeof(ComponentSystemAttribute), true)))
+            foreach (var obj in from type in AssemblyManagement.AllType
+                where type.IsDefined(typeof(ComponentSystemAttribute), true)
+                select Activator.CreateInstance(type))
             {
-                var obj = Activator.CreateInstance(type);
-
                 switch (obj)
                 {
                     case IAwakeSystem awakeSystem:
@@ -33,6 +38,38 @@ namespace Sining.Module
             }
 
             Instance = this;
+        }
+
+        public void Register(Component component)
+        {
+            _readerWriterLockSlim.EnterWriteLock();
+            _components.Add(component.InstanceId,component);
+            _readerWriterLockSlim.ExitWriteLock();
+        }
+
+        public T Get<T>(long instanceId) where T : Component
+        {
+            _readerWriterLockSlim.EnterReadLock();
+            if (!_components.TryGetValue(instanceId, out var component))
+            {
+                return default;
+            }
+
+            _readerWriterLockSlim.ExitReadLock();
+
+            return (T) component;
+        }
+
+        public void Remove(long instanceId,bool isDispose = false)
+        {
+            _readerWriterLockSlim.EnterWriteLock();
+            if (!_components.Remove(instanceId, out var component) || !isDispose)
+            {
+                return;
+            }
+            
+            component.Dispose();
+            _readerWriterLockSlim.ExitWriteLock();
         }
 
         public void Awake<T>(T t) where T : Component
