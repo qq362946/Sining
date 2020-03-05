@@ -11,27 +11,29 @@ namespace Sining.Tools
     /// </summary>
     public static class IdFactory
     {
-        private static int _appId;
+        private static long __appId;
 
         private const int AppIdBits = 10;
         private const long AppIdMask = -1L ^ (-1L << AppIdBits);
-        private static long _lastTimeStamp = -1L;
-        private static long _sequence;
+        private static long __lastTimeStamp = -1L;
+        private static long __sequence;
         private const int SequenceBits = 12;
         private const long SequenceMask = -1L ^ (-1L << SequenceBits);
         private const long Epoch = 453830400000L;
-        private const int TimeStampLeftShift = SequenceBits + AppIdBits;
-        private const int GetAppIdLeftShift = 64 - AppIdBits - SequenceBits;
-        private const int GetAppIdRightShift = GetAppIdLeftShift + SequenceBits;
+        private const int AppIdLeftShift = 64 - SequenceBits;
+        private const int SequenceLeftShift = AppIdLeftShift - SequenceBits;
+        // private const int TimeStampLeftShift = SequenceBits + AppIdBits;
+        // private const int GetAppIdLeftShift = 64 - AppIdBits - SequenceBits;
+        // private const int GetAppIdRightShift = GetAppIdLeftShift + SequenceBits;
         private static readonly object LockObject = new object();
 
         /// <summary>
         /// 获取或设置APPID(一般是当前进程的ID)
         /// </summary>
         /// <exception cref="ArgumentException"></exception>
-        public static int AppId
+        public static long AppId
         {
-            get => _appId;
+            get => __appId;
             set
             {
                 if (value > AppIdMask || value < 0)
@@ -39,7 +41,7 @@ namespace Sining.Tools
                     throw new ArgumentException($"AppId can't be greater than {AppIdMask} or less than 0");
                 }
 
-                _appId = value;
+                __appId = value;
             }
         }
 
@@ -55,29 +57,29 @@ namespace Sining.Tools
                 {
                     var timestamp = TimeHelper.Now;
 
-                    if (_lastTimeStamp == timestamp)
+                    if (__lastTimeStamp == timestamp)
                     {
-                        _sequence = (_sequence + 1) & SequenceMask;
+                        __sequence = (__sequence + 1) & SequenceMask;
 
-                        if (_sequence == 0)
+                        if (__sequence == 0)
                         {
                             timestamp = WaitNextMillis();
                         }
                     }
                     else
                     {
-                        _sequence = 0;
+                        __sequence = 0;
                     }
 
-                    if (timestamp < _lastTimeStamp)
+                    if (timestamp < __lastTimeStamp)
                     {
                         throw new Exception(
-                            $"Clock moved backwards. Refusing to generate id for {_lastTimeStamp - timestamp} milliseconds");
+                            $"Clock moved backwards. Refusing to generate id for {__lastTimeStamp - timestamp} milliseconds");
                     }
 
-                    _lastTimeStamp = timestamp;
+                    __lastTimeStamp = timestamp;
 
-                    return (timestamp - Epoch << TimeStampLeftShift) + (AppId << SequenceBits) + _sequence;
+                    return (AppId << AppIdLeftShift) | (__sequence << SequenceLeftShift) | (timestamp - Epoch);
                 }
             }
         }
@@ -89,13 +91,13 @@ namespace Sining.Tools
         /// <returns></returns>
         public static long GetAppId(long id)
         {
-            return id << GetAppIdLeftShift >> GetAppIdRightShift;
+            return id >> AppIdLeftShift;
         }
 
         private static long WaitNextMillis()
         {
             var timestamp = TimeHelper.Now;
-            while (timestamp <= _lastTimeStamp)
+            while (timestamp <= __lastTimeStamp)
             {
                 timestamp = TimeHelper.Now;
             }

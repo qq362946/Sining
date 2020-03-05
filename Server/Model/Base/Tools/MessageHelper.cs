@@ -20,6 +20,16 @@ namespace Sining.Tools
             return NetInnerComponent.Instance.GetSession(GetAddress(serverId)).Call<TResponse>(request);
         }
 
+        public static void SendActor()
+        {
+            
+        }
+
+        public static void CallActor()
+        {
+            
+        }
+
         private static string GetAddress(int serverId)
         {
             if (AddressCache.TryGetValue(serverId, out var address)) return address;
