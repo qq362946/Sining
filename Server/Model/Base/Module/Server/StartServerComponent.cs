@@ -87,7 +87,10 @@ namespace Sining.Module
                 SceneManagementComponent.Instance.Create(serverConfig, sceneConfig);
             }
 
-            new ServerStartFinished().Send(ManageServer);
+            new ServerStartFinished()
+            {
+                ServerId = serverConfig.Id
+            }.Send(ManageServer);
 
             Log.Debug($"Server:{serverConfig.ServerType} 启动完成!");
         }

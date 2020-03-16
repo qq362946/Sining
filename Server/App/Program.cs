@@ -1,5 +1,7 @@
 ﻿using System;
 using CommandLine;
+using MongoDB.Bson;
+using Sining.Message;
 using Sining.Module;
 using Sining.Tools;
 

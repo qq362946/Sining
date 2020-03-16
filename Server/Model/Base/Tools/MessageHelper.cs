@@ -39,14 +39,16 @@ namespace Sining.Tools
         {
             if (AddressCache.TryGetValue(serverId, out var address)) return address;
 
-            // address = NetInnerComponent.Instance.Get(serverId);
-            //
-            // if (address == null)
-            // {
-            //     throw new Exception("没有找到该服务器的配置文件");
-            // }
-            //
-            // AddressCache.Add(serverId, address);
+            var serverConfig = ServerConfigData.Instance.GetConfig(serverId);
+
+            if (serverConfig == null)
+            {
+                throw new Exception("没有找到该服务器的配置文件");
+            }
+
+            address = $"{serverConfig.InnerIP}:{serverConfig.InnerPort}";
+
+            AddressCache.Add(serverId, address);
 
             return address;
         }

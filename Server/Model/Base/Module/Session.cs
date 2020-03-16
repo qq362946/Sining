@@ -12,7 +12,7 @@ using Sining.Tools;
 namespace Sining.Module
 {
     [ComponentSystem]
-    public class SessionAwakeSystem : AwakeSystem<Session,NetworkComponent>
+    public class SessionAwakeSystem : AwakeSystem<Session, NetworkComponent>
     {
         protected override void Awake(Session self, NetworkComponent networkComponent)
         {
