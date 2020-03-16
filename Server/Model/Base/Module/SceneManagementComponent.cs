@@ -46,7 +46,7 @@ namespace Sining
                     break;
                 case "HTTP" when sceneConfig.Urls.Length > 0:
                     scene.AddComponent<NetOuterComponent, MessagePacker, IEnumerable<string>, string>(
-                        ComponentFactory.Create<ProtobufMessagePacker>(),
+                        ComponentFactory.Create<JsonMessagePacker>(),
                         sceneConfig.Urls,
                         sceneConfig.NetworkProtocol);
                     break;

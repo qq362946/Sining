@@ -27,35 +27,44 @@ namespace Sining.Module
             if (serverId < 0)
             {
                 Log.Info("[单进程模式]开始启动服务器，请稍等...");
+
+                // foreach (var serverConfig in ServerConfigData.Instance.GetAllConfig())
+                // {
+                //     await Create(serverConfig);
+                // }
                 
-                foreach (var serverConfig in ServerConfigData.Instance.GetAllConfig())
-                {
-                    Create(serverConfig);
-                }
+                StartUpServerAsync().Coroutine();
 
                 return;
             }
-            
+
             // 多进程模式.
 
             if (serverId == 0)
             {
                 Log.Info("[多进程模式]开始启动服务器，请稍等...");
-                
+
                 SApp.Scene.AddComponent<NetInnerComponent, string>(ManageServer);
-                
-                StartUpServerAsync().Coroutine();
-                
+
+                StartUpServerAsync(true).Coroutine();
+
                 return;
             }
-            
-            Create(SApp.ServerConfig);
+
+            Create(SApp.ServerConfig, true);
         }
 
-        private async SVoid StartUpServerAsync()
+        private async SVoid StartUpServerAsync(bool runProcess = false)
         {
             foreach (var serverConfig in ServerConfigData.Instance.GetAllConfig())
             {
+                if (!runProcess)
+                {
+                    Create(serverConfig);
+
+                    continue;
+                }
+
                 await RunServer(serverConfig);
             }
         }
@@ -69,7 +78,7 @@ namespace Sining.Module
             return STaskCompletionSource.Task;
         }
 
-        private static void Create(ServerConfig serverConfig)
+        private static void Create(ServerConfig serverConfig, bool runProcess = false)
         {
             if (!string.IsNullOrWhiteSpace(serverConfig.InnerIP) &&
                 serverConfig.InnerPort > 0)
@@ -87,10 +96,13 @@ namespace Sining.Module
                 SceneManagementComponent.Instance.Create(serverConfig, sceneConfig);
             }
 
-            new ServerStartFinished()
+            if (runProcess)
             {
-                ServerId = serverConfig.Id
-            }.Send(ManageServer);
+                new ServerStartFinished
+                {
+                    ServerId = serverConfig.Id
+                }.Send(ManageServer);
+            }
 
             Log.Debug($"Server:{serverConfig.ServerType} 启动完成!");
         }

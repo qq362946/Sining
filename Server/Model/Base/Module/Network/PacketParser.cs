@@ -3,7 +3,10 @@ using System.Buffers;
 using System.Data;
 using System.IO;
 using System.Runtime.InteropServices;
+using System.Text;
 using Sining.DataStructure;
+using Sining.Message;
+using Sining.Tools;
 
 namespace Sining.Network
 {
@@ -18,6 +21,7 @@ namespace Sining.Network
         private readonly MemoryStream _channelMemoryStream;
         public int MessagePacketLength;
         public ushort MessageProtocolCode;
+        public const int MemoryPoolMaxLength = 8192;
     
         public PacketParser(CircularBuffer buffer, MemoryStream channelMemoryStream)
         {
@@ -25,26 +29,17 @@ namespace Sining.Network
             _channelMemoryStream = channelMemoryStream;
         }
 
-        public bool Parse(Stream stream)
+        public void JsonParse(Stream stream)
         {
-            using (var memoryOwner = MemoryPool<byte>.Shared.Rent(8192))
-            {
-                stream.Read(memoryOwner.Memory.Span);
+            using var memoryOwner = MemoryPool<byte>.Shared.Rent(MemoryPoolMaxLength);
+            stream.Read(memoryOwner.Memory.Span);
 
-                if (memoryOwner.Memory.Length < PacketHeadLength) return false;
-
-                MessagePacketLength = BitConverter.ToInt32(memoryOwner.Memory.Span.Slice(0, PacketLength));
-                MessageProtocolCode =
-                    BitConverter.ToUInt16(memoryOwner.Memory.Span.Slice(PacketLength, ProtocolCodeLength));
-
-                _channelMemoryStream.Seek(0, SeekOrigin.Begin);
-                _channelMemoryStream.Write(memoryOwner.Memory.Span.Slice(PacketHeadLength));
-                _channelMemoryStream.Seek(0, SeekOrigin.Begin);
-                _channelMemoryStream.SetLength(MessagePacketLength);
-            }
-
-            return true;
+            _channelMemoryStream.Seek(0, SeekOrigin.Begin);
+            _channelMemoryStream.Write(memoryOwner.Memory.Span);
+            _channelMemoryStream.Seek(0, SeekOrigin.Begin);
+            _channelMemoryStream.SetLength(MemoryPoolMaxLength);
         }
+
         public bool Parse()
         {
             if (_buffer.Length < PacketHeadLength) return false;

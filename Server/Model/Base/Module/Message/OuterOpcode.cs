@@ -3,7 +3,7 @@ using Sining.Network;
 namespace Sining.Message
 {
 	// 测试框架协议
-	[Message(OuterOpcode.TestMessage)]
+	[Message(OuterOpcode.TestMessage,"/Api/TestMessage")]
 	public partial class TestMessage : IMessage {}
 
 	// 登录协议

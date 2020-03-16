@@ -2,7 +2,7 @@ syntax = "proto3";
 package Sining.Message;
 
 // 测试框架协议
-message TestMessage // IMessage   
+message TestMessage // IMessage | /Api/  
 {
 	string Name = 1;
 	int32 Number = 2;

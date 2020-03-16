@@ -99,8 +99,20 @@ namespace Sining.ProtoBufTool
                 if (!line.StartsWith("message")) continue;
 
                 var className = line.Split(SplitChars, StringSplitOptions.RemoveEmptyEntries)[1];
-                var interfaceName = line.Split(new[] {"//"}, StringSplitOptions.RemoveEmptyEntries)[1].Trim();
-                file.Append($"\t[Message({opcodeName}.{className})]\n");
+                var parameter = line.Split(new[] {"//"}, StringSplitOptions.RemoveEmptyEntries)[1]
+                    .Split('|', StringSplitOptions.RemoveEmptyEntries);
+                var interfaceName = parameter[0].Trim();
+
+                if (parameter.Length == 1)
+                {
+                    file.Append($"\t[Message({opcodeName}.{className})]\n");
+                }
+                else
+                {
+                    var rawUrl = parameter[1].Trim();
+                    file.Append($"\t[Message({opcodeName}.{className},\"{rawUrl}{className}\")]\n");
+                }
+
                 file.Append($"\tpublic partial class {className} ");
                 file.Append($": {interfaceName} ");
                 file.Append("{}\n\n");

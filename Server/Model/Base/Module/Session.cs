@@ -32,11 +32,12 @@ namespace Sining.Module
 
         private readonly Dictionary<int, Action<IResponse>>
             _requestCallback = new Dictionary<int, Action<IResponse>>();
+
         public void Send(IMessage message)
         {
             try
             {
-                Unpack(message);
+                Network.MessagePacker.Unpack(this, message, Network, ref Channel.MemoryStream);
 
                 Channel.Send(this, Channel.MemoryStream);
 
@@ -78,18 +79,52 @@ namespace Sining.Module
 
         #region Receive
 
+        /// <summary>
+        /// WebAPI
+        /// </summary>
+        /// <param name="context"></param>
+        /// <param name="message"></param>
+        /// <exception cref="Exception"></exception>
         [EditorBrowsable(EditorBrowsableState.Never)]
-        public object Receive(HttpListenerContext context, ushort code, MemoryStream memoryStream)
+        public void Receive(HttpListenerContext context, object message)
         {
+            if (IsDispose)
+            {
+                return;
+            }
+
             Context = context;
 
-            return Receive(code, memoryStream);
+            try
+            {
+                if (message is IResponse response)
+                {
+                    // 如果是回调消息，执行消息的回调
+
+                    if (!_requestCallback.TryGetValue(response.RpcId, out var action))
+                    {
+                        throw new Exception($"not found rpc, response message: {response.GetType().Name}");
+                    }
+
+                    _requestCallback.Remove(response.RpcId);
+
+                    action(response);
+                }
+                else
+                {
+                    MessageDispatcherManagement.Instance.Handle(this, message);
+                }
+            }
+            catch (Exception e)
+            {
+                Log.Error(e);
+            }
         }
 
         [EditorBrowsable(EditorBrowsableState.Never)]
-        public object Receive(ushort code, MemoryStream memoryStream)
+        public void Receive(ushort code, MemoryStream memoryStream)
         {
-            if (IsDispose) return null;
+            if (IsDispose) return;
 
             LastRecvTime = TimeHelper.Now;
             object message;
@@ -104,23 +139,9 @@ namespace Sining.Module
                 // 解析失败表示有可能是其他人攻击
                 Log.Error($"code: {code} {Network.Count} {e}, ip: {Channel.RemoteAddress}");
                 Dispose();
-                return null;
+                return;
             }
 
-            try
-            {
-                Dispatcher(message);
-            }
-            catch (Exception e)
-            {
-                Log.Error(e);
-            }
-
-            return message;
-        }
-
-        private void Dispatcher(object message)
-        {
             try
             {
                 if (message is IResponse response)
@@ -131,15 +152,15 @@ namespace Sining.Module
                     {
                         throw new Exception($"not found rpc, response message: {response.GetType().Name}");
                     }
-                    
+
                     _requestCallback.Remove(response.RpcId);
 
                     action(response);
-
-                    return;
                 }
-
-                MessageDispatcherManagement.Instance.Handle(this, message);
+                else
+                {
+                    MessageDispatcherManagement.Instance.Handle(this, message);
+                }
             }
             catch (Exception e)
             {
@@ -148,35 +169,7 @@ namespace Sining.Module
         }
 
         #endregion
-        private void Unpack(IMessage message)
-        {
-            if (message == null)
-            {
-                throw new Exception("message cannot be null");
-            }
-
-            if (IsDispose)
-            {
-                throw new Exception("session has been Disposed");
-            }
-
-            var opCode = NetworkProtocolManagement.Instance.GetOpCode(message.GetType());
-
-            MemoryStream.Seek(PacketParser.PacketHeadLength, SeekOrigin.Begin);
-            MemoryStream.SetLength(PacketParser.PacketHeadLength);
-            Network.MessagePacker.SerializeTo(message, MemoryStream);
-
-            var byteLength = MemoryStream.Length - PacketParser.PacketHeadLength;
-            if (byteLength > PacketParser.PacketBody)
-            {
-                throw new Exception($"Message content exceeds {PacketParser.PacketBody} bytes");
-            }
-
-            MemoryStream.Seek(0, SeekOrigin.Begin);
-            MemoryStream.Write(BitConverter.GetBytes((int) byteLength));
-            MemoryStream.Write(BitConverter.GetBytes(opCode));
-            MemoryStream.Seek(0, SeekOrigin.Begin);
-        }
+        
         public override void Dispose()
         {
             if (IsDispose) return;

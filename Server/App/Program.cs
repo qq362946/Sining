@@ -1,6 +1,7 @@
 ﻿using System;
 using CommandLine;
 using MongoDB.Bson;
+using Server.Network;
 using Sining.Message;
 using Sining.Module;
 using Sining.Tools;
@@ -25,6 +26,16 @@ namespace Sining
                 SApp.Id = options.Server < 0 ? 0 : options.Server;
                 // 启动服务器组件
                 SApp.Scene.AddComponent<StartServerComponent, int>(options.Server);
+                var message = new TestMessage()
+                {
+                    Name = "张三", Number = 666, Page = 2
+                };
+                // var opCode = NetworkProtocolManagement.Instance.GetOpCode(message.GetType());
+                //
+                // var coat = ComponentFactory.Create<HttpCoat, TestMessage, ushort>(message, opCode);
+                
+                var json = message.Serialize();
+
                 // 防止主线程退出
                 for (;;) Console.ReadKey();
             }

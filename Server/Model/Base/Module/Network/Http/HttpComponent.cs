@@ -26,12 +26,7 @@ namespace Sining.Network
 
         public override NetworkChannel ConnectChannel(Session session, string address)
         {
-            if (GetComponent<HttpClientChannelComponent>() != null)
-            {
-                RemoveComponent<HttpClientChannelComponent>();
-            }
-
-            return AddComponent<HttpClientChannelComponent, Session, string>(session, address);
+            return null;
         }
 
         public override void RemoveChannel(long channelId) { }

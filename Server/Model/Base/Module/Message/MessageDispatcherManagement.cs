@@ -4,6 +4,7 @@ using System.Linq;
 using Sining.DataStructure;
 using Sining.Module;
 using Sining.Tools;
+using System.Reflection;
 
 namespace Sining.Network
 {
@@ -18,8 +19,10 @@ namespace Sining.Network
             foreach (var type in AssemblyManagement.AllType.Where(d =>
                 d.IsDefined(typeof(MessageSystemAttribute), true)))
             {
+                var messageSystemAttribute = type.GetCustomAttribute<MessageSystemAttribute>(true);
+
                 var obj = Activator.CreateInstance(type);
-                
+
                 if (!(obj is IMessageHandler messageHandler))
                 {
                     throw new Exception($"message handle {type.Name} 需要继承 IMessageHandler");

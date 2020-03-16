@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 using System.Linq;
 using MongoDB.Bson;
@@ -35,6 +36,11 @@ namespace Sining.Tools
         public static byte[] SerializeToByte<T>(this T t)
         {
             return t.ToBson();
+        }
+
+        public static object Deserialize(this string json, Type type)
+        {
+            return BsonSerializer.Deserialize(json, type);
         }
 
         public static T Deserialize<T>(this string json)

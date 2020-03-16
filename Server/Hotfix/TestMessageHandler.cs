@@ -7,7 +7,7 @@ using Sining.Network;
 namespace Server.Hotfix
 {
     [MessageSystem]
-    public class TestMessageHandler : MessageHandler<TestMessage>
+    public class TestMessageApiHandler : MessageHandler<TestMessage>
     {
         protected override async STask Run(Session session, TestMessage message)
         {

@@ -18,7 +18,7 @@ namespace Sining.Module
         
         private readonly OneToManyList<Type, IDestroySystem> _destroySystem = new OneToManyList<Type, IDestroySystem>(0);
 
-        private readonly ReaderWriterLockSlim _readerWriterLockSlim = new ReaderWriterLockSlim();
+        private readonly object _lock = new object();
         
         public void Init()
         {
@@ -42,34 +42,36 @@ namespace Sining.Module
 
         public void Register(Component component)
         {
-            _readerWriterLockSlim.EnterWriteLock();
-            _components.Add(component.InstanceId, component);
-            _readerWriterLockSlim.ExitWriteLock();
+            lock (_lock)
+            {
+                _components.Add(component.InstanceId, component);
+            }
         }
 
         public T Get<T>(long instanceId) where T : Component
         {
-            _readerWriterLockSlim.EnterReadLock();
-            if (!_components.TryGetValue(instanceId, out var component))
+            lock (_lock)
             {
-                return default;
+                if (!_components.TryGetValue(instanceId, out var component))
+                {
+                    return default;
+                }
+
+                return (T) component;
             }
-
-            _readerWriterLockSlim.ExitReadLock();
-
-            return (T) component;
         }
 
-        public void Remove(long instanceId,bool isDispose = false)
+        public void Remove(long instanceId, bool isDispose = false)
         {
-            _readerWriterLockSlim.EnterWriteLock();
-            if (!_components.Remove(instanceId, out var component) || !isDispose)
+            lock (_lock)
             {
-                return;
+                if (!_components.Remove(instanceId, out var component) || !isDispose)
+                {
+                    return;
+                }
+
+                component.Dispose();
             }
-            
-            component.Dispose();
-            _readerWriterLockSlim.ExitWriteLock();
         }
 
         public void Awake<T>(T t) where T : Component

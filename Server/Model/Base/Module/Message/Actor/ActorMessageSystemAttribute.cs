@@ -1,9 +1,10 @@
 using System;
+using CommandLine;
 
 namespace Sining.Network.Actor
 {
     [AttributeUsage(AttributeTargets.Class)]
-    public class ActorMessageSystemAttribute : MessageSystemAttribute
+    public class ActorMessageSystemAttribute : BaseAttribute
     {
         
     }

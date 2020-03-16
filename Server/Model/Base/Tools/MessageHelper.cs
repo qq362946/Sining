@@ -20,6 +20,11 @@ namespace Sining.Tools
             NetInnerComponent.Instance.GetSession(address).Send(message);
         }
 
+        public static STask<TResponse> Call<TResponse>(this IRequest request, string address) where TResponse : IResponse
+        {
+            return NetInnerComponent.Instance.GetSession(address).Call<TResponse>(request);
+        }
+        
         public static STask<TResponse> Call<TResponse>(this IRequest request, int serverId) where TResponse : IResponse
         {
             return NetInnerComponent.Instance.GetSession(GetAddress(serverId)).Call<TResponse>(request);

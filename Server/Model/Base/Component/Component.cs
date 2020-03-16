@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using MongoDB.Bson.Serialization.Attributes;
 using Sining.Event;
 using Sining.Module;
 using Sining.Tools;
@@ -10,20 +11,27 @@ namespace Sining
     public class Component : IDisposable, IObject
     {
         #region MemberVariables
-
+        [BsonIgnore]
         private Dictionary<Type, Component> _components;
+        [BsonIgnore]
         private Dictionary<long, Component> _children;
-
+        [BsonIgnore]
         private Dictionary<Type, Component> Components =>
             _components ??= ObjectPool<Dictionary<Type, Component>>.Rent();
 
+        [BsonIgnore]
         protected Dictionary<long, Component> Children => _children ??= ObjectPool<Dictionary<long, Component>>.Rent();
+        [BsonIgnore]
         public bool IsDispose { get; private set; }
+        [BsonIgnore]
         public long InstanceId { get; private set; }
+        [BsonIgnore]
         public bool IsFromPool { get; private set; }
+        [BsonIgnore]
         private bool _isChild;
+        [BsonIgnore]
         private Component _parent;
-
+        [BsonIgnore]
         public Component Parent
         {
             get => _parent;
@@ -55,7 +63,7 @@ namespace Sining
         {
             return _parent as T;
         }
-
+        [BsonIgnore]
         private Component ComponentParent
         {
             set => _parent = value;

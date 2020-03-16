@@ -1,9 +1,13 @@
 using System;
+using System.Buffers;
 using System.Collections.Generic;
 using System.IO;
 using System.Net;
+using System.Text;
+using Server.Network;
 using Sining.DataStructure;
 using Sining.Event;
+using Sining.Message;
 using Sining.Module;
 using Sining.Tools;
 
@@ -75,16 +79,14 @@ namespace Sining.Network
 
         private void OnRecvComplete(HttpListenerContext context)
         {
-            var stream = context.Request.InputStream;
+            object message;
 
             try
             {
-                if (!_parser.Parse(stream))
-                {
-                    Log.Error("无法解析的数据包");
+                _parser.JsonParse(context.Request.InputStream);
 
-                    return;
-                }
+                var messageType = NetworkProtocolManagement.Instance.GetType(context.Request.RawUrl);
+                message = _networkComponent.MessagePacker.DeserializeFrom(messageType, MemoryStream);
             }
             catch (Exception e)
             {
@@ -96,20 +98,18 @@ namespace Sining.Network
             }
 
             var session = _networkComponent.Create();
-            var code = _parser.MessageProtocolCode;
             session.Channel = this;
             session.MemoryStream = MemoryStream;
             _parser.Clear();
 
-            var messageObj = session.Receive(context, code, MemoryStream);
-            if (messageObj == null) return;
-            if (!(messageObj is IRequest)) SendEmpty(session);
+            session.Receive(context, message);
+            if (!(message is IRequest)) SendEmpty(session);
         }
 
         private void SendEmpty(Session session)
         {
             var context = session.Context;
-            context.Response.StatusCode = (int) HttpStatusCode.Accepted;
+            context.Response.StatusCode = (int) HttpStatusCode.OK;
             context.Response.Close();
             session.Channel = null;
             session.Dispose();
@@ -120,7 +120,7 @@ namespace Sining.Network
             var context = session.Context;
 
             context.Response.StatusCode = (int) HttpStatusCode.OK;
-            context.Response.ContentType = "application/octet-stream";
+            context.Response.ContentType = "application/json";
             context.Response.OutputStream.Write(MemoryStream.GetBuffer());
             context.Response.Close();
             session.Channel = null;
