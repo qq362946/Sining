@@ -9,7 +9,7 @@ namespace Export2Other
     public static class SceneConfigToEnum
     {
         private const string ConfigFile = "../../../../../Excel/Server/ServerConfig.xlsx";
-        private const string SaveConfigFile = "../../../../../Server/Model/Base/Scene/SceneType.cs";
+        private const string SaveConfigFile = "../../../../../Server/Model/Base/Module/Scene/SceneType.cs";
 
         public static void Run()
         {

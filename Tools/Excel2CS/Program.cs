@@ -17,7 +17,7 @@ namespace ExcelToCS
     {
         private const string ExcelDirectory = "../../../../../Excel/";
         public const string ConfigDirectory = "../../../../../Config/";
-        public const string CsFileDirectory = "../../../../../Server/Model/Config/";
+        public const string CsFileDirectory = "../../../../../Server/Model/Base/Module/Config/";
         private static Assembly __assembly;
 
         private static readonly ConcurrentQueue<(DataTable, Dictionary<string, string>)>

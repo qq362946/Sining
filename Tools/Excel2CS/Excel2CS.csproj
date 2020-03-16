@@ -13,7 +13,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\Server\Core\Server.Core.csproj" />
       <ProjectReference Include="..\..\Server\Model\Server.Model.csproj" />
       <ProjectReference Include="..\..\Server\ThirdPartyPlugin\Google.Protobuf\Google.Protobuf.csproj" />
       <ProjectReference Include="..\..\Server\ThirdPartyPlugin\MongoDB\MongoDB.Bson\MongoDB.Bson.csproj" />

@@ -13,7 +13,7 @@ namespace Export2Other
     public static class ServerConfigToEnum
     {
         private const string ConfigFile = "../../../../../Excel/Server/ServerConfig.xlsx";
-        private const string SaveConfigFile = "../../../../../Server/Model/Base/Server/ServerType.cs";
+        private const string SaveConfigFile = "../../../../../Server/Model/Base/Module/Server/ServerType.cs";
 
         public static void Run()
         {

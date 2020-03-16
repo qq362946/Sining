@@ -1,2 +1,8 @@
 syntax = "proto3";
-package Sining;
+package Sining.Message;
+
+// 服务器启动完成
+message ServerStartFinished // IMessage   
+{
+	int32 ServerId = 1;  
+} 

@@ -1,6 +1,5 @@
 using System.Threading;
 using Sining;
-using Sining.Event;
 using Sining.Message;
 using Sining.Module;
 using Sining.Network;

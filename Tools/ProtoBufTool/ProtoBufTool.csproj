@@ -6,7 +6,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Compile Include="..\..\Server\Core\Base\Tools\ProcessHelper.cs">
+      <Compile Include="..\..\Server\Model\Base\Tools\ProcessHelper.cs">
         <Link>ProcessHelper.cs</Link>
       </Compile>
     </ItemGroup>

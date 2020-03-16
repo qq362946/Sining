@@ -6,13 +6,18 @@ using Sining.Network;
 
 namespace Sining.Tools
 {
-    public static class MessageHelper
+    public static partial class MessageHelper
     {
         private static readonly Dictionary<int, string> AddressCache = new Dictionary<int, string>();
 
         public static void Send(this IMessage message, int serverId)
         {
             NetInnerComponent.Instance.GetSession(GetAddress(serverId)).Send(message);
+        }
+        
+        public static void Send(this IMessage message, string address)
+        {
+            NetInnerComponent.Instance.GetSession(address).Send(message);
         }
 
         public static STask<TResponse> Call<TResponse>(this IRequest request, int serverId) where TResponse : IResponse
@@ -34,14 +39,15 @@ namespace Sining.Tools
         {
             if (AddressCache.TryGetValue(serverId, out var address)) return address;
 
-            var serverConfig = ServerConfigData.Instance.GetConfig(serverId);
-            if (serverConfig == null)
-            {
-                throw new Exception("没有找到该服务器的配置文件");
-            }
+            // address = NetInnerComponent.Instance.Get(serverId);
+            //
+            // if (address == null)
+            // {
+            //     throw new Exception("没有找到该服务器的配置文件");
+            // }
+            //
+            // AddressCache.Add(serverId, address);
 
-            address = $"{serverConfig.InnerIP}:{serverConfig.InnerPort}";
-            AddressCache.Add(serverId, address);
             return address;
         }
     }

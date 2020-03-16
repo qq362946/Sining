@@ -1,6 +1,5 @@
 ﻿using System;
 using CommandLine;
-using Sining.Core;
 using Sining.Module;
 using Sining.Tools;
 
@@ -22,10 +21,6 @@ namespace Sining
                 SiningSystem.Init();
                 // 设置服务器ID
                 SApp.Id = options.Server < 0 ? 0 : options.Server;
-                // 逻辑处理组件
-                SApp.Scene.AddComponent<TaskProcessingComponent>();
-                // 场景管理组件
-                SApp.Scene.AddComponent<SceneManagementComponent>();
                 // 启动服务器组件
                 SApp.Scene.AddComponent<StartServerComponent, int>(options.Server);
                 // 防止主线程退出

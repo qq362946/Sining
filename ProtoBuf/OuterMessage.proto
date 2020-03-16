@@ -4,9 +4,9 @@ package Sining.Message;
 // 测试框架协议
 message TestMessage // IMessage   
 {
-  string Name = 1;
-  int32 Number = 2;
-  int32 Page = 3;
+	string Name = 1;
+	int32 Number = 2;
+	int32 Page = 3;
 } 
 // 登录协议
 message LoginRequest // IMessage

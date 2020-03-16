@@ -2,8 +2,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.App", "App\Server.App.csproj", "{18EAC1DB-41C3-4CF8-9DDC-A4255D79A0D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.Core", "Core\Server.Core.csproj", "{7BCABBF9-77DD-4D54-BECC-3754D3C6A42D}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.Model", "Model\Server.Model.csproj", "{A6A309E1-03AD-4F3B-8FF3-F2E43F4A6672}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.Hotfix", "Hotfix\Server.Hotfix.csproj", "{F0555FFE-A119-44B6-8A8D-48F19F13966D}"
@@ -42,10 +40,6 @@ Global
 		{18EAC1DB-41C3-4CF8-9DDC-A4255D79A0D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18EAC1DB-41C3-4CF8-9DDC-A4255D79A0D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18EAC1DB-41C3-4CF8-9DDC-A4255D79A0D9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7BCABBF9-77DD-4D54-BECC-3754D3C6A42D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7BCABBF9-77DD-4D54-BECC-3754D3C6A42D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7BCABBF9-77DD-4D54-BECC-3754D3C6A42D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7BCABBF9-77DD-4D54-BECC-3754D3C6A42D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A6A309E1-03AD-4F3B-8FF3-F2E43F4A6672}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A6A309E1-03AD-4F3B-8FF3-F2E43F4A6672}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6A309E1-03AD-4F3B-8FF3-F2E43F4A6672}.Release|Any CPU.ActiveCfg = Release|Any CPU

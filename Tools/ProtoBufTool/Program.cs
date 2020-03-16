@@ -18,18 +18,21 @@ namespace Sining.ProtoBufTool
             Opcode = opcode;
         }
     }
-    
+
     internal static class Program
     {
         private const string OuterMessageName = "OuterMessage.proto";
+        private const string InnerMessageName = "InnerMessage.proto";
         private const string OuterOpcodeName = "OuterOpcode";
         private const string OuterOpcodeCsName = OuterOpcodeName + ".cs";
+        private const string InnerOpcodeName = "InnerOpcode";
+        private const string InnerOpcodeCsName = InnerOpcodeName + ".cs";
         private const string ProtoBufPath = "../../../../../ProtoBuf/";
-        private const string ServerPath = "../Server/Model/Base/Network/Message/";
-        
+        private const string ServerPath = "../Server/Model/Base/Module/Message/";
+
         private static readonly List<OpcodeInfo> Opcodes = new List<OpcodeInfo>();
-        
-        private static readonly char[] SplitChars = { ' ', '\t' };
+
+        private static readonly char[] SplitChars = {' ', '\t'};
 
         private static void Main(string[] args)
         {
@@ -50,21 +53,28 @@ namespace Sining.ProtoBufTool
                 return;
             }
 
+            var startOpcode = 100;
+
             ProcessHelper.Run(
                 Path.Combine(ProtoBufPath, protoToolName),
                 $"--proto_path=./ {OuterMessageName} --csharp_out={ServerPath}",
                 ProtoBufPath, true);
 
-            OuterOpcode();
-            
+            Opcode(ref startOpcode, OuterMessageName, OuterOpcodeName, OuterOpcodeCsName);
+
+            ProcessHelper.Run(
+                Path.Combine(ProtoBufPath, protoToolName),
+                $"--proto_path=./ {InnerMessageName} --csharp_out={ServerPath}",
+                ProtoBufPath, true);
+
+            Opcode(ref startOpcode, InnerMessageName, InnerOpcodeName, InnerOpcodeCsName);
+
             Console.WriteLine("proto2cs succeed!");
         }
 
-        private static void OuterOpcode()
+        private static void Opcode(ref int opcodeIndex, string messageName, string opcodeName, string opcodeCsName)
         {
-            var startOpcode = 100;
-            
-            using var protoFile = new StreamReader(Path.Combine(ProtoBufPath, OuterMessageName));
+            using var protoFile = new StreamReader(Path.Combine(ProtoBufPath, messageName));
 
             var file = new StringBuilder();
 
@@ -79,7 +89,7 @@ namespace Sining.ProtoBufTool
                 if (line == null) break;
 
                 if (string.IsNullOrWhiteSpace(line)) continue;
-                
+
                 if (line.StartsWith("//"))
                 {
                     file.Append($"\t{line}\n");
@@ -87,35 +97,36 @@ namespace Sining.ProtoBufTool
                 }
 
                 if (!line.StartsWith("message")) continue;
-                
+
                 var className = line.Split(SplitChars, StringSplitOptions.RemoveEmptyEntries)[1];
                 var interfaceName = line.Split(new[] {"//"}, StringSplitOptions.RemoveEmptyEntries)[1].Trim();
-                file.Append($"\t[Message({OuterOpcodeName}.{className})]\n");
+                file.Append($"\t[Message({opcodeName}.{className})]\n");
                 file.Append($"\tpublic partial class {className} ");
                 file.Append($": {interfaceName} ");
                 file.Append("{}\n\n");
-                Opcodes.Add(new OpcodeInfo(className, ++startOpcode));
+                Opcodes.Add(new OpcodeInfo(className, ++opcodeIndex));
             }
 
             file.Append("}\n");
 
-            GenerateOpcode(file);
+            GenerateOpcode(file, opcodeName);
 
-            using var sw = new StreamWriter($"../../../../{ServerPath}{OuterOpcodeCsName}");
-            
+            using var sw = new StreamWriter($"../../../../{ServerPath}{opcodeCsName}");
+
             sw.Write(file.ToString());
         }
 
-        private static void GenerateOpcode(StringBuilder file)
+        private static void GenerateOpcode(StringBuilder file, string opcodeName)
         {
             file.AppendLine("namespace Sining.Message");
             file.AppendLine("{");
-            file.AppendLine($"\tpublic static partial class {OuterOpcodeName}");
+            file.AppendLine($"\tpublic static partial class {opcodeName}");
             file.AppendLine("\t{");
             foreach (var info in Opcodes)
             {
                 file.AppendLine($"\t\t public const ushort {info.Name} = {info.Opcode};");
             }
+
             Opcodes.Clear();
             file.AppendLine("\t}");
             file.AppendLine("}");
