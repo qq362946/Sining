@@ -15,8 +15,11 @@
     "frameworks": {
       "netcoreapp3.1": {
         "projectReferences": {
-          "/Users/sining/Code/Sining/Client/Core/Client.Core.csproj": {
-            "projectPath": "/Users/sining/Code/Sining/Client/Core/Client.Core.csproj"
+          "/Users/sining/Code/Sining/Server/ThirdPartyPlugin/Google.Protobuf/Google.Protobuf.csproj": {
+            "projectPath": "/Users/sining/Code/Sining/Server/ThirdPartyPlugin/Google.Protobuf/Google.Protobuf.csproj"
+          },
+          "/Users/sining/Code/Sining/Server/ThirdPartyPlugin/MongoDB/MongoDB.Bson/MongoDB.Bson.csproj": {
+            "projectPath": "/Users/sining/Code/Sining/Server/ThirdPartyPlugin/MongoDB/MongoDB.Bson/MongoDB.Bson.csproj"
           }
         }
       }

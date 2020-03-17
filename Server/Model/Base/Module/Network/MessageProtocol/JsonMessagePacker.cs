@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using System.Text;
+using MongoDB.Bson.Serialization;
 using Server.Network;
 using Sining.Message;
 using Sining.Module;

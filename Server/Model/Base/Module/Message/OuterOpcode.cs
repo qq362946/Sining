@@ -15,7 +15,7 @@ namespace Sining.Message
 	public partial class RegRequest : IMessage {}
 
 	// 获取一个值
-	[Message(OuterOpcode.GetNameRequest)]
+	[Message(OuterOpcode.GetNameRequest,"/Api/GetNameRequest")]
 	public partial class GetNameRequest : IRequest {}
 
 	[Message(OuterOpcode.GetNameResponse)]

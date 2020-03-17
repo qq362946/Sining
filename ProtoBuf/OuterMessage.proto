@@ -21,7 +21,7 @@ message RegRequest // IMessage
 	string Date = 2;
 }
 // 获取一个值
-message GetNameRequest // IRequest
+message GetNameRequest // IRequest | /Api/
 {
 	int32 RpcId = 90;
 	string Name = 1;	

@@ -1,9 +1,0 @@
-/Users/sining/Code/Sining/Client/Bin/Client.Core.deps.json
-/Users/sining/Code/Sining/Client/Bin/Client.Core.dll
-/Users/sining/Code/Sining/Client/Bin/Client.Core.pdb
-/Users/sining/Code/Sining/Client/Core/obj/Debug/Client.Core.csprojAssemblyReference.cache
-/Users/sining/Code/Sining/Client/Core/obj/Debug/Client.Core.AssemblyInfoInputs.cache
-/Users/sining/Code/Sining/Client/Core/obj/Debug/Client.Core.AssemblyInfo.cs
-/Users/sining/Code/Sining/Client/Core/obj/Debug/Client.Core.csproj.CopyComplete
-/Users/sining/Code/Sining/Client/Core/obj/Debug/Client.Core.dll
-/Users/sining/Code/Sining/Client/Core/obj/Debug/Client.Core.pdb

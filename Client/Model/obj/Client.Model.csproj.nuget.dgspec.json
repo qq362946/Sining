@@ -4,63 +4,6 @@
     "/Users/sining/Code/Sining/Client/Model/Client.Model.csproj": {}
   },
   "projects": {
-    "/Users/sining/Code/Sining/Client/Core/Client.Core.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/Users/sining/Code/Sining/Client/Core/Client.Core.csproj",
-        "projectName": "Client.Core",
-        "projectPath": "/Users/sining/Code/Sining/Client/Core/Client.Core.csproj",
-        "packagesPath": "/Users/sining/.nuget/packages/",
-        "outputPath": "/Users/sining/Code/Sining/Client/Core/obj/",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "/Users/sining/.config/NuGet/NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp3.1"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp3.1": {
-            "projectReferences": {
-              "/Users/sining/Code/Sining/Server/ThirdPartyPlugin/Google.Protobuf/Google.Protobuf.csproj": {
-                "projectPath": "/Users/sining/Code/Sining/Server/ThirdPartyPlugin/Google.Protobuf/Google.Protobuf.csproj"
-              },
-              "/Users/sining/Code/Sining/Server/ThirdPartyPlugin/MongoDB/MongoDB.Bson/MongoDB.Bson.csproj": {
-                "projectPath": "/Users/sining/Code/Sining/Server/ThirdPartyPlugin/MongoDB/MongoDB.Bson/MongoDB.Bson.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp3.1": {
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
-        }
-      }
-    },
     "/Users/sining/Code/Sining/Client/Model/Client.Model.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -82,8 +25,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "/Users/sining/Code/Sining/Client/Core/Client.Core.csproj": {
-                "projectPath": "/Users/sining/Code/Sining/Client/Core/Client.Core.csproj"
+              "/Users/sining/Code/Sining/Server/ThirdPartyPlugin/Google.Protobuf/Google.Protobuf.csproj": {
+                "projectPath": "/Users/sining/Code/Sining/Server/ThirdPartyPlugin/Google.Protobuf/Google.Protobuf.csproj"
+              },
+              "/Users/sining/Code/Sining/Server/ThirdPartyPlugin/MongoDB/MongoDB.Bson/MongoDB.Bson.csproj": {
+                "projectPath": "/Users/sining/Code/Sining/Server/ThirdPartyPlugin/MongoDB/MongoDB.Bson/MongoDB.Bson.csproj"
               }
             }
           }

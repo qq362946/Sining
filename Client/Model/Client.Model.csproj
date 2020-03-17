@@ -14,64 +14,239 @@
     <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
       <DefineConstants>TRACE;RELEASE;NETCOREAPP2_0;SERVER;SiningClient</DefineConstants>
       <OutputPath>../Bin</OutputPath>
-    </PropertyGroup>
+    </PropertyGroup>    
 
     <ItemGroup>
-      <ProjectReference Include="..\Core\Client.Core.csproj" />
+      <Compile Include="..\..\Server\Model\Base\Async\Builder\AsyncSTaskMethodBuilder.cs">
+        <Link>Base\Async\Builder\AsyncSTaskMethodBuilder.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Async\Builder\AsyncSVoidMethodBuilder.cs">
+        <Link>Base\Async\Builder\AsyncSVoidMethodBuilder.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Async\IAwaiter.cs">
+        <Link>Base\Async\IAwaiter.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Async\Task\STask.cs">
+        <Link>Base\Async\Task\STask.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Async\Task\STaskAwaiter.cs">
+        <Link>Base\Async\Task\STaskAwaiter.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Async\Task\STaskCompletionSource.cs">
+        <Link>Base\Async\Task\STaskCompletionSource.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Async\Void\SVoid.cs">
+        <Link>Base\Async\Void\SVoid.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Async\Void\SVoidAwaiter.cs">
+        <Link>Base\Async\Void\SVoidAwaiter.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Component\Component.cs">
+        <Link>Base\Component\Component.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Component\ComponentFactory.cs">
+        <Link>Base\Component\ComponentFactory.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Component\IObject.cs">
+        <Link>Base\Component\IObject.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\DataStructure\CircularBuffer.cs">
+        <Link>Base\DataStructure\CircularBuffer.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\DataStructure\DoubleMapDictionary.cs">
+        <Link>Base\DataStructure\DoubleMapDictionary.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\DataStructure\OneToManyDictionary.cs">
+        <Link>Base\DataStructure\OneToManyDictionary.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\DataStructure\OneToManyHashSet.cs">
+        <Link>Base\DataStructure\OneToManyHashSet.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\DataStructure\OneToManyList.cs">
+        <Link>Base\DataStructure\OneToManyList.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\DataStructure\OneToManyQueue.cs">
+        <Link>Base\DataStructure\OneToManyQueue.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Event\Attribute\BaseAttribute.cs">
+        <Link>Base\Event\Attribute\BaseAttribute.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Event\EventHandlerSystem.cs">
+        <Link>Base\Event\EventHandlerSystem.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Event\IEvent.cs">
+        <Link>Base\Event\IEvent.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Module\Component\AwakeSystem.cs">
+        <Link>Base\Module\Component\AwakeSystem.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Module\Component\ComponentManagement.cs">
+        <Link>Base\Module\Component\ComponentManagement.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Module\Component\ComponentSystemAttribute.cs">
+        <Link>Base\Module\Component\ComponentSystemAttribute.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Module\Component\DestroySystem.cs">
+        <Link>Base\Module\Component\DestroySystem.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Module\Config\AConfig.cs">
+        <Link>Base\Config\AConfig.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Module\Config\ConfigAttribute.cs">
+        <Link>Base\Config\ConfigAttribute.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Module\Config\ConfigManagementComponent.cs">
+        <Link>Base\Module\ConfigManagementComponent.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Module\Config\IConfig.cs">
+        <Link>Base\Config\IConfig.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Module\Message\ErrorCode.cs">
+        <Link>Base\Module\Message\ErrorCode.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Module\Message\MessageDispatcherManagement.cs">
+        <Link>Base\Module\Message\MessageDispatcherManagement.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Module\Message\MessageHandler.cs">
+        <Link>Base\Module\Message\MessageHandler.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Module\Message\MessageSystemAttribute.cs">
+        <Link>Base\Module\Message\MessageSystemAttribute.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Module\Message\Opcode.cs">
+        <Link>Base\Module\Message\Opcode.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Module\Message\OuterMessage.cs">
+        <Link>Base\Module\Message\OuterMessage.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Module\Message\OuterOpcode.cs">
+        <Link>Base\Module\Message\OuterOpcode.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Module\Network\Base\AMessagePacker.cs">
+        <Link>Base\Module\Network\Base\AMessagePacker.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Module\Network\Base\IMessageHandler.cs">
+        <Link>Base\Module\Network\Base\IMessageHandler.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Module\Network\Base\MessageAttribute.cs">
+        <Link>Base\Module\Network\Base\MessageAttribute.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Module\Network\Base\MessagePacker.cs">
+        <Link>Base\Module\Network\Base\MessagePacker.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Module\Network\Base\NetworkChannel.cs">
+        <Link>Base\Module\Network\Base\NetworkChannel.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Module\Network\Base\NetworkProtocol.cs">
+        <Link>Base\Module\Network\Base\NetworkProtocol.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Module\Network\Http\HttpClientChannelComponent.cs">
+        <Link>Base\Module\Network\Http\HttpClientChannelComponent.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Module\Network\Http\HttpClientComponent.cs">
+        <Link>Base\Module\Network\Http\HttpClientComponent.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Module\Network\Http\HttpComponent.cs">
+        <Link>Base\Module\Network\Http\HttpComponent.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Module\Network\Http\HttpServerChannelComponent.cs">
+        <Link>Base\Module\Network\Http\HttpServerChannelComponent.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Module\Network\Interface\IMessage.cs">
+        <Link>Base\Module\Network\Interface\IMessage.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Module\Network\MessageProtocol\JsonMessagePacker.cs">
+        <Link>Base\Module\Network\MessageProtocol\JsonMessagePacker.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Module\Network\MessageProtocol\ProtobufHelper.cs">
+        <Link>Base\Module\Network\MessageProtocol\ProtobufHelper.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Module\Network\MessageProtocol\ProtobufMessagePacker.cs">
+        <Link>Base\Module\Network\MessageProtocol\ProtobufMessagePacker.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Module\Network\NetInnerComponent.cs">
+        <Link>Base\Module\Network\NetInnerComponent.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Module\Network\NetOuterComponent.cs">
+        <Link>Base\Module\Network\NetOuterComponent.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Module\Network\NetworkComponent.cs">
+        <Link>Base\Module\Network\NetworkComponent.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Module\Network\NetworkProtocolManagement.cs">
+        <Link>Base\Module\Network\NetworkProtocolManagement.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Module\Network\PacketParser.cs">
+        <Link>Base\Module\Network\PacketParser.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Module\Network\TCP\TCPChannelComponent.cs">
+        <Link>Base\Module\Network\TCP\TCPChannelComponent.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Module\Network\TCP\TCPComponent.cs">
+        <Link>Base\Module\Network\TCP\TCPComponent.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Module\Network\WebSocket\WebSocketChannelComponent.cs">
+        <Link>Base\Module\Network\WebSocket\WebSocketChannelComponent.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Module\Network\WebSocket\WebSocketComponent.cs">
+        <Link>Base\Module\Network\WebSocket\WebSocketComponent.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Module\Session.cs">
+        <Link>Base\Module\Session.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Module\SystemEventComponent\EventSystemAttribute.cs">
+        <Link>Base\Module\SystemEventComponent\EventSystemAttribute.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Module\SystemEventComponent\SystemEventComponent.cs">
+        <Link>Base\Module\SystemEventComponent\SystemEventComponent.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Task\TaskProcessingComponent.cs">
+        <Link>Base\Task\TaskProcessingComponent.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Tools\AssemblyManagement.cs">
+        <Link>Base\Tools\AssemblyManagement.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Tools\IdFactory.cs">
+        <Link>Base\Tools\IdFactory.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Tools\Log.cs">
+        <Link>Base\Tools\Log.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Tools\NetworkHelper.cs">
+        <Link>Base\Tools\NetworkHelper.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Tools\ObjectPool.cs">
+        <Link>Base\Tools\ObjectPool.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Tools\RecyclableMemoryStream\Events.cs">
+        <Link>Base\Tools\RecyclableMemoryStream\Events.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Tools\RecyclableMemoryStream\MemoryStreamPool.cs">
+        <Link>Base\Tools\RecyclableMemoryStream\MemoryStreamPool.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Tools\RecyclableMemoryStream\RecyclableMemoryStream.cs">
+        <Link>Base\Tools\RecyclableMemoryStream\RecyclableMemoryStream.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Tools\RecyclableMemoryStream\RecyclableMemoryStreamManager.cs">
+        <Link>Base\Tools\RecyclableMemoryStream\RecyclableMemoryStreamManager.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Tools\SerializationHelper.cs">
+        <Link>Base\Tools\SerializationHelper.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Tools\TimeHelper.cs">
+        <Link>Base\Tools\TimeHelper.cs</Link>
+      </Compile>
+    </ItemGroup>
+
+    <ItemGroup>      
+      <Folder Include="Base\Config\Data" />
+      <Folder Include="Base\Config\Entity" />
+      <Folder Include="Base\Config\Partial" />
     </ItemGroup>
 
     <ItemGroup>
-      <Compile Include="..\..\Server\Model\Base\Network\MessageProtocol\ProtobufMessagePacker.cs">
-        <Link>Base\Network\MessageProtocol\ProtobufMessagePacker.cs</Link>
-      </Compile>
-      <Compile Include="..\..\Server\Model\Base\Network\Message\OuterMessage.cs">
-        <Link>Base\Network\Message\OuterMessage.cs</Link>
-      </Compile>
-      <Compile Include="..\..\Server\Model\Base\Network\Message\OuterOpcode.cs">
-        <Link>Base\Network\Message\OuterOpcode.cs</Link>
-      </Compile>
-      <Compile Include="..\..\Server\Model\Base\Scene\Scene.cs">
-        <Link>Base\Scene\Scene.cs</Link>
-      </Compile>
-      <Compile Include="..\..\Server\Model\Base\Scene\SceneFactory.cs">
-        <Link>Base\Scene\SceneFactory.cs</Link>
-      </Compile>
-      <Compile Include="..\..\Server\Model\Base\Scene\SceneType.cs">
-        <Link>Base\Scene\SceneType.cs</Link>
-      </Compile>
-      <Compile Include="..\..\Server\Model\Base\Server\ServerType.cs">
-        <Link>Base\Server\ServerType.cs</Link>
-      </Compile>
-      <Compile Include="..\..\Server\Model\Base\Tools\ProtobufHelper.cs">
-        <Link>Base\Tools\ProtobufHelper.cs</Link>
-      </Compile>
-      <Compile Include="..\..\Server\Model\Config\Data\SceneConfigData.cs">
-        <Link>Config\Data\SceneConfigData.cs</Link>
-      </Compile>
-      <Compile Include="..\..\Server\Model\Config\Data\ServerConfigData.cs">
-        <Link>Config\Data\ServerConfigData.cs</Link>
-      </Compile>
-      <Compile Include="..\..\Server\Model\Config\Entity\SceneConfig.cs">
-        <Link>Config\Entity\SceneConfig.cs</Link>
-      </Compile>
-      <Compile Include="..\..\Server\Model\Config\Entity\ServerConfig.cs">
-        <Link>Config\Entity\ServerConfig.cs</Link>
-      </Compile>
-      <Compile Include="..\..\Server\Model\Config\Partial\SceneConfigData.cs">
-        <Link>Config\Partial\SceneConfigData.cs</Link>
-      </Compile>
-      <Compile Include="..\..\Server\Model\Config\Partial\ServerConfigData.cs">
-        <Link>Config\Partial\ServerConfigData.cs</Link>
-      </Compile>
-      <Compile Include="..\..\Server\Model\Module\NetOuterComponent.cs">
-        <Link>Module\NetOuterComponent.cs</Link>
-      </Compile>
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="..\..\Server\Model\Base\Network\Message\Interface">
-        <Link>Base\Network\Message\Interface</Link>
-      </Folder>
+      <ProjectReference Include="..\..\Server\ThirdPartyPlugin\Google.Protobuf\Google.Protobuf.csproj" />
+      <ProjectReference Include="..\..\Server\ThirdPartyPlugin\MongoDB\MongoDB.Bson\MongoDB.Bson.csproj" />
     </ItemGroup>
 
 </Project>

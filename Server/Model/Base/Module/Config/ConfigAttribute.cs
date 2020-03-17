@@ -1,5 +1,5 @@
 using System;
-using CommandLine;
+using Sining.Event;
 
 namespace Sining.Config
 {

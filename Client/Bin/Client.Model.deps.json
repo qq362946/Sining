@@ -8,19 +8,11 @@
     ".NETCoreApp,Version=v3.1": {
       "Client.Model/1.0.0": {
         "dependencies": {
-          "Client.Core": "1.0.0"
-        },
-        "runtime": {
-          "Client.Model.dll": {}
-        }
-      },
-      "Client.Core/1.0.0": {
-        "dependencies": {
           "Google.Protobuf": "1.0.0",
           "MongoDB.Bson": "0.0.0-local"
         },
         "runtime": {
-          "Client.Core.dll": {}
+          "Client.Model.dll": {}
         }
       },
       "Google.Protobuf/1.0.0": {
@@ -37,11 +29,6 @@
   },
   "libraries": {
     "Client.Model/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Client.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

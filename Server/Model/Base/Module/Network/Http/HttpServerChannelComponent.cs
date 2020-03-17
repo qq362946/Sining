@@ -86,6 +86,7 @@ namespace Sining.Network
                 _parser.JsonParse(context.Request.InputStream);
 
                 var messageType = NetworkProtocolManagement.Instance.GetType(context.Request.RawUrl);
+                
                 message = _networkComponent.MessagePacker.DeserializeFrom(messageType, MemoryStream);
             }
             catch (Exception e)

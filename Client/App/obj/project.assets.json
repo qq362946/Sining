@@ -2,25 +2,12 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "Client.Core/1.0.0": {
+      "Client.Model/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "Google.Protobuf": "1.0.0",
           "MongoDB.Bson": "0.0.0-local"
-        },
-        "compile": {
-          "bin/placeholder/Client.Core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Client.Core.dll": {}
-        }
-      },
-      "Client.Model/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "Client.Core": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Client.Model.dll": {}
@@ -52,11 +39,6 @@
     }
   },
   "libraries": {
-    "Client.Core/1.0.0": {
-      "type": "project",
-      "path": "../Core/Client.Core.csproj",
-      "msbuildProject": "../Core/Client.Core.csproj"
-    },
     "Client.Model/1.0.0": {
       "type": "project",
       "path": "../Model/Client.Model.csproj",

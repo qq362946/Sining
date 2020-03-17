@@ -28,11 +28,6 @@ namespace Sining.Module
             {
                 Log.Info("[单进程模式]开始启动服务器，请稍等...");
 
-                // foreach (var serverConfig in ServerConfigData.Instance.GetAllConfig())
-                // {
-                //     await Create(serverConfig);
-                // }
-                
                 StartUpServerAsync().Coroutine();
 
                 return;

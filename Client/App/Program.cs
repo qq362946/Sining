@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Net.Http;
-using System.Threading;
-using System.Threading.Tasks;
 using MongoDB.Bson;
 using Sining;
-using Sining.Core;
 using Sining.Message;
 using Sining.Tools;
 using Sining.Module;
+using Sining.Network;
 
 namespace Client.App
 {
@@ -15,46 +12,62 @@ namespace Client.App
     {
         private static void Main(string[] args)
         {
-            // 系统初始化
-            SiningSystem.Init();
-            // 设置AppID
-            SApp.Id = 0;
-            // 逻辑处理组件
-            SApp.Scene.AddComponent<TaskProcessingComponent>();
-            // 挂载网络组件（可以同时挂载多个，也就是多个网络连接）
-            SApp.Scene.AddComponent<NetOuterComponent, NetworkProtocolType>(NetworkProtocolType.TCP);
-
-            // TCP
-            // 获取网络组件
-            var tcpNetOuterComponent = SApp.Scene.GetComponent<NetOuterComponent>();
-            // 根据地址连接到服务器
-            var tcpSession = tcpNetOuterComponent.Create("127.0.0.1:10000");
-            Run(tcpSession).Coroutine();
-            
-            // WebSocket
-            var webSocketNetOuterComponent =
-                ComponentFactory.CreateOnly<NetOuterComponent, NetworkProtocolType>(NetworkProtocolType.WebSocket);
-            var webSocketSession = webSocketNetOuterComponent.Create("ws://127.0.0.1:8889/");
-            Run(webSocketSession).Coroutine();
-
-            // HTTP
-            var httpNetOuterComponent =
-                ComponentFactory.CreateOnly<NetOuterComponent, NetworkProtocolType>(NetworkProtocolType.HTTP);
-            var httpSession = httpNetOuterComponent.Create("http://127.0.0.1:8888/");
-            Run(httpSession).Coroutine();
-            
-            
-            for (;;)
+            try
             {
-                Console.ReadKey();
-                httpSession.Send(new TestMessage()
-                {
-                    Name = "大宁", Number = 123
-                });
+                // 系统初始化
+                SiningSystem.Init();
+
+                // 挂载TCP网络组件（可以同时挂载多个，也就是多个网络连接）
+                SApp.Scene.AddComponent<NetOuterComponent, MessagePacker, NetworkProtocolType>(
+                    ComponentFactory.Create<ProtobufMessagePacker>(),
+                    NetworkProtocolType.TCP);
+
+                // 获取网络组件
+                var tcpNetOuterComponent = SApp.Scene.GetComponent<NetOuterComponent>();
+
+                // 根据地址连接到服务器
+                var tcpSession = tcpNetOuterComponent.Create("127.0.0.1:10000");
+                TextCall(tcpSession).Coroutine();
+
+                // WebSocket
+                var webSocketNetOuterComponent =
+                    ComponentFactory.CreateOnly<NetOuterComponent, MessagePacker, NetworkProtocolType>(
+                        ComponentFactory.Create<ProtobufMessagePacker>(),
+                        NetworkProtocolType.WebSocket);
+
+                var webSocketSession = webSocketNetOuterComponent.Create("ws://127.0.0.1:8889/");
+                TextCall(webSocketSession).Coroutine();
+
+                // HTTP
+
+                SApp.Scene.AddComponent<HttpClientComponent>();
+
+                HttpTestCall().Coroutine();
+
+                for (;;) Console.ReadKey();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
             }
         }
+        
+        private static async SVoid HttpTestCall()
+        {
+            HttpClientComponent.Instance.Send(new TestMessage()
+            {
+                Name = "张思", Number = 666, Page = 9
+            }, "http://127.0.0.1:8888");
+            
+            var result = await HttpClientComponent.Instance.Call<GetNameResponse>(new GetNameRequest()
+            {
+                Name = "宁2"
+            },"http://127.0.0.1:8888");
+            
+            Console.WriteLine($"result:{result.ToJson()}");
+        }
 
-        private static async SVoid Run(Session session)
+        private static async SVoid TextCall(Session session)
         {
             var result = await session.Call<GetNameResponse>(new GetNameRequest()
             {

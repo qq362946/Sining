@@ -2,20 +2,6 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "Client.Core/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "Google.Protobuf": "1.0.0",
-          "MongoDB.Bson": "0.0.0-local"
-        },
-        "compile": {
-          "bin/placeholder/Client.Core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Client.Core.dll": {}
-        }
-      },
       "Google.Protobuf/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -39,11 +25,6 @@
     }
   },
   "libraries": {
-    "Client.Core/1.0.0": {
-      "type": "project",
-      "path": "../Core/Client.Core.csproj",
-      "msbuildProject": "../Core/Client.Core.csproj"
-    },
     "Google.Protobuf/1.0.0": {
       "type": "project",
       "path": "../../Server/ThirdPartyPlugin/Google.Protobuf/Google.Protobuf.csproj",
@@ -57,7 +38,8 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Client.Core >= 1.0.0"
+      "Google.Protobuf >= 1.0.0",
+      "MongoDB.Bson >= 0.0.0-local"
     ]
   },
   "packageFolders": {
@@ -84,8 +66,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "/Users/sining/Code/Sining/Client/Core/Client.Core.csproj": {
-              "projectPath": "/Users/sining/Code/Sining/Client/Core/Client.Core.csproj"
+            "/Users/sining/Code/Sining/Server/ThirdPartyPlugin/Google.Protobuf/Google.Protobuf.csproj": {
+              "projectPath": "/Users/sining/Code/Sining/Server/ThirdPartyPlugin/Google.Protobuf/Google.Protobuf.csproj"
+            },
+            "/Users/sining/Code/Sining/Server/ThirdPartyPlugin/MongoDB/MongoDB.Bson/MongoDB.Bson.csproj": {
+              "projectPath": "/Users/sining/Code/Sining/Server/ThirdPartyPlugin/MongoDB/MongoDB.Bson/MongoDB.Bson.csproj"
             }
           }
         }

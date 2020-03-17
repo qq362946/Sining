@@ -8,10 +8,17 @@ namespace Sining.Tools
     {
         public static readonly List<Type> AllType = new List<Type>();
 
+        #if SiningClient
+        public static void Init()
+        {
+            Init("Client.Hotfix.dll");
+        }
+        #else
         public static void Init()
         {
             Init("Server.Hotfix.dll");
         }
+        #endif
 
         private static void Init(params string[] assemblyName)
         {
