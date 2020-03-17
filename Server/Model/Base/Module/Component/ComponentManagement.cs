@@ -13,9 +13,7 @@ namespace Sining.Module
         public static ComponentManagement Instance;
 
         private readonly Dictionary<long, Component> _components = new Dictionary<long, Component>();
-
         private readonly OneToManyList<Type, IAwakeSystem> _awakeSystem = new OneToManyList<Type, IAwakeSystem>(0);
-        
         private readonly OneToManyList<Type, IDestroySystem> _destroySystem = new OneToManyList<Type, IDestroySystem>(0);
 
         private readonly object _lock = new object();

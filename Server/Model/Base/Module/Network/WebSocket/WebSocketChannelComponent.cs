@@ -129,7 +129,7 @@ namespace Sining.Network
                         return;
                     }
 
-                    TaskProcessingComponent.Instance.Add(OnRecvComplete);
+                    OneThreadSynchronizationContext.Instance.Post(OnRecvComplete, null);
                 }
             }
             catch (Exception e)
@@ -139,7 +139,7 @@ namespace Sining.Network
             }
         }
 
-        private void OnRecvComplete()
+        private void OnRecvComplete(object o)
         {
             for (;;)
             {

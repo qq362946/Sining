@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using MongoDB.Bson;
 using Sining;
 using Sining.Message;
@@ -44,7 +45,18 @@ namespace Client.App
 
                 HttpTestCall().Coroutine();
 
-                for (;;) Console.ReadKey();
+                for (;;)
+                {
+                    try
+                    {
+                        Thread.Sleep(1);
+                        OneThreadSynchronizationContext.Instance.Update();
+                    }
+                    catch (Exception e)
+                    {
+                        Log.Error(e);
+                    }
+                }
             }
             catch (Exception e)
             {

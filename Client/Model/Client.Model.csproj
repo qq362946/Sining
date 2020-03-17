@@ -200,6 +200,9 @@
       <Compile Include="..\..\Server\Model\Base\Module\SystemEventComponent\SystemEventComponent.cs">
         <Link>Base\Module\SystemEventComponent\SystemEventComponent.cs</Link>
       </Compile>
+      <Compile Include="..\..\Server\Model\Base\OneThreadSynchronizationContext.cs">
+        <Link>Base\OneThreadSynchronizationContext.cs</Link>
+      </Compile>
       <Compile Include="..\..\Server\Model\Base\Task\TaskProcessingComponent.cs">
         <Link>Base\Task\TaskProcessingComponent.cs</Link>
       </Compile>

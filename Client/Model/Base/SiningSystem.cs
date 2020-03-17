@@ -34,8 +34,6 @@ namespace Sining.Tools
             SApp.Init();
             // 等待线程全部处理完毕
             Task.WaitAll(tasks.ToArray());
-            // 逻辑处理组件
-            SApp.Scene.AddComponent<TaskProcessingComponent>();
         }
     }
 }

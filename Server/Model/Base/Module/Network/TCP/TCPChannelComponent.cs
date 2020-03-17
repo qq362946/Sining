@@ -96,9 +96,11 @@ namespace Sining.Network
             OnConnectComplete(_outArgs);
         }
         
-        private void OnConnectComplete(SocketAsyncEventArgs asyncEventArgs)
+        private void OnConnectComplete(object o)
         {
             if (IsDispose) return;
+
+            var asyncEventArgs = (SocketAsyncEventArgs) o;
 
             if (asyncEventArgs.SocketError != SocketError.Success)
             {
@@ -141,9 +143,11 @@ namespace Sining.Network
             OnRecvComplete(_innArgs);
         }
 
-        private void OnRecvComplete(SocketAsyncEventArgs asyncEventArgs)
+        private void OnRecvComplete(object o)
         {
             if (IsDispose) return;
+
+            var asyncEventArgs = (SocketAsyncEventArgs) o;
 
             if (asyncEventArgs.SocketError != SocketError.Success) return;
 
@@ -271,9 +275,11 @@ namespace Sining.Network
             StartSend();
         }
 
-        private void OnSendComplete(SocketAsyncEventArgs asyncEventArgs)
+        private void OnSendComplete(object o)
         {
             if (_socket == null || IsDispose) return;
+
+            SocketAsyncEventArgs asyncEventArgs = (SocketAsyncEventArgs) o;
 
             if (asyncEventArgs.SocketError != SocketError.Success)
             {
@@ -307,23 +313,23 @@ namespace Sining.Network
             switch (asyncEventArgs.LastOperation)
             {
                 case SocketAsyncOperation.Connect:
-                    TaskProcessingComponent.Instance.Add(() => { OnConnectComplete(asyncEventArgs); });
+                    OneThreadSynchronizationContext.Instance.Post(OnConnectComplete, asyncEventArgs);
                     break;
                 case SocketAsyncOperation.Receive:
-                    TaskProcessingComponent.Instance.Add(() => { OnRecvComplete(asyncEventArgs); });
+                    OneThreadSynchronizationContext.Instance.Post(OnRecvComplete,asyncEventArgs);
                     break;
                 case SocketAsyncOperation.Send:
-                    TaskProcessingComponent.Instance.Add(() => { OnSendComplete(asyncEventArgs); });
+                    OneThreadSynchronizationContext.Instance.Post(OnSendComplete, asyncEventArgs);
                     break;
                 case SocketAsyncOperation.Disconnect:
-                    TaskProcessingComponent.Instance.Add(() => { OnDisconnectComplete(asyncEventArgs); });
+                    OneThreadSynchronizationContext.Instance.Post(OnDisconnectComplete, asyncEventArgs);
                     break;
                 default:
                     throw new Exception($"Socket Error: {asyncEventArgs.LastOperation}");
             }
         }
 
-        private void OnDisconnectComplete(SocketAsyncEventArgs asyncEventArgs)
+        private void OnDisconnectComplete(object o)
         {
             Dispose();
         }

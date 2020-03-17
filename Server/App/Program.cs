@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Diagnostics;
+using System.Threading;
 using CommandLine;
 using MongoDB.Bson;
 using Server.Network;
@@ -14,6 +16,8 @@ namespace Sining
         {
             try
             {
+                // 将其他线程的数据同步上线文。保证都在同一个线程里执行。
+                SynchronizationContext.SetSynchronizationContext(OneThreadSynchronizationContext.Instance);
                 // 服务器会占用8999端口，请不要使用这个端口。
                 // 解析命令行
                 Options options = null;
@@ -27,7 +31,18 @@ namespace Sining
                 // 启动服务器组件
                 SApp.Scene.AddComponent<StartServerComponent, int>(options.Server);
                 // 防止主线程退出
-                for (;;) Console.ReadKey();
+                for (;;)
+                {
+                    try
+                    {
+                        Thread.Sleep(1);
+                        OneThreadSynchronizationContext.Instance.Update();
+                    }
+                    catch (Exception e)
+                    {
+                        Log.Error(e);
+                    }
+                }
             }
             catch (Exception e)
             {

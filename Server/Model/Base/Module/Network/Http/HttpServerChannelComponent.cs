@@ -72,13 +72,14 @@ namespace Sining.Network
         {
             if (!(result.AsyncState is HttpListener httpListener)) return;
 
-            TaskProcessingComponent.Instance.Add(() => OnRecvComplete(httpListener.EndGetContext(result)));
-
+            OneThreadSynchronizationContext.Instance.Post(OnRecvComplete,httpListener.EndGetContext(result));
+            
             httpListener.BeginGetContext(Recv, httpListener);
         }
 
-        private void OnRecvComplete(HttpListenerContext context)
+        private void OnRecvComplete(object o)
         {
+            var context = (HttpListenerContext) o;
             object message;
 
             try
@@ -86,7 +87,7 @@ namespace Sining.Network
                 _parser.JsonParse(context.Request.InputStream);
 
                 var messageType = NetworkProtocolManagement.Instance.GetType(context.Request.RawUrl);
-                
+
                 message = _networkComponent.MessagePacker.DeserializeFrom(messageType, MemoryStream);
             }
             catch (Exception e)

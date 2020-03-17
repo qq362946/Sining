@@ -33,14 +33,15 @@ namespace Sining.Tools
                 // 初始化配置文件
                 Task.Run(() => SApp.Scene.AddComponent<ConfigManagementComponent>().Init())
             };
+            
             // 等待线程全部处理完毕
             Task.WaitAll(tasks.ToArray());
             // Actor消息组件
             SApp.Scene.AddComponent<ActorMessageComponent>();
-            // 逻辑处理组件
-            SApp.Scene.AddComponent<TaskProcessingComponent>();
             // 场景管理组件
             SApp.Scene.AddComponent<SceneManagementComponent>();
+            // 时间调度处理组件
+            SApp.Scene.AddComponent<TimerComponent>();
         }
     }
 }
