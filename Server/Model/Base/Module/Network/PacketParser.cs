@@ -21,23 +21,11 @@ namespace Sining.Network
         private readonly MemoryStream _channelMemoryStream;
         public int MessagePacketLength;
         public ushort MessageProtocolCode;
-        public const int MemoryPoolMaxLength = 8192;
-    
+
         public PacketParser(CircularBuffer buffer, MemoryStream channelMemoryStream)
         {
             _buffer = buffer;
             _channelMemoryStream = channelMemoryStream;
-        }
-
-        public void JsonParse(Stream stream)
-        {
-            using var memoryOwner = MemoryPool<byte>.Shared.Rent(MemoryPoolMaxLength);
-            stream.Read(memoryOwner.Memory.Span);
-
-            _channelMemoryStream.Seek(0, SeekOrigin.Begin);
-            _channelMemoryStream.Write(memoryOwner.Memory.Span);
-            _channelMemoryStream.Seek(0, SeekOrigin.Begin);
-            _channelMemoryStream.SetLength(MemoryPoolMaxLength);
         }
 
         public bool Parse()

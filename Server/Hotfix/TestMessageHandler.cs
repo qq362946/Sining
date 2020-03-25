@@ -1,4 +1,8 @@
+using System;
+using System.Reflection;
 using System.Threading;
+using System.Threading.Tasks;
+using MongoDB.Bson;
 using Sining;
 using Sining.Message;
 using Sining.Module;
@@ -6,6 +10,33 @@ using Sining.Network;
 
 namespace Server.Hotfix
 {
+    public class TestPostModel
+    {
+        public string Name;
+        public string PassWord;
+    }
+    
+    [HTTPApiController]
+    public class TestHttp : HTTPControllerBase
+    {
+        [PostJson("/api/login")]
+        public ActionResult Test(TestPostModel testPostModel)
+        {
+            Log.Debug(testPostModel);
+            Log.Debug($"接收到Post请求:mame:{testPostModel.Name}passWord{testPostModel.PassWord}");
+
+            return Success();
+        }
+
+        [GetJson(("/api/loginget"))]
+        public ActionResult DTest(TestPostModel testPostMode)
+        {
+            Log.Debug($"接收Get请求:mame:{testPostMode.Name}passWord{testPostMode.PassWord}");
+
+            return Success("1132424324234");
+        }
+    }
+    
     [MessageSystem]
     public class TestMessageApiHandler : MessageHandler<TestMessage>
     {

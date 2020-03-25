@@ -31,7 +31,9 @@ namespace Sining.Tools
                 // 初始化Actor处理程序
                 Task.Run(() => SApp.Scene.AddComponent<ActorDispatcherComponent>().Init()),
                 // 初始化配置文件
-                Task.Run(() => SApp.Scene.AddComponent<ConfigManagementComponent>().Init())
+                Task.Run(() => SApp.Scene.AddComponent<ConfigManagementComponent>().Init()),
+                // 初始化HTTP处理程序
+                Task.Run(() => SApp.Scene.AddComponent<HttpMessageDispatcherManagement>().Init())
             };
             
             // 等待线程全部处理完毕

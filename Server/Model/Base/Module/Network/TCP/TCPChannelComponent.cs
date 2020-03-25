@@ -51,7 +51,6 @@ namespace Sining.Network
 
             MemoryStream = MemoryStreamPool.Instance.GetStream("Message", short.MaxValue);
             _session = session;
-            _session.MemoryStream = MemoryStream;
             _parser = new PacketParser(_recvBuffer, MemoryStream);
             _innArgs.Completed += OnComplete;
             _outArgs.Completed += OnComplete;
@@ -69,7 +68,6 @@ namespace Sining.Network
             MemoryStream = MemoryStreamPool.Instance.GetStream("Message", short.MaxValue);
 
             _session = session;
-            _session.MemoryStream = MemoryStream;
             _parser = new PacketParser(_recvBuffer, MemoryStream);
             _innArgs.Completed += OnComplete;
             _outArgs.Completed += OnComplete;

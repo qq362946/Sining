@@ -19,8 +19,6 @@ namespace Sining.Network
             foreach (var type in AssemblyManagement.AllType.Where(d =>
                 d.IsDefined(typeof(MessageSystemAttribute), true)))
             {
-                var messageSystemAttribute = type.GetCustomAttribute<MessageSystemAttribute>(true);
-
                 var obj = Activator.CreateInstance(type);
 
                 if (!(obj is IMessageHandler messageHandler))

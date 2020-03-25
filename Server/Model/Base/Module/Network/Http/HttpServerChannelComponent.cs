@@ -24,21 +24,8 @@ namespace Sining.Network
 
     public class HttpServerChannelComponent : NetworkChannel
     {
-        private PacketParser _parser;
-        private NetworkComponent _networkComponent;
         private HttpListener _httpListener;
-        private readonly CircularBuffer _recvBuffer = new CircularBuffer();
-
         public void Awake(IEnumerable<string> urls)
-        {
-            _networkComponent = Parent.GetParent<NetworkComponent>();
-            MemoryStream = MemoryStreamPool.Instance.GetStream("Message", short.MaxValue);
-            _parser = new PacketParser(_recvBuffer, MemoryStream);
-
-            Start(urls);
-        }
-
-        private void Start(IEnumerable<string> urls)
         {
             try
             {
@@ -67,7 +54,6 @@ namespace Sining.Network
                 Log.Error(e);
             }
         }
-        
         private void Recv(IAsyncResult result)
         {
             if (!(result.AsyncState is HttpListener httpListener)) return;
@@ -76,68 +62,29 @@ namespace Sining.Network
             
             httpListener.BeginGetContext(Recv, httpListener);
         }
-
-        private void OnRecvComplete(object o)
-        {
-            var context = (HttpListenerContext) o;
-            object message;
-
-            try
-            {
-                _parser.JsonParse(context.Request.InputStream);
-
-                var messageType = NetworkProtocolManagement.Instance.GetType(context.Request.RawUrl);
-
-                message = _networkComponent.MessagePacker.DeserializeFrom(messageType, MemoryStream);
-            }
-            catch (Exception e)
-            {
-                // 出现这样错误，肯定是其他人恶意发送封包造成的。
-
-                Log.Warning($"Likely to be attacked IP: {context.Request.RemoteEndPoint?.Address} {e}");
-
-                return;
-            }
-
-            var session = _networkComponent.Create();
-            session.Channel = this;
-            session.MemoryStream = MemoryStream;
-            _parser.Clear();
-
-            session.Receive(context, message);
-            if (!(message is IRequest)) SendEmpty(session);
-        }
-
-        private void SendEmpty(Session session)
-        {
-            var context = session.Context;
-            context.Response.StatusCode = (int) HttpStatusCode.OK;
-            context.Response.Close();
-            session.Channel = null;
-            session.Dispose();
-        }
-
         public override void Send(Session session, MemoryStream memoryStream)
         {
-            var context = session.Context;
-
-            context.Response.StatusCode = (int) HttpStatusCode.OK;
-            context.Response.ContentType = "application/json";
-            context.Response.OutputStream.Write(MemoryStream.GetBuffer());
-            context.Response.Close();
-            session.Channel = null;
-            session.Dispose();
+            throw new Exception("Send messages using HttpHelper");
         }
+        private void OnRecvComplete(object obj)
+        {
+            var context = (HttpListenerContext) obj;
+            var result = HttpMessageDispatcherManagement.Instance.Handler(context);
 
+            context.Response.StatusCode = result.StatusCode;
+
+            if (!string.IsNullOrWhiteSpace(result.Response))
+            {
+                context.Response.OutputStream.Write(Encoding.UTF8.GetBytes(result.Response));
+            }
+
+            context.Response.Close();
+        }
         public override void Dispose()
         {
             if (IsDispose) return;
 
             _httpListener.Close();
-            MemoryStream.Dispose();
-            _parser = null;
-            _networkComponent = null;
-            _recvBuffer.Clear();
 
             base.Dispose();
         }

@@ -1,15 +1,16 @@
+﻿using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace Sining.DataStructure
 {
-    public class OneToManyList<TKey, TValue> : Dictionary<TKey, List<TValue>>
+    public class ConcurrentOneToManyList<TKey, TValue> : ConcurrentDictionary<TKey, List<TValue>>
     {
         private readonly int _recyclingLimit = 120;
         
         private readonly Queue<List<TValue>> _queue = new Queue<List<TValue>>();
 
-        public OneToManyList() { }
+        public ConcurrentOneToManyList() { }
 
         /// <summary>
         /// 设置最大缓存数量
@@ -17,7 +18,7 @@ namespace Sining.DataStructure
         /// <param name="recyclingLimit">
         /// 1:防止数据量过大、所以超过recyclingLimit的数据还是走GC.
         /// 2:设置成0不控制数量，全部缓存</param>
-        public OneToManyList(int recyclingLimit)
+        public ConcurrentOneToManyList(int recyclingLimit)
         {
             _recyclingLimit = recyclingLimit;
         }
@@ -35,8 +36,7 @@ namespace Sining.DataStructure
             {
                 list = Fetch();
                 list.Add(value);
-                Add(key, list);
-
+                base[key] = list;
                 return;
             }
 
@@ -62,10 +62,7 @@ namespace Sining.DataStructure
 
         public void RemoveKey(TKey key)
         {
-            if (!Remove(key, out var list))
-            {
-                return;
-            }
+            if (!TryRemove(key, out var list)) return;
 
             Recycle(list);
         }

@@ -47,7 +47,6 @@ namespace Sining.Network
             RemoteAddress = $"{webSocketContext.RequestUri.Host}:{webSocketContext.RequestUri.Port}";
             MemoryStream = MemoryStreamPool.Instance.GetStream("Message", short.MaxValue);
             _session = session;
-            _session.MemoryStream = MemoryStream;
             _parser = new PacketParser(_recvBuffer, MemoryStream);
             _cancellationTokenSource = new CancellationTokenSource();
             
@@ -60,7 +59,6 @@ namespace Sining.Network
             _webSocket = new ClientWebSocket();
             MemoryStream = MemoryStreamPool.Instance.GetStream("Message", short.MaxValue);
             _session = session;
-            _session.MemoryStream = MemoryStream;
             _parser = new PacketParser(_recvBuffer, MemoryStream);
             _cancellationTokenSource = new CancellationTokenSource();
 

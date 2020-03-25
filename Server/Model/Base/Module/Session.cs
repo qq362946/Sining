@@ -26,9 +26,7 @@ namespace Sining.Module
         public long LastRecvTime { get; private set; }
         public long LastSendTime { get; private set; }
         public NetworkChannel Channel;
-        public MemoryStream MemoryStream;
         public NetworkComponent Network;
-        public HttpListenerContext Context;
 
         private readonly Dictionary<int, Action<IResponse>>
             _requestCallback = new Dictionary<int, Action<IResponse>>();
@@ -78,48 +76,6 @@ namespace Sining.Module
         #endregion
 
         #region Receive
-
-        /// <summary>
-        /// WebAPI
-        /// </summary>
-        /// <param name="context"></param>
-        /// <param name="message"></param>
-        /// <exception cref="Exception"></exception>
-        [EditorBrowsable(EditorBrowsableState.Never)]
-        public void Receive(HttpListenerContext context, object message)
-        {
-            if (IsDispose)
-            {
-                return;
-            }
-
-            Context = context;
-
-            try
-            {
-                if (message is IResponse response)
-                {
-                    // 如果是回调消息，执行消息的回调
-
-                    if (!_requestCallback.TryGetValue(response.RpcId, out var action))
-                    {
-                        throw new Exception($"not found rpc, response message: {response.GetType().Name}");
-                    }
-
-                    _requestCallback.Remove(response.RpcId);
-
-                    action(response);
-                }
-                else
-                {
-                    MessageDispatcherManagement.Instance.Handle(this, message);
-                }
-            }
-            catch (Exception e)
-            {
-                Log.Error(e);
-            }
-        }
 
         [EditorBrowsable(EditorBrowsableState.Never)]
         public void Receive(ushort code, MemoryStream memoryStream)
@@ -185,17 +141,13 @@ namespace Sining.Module
             {
                 Channel.Dispose();
             }
-            
-            Context = null;
 
             base.Dispose();
 
             LastRecvTime = 0;
             LastSendTime = 0;
             Network = null;
-            MemoryStream = null;
             Channel = null;
-            Context = null;
         }
     }
 }
