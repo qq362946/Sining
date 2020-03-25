@@ -16,7 +16,7 @@ namespace Sining.Tools
             // 初始化Bson库
             SerializationHelper.Init();
             // 初始化组件事件
-            var componentManagement = ComponentFactory.CreateOnly<ComponentManagement>(eventSystem: false);
+            var componentManagement = ComponentFactory.CreateOnly<ComponentManagement>(SApp.Scene, eventSystem: false);
             componentManagement.Init();
             SApp.Scene.AddComponent(componentManagement);
 

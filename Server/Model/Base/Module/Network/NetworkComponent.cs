@@ -60,7 +60,7 @@ namespace Sining.Module
 
         public Session Create()
         {
-            return ComponentFactory.Create<Session, NetworkComponent>(this, this, true);
+            return ComponentFactory.Create<Session, NetworkComponent>(Scene, this, this, true);
         }
 
         public Session Get(long instanceId)

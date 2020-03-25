@@ -80,8 +80,8 @@ namespace Sining.Network
         {
             var session = _networkComponent.Create();
 
-            ComponentFactory.Create<TCPChannelComponent, Session, SocketAsyncEventArgs>(session,
-                asyncEventArgs, this, true);
+            ComponentFactory.Create<TCPChannelComponent, Session, SocketAsyncEventArgs>(
+                Scene, session, asyncEventArgs, this, true);
         }
 
         public override NetworkChannel GetChannel(long channelId)
@@ -91,9 +91,8 @@ namespace Sining.Network
 
         public override NetworkChannel ConnectChannel(Session session, string address)
         {
-            return ComponentFactory.Create<TCPChannelComponent, Session, IPEndPoint>(session,
-                NetworkHelper.ToIPEndPoint(address), this,
-                true);
+            return ComponentFactory.Create<TCPChannelComponent, Session, IPEndPoint>(
+                Scene, session, NetworkHelper.ToIPEndPoint(address), this, true);
         }
 
         public override void RemoveChannel(long channelId)

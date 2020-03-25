@@ -33,7 +33,7 @@ namespace Sining
             {
                 if (__scene != null) return __scene;
 
-                return __scene = ComponentFactory.CreateOnly<Scene>();
+                return __scene = ComponentFactory.CreateOnly<Scene>(null);
             }
         }
     }

@@ -75,9 +75,9 @@ namespace Sining.Network
             ComponentFactory.Create<
                 WebSocketChannelComponent,
                 Session,
-                HttpListenerWebSocketContext>(session,
-                webSocketContext, this, true);
-            
+                HttpListenerWebSocketContext>(
+                Scene, session, webSocketContext, this, true);
+
         }
 
         public override NetworkChannel GetChannel(long channelId)
@@ -88,7 +88,7 @@ namespace Sining.Network
         public override NetworkChannel ConnectChannel(Session session, string address)
         {
             return ComponentFactory.Create<WebSocketChannelComponent, Session, string>
-                (session, address, this, true);
+                (Scene, session, address, this, true);
         }
 
         public override void RemoveChannel(long channelId)

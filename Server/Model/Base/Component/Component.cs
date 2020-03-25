@@ -18,6 +18,8 @@ namespace Sining
         [BsonId]
         public long Id { get; set; }
         [BsonIgnore]
+        public Scene Scene;
+        [BsonIgnore]
         private Dictionary<Type, Component> _components;
         [BsonIgnore]
         private Dictionary<long, Component> _children;
@@ -173,7 +175,9 @@ namespace Sining
                 throw new Exception($"A component of type {GetType().Name} already exists");
             }
 
-            var component = isFromPool ? ComponentFactory.Create<T>(this) : ComponentFactory.CreateOnly<T>(this);
+            var component = isFromPool
+                ? ComponentFactory.Create<T>(Scene, this)
+                : ComponentFactory.CreateOnly<T>(Scene, this);
 
             Components.Add(type, component);
             AddToComponentsDb(component);
@@ -195,8 +199,8 @@ namespace Sining
             }
 
             var component = isFromPool
-                ? ComponentFactory.Create<T, T1>(a, this)
-                : ComponentFactory.CreateOnly<T, T1>(a, this);
+                ? ComponentFactory.Create<T, T1>(Scene, a, this)
+                : ComponentFactory.CreateOnly<T, T1>(Scene, a, this);
 
             Components.Add(type, component);
             AddToComponentsDb(component);
@@ -218,8 +222,8 @@ namespace Sining
             }
 
             var component = isFromPool
-                ? ComponentFactory.Create<T, T1, T2>(a, b, this)
-                : ComponentFactory.CreateOnly<T, T1, T2>(a, b, this);
+                ? ComponentFactory.Create<T, T1, T2>(Scene, a, b, this)
+                : ComponentFactory.CreateOnly<T, T1, T2>(Scene, a, b, this);
 
             Components.Add(type, component);
             AddToComponentsDb(component);
@@ -241,8 +245,8 @@ namespace Sining
             }
 
             var component = isFromPool
-                ? ComponentFactory.Create<T, T1, T2, T3>(a, b, c, this)
-                : ComponentFactory.CreateOnly<T, T1, T2, T3>(a, b, c, this);
+                ? ComponentFactory.Create<T, T1, T2, T3>(Scene, a, b, c, this)
+                : ComponentFactory.CreateOnly<T, T1, T2, T3>(Scene, a, b, c, this);
 
             Components.Add(type, component);
             AddToComponentsDb(component);
@@ -265,8 +269,8 @@ namespace Sining
             }
 
             var component = isFromPool
-                ? ComponentFactory.Create<T, T1, T2, T3, T4>(a, b, c, d, this)
-                : ComponentFactory.CreateOnly<T, T1, T2, T3, T4>(a, b, c, d, this);
+                ? ComponentFactory.Create<T, T1, T2, T3, T4>(Scene, a, b, c, d, this)
+                : ComponentFactory.CreateOnly<T, T1, T2, T3, T4>(Scene, a, b, c, d, this);
 
             Components.Add(type, component);
             AddToComponentsDb(component);
@@ -405,6 +409,7 @@ namespace Sining
             IsFromPool = false;
             InstanceId = 0;
             Id = 0;
+            Scene = null;
 
             ComponentFactory.Recycle(this);
         }
@@ -412,8 +417,9 @@ namespace Sining
         #endregion
 
         [EditorBrowsable(EditorBrowsableState.Never)]
-        public void Initialization(Component parent = null, bool isChild = false, bool isFromPool = true)
+        public void Initialization(Scene scene, Component parent = null, bool isChild = false, bool isFromPool = true)
         {
+            Scene = scene;
             IsDispose = false;
             InstanceId = IdFactory.NextId;
             Id = InstanceId;

@@ -14,7 +14,8 @@ namespace Sining
         
         #region CreateOnly
 
-        public static T CreateOnly<T>(Component parent = null, bool isChild = false, bool eventSystem = true)
+        public static T CreateOnly<T>(Scene scene, Component parent = null, bool isChild = false,
+            bool eventSystem = true)
             where T : Component, new()
         {
             T component = null;
@@ -25,9 +26,9 @@ namespace Sining
                 {
                     component = (T) Pool.Dequeue(typeof(T)) ?? new T();
 
-                    component.Initialization(parent, isChild, false);
+                    component.Initialization(scene, parent, isChild, false);
                 }
-                
+
                 if (eventSystem) ComponentManagement.Instance.Awake(component);
             }
             catch (Exception e)
@@ -38,41 +39,42 @@ namespace Sining
             return component;
         }
 
-        public static T CreateOnly<T, T1>(T1 a, Component parent = null, bool isChild = false)
+        public static T CreateOnly<T, T1>(Scene scene, T1 a, Component parent = null, bool isChild = false)
             where T : Component, new()
         {
-            var component = CreateOnly<T>(parent, isChild, false);
+            var component = CreateOnly<T>(scene, parent, isChild, false);
 
             ComponentManagement.Instance.Awake(component, a);
 
             return component;
         }
 
-        public static T CreateOnly<T, T1, T2>(T1 a, T2 b, Component parent = null, bool isChild = false)
+        public static T CreateOnly<T, T1, T2>(Scene scene, T1 a, T2 b, Component parent = null, bool isChild = false)
             where T : Component, new()
         {
-            var component = CreateOnly<T>(parent, isChild, false);
+            var component = CreateOnly<T>(scene, parent, isChild, false);
 
             ComponentManagement.Instance.Awake(component, a, b);
 
             return component;
         }
 
-        public static T CreateOnly<T, T1, T2, T3>(T1 a, T2 b, T3 c, Component parent = null, bool isChild = false)
+        public static T CreateOnly<T, T1, T2, T3>(Scene scene, T1 a, T2 b, T3 c, Component parent = null,
+            bool isChild = false)
             where T : Component, new()
         {
-            var component = CreateOnly<T>(parent, isChild, false);
+            var component = CreateOnly<T>(scene, parent, isChild, false);
 
             ComponentManagement.Instance.Awake(component, a, b, c);
 
             return component;
         }
 
-        public static T CreateOnly<T, T1, T2, T3, T4>(T1 a, T2 b, T3 c, T4 d, Component parent = null,
+        public static T CreateOnly<T, T1, T2, T3, T4>(Scene scene, T1 a, T2 b, T3 c, T4 d, Component parent = null,
             bool isChild = false)
             where T : Component, new()
         {
-            var component = CreateOnly<T>(parent, isChild, false);
+            var component = CreateOnly<T>(scene, parent, isChild, false);
 
             ComponentManagement.Instance.Awake(component, a, b, c, d);
 
@@ -83,7 +85,7 @@ namespace Sining
 
         #region Create
 
-        public static T Create<T>(Component parent = null, bool isChild = false, bool eventSystem = true)
+        public static T Create<T>(Scene scene, Component parent = null, bool isChild = false, bool eventSystem = true)
             where T : Component, new()
         {
             T component = null;
@@ -96,7 +98,7 @@ namespace Sining
                 {
                     component = (T) Pool.Dequeue(type) ?? new T();
 
-                    component.Initialization(parent, isChild);
+                    component.Initialization(scene, parent, isChild);
                 }
 
                 if (eventSystem) ComponentManagement.Instance.Awake(component);
@@ -107,43 +109,42 @@ namespace Sining
             {
                 Log.Error(e);
             }
-            
+
             return component;
         }
-
-        public static T Create<T, T1>(T1 a, Component parent = null, bool isChild = false) where T : Component, new()
+        public static T Create<T, T1>(Scene scene, T1 a, Component parent = null, bool isChild = false)
+            where T : Component, new()
         {
-            var component = Create<T>(parent, isChild, false);
+            var component = Create<T>(scene, parent, isChild, false);
 
             ComponentManagement.Instance.Awake(component, a);
 
             return component;
         }
-
-        public static T Create<T, T1, T2>(T1 a, T2 b, Component parent = null, bool isChild = false)
+        public static T Create<T, T1, T2>(Scene scene, T1 a, T2 b, Component parent = null, bool isChild = false)
             where T : Component, new()
         {
-            var component = Create<T>(parent, isChild, false);
+            var component = Create<T>(scene, parent, isChild, false);
 
             ComponentManagement.Instance.Awake(component, a, b);
 
             return component;
         }
-
-        public static T Create<T, T1, T2, T3>(T1 a, T2 b, T3 c, Component parent = null, bool isChild = false)
+        public static T Create<T, T1, T2, T3>(Scene scene, T1 a, T2 b, T3 c, Component parent = null,
+            bool isChild = false)
             where T : Component, new()
         {
-            var component = Create<T>(parent, isChild, false);
+            var component = Create<T>(scene, parent, isChild, false);
 
             ComponentManagement.Instance.Awake(component, a, b, c);
 
             return component;
         }
-
-        public static T Create<T, T1, T2, T3, T4>(T1 a, T2 b, T3 c, T4 d, Component parent = null, bool isChild = false)
+        public static T Create<T, T1, T2, T3, T4>(Scene scene, T1 a, T2 b, T3 c, T4 d, Component parent = null,
+            bool isChild = false)
             where T : Component, new()
         {
-            var component = Create<T>(parent, isChild, false);
+            var component = Create<T>(scene, parent, isChild, false);
 
             ComponentManagement.Instance.Awake(component, a, b, c, d);
 

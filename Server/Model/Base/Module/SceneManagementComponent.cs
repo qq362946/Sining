@@ -25,7 +25,7 @@ namespace Sining
             var sceneType = (SceneType) sceneConfig.Id;
             var scene =
                 ComponentFactory.Create<Scene, SceneType, SceneConfig>(
-                    sceneType, sceneConfig, this, true);
+                    SApp.Scene, sceneType, sceneConfig, this, true);
 
             _scenes.Add(sceneConfig.Id, scene);
 
@@ -34,19 +34,19 @@ namespace Sining
             {
                 case "TCP" when !string.IsNullOrWhiteSpace(serverConfig.OuterIP) && sceneConfig.OuterPort > 0:
                     scene.AddComponent<NetOuterComponent, MessagePacker, string, string>(
-                        ComponentFactory.Create<ProtobufMessagePacker>(),
+                        ComponentFactory.Create<ProtobufMessagePacker>(scene),
                         $"{serverConfig.OuterIP}:{sceneConfig.OuterPort}",
                         sceneConfig.NetworkProtocol);
                     break;
                 case "WebSocket" when sceneConfig.Urls.Length > 0:
                     scene.AddComponent<NetOuterComponent, MessagePacker, IEnumerable<string>, string>(
-                        ComponentFactory.Create<ProtobufMessagePacker>(),
+                        ComponentFactory.Create<ProtobufMessagePacker>(scene),
                         sceneConfig.Urls,
                         sceneConfig.NetworkProtocol);
                     break;
                 case "HTTP" when sceneConfig.Urls.Length > 0:
                     scene.AddComponent<NetOuterComponent, MessagePacker, IEnumerable<string>, string>(
-                        ComponentFactory.Create<JsonMessagePacker>(),
+                        ComponentFactory.Create<JsonMessagePacker>(scene),
                         sceneConfig.Urls,
                         sceneConfig.NetworkProtocol);
                     break;

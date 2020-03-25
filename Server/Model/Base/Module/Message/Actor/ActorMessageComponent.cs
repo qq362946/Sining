@@ -76,8 +76,7 @@ namespace Sining.Network.Actor
             var tcs = new STaskCompletionSource<TResponse>();
 
             _requestCallback[rpcId] = ComponentFactory.Create<ActorTaskComponent, Action<IActorResponse>>
-            (
-                response =>
+            (Scene, response =>
                 {
                     if (response.ErrorCode > 0)
                     {

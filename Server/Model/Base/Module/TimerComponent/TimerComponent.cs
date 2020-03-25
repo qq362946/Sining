@@ -84,7 +84,7 @@ namespace Sining
             }
 
             var tcs = new STaskCompletionSource<bool>();
-            var timer = ComponentFactory.Create<WaitTimer, STaskCompletionSource<bool>>(tcs, this, true);
+            var timer = ComponentFactory.Create<WaitTimer, STaskCompletionSource<bool>>(Scene, tcs, this, true);
             _timers[timer.InstanceId] = timer;
             AddToTimeId(tillTime, timer.InstanceId);
 
@@ -98,7 +98,7 @@ namespace Sining
             }
 
             var tcs = new STaskCompletionSource<bool>();
-            var timer = ComponentFactory.Create<WaitTimer, STaskCompletionSource<bool>>(tcs, this, true);
+            var timer = ComponentFactory.Create<WaitTimer, STaskCompletionSource<bool>>(Scene, tcs, this, true);
             _timers[timer.InstanceId] = timer;
             AddToTimeId(tillTime, timer.InstanceId);
 
@@ -112,7 +112,7 @@ namespace Sining
             }
 
             var tillTime = TimeHelper.Now + time;
-            var timer = ComponentFactory.Create<RepeatedTimer, long, Action>(time, action, this, true);
+            var timer = ComponentFactory.Create<RepeatedTimer, long, Action>(Scene, time, action, this, true);
             _timers[timer.InstanceId] = timer;
             AddToTimeId(tillTime, timer.InstanceId);
             return timer.InstanceId;

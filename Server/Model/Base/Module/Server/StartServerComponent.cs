@@ -79,7 +79,7 @@ namespace Sining.Module
                 serverConfig.InnerPort > 0)
             {
                 ComponentFactory.Create<NetInnerComponent, string>(
-                    $"{serverConfig.InnerIP}:{serverConfig.InnerPort}", SApp.Scene, true);
+                    SApp.Scene, $"{serverConfig.InnerIP}:{serverConfig.InnerPort}", SApp.Scene, true);
             }
 
             var scenes = SceneConfigData.Instance.GetByServer(serverConfig.Id);
