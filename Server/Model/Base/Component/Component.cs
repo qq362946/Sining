@@ -11,6 +11,12 @@ namespace Sining
     public class Component : IDisposable, IObject
     {
         #region MemberVariables
+        
+        [BsonIgnoreIfDefault]
+        [BsonDefaultValue(0L)]
+        [BsonElement]
+        [BsonId]
+        public long Id { get; set; }
         [BsonIgnore]
         private Dictionary<Type, Component> _components;
         [BsonIgnore]
@@ -18,7 +24,6 @@ namespace Sining
         [BsonIgnore]
         private Dictionary<Type, Component> Components =>
             _components ??= ObjectPool<Dictionary<Type, Component>>.Rent();
-
         [BsonIgnore]
         protected Dictionary<long, Component> Children => _children ??= ObjectPool<Dictionary<long, Component>>.Rent();
         [BsonIgnore]
@@ -58,17 +63,19 @@ namespace Sining
                 _isChild = true;
             }
         }
-
-        public T GetParent<T>() where T : Component
-        {
-            return _parent as T;
-        }
+        [BsonElement("C")]
+        [BsonIgnoreIfNull]
+        private HashSet<Component> _componentsDb;
         [BsonIgnore]
         private Component ComponentParent
         {
             set => _parent = value;
         }
-
+        public T GetParent<T>() where T : Component
+        {
+            return _parent as T;
+        }
+        
         #endregion
 
         #region Child
@@ -148,10 +155,10 @@ namespace Sining
             }
 
             Components.Add(type, component);
+            AddToComponentsDb(component);
 
             return component;
         }
-
         public T AddComponent<T>(bool isFromPool = true) where T : Component, new()
         {
             if (IsDispose)
@@ -169,10 +176,10 @@ namespace Sining
             var component = isFromPool ? ComponentFactory.Create<T>(this) : ComponentFactory.CreateOnly<T>(this);
 
             Components.Add(type, component);
+            AddToComponentsDb(component);
 
             return component;
         }
-
         public T AddComponent<T, T1>(T1 a, bool isFromPool = true) where T : Component, new()
         {
             if (IsDispose)
@@ -192,10 +199,10 @@ namespace Sining
                 : ComponentFactory.CreateOnly<T, T1>(a, this);
 
             Components.Add(type, component);
+            AddToComponentsDb(component);
 
             return component;
         }
-
         public T AddComponent<T, T1, T2>(T1 a, T2 b, bool isFromPool = true) where T : Component, new()
         {
             if (IsDispose)
@@ -215,10 +222,10 @@ namespace Sining
                 : ComponentFactory.CreateOnly<T, T1, T2>(a, b, this);
 
             Components.Add(type, component);
+            AddToComponentsDb(component);
 
             return component;
         }
-
         public T AddComponent<T, T1, T2, T3>(T1 a, T2 b, T3 c, bool isFromPool = true) where T : Component, new()
         {
             if (IsDispose)
@@ -238,10 +245,10 @@ namespace Sining
                 : ComponentFactory.CreateOnly<T, T1, T2, T3>(a, b, c, this);
 
             Components.Add(type, component);
+            AddToComponentsDb(component);
 
             return component;
         }
-
         public T AddComponent<T, T1, T2, T3, T4>(T1 a, T2 b, T3 c, T4 d, bool isFromPool = true)
             where T : Component, new()
         {
@@ -262,8 +269,18 @@ namespace Sining
                 : ComponentFactory.CreateOnly<T, T1, T2, T3, T4>(a, b, c, d, this);
 
             Components.Add(type, component);
+            AddToComponentsDb(component);
 
             return component;
+        }
+        private void AddToComponentsDb(Component component)
+        {
+            if (_componentsDb == null)
+            {
+                _componentsDb = ObjectPool<HashSet<Component>>.Rent();
+            }
+
+            _componentsDb.Add(component);
         }
 
         #endregion
@@ -296,23 +313,33 @@ namespace Sining
         {
             RemoveComponent(typeof(T));
         }
-
         public void RemoveComponent(Type type)
         {
             if (_components == null || IsDispose) return;
 
             if (!Components.Remove(type, out var component)) return;
 
+            if (_componentsDb != null)
+            {
+                _componentsDb.Remove(component);
+
+                if (_componentsDb.Count == 0 && IsFromPool)
+                {
+                    ObjectPool<HashSet<Component>>.Return(_componentsDb);
+
+                    _componentsDb = null;
+                }
+            }
+
             component.Dispose();
         }
-
         public void RemoveComponent(Component component)
         {
             if (component.IsDispose) return;
 
             RemoveComponent(component.GetType());
         }
-
+        
         #endregion
 
         #region Dispose
@@ -334,6 +361,17 @@ namespace Sining
 
                 ObjectPool<Dictionary<Type, Component>>.Return(_components);
                 _components = null;
+
+                if (_componentsDb != null)
+                {
+                    _componentsDb.Clear();
+
+                    if (IsFromPool)
+                    {
+                        ObjectPool<HashSet<Component>>.Return(_componentsDb);
+                        _componentsDb = null;
+                    }
+                }
             }
 
             if (_children != null)
@@ -366,6 +404,7 @@ namespace Sining
             _parent = null;
             IsFromPool = false;
             InstanceId = 0;
+            Id = 0;
 
             ComponentFactory.Recycle(this);
         }
@@ -377,6 +416,7 @@ namespace Sining
         {
             IsDispose = false;
             InstanceId = IdFactory.NextId;
+            Id = InstanceId;
             IsFromPool = isFromPool;
 
             if (parent == null) return;
