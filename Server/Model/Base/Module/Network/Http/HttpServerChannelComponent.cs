@@ -68,18 +68,48 @@ namespace Sining.Network
         }
         private void OnRecvComplete(object obj)
         {
+            OnRecvCompleteAsync(obj).Coroutine();
+        }
+        private async SVoid OnRecvCompleteAsync(object obj)
+        {
             var context = (HttpListenerContext) obj;
-            var result = HttpMessageDispatcherManagement.Instance.Handler(context);
+            var result = HttpMessageDispatcherManagement.Instance.Handler(Scene, context);
 
-            context.Response.StatusCode = result.StatusCode;
-
-            if (!string.IsNullOrWhiteSpace(result.Response))
+            if (result == null)
             {
-                context.Response.OutputStream.Write(Encoding.UTF8.GetBytes(result.Response));
+                context.Response.StatusCode = 404;
+            }
+            else
+            {
+                try
+                {
+                    ActionResult actionResult;
+
+                    if (result is STask<ActionResult> sTaskActionResult)
+                    {
+                        actionResult = await sTaskActionResult;
+                    }
+                    else
+                    {
+                        actionResult = (ActionResult) result;
+                    }
+
+                    context.Response.StatusCode = actionResult.StatusCode;
+
+                    if (!string.IsNullOrWhiteSpace(actionResult.Response))
+                    {
+                        context.Response.OutputStream.Write(Encoding.UTF8.GetBytes(actionResult.Response));
+                    }
+                }
+                catch (Exception e)
+                {
+                    Log.Error(e);
+                }
             }
 
             context.Response.Close();
         }
+        
         public override void Dispose()
         {
             if (IsDispose) return;

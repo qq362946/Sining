@@ -22,4 +22,8 @@
       <ProjectReference Include="..\ThirdPartyPlugin\Google.Protobuf\Google.Protobuf.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Module" />
+    </ItemGroup>
+
 </Project>

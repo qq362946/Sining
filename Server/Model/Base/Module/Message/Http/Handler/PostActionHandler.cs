@@ -34,7 +34,7 @@ namespace Sining.Network
             }
         }
 
-        protected override ActionResult Handler(HttpListenerContext context)
+        protected override object Handler(Scene scene, HttpListenerContext context)
         {
             if (context.Request.HttpMethod.ToLower() != "post" ||
                 !context.Request.HasEntityBody ||
@@ -50,7 +50,7 @@ namespace Sining.Network
             {
                 Parsing(objectArray, context);
 
-                return (ActionResult) MethodInfo.Invoke(HttpControllerBase,
+                return MethodInfo.Invoke(HttpControllerBase,
                     objectArray.AsSpan(0, parametersLength).ToArray());
             }
             finally

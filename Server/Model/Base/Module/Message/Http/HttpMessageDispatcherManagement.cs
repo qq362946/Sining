@@ -1,4 +1,5 @@
-﻿using System.Collections.Concurrent;
+﻿using System;
+using System.Collections.Concurrent;
 using System.Linq;
 using System.Net;
 using System.Reflection;
@@ -83,11 +84,19 @@ namespace Sining.Network
             Instance = this;
         }
 
-        public ActionResult Handler(HttpListenerContext context)
+        public object Handler(Scene scene, HttpListenerContext context)
         {
-            return _actionHandler.TryGetValue(context.Request.RawUrl.Split('?')[0], out var handler)
-                ? handler.Run(context)
-                : null;
+            if (!_actionHandler.TryGetValue(context.Request.RawUrl.Split('?')[0], out var handler)) return null;
+            
+            try
+            {
+                return handler.Run(scene, context);
+            }
+            catch (Exception e)
+            {
+                Log.Error(e);
+                return null;
+            }
         }
     }
 }

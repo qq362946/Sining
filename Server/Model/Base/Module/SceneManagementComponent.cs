@@ -23,12 +23,15 @@ namespace Sining
         public void Create(ServerConfig serverConfig, SceneConfig sceneConfig)
         {
             var sceneType = (SceneType) sceneConfig.Id;
+            
             var scene =
                 ComponentFactory.Create<Scene, SceneType, SceneConfig>(
                     SApp.Scene, sceneType, sceneConfig, this, true);
-
+            
+            scene.Scene = scene;
             _scenes.Add(sceneConfig.Id, scene);
-
+            scene.AddDbComponent();
+            
             // 挂载网络服务
             switch (sceneConfig.NetworkProtocol)
             {

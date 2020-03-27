@@ -57,5 +57,10 @@ namespace Sining.Tools
         {
             return BsonSerializer.Deserialize<T>(stream);
         }
+
+        public static T Clone<T>(this T t)
+        {
+            return Deserialize<T>(SerializeToByte(t));
+        }
     }
 }

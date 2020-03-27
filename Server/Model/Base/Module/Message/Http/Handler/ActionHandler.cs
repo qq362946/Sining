@@ -15,12 +15,12 @@ namespace Sining.Network
             HttpControllerBase = (HTTPControllerBase) Activator.CreateInstance(type);
         }
 
-        public ActionResult Run(HttpListenerContext context)
+        public object Run(Scene scene, HttpListenerContext context)
         {
             HttpControllerBase.SetContext(context);
-            return Handler(context);
+            return Handler(scene, context);
         }
 
-        protected abstract ActionResult Handler(HttpListenerContext context);
+        protected abstract object Handler(Scene scene, HttpListenerContext context);
     }
 }

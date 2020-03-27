@@ -10,7 +10,7 @@ using Sining.Network;
 
 namespace Server.Hotfix
 {
-    public class TestPostModel
+    public class TestPostModel : Component
     {
         public string Name;
         public string PassWord;
@@ -24,8 +24,7 @@ namespace Server.Hotfix
         {
             Log.Debug(testPostModel);
             Log.Debug($"接收到Post请求:mame:{testPostModel.Name}passWord{testPostModel.PassWord}");
-
-            return Success();
+            return Success("111");
         }
 
         [GetJson(("/api/loginget"))]

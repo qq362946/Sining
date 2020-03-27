@@ -28,7 +28,7 @@ namespace Sining.Network
             }
         }
 
-        protected override ActionResult Handler(HttpListenerContext context)
+        protected override object Handler(Scene scene, HttpListenerContext context)
         {
             if (context.Request.HttpMethod.ToLower() != "get" ||
                 !context.Request.HasEntityBody ||
@@ -42,9 +42,11 @@ namespace Sining.Network
 
             try
             {
-                objectArray[0] = Parsing(context).Deserialize(MethodInfo.GetParameters()[0].ParameterType);
+                var component = (Component) Parsing(context).Deserialize(MethodInfo.GetParameters()[0].ParameterType);
+                component.Initialization(scene, isFromPool: false);
+                objectArray[0] = component;
 
-                return (ActionResult) MethodInfo.Invoke(HttpControllerBase, objectArray.AsSpan(0, 1).ToArray());
+                return MethodInfo.Invoke(HttpControllerBase, objectArray.AsSpan(0, 1).ToArray());
             }
             finally
             {

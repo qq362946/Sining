@@ -93,10 +93,7 @@ namespace Sining.Module
 
             if (runProcess)
             {
-                new ServerStartFinished
-                {
-                    ServerId = serverConfig.Id
-                }.Send(ManageServer);
+                new ServerStartFinished {ServerId = serverConfig.Id}.Send(ManageServer);
             }
 
             Log.Debug($"Server:{serverConfig.ServerType} 启动完成!");

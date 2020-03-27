@@ -9,7 +9,7 @@ namespace Sining.Network
     {
         public GetActionHandler(Type type, MethodInfo methodInfo) : base(type, methodInfo) { }
 
-        protected override ActionResult Handler(HttpListenerContext context)
+        protected override object Handler(Scene scene, HttpListenerContext context)
         {
             if (context.Request.HttpMethod.ToLower() != "post" ||
                 context.Request.ContentType != "application/x-www-form-urlencoded")

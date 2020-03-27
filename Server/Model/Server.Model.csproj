@@ -19,16 +19,13 @@
 
     <ItemGroup>     
       <ProjectReference Include="..\ThirdPartyPlugin\Google.Protobuf\Google.Protobuf.csproj" />     
-      <ProjectReference Include="..\ThirdPartyPlugin\MongoDB\MongoDB.Bson\MongoDB.Bson.csproj" />
+      <ProjectReference Include="..\ThirdPartyPlugin\MongoDB\MongoDB.Bson\MongoDB.Bson.csproj" />     
+      <ProjectReference Include="..\ThirdPartyPlugin\MongoDB\MongoDB.Driver\MongoDB.Driver.csproj" />
     </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="CommandLineParser" Version="2.7.82" />
       <PackageReference Include="NLog" Version="4.6.8" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Base\Module\DBComponent" />
     </ItemGroup>
 
 </Project>
