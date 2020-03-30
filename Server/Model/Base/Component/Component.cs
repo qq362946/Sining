@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using MongoDB.Bson.Serialization.Attributes;
+using Newtonsoft.Json;
 using Sining.Module;
 using Sining.Tools;
 using SqlSugar;
@@ -17,6 +18,7 @@ namespace Sining
         [BsonDefaultValue(0L)]
         [BsonElement]
         [BsonId]
+        [JsonIgnore]
         [SugarColumn(IsNullable =false ,IsPrimaryKey =true)]
         public long Id { get; set; }
         [BsonIgnore]
