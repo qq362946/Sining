@@ -13,7 +13,8 @@ namespace Export2Other
                 var tasks = new List<Task>()
                 {
                     Task.Run(ServerConfigToEnum.Run),
-                    Task.Run(SceneConfigToEnum.Run)
+                    Task.Run(SceneConfigToEnum.Run),
+                    Task.Run(ConstValueHelper.Run)
                 };
 
                 Task.WaitAll(tasks.ToArray());
