@@ -48,6 +48,11 @@ namespace Sining.Network
 
             try
             {
+                if (parametersLength == 0)
+                {
+                    return MethodInfo.Invoke(HttpControllerBase, null);
+                }
+                
                 Parsing(objectArray, context);
 
                 return MethodInfo.Invoke(HttpControllerBase,

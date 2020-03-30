@@ -22,15 +22,18 @@ namespace Sining.Network
 
             try
             {
+
+                if (parametersLength == 0)
+                {
+                    return MethodInfo.Invoke(HttpControllerBase, null);
+                }
+                
                 for (var i = 0; i < context.Request.QueryString.Count; i++)
                 {
                     objectArray[i] = context.Request.QueryString[i];
                 }
 
-                var obj = MethodInfo.Invoke(HttpControllerBase,
-                    objectArray.AsSpan(0, parametersLength).ToArray());
-               
-                return (ActionResult) MethodInfo.Invoke(HttpControllerBase,
+                return MethodInfo.Invoke(HttpControllerBase,
                     objectArray.AsSpan(0, parametersLength).ToArray());
             }
             finally

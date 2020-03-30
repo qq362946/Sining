@@ -44,7 +44,7 @@ namespace Sining.Network
                 component.Initialization(scene, isFromPool: false);
                 objectArray[0] = component;
 
-                return  MethodInfo.Invoke(HttpControllerBase, objectArray.AsSpan(0, 1).ToArray());
+                return MethodInfo.Invoke(HttpControllerBase, objectArray.AsSpan(0, 1).ToArray());
             }
             finally
             {

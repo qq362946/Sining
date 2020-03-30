@@ -24,7 +24,7 @@ namespace Sining.Module
 
         public void Awake(string connectionString, string dbType, string dbName)
         {
-            if (dbType == "MySql")
+            try
             {
                 _connectionConfig = new ConnectionConfig()
                 {
@@ -35,11 +35,11 @@ namespace Sining.Module
                 };
 
                 _connection = new SqlSugarClient(_connectionConfig);
-
-                return;
             }
-
-            throw new Exception($"{dbType} method is not currently supported");
+            catch (Exception e)
+            {
+                throw new Exception($"{dbType} method is not currently supported {e}");
+            }
         }
 
         public override void Init()
