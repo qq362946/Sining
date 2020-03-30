@@ -10,12 +10,12 @@ namespace Sining.Network
     {
         public override string SerializeToJson<T>(T t)
         {
-            return t.Serialize();
+            return t.ToJson();
         }
 
         public override byte[] SerializeTo<T>(T t)
         {
-            return t.SerializeToByte();
+            return t.ToBytes();
         }
 
         public override void SerializeTo<T>(T t, MemoryStream stream)

@@ -8,19 +8,16 @@ using Sining.Tools;
 namespace Sining.Module
 {
     [ComponentSystem]
-    public class DBComponentAwakeSystem: AwakeSystem<DBComponent, string, string>
+    public class MongoDBComponentAwakeSystem: AwakeSystem<MongoDBComponent, string, string>
     {
-        protected override void Awake(DBComponent self, string connectionString, string dbName)
+        protected override void Awake(MongoDBComponent self, string connectionString, string dbName)
         {
             self.Awake(connectionString, dbName);
         }
     }
     
-    public class DBComponent : Component
+    public class MongoDBComponent : ADBComponent
     {
-        private readonly Dictionary<long, STaskCompletionSource<long>> _taskByLongs =
-            new Dictionary<long, STaskCompletionSource<long>>();
-
         private MongoClient _mongoClient;
         private IMongoDatabase _mongoDatabase;
 
@@ -29,6 +26,7 @@ namespace Sining.Module
             _mongoClient = new MongoClient(connectionString);
             _mongoDatabase = _mongoClient.GetDatabase(dbName);
         }
+        public override void Init() { }
         private IMongoCollection<T> GetCollection<T>(string collection=null)
         {
             return _mongoDatabase.GetCollection<T>(collection ?? typeof (T).Name);
@@ -40,11 +38,11 @@ namespace Sining.Module
         
         #region Count
 
-        public async STask<long> Count<T>(string collection = null) where T : Component
+        public override async STask<long> Count<T>(string collection = null)
         {
             return await GetCollection<T>(collection).CountDocumentsAsync(d => true);
         }
-        public async STask<long> Count<T>(Expression<Func<T, bool>> filter, string collection = null) where T : Component
+        public override async STask<long> Count<T>(Expression<Func<T, bool>> filter, string collection = null)
         {
             return await GetCollection<T>(collection).CountDocumentsAsync(filter);
         }
@@ -53,12 +51,11 @@ namespace Sining.Module
 
         #region Exist
 
-        public async STask<bool> Exist<T>(string collection = null) where T : Component
+        public override async STask<bool> Exist<T>(string collection = null)
         {
             return (await Count<T>(collection)) > 0;
         }
-        public async STask<bool> Exist<T>(Expression<Func<T, bool>> filter, string collection = null)
-            where T : Component
+        public override async STask<bool> Exist<T>(Expression<Func<T, bool>> filter, string collection = null)
         {
             return (await Count(filter, collection)) > 0;
         }
@@ -67,44 +64,37 @@ namespace Sining.Module
 
         #region Query
 
-        public async STask<T> Query<T>(long id, string collection = null) where T : Component
+        public override async STask<T> Query<T>(long id, string collection = null)
         {
             var cursor = await GetCollection<T>(collection).FindAsync(d => d.Id == id);
 
             return await cursor.FirstOrDefaultAsync();
         }
-        public async STask<List<T>> QueryByPage<T>(Expression<Func<T, bool>> filter, int pageIndex, int pageSize,
-            string collection = null) where T : Component
+        public override async STask<List<T>> QueryByPage<T>(Expression<Func<T, bool>> filter, int pageIndex, int pageSize,
+            string collection = null)
         {
             return await GetCollection<T>(collection).Find(filter).Skip((pageIndex - 1) * pageSize).Limit(pageSize)
                 .ToListAsync();
         }
-        public async STask<List<T>> QueryByPage<T>(FilterDefinition<T> filterDefinition, int pageIndex, int pageSize,
-            string collection = null) where T : Component
-        {
-            return await GetCollection<T>(collection).Find(filterDefinition).Skip((pageIndex - 1) * pageSize)
-                .Limit(pageSize).ToListAsync();
-        }
-        public async STask<T> First<T>(Expression<Func<T, bool>> filter, string collection = null) where T : Component
+        public override async STask<T> First<T>(Expression<Func<T, bool>> filter, string collection = null)
         {
             var cursor = await GetCollection<T>(collection).FindAsync(filter);
 
             return await cursor.FirstOrDefaultAsync();
         }
-        public async STask<List<T>> Query<T>(Expression<Func<T, bool>> filter, string collection = null) where T : Component
+        public override async STask<List<T>> Query<T>(Expression<Func<T, bool>> filter, string collection = null)
         {
             var cursor = await GetCollection<T>(collection).FindAsync(filter);
 
             return await cursor.ToListAsync();
         }
-        public async STask<List<T>> Query<T>(long taskId, Expression<Func<T, bool>> filter, string collection = null)
-            where T : Component
+        public override async STask<List<T>> Query<T>(long taskId, Expression<Func<T, bool>> filter, string collection = null)
         {
             var cursor = await GetCollection<T>(collection).FindAsync(filter);
 
             return await cursor.ToListAsync();
         }
-        public async STask Query(long id, List<string> collectionNames, List<Component> result)
+        public override async STask Query(long id, List<string> collectionNames, List<Component> result)
         {
             if (collectionNames == null || collectionNames.Count == 0)
             {
@@ -122,13 +112,13 @@ namespace Sining.Module
                 result.Add(e);
             }
         }
-        public async STask<List<T>> QueryJson<T>(string json, string collection = null) where T : Component
+        public override async STask<List<T>> QueryJson<T>(string json, string collection = null)
         {
             FilterDefinition<T> filterDefinition = new JsonFilterDefinition<T>(json);
             var cursor = await GetCollection<T>(collection).FindAsync(filterDefinition);
             return await cursor.ToListAsync();
         }
-        public async STask<List<T>> QueryJson<T>(long taskId, string json, string collection = null) where T : Component
+        public override async STask<List<T>> QueryJson<T>(long taskId, string json, string collection = null)
         {
             FilterDefinition<T> filterDefinition = new JsonFilterDefinition<T>(json);
             var cursor = await GetCollection<T>(collection).FindAsync(filterDefinition);
@@ -139,7 +129,12 @@ namespace Sining.Module
 
         #region Insert
 
-        public async STask InsertBatch<T>(IEnumerable<T> list, string collection = null) where T : Component
+        public override async STask Insert<T>(T entity, string collection = null)
+        {
+            await Save(entity);
+        }
+
+        public override async STask InsertBatch<T>(IEnumerable<T> list, string collection = null)
         {
             if (collection == null)
             {
@@ -153,7 +148,7 @@ namespace Sining.Module
 
         #region Save
 
-        public async STask Save<T>(T entity, string collection = null) where T : Component
+        public override async STask Save<T>(T entity, string collection = null)
         {
             if (entity == null)
             {
@@ -169,7 +164,7 @@ namespace Sining.Module
             await GetCollection(collection).ReplaceOneAsync(d => d.Id == cloneEntity.Id, cloneEntity,
                 new ReplaceOptions() {IsUpsert = true});
         }
-        public async STask Save<T>(long taskId, T entity, string collection = null) where T : Component
+        public override async STask Save<T>(long taskId, T entity, string collection = null)
         {
             if (entity == null)
             {
@@ -185,7 +180,7 @@ namespace Sining.Module
             await GetCollection(collection).ReplaceOneAsync(d => d.Id == cloneEntity.Id, cloneEntity,
                 new ReplaceOptions {IsUpsert = true});
         }
-        public async STask Save(long id, List<Component> entities)
+        public override async STask Save(long id, List<Component> entities)
         {
             if (entities == null)
             {
@@ -206,7 +201,7 @@ namespace Sining.Module
                     .ReplaceOneAsync(d => d.Id == entity.Id, entity, new ReplaceOptions {IsUpsert = true});
             }
         }
-        public async SVoid SaveNotWait<T>(T entity, long taskId = 0, string collection = null) where T : Component
+        public override async SVoid SaveNotWait<T>(T entity, long taskId = 0, string collection = null)
         {
             if (taskId == 0)
             {
@@ -222,36 +217,35 @@ namespace Sining.Module
 
         #region Remove
 
-        public async STask<long> Remove<T>(long id, string collection = null) where T : Component
+        public override async STask<long> Remove<T>(long id, string collection = null)
         {
             var result = await GetCollection<T>(collection).DeleteOneAsync(d => d.Id == id);
 
             return result.DeletedCount;
         }
-        public async SVoid RemoveNoWait<T>(long id, string collection = null) where T : Component
+        public override async SVoid RemoveNoWait<T>(long id, string collection = null)
         {
             await Remove<T>(id, collection);
         }
-        public async STask<long> Remove<T>(long taskId, long id, string collection = null) where T : Component
+        public override async STask<long> Remove<T>(long taskId, long id, string collection = null)
         {
             var result = await GetCollection<T>(collection).DeleteOneAsync(d => d.Id == id);
 
             return result.DeletedCount;
         }
-        public async STask<long> Remove<T>(Expression<Func<T, bool>> filter, string collection = null) where T : Component
+        public override async STask<long> Remove<T>(Expression<Func<T, bool>> filter, string collection = null)
         {
             var result = await GetCollection<T>(collection).DeleteManyAsync(filter);
 
             return result.DeletedCount;
         }
-        public async STask<long> Remove<T>(long taskId, Expression<Func<T, bool>> filter, string collection = null)
-                where T : Component
+        public override async STask<long> Remove<T>(long taskId, Expression<Func<T, bool>> filter, string collection = null)
         {
             var result = await GetCollection<T>(collection).DeleteManyAsync(filter);
 
             return result.DeletedCount;
         }
-        public async SVoid RemoveNoWait<T>(Expression<Func<T, bool>> filter, string collection = null) where T : Component
+        public override async SVoid RemoveNoWait<T>(Expression<Func<T, bool>> filter, string collection = null)
         {
             await Remove(filter, collection);
         }

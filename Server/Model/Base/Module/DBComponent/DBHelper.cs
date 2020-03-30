@@ -5,7 +5,7 @@ namespace Sining.Module
 {
     public static class DBHelper
     {
-        private static readonly Dictionary<int, DBComponent> DbComponents = new Dictionary<int, DBComponent>();
+        private static readonly Dictionary<int, ADBComponent> DbComponents = new Dictionary<int, ADBComponent>();
         public static void AddDbComponent(this Scene scene)
         {
             if (DbComponents.ContainsKey(scene.SceneConfig.Zone))
@@ -15,22 +15,43 @@ namespace Sining.Module
 
             var zone = ZoneConfigData.Instance.GetConfig(scene.SceneConfig.Zone);
 
-            var dbComponent =
-                ComponentFactory.Create<DBComponent, string, string>(SApp.Scene, zone.DbConnection, zone.DbName);
+            ADBComponent dbComponent;
+            
+            if (zone.DbType == "MongoDB")
+            {
+                dbComponent =
+                    ComponentFactory.Create<MongoDBComponent, string, string>(SApp.Scene, zone.DbConnection,
+                        zone.DbName);
+            }
+            else
+            {
+                dbComponent =
+                    ComponentFactory.Create<SqlDBComponent, string, string, string>(SApp.Scene, zone.DbConnection,
+                        zone.DbType, zone.DbName);
+            }
 
             DbComponents.Add(scene.SceneConfig.Zone, dbComponent);
         }
-        public static DBComponent DataBase(this Scene scene)
+        public static void Init()
+        {
+            foreach (var dbComponentsValue in DbComponents.Values)
+            {
+                dbComponentsValue.Init();
+            }
+            
+            Log.Debug("所有数据库初始化成功！");
+        }
+        public static ADBComponent DataBase(this Scene scene)
         {
             DbComponents.TryGetValue(scene.SceneConfig.Zone, out var dbComponent);
 
             return dbComponent;
         }
-        public static DBComponent DataBase<T>(this T component) where T : Component
+        public static ADBComponent DataBase<T>(this T component) where T : Component
         {
             return component.Scene.DataBase();
         }
-        public static DBComponent DataBase(int sceneId)
+        public static ADBComponent DataBase(int sceneId)
         {
             var scene = SceneManagementComponent.Instance.GetScene(sceneId);
 

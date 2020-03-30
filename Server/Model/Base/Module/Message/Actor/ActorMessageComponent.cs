@@ -61,7 +61,7 @@ namespace Sining.Network.Actor
         {
             if (actorMessage.ActorId == 0)
             {
-                throw new Exception($"ActorId is 0: {actorMessage.Serialize()}");
+                throw new Exception($"ActorId is 0: {actorMessage.ToBytes()}");
             }
 
             var appId = actorMessage.ActorId.GetAppId();

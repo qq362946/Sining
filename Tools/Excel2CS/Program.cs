@@ -94,7 +94,7 @@ namespace ExcelToCS
                 using var br = new FileStream(
                     Path.Combine(ConfigDirectory, $"{currentTable.TableName}.byte"),
                     FileMode.Create);
-                br.Write(binaryFileClass.ToBsonDocument().SerializeToByte());
+                br.Write(binaryFileClass.ToBsonDocument().ToBytes());
             }
         }
         private static async void ToDataFile(DataTable excelTable)

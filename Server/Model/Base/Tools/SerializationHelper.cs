@@ -5,6 +5,7 @@ using MongoDB.Bson;
 using MongoDB.Bson.IO;
 using MongoDB.Bson.Serialization;
 using MongoDB.Bson.Serialization.Conventions;
+using JsonConvert = Newtonsoft.Json.JsonConvert;
 
 namespace Sining.Tools
 {
@@ -28,24 +29,24 @@ namespace Sining.Tools
             }
         }
 
-        public static string Serialize<T>(this T t)
+        public static string ToJson<T>(this T t)
         {
-            return t.ToJson(JsonWriterSettings);
+            return JsonConvert.SerializeObject(t);
         }
         
-        public static byte[] SerializeToByte<T>(this T t)
+        public static byte[] ToBytes<T>(this T t)
         {
             return t.ToBson();
         }
 
         public static object Deserialize(this string json, Type type)
         {
-            return BsonSerializer.Deserialize(json, type);
+            return JsonConvert.DeserializeObject(json, type);
         }
 
         public static T Deserialize<T>(this string json)
         {
-            return BsonSerializer.Deserialize<T>(json);
+            return JsonConvert.DeserializeObject<T>(json);
         }
 
         public static T Deserialize<T>(this byte[] bytes)
@@ -60,7 +61,7 @@ namespace Sining.Tools
 
         public static T Clone<T>(this T t)
         {
-            return Deserialize<T>(SerializeToByte(t));
+            return Deserialize<T>(ToBytes(t));
         }
     }
 }

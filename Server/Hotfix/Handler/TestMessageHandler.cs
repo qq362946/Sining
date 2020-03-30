@@ -5,25 +5,26 @@ using System.Threading.Tasks;
 using MongoDB.Bson;
 using Sining;
 using Sining.Message;
+using Sining.Model;
 using Sining.Module;
 using Sining.Network;
 
 namespace Server.Hotfix
 {
-    public class TestPostModel : Component
-    {
-        public string Name;
-        public string PassWord;
-    }
-    
     [HTTPApiController]
     public class TestHttp : HTTPControllerBase
     {
+        [Post("/api/login1")]
+        public ActionResult test1(string name, string test1)
+        {
+            return Success();
+        }
         [PostJson("/api/login")]
-        public ActionResult Test(TestPostModel testPostModel)
+        public async STask<ActionResult> Test(TestPostModel testPostModel)
         {
             Log.Debug(testPostModel);
             Log.Debug($"接收到Post请求:mame:{testPostModel.Name}passWord{testPostModel.PassWord}");
+            await testPostModel.DataBase().Insert(testPostModel);
             return Success("111");
         }
 

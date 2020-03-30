@@ -30,6 +30,9 @@ namespace Sining
                 SApp.Id = options.Server < 0 ? 0 : options.Server;
                 // 启动服务器组件
                 SApp.Scene.AddComponent<StartServerComponent, int>(options.Server);
+                // 初始化数据库(Mongo数据库不需要)
+                // 这个方法会帮助创建数据库表，需要在SqlDBComponent.Init方法里添加需要创建的表类型
+                // DBHelper.Init();
                 // 防止主线程退出
                 for (;;)
                 {

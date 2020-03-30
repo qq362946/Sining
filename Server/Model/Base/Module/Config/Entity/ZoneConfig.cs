@@ -10,5 +10,7 @@ namespace Sining.Config
 		public string DbConnection { get; set; }
 		[BsonDefaultValue("")]
 		public string DbName { get; set; }
+		[BsonDefaultValue("")]
+		public string DbType { get; set; }
 	}
 }

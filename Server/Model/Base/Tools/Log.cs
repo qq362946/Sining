@@ -77,7 +77,7 @@ namespace Sining
         }
         public static void Debug(object obj)
         {
-            Debug(obj.Serialize());
+            Debug(obj.ToBytes());
         }
         public static void Info(string message)
         {
@@ -85,7 +85,7 @@ namespace Sining
         }
         public static void Info(object obj)
         {
-            Info(obj.Serialize());
+            Info(obj.ToBytes());
         }
         public static void Error(string message)
         {
@@ -93,7 +93,7 @@ namespace Sining
         }
         public static void Error(object obj)
         {
-            Error(obj.Serialize());
+            Error(obj.ToBytes());
         }
         public static void Error(Exception e)
         {
@@ -105,7 +105,7 @@ namespace Sining
         }
         public static void Trace(object obj)
         {
-            Trace(obj.Serialize());
+            Trace(obj.ToBytes());
         }
         public static void Warning(string message)
         {
@@ -113,7 +113,7 @@ namespace Sining
         }
         public static void Warning(object obj)
         {
-            Warning(obj.Serialize());
+            Warning(obj.ToBytes());
         }
         public static void Fatal(string fatal)
         {
@@ -121,7 +121,7 @@ namespace Sining
         }
         public static void Fatal(object obj)
         {
-            Fatal(obj.Serialize());
+            Fatal(obj.ToBytes());
         }
         public static void Fatal(Exception e)
         {

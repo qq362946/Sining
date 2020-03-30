@@ -1,10 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using MongoDB.Bson.Serialization.Attributes;
-using Sining.Event;
 using Sining.Module;
 using Sining.Tools;
+using SqlSugar;
 
 namespace Sining
 {
@@ -16,32 +17,44 @@ namespace Sining
         [BsonDefaultValue(0L)]
         [BsonElement]
         [BsonId]
+        [SugarColumn(IsNullable =false ,IsPrimaryKey =true)]
         public long Id { get; set; }
         [BsonIgnore]
-        public Scene Scene;
+        [SugarColumn(IsIgnore =true)]
+        public Scene Scene { get; set; }
         [BsonIgnore]
-        private Dictionary<Type, Component> _components;
+        [SugarColumn(IsIgnore =true)]
+        private Dictionary<Type, Component> ComponentsDic { get; set; }
         [BsonIgnore]
-        private Dictionary<long, Component> _children;
+        [SugarColumn(IsIgnore =true)]
+        private Dictionary<long, Component> ChildrenDic { get; set; }
         [BsonIgnore]
+        [SugarColumn(IsIgnore =true)]
         private Dictionary<Type, Component> Components =>
-            _components ??= ObjectPool<Dictionary<Type, Component>>.Rent();
+            ComponentsDic ??= ObjectPool<Dictionary<Type, Component>>.Rent();
         [BsonIgnore]
-        protected Dictionary<long, Component> Children => _children ??= ObjectPool<Dictionary<long, Component>>.Rent();
+        [SugarColumn(IsIgnore =true)]
+        protected Dictionary<long, Component> Children => ChildrenDic ??= ObjectPool<Dictionary<long, Component>>.Rent();
         [BsonIgnore]
+        [SugarColumn(IsIgnore =true)]
         public bool IsDispose { get; private set; }
         [BsonIgnore]
+        [SugarColumn(IsIgnore =true)]
         public long InstanceId { get; private set; }
         [BsonIgnore]
+        [SugarColumn(IsIgnore =true)]
         public bool IsFromPool { get; private set; }
         [BsonIgnore]
-        private bool _isChild;
+        [SugarColumn(IsIgnore =true)]
+        private bool IsChild { get; set; }
         [BsonIgnore]
-        private Component _parent;
+        [SugarColumn(IsIgnore =true)]
+        private Component ParentComponent { get; set; }
         [BsonIgnore]
+        [SugarColumn(IsIgnore =true)]
         public Component Parent
         {
-            get => _parent;
+            get => ParentComponent;
             set
             {
                 if (value == null)
@@ -49,33 +62,35 @@ namespace Sining
                     throw new Exception($"cant set parent null: {this.GetType().Name}");
                 }
 
-                if (_parent != null)
+                if (ParentComponent != null)
                 {
-                    if (_parent.InstanceId == value.InstanceId)
+                    if (ParentComponent.InstanceId == value.InstanceId)
                     {
                         throw new Exception(
-                            $"Repeatedly set Parent: {GetType().Name} parent: {_parent.GetType().Name}");
+                            $"Repeatedly set Parent: {GetType().Name} parent: {ParentComponent.GetType().Name}");
                     }
 
-                    _parent.RemoveChild(this);
+                    ParentComponent.RemoveChild(this);
                 }
 
-                _parent = value;
-                _parent.AddChild(this);
-                _isChild = true;
+                ParentComponent = value;
+                ParentComponent.AddChild(this);
+                IsChild = true;
             }
         }
         [BsonElement("C")]
         [BsonIgnoreIfNull]
-        private HashSet<Component> _componentsDb;
+        [SugarColumn(IsIgnore =true)]
+        private HashSet<Component> ComponentsDbHash { get; set; }
         [BsonIgnore]
+        [SugarColumn(IsIgnore =true)]
         private Component ComponentParent
         {
-            set => _parent = value;
+            set => ParentComponent = value;
         }
         public T GetParent<T>() where T : Component
         {
-            return _parent as T;
+            return ParentComponent as T;
         }
         
         #endregion
@@ -91,7 +106,7 @@ namespace Sining
 
         protected T GetChild<T>(long instanceId) where T : Component
         {
-            if (!_children.TryGetValue(instanceId, out var component) || IsDispose)
+            if (!ChildrenDic.TryGetValue(instanceId, out var component) || IsDispose)
             {
                 return default;
             }
@@ -101,12 +116,12 @@ namespace Sining
 
         protected void RemoveChild(long instanceId)
         {
-            if (_children == null || IsDispose)
+            if (ChildrenDic == null || IsDispose)
             {
                 return;
             }
 
-            if (!_children.TryGetValue(instanceId, out var component))
+            if (!ChildrenDic.TryGetValue(instanceId, out var component))
             {
                 return;
             }
@@ -116,24 +131,24 @@ namespace Sining
 
         protected void RemoveChild(Component component)
         {
-            if (_children == null || IsDispose)
+            if (ChildrenDic == null || IsDispose)
             {
                 return;
             }
 
-            if (!_children.Remove(component.InstanceId))
+            if (!ChildrenDic.Remove(component.InstanceId))
             {
                 return;
             }
 
-            if (_children.Count != 0)
+            if (ChildrenDic.Count != 0)
             {
                 return;
             }
 
-            ObjectPool<Dictionary<long, Component>>.Return(_children);
+            ObjectPool<Dictionary<long, Component>>.Return(ChildrenDic);
 
-            _children = null;
+            ChildrenDic = null;
 
             if (!IsDispose) component.Dispose();
         }
@@ -279,12 +294,12 @@ namespace Sining
         }
         private void AddToComponentsDb(Component component)
         {
-            if (_componentsDb == null)
+            if (ComponentsDbHash == null)
             {
-                _componentsDb = ObjectPool<HashSet<Component>>.Rent();
+                ComponentsDbHash = ObjectPool<HashSet<Component>>.Rent();
             }
 
-            _componentsDb.Add(component);
+            ComponentsDbHash.Add(component);
         }
 
         #endregion
@@ -293,7 +308,7 @@ namespace Sining
 
         public T GetComponent<T>() where T : Component
         {
-            if (_components == null || IsDispose) return default;
+            if (ComponentsDic == null || IsDispose) return default;
 
             Components.TryGetValue(typeof(T), out var component);
 
@@ -302,7 +317,7 @@ namespace Sining
 
         public T GetComponent<T>(Type type) where T : Component
         {
-            if (_components == null || IsDispose) return default;
+            if (ComponentsDic == null || IsDispose) return default;
 
             Components.TryGetValue(type, out var component);
 
@@ -319,19 +334,19 @@ namespace Sining
         }
         public void RemoveComponent(Type type)
         {
-            if (_components == null || IsDispose) return;
+            if (ComponentsDic == null || IsDispose) return;
 
             if (!Components.Remove(type, out var component)) return;
 
-            if (_componentsDb != null)
+            if (ComponentsDbHash != null)
             {
-                _componentsDb.Remove(component);
+                ComponentsDbHash.Remove(component);
 
-                if (_componentsDb.Count == 0 && IsFromPool)
+                if (ComponentsDbHash.Count == 0 && IsFromPool)
                 {
-                    ObjectPool<HashSet<Component>>.Return(_componentsDb);
+                    ObjectPool<HashSet<Component>>.Return(ComponentsDbHash);
 
-                    _componentsDb = null;
+                    ComponentsDbHash = null;
                 }
             }
 
@@ -354,58 +369,58 @@ namespace Sining
 
             ComponentManagement.Instance.Destroy(this);
 
-            if (_components != null)
+            if (ComponentsDic != null)
             {
-                foreach (var childrenValue in _components.Values)
+                foreach (var childrenValue in ComponentsDic.Values)
                 {
                     childrenValue.Dispose();
                 }
 
-                _components.Clear();
+                ComponentsDic.Clear();
 
-                ObjectPool<Dictionary<Type, Component>>.Return(_components);
-                _components = null;
+                ObjectPool<Dictionary<Type, Component>>.Return(ComponentsDic);
+                ComponentsDic = null;
 
-                if (_componentsDb != null)
+                if (ComponentsDbHash != null)
                 {
-                    _componentsDb.Clear();
+                    ComponentsDbHash.Clear();
 
                     if (IsFromPool)
                     {
-                        ObjectPool<HashSet<Component>>.Return(_componentsDb);
-                        _componentsDb = null;
+                        ObjectPool<HashSet<Component>>.Return(ComponentsDbHash);
+                        ComponentsDbHash = null;
                     }
                 }
             }
 
-            if (_children != null)
+            if (ChildrenDic != null)
             {
-                foreach (var component in _children.Values)
+                foreach (var component in ChildrenDic.Values)
                 {
                     component.Dispose();
                 }
 
-                _children.Clear();
+                ChildrenDic.Clear();
 
-                ObjectPool<Dictionary<long, Component>>.Return(_children);
-                _children = null;
+                ObjectPool<Dictionary<long, Component>>.Return(ChildrenDic);
+                ChildrenDic = null;
             }
 
             IsDispose = true;
 
-            if (_isChild)
+            if (IsChild)
             {
-                _parent?.RemoveChild(this);
+                ParentComponent?.RemoveChild(this);
             }
             else
             {
-                _parent?.RemoveComponent(this);
+                ParentComponent?.RemoveComponent(this);
             }
             
             ComponentManagement.Instance.Remove(InstanceId);
 
-            _isChild = false;
-            _parent = null;
+            IsChild = false;
+            ParentComponent = null;
             IsFromPool = false;
             InstanceId = 0;
             Id = 0;
