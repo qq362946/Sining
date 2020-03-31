@@ -7,7 +7,10 @@ using Sining.Tools;
 
 namespace Sining.Config
 {
-    public interface IAConfig : ISupportInitialize{ }
+    public interface IAConfig : ISupportInitialize
+    {
+        void BeginClear();
+    }
 
     public abstract class AConfig<T> : IAConfig where T : class
     {
@@ -27,6 +30,10 @@ namespace Sining.Config
         public List<T> GetAllConfig()
         {
             return Configs.Values.ToList();
+        }
+        public virtual void BeginClear()
+        {
+            Configs.Clear();
         }
         public virtual void BeginInit()
         {

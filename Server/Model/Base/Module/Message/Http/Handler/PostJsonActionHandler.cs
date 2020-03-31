@@ -37,7 +37,7 @@ namespace Sining.Network
 
             var parametersLength = MethodInfo.GetParameters().Length;
             var objectArray = ArrayPool<object>.Shared.Rent(parametersLength);
-
+            
             try
             {
                 var component = (Component) Parsing(context).Deserialize(MethodInfo.GetParameters()[0].ParameterType);
@@ -45,6 +45,10 @@ namespace Sining.Network
                 objectArray[0] = component;
 
                 return MethodInfo.Invoke(HttpControllerBase, objectArray.AsSpan(0, 1).ToArray());
+            }
+            catch
+            {
+                return null;
             }
             finally
             {

@@ -11,25 +11,26 @@ namespace Sining.Network.Actor
     {
         public static ActorDispatcherComponent Instance;
         private readonly OneToManyList<Type, IActorMessageHandler> _actorHandlers = new OneToManyList<Type, IActorMessageHandler>();
-
         public void Init()
         {
             Instance = this;
             
-            foreach (var type in AssemblyManagement.AllType.Where(d =>
-                d.IsDefined(typeof(ActorMessageSystemAttribute), true)))
+            foreach (var allTypes in AssemblyManagement.AllType.Values)
             {
-                var obj = Activator.CreateInstance(type);
-                
-                if (!(obj is IActorMessageHandler actorMessageHandler))
+                foreach (var type in allTypes.Where(d =>
+                    d.IsDefined(typeof(ActorMessageSystemAttribute), true)))
                 {
-                    throw new Exception($"message handle {type.Name} 需要继承 IActorMessageHandler");
-                }
+                    var obj = Activator.CreateInstance(type);
                 
-                AddHandler(actorMessageHandler.Type(), actorMessageHandler);
+                    if (!(obj is IActorMessageHandler actorMessageHandler))
+                    {
+                        throw new Exception($"message handle {type.Name} 需要继承 IActorMessageHandler");
+                    }
+                
+                    AddHandler(actorMessageHandler.Type(), actorMessageHandler);
+                }
             }
         }
-
         public void Handle(Session session, Component component, object obj)
         {
             var list = GetHandler(obj.GetType());
@@ -45,24 +46,25 @@ namespace Sining.Network.Actor
                 messageHandler.Handle(session, component, obj).GetAwaiter().GetResult();
             }
         }
-
         public List<IActorMessageHandler> GetHandler(Type type)
         {
             _actorHandlers.TryGetValue(type, out var list);
 
             return list;
         }
-
         public void AddHandler(Type type, IActorMessageHandler message)
         {
             _actorHandlers.Add(type, message);
         }
-        
-        public void Clear()
+        public void ReLoad()
+        {
+            Clear();
+            Init();
+        }
+        private void Clear()
         {
             _actorHandlers.Clear();
         }
-
         public override void Dispose()
         {
             if (IsDispose) return;

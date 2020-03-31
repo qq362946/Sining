@@ -10,25 +10,25 @@ namespace Sining.Module
     public class SystemEventComponent : Component
     {
         public static SystemEventComponent Instance;
-        
         private readonly OneToManyList<string, object> _eventSystem = new OneToManyList<string, object>(0);
-
         public void Init()
         {
-            foreach (var type in AssemblyManagement.AllType.Where(d =>
-                d.IsDefined(typeof(EventSystemAttribute), true)))
+            foreach (var allTypes in AssemblyManagement.AllType.Values)
             {
-                var obj = Activator.CreateInstance(type);
-
-                foreach (var customAttribute in type.GetCustomAttributes<EventSystemAttribute>(true))
+                foreach (var type in allTypes.Where(d =>
+                    d.IsDefined(typeof(EventSystemAttribute), true)))
                 {
-                    _eventSystem.Add(customAttribute.EventType, obj);
+                    var obj = Activator.CreateInstance(type);
+
+                    foreach (var customAttribute in type.GetCustomAttributes<EventSystemAttribute>(true))
+                    {
+                        _eventSystem.Add(customAttribute.EventType, obj);
+                    }
                 }
             }
 
             Instance = this;
         }
-        
         public void Publish(string eventName)
         {
             if (!_eventSystem.TryGetValue(eventName, out var list)) return;
@@ -45,7 +45,6 @@ namespace Sining.Module
                 }
             }
         }
-
         public void Publish<T>(string eventName, T a)
         {
             if (!_eventSystem.TryGetValue(eventName, out var list)) return;
@@ -62,7 +61,6 @@ namespace Sining.Module
                 }
             }
         }
-
         public void Publish<T, T1>(string eventName, T a, T1 b)
         {
             if (!_eventSystem.TryGetValue(eventName, out var list)) return;
@@ -79,7 +77,6 @@ namespace Sining.Module
                 }
             }
         }
-
         public void Publish<T, T1, T2>(string eventName, T a, T1 b, T2 c)
         {
             if (!_eventSystem.TryGetValue(eventName, out var list)) return;
@@ -96,7 +93,6 @@ namespace Sining.Module
                 }
             }
         }
-
         public void Publish<T, T1, T2, T3>(string eventName, T a, T1 b, T2 c, T3 d)
         {
             if (!_eventSystem.TryGetValue(eventName, out var list)) return;
@@ -113,7 +109,6 @@ namespace Sining.Module
                 }
             }
         }
-
         public void Publish<T, T1, T2, T3, T4>(string eventName, T a, T1 b, T2 c, T3 d, T4 e)
         {
             if (!_eventSystem.TryGetValue(eventName, out var list)) return;
@@ -130,12 +125,15 @@ namespace Sining.Module
                 }
             }
         }
-
-        public void Clear()
+        public void ReLoad()
+        {
+            Clear();
+            Init();
+        }
+        private void Clear()
         {
             _eventSystem.Clear();
         }
-
         public override void Dispose()
         {
             if(IsDispose) return;

@@ -1,13 +1,16 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
+using Sining.DataStructure;
 
 namespace Sining.Tools
 {
     public static class AssemblyManagement
     {
-        public static readonly List<Type> AllType = new List<Type>();
-
+        public static readonly OneToManyList<string, Type> AllType = new OneToManyList<string, Type>();
+        public const string Model = "Model";
+        public const string Hotfix = "Hotfix";
         #if SiningClient
         public static void Init()
         {
@@ -26,14 +29,21 @@ namespace Sining.Tools
             
             AllType.Clear();
             
-            // 加载Core程序集
+            // 加载Model程序集
 
-            AllType.AddRange(Assembly.GetExecutingAssembly().GetTypes());
+            AllType.Add(Model,Assembly.GetExecutingAssembly().GetTypes().ToList());
 
             foreach (var assembly in assemblyName)
             {
-                AllType.AddRange(Assembly.LoadFrom(assembly).GetTypes());
+                AllType.Add(Hotfix, Assembly.LoadFrom(assembly).GetTypes().ToList());
             }
+        }
+
+        public static void ReLoadHotfix()
+        {
+            AllType.RemoveKey(Hotfix);
+            
+            AllType.Add(Hotfix, Assembly.LoadFrom("Server.Hotfix.dll").GetTypes().ToList());
         }
     }
 }

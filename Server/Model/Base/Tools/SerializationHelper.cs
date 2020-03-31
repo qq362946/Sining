@@ -22,8 +22,8 @@ namespace Sining.Tools
 
             ConventionRegistry.Register("IgnoreExtraElements", conventionPack, type => true);
 
-            foreach (var type in AssemblyManagement.AllType.Where(d =>
-                !d.IsInterface && typeof(IObject).IsAssignableFrom(d)))
+            foreach (var type in AssemblyManagement.AllType.Values.SelectMany(allTypes => allTypes.Where(d =>
+                !d.IsInterface && typeof(IObject).IsAssignableFrom(d))))
             {
                 BsonClassMap.LookupClassMap(type);
             }

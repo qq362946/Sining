@@ -20,11 +20,11 @@ namespace Server.Hotfix
             return Success();
         }
         [PostJson("/api/login")]
-        public async STask<ActionResult> Test(TestPostModel testPostModel)
+        public ActionResult Test(TestPostModel testPostModel)
         {
             Log.Debug(testPostModel);
             Log.Debug($"接收到Post请求:mame:{testPostModel.Name}passWord{testPostModel.PassWord}");
-            await testPostModel.DataBase().Insert(testPostModel);
+           // await testPostModel.DataBase().Insert(testPostModel);
             return Success("111");
         }
 

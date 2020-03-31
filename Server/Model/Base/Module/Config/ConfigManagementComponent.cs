@@ -3,17 +3,52 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Sining.Config;
+using Sining.Event;
 using Sining.Tools;
 
 namespace Sining.Module
 {
     public class ConfigManagementComponent : Component
     {
+        public static ConfigManagementComponent Instance;
+        private readonly Dictionary<Type, IAConfig> _configs = new Dictionary<Type, IAConfig>();
         public void Init()
         {
-            Task.WaitAll(
-                AssemblyManagement.AllType.Where(d => d.IsDefined(typeof(ConfigAttribute), true))
-                    .Select(type => Task.Run(() => LoadConfiguration(type))).ToArray());
+            var list = new List<Task>();
+
+            foreach (var allTypes in AssemblyManagement.AllType.Values)
+            {
+                list.AddRange(allTypes.Where(d => d.IsDefined(typeof(ConfigAttribute), true))
+                    .Select(type => Task.Run(() => LoadConfiguration(type))));
+            }
+
+            Task.WaitAll(list.ToArray());
+
+            Instance = this;
+        }
+
+        public void ReLoad()
+        {
+            var list = new List<Task>();
+
+            foreach (var allTypes in AssemblyManagement.AllType.Values)
+            {
+                list.AddRange(allTypes.Where(d => d.IsDefined(typeof(ConfigAttribute), true))
+                    .Select(type => Task.Run(() =>
+                    {
+                        if (!_configs.TryGetValue(type, out var iAConfig))
+                        {
+                            LoadConfiguration(type);
+
+                            return;
+                        }
+
+                        iAConfig.BeginClear();
+                        iAConfig.BeginInit();
+                    })));
+            }
+
+            Task.WaitAll(list.ToArray());
         }
 
         private void LoadConfiguration(Type type)
@@ -27,6 +62,7 @@ namespace Sining.Module
 
             iAConfig.BeginInit();
             iAConfig.EndInit();
+            _configs.Add(type, iAConfig);
         }
     }
 }

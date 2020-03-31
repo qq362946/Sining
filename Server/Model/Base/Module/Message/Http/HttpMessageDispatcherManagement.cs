@@ -10,80 +10,80 @@ namespace Sining.Network
     public class HttpMessageDispatcherManagement : Component
     {
         public static HttpMessageDispatcherManagement Instance;
-
         private readonly ConcurrentDictionary<string, ActionHandler> _actionHandler =
             new ConcurrentDictionary<string, ActionHandler>();
-
         public void Init()
         {
-            foreach (var type in AssemblyManagement.AllType.Where(d =>
-                d.IsDefined(typeof(HTTPApiControllerAttribute), false)))
+            foreach (var allTypes in AssemblyManagement.AllType.Values)
             {
-                foreach (var methodInfo in type.GetMethods())
+                foreach (var type in allTypes.Where(d =>
+                    d.IsDefined(typeof(HTTPApiControllerAttribute), false)))
                 {
-                    if (methodInfo.IsDefined(typeof(PostAttribute), false))
+                    foreach (var methodInfo in type.GetMethods())
                     {
-                        var url = methodInfo.GetCustomAttribute<PostAttribute>(false).Url;
-
-                        if (string.IsNullOrWhiteSpace(url))
+                        if (methodInfo.IsDefined(typeof(PostAttribute), false))
                         {
-                            Log.Error($"class:{type.Name} method:{methodInfo.Name} PostAttribute Url not null");
+                            var url = methodInfo.GetCustomAttribute<PostAttribute>(false).Url;
+
+                            if (string.IsNullOrWhiteSpace(url))
+                            {
+                                Log.Error($"class:{type.Name} method:{methodInfo.Name} PostAttribute Url not null");
+                                continue;
+                            }
+
+                            _actionHandler[url] = new PostActionHandler(type, methodInfo);
+
                             continue;
                         }
 
-                        _actionHandler[url] = new PostActionHandler(type, methodInfo);
-
-                        continue;
-                    }
-
-                    if (methodInfo.IsDefined(typeof(GetAttribute), true))
-                    {
-                        var url = methodInfo.GetCustomAttribute<GetAttribute>(true).Url;
-
-                        if (string.IsNullOrWhiteSpace(url))
+                        if (methodInfo.IsDefined(typeof(GetAttribute), true))
                         {
-                            Log.Error($"class:{type.Name} method:{methodInfo.Name} PostAttribute Url not null");
+                            var url = methodInfo.GetCustomAttribute<GetAttribute>(true).Url;
+
+                            if (string.IsNullOrWhiteSpace(url))
+                            {
+                                Log.Error($"class:{type.Name} method:{methodInfo.Name} PostAttribute Url not null");
+                                continue;
+                            }
+
+                            _actionHandler[url] = new GetActionHandler(type, methodInfo);
+
                             continue;
                         }
 
-                        _actionHandler[url] = new GetActionHandler(type, methodInfo);
-
-                        continue;
-                    }
-
-                    if (methodInfo.IsDefined(typeof(PostJsonAttribute), false))
-                    {
-                        var url = methodInfo.GetCustomAttribute<PostJsonAttribute>(false).Url;
-
-                        if (string.IsNullOrWhiteSpace(url))
+                        if (methodInfo.IsDefined(typeof(PostJsonAttribute), false))
                         {
-                            Log.Error($"class:{type.Name} method:{methodInfo.Name} PostAttribute Url not null");
+                            var url = methodInfo.GetCustomAttribute<PostJsonAttribute>(false).Url;
+
+                            if (string.IsNullOrWhiteSpace(url))
+                            {
+                                Log.Error($"class:{type.Name} method:{methodInfo.Name} PostAttribute Url not null");
+                                continue;
+                            }
+
+                            _actionHandler[url] = new PostJsonActionHandler(type, methodInfo);
+
                             continue;
                         }
 
-                        _actionHandler[url] = new PostJsonActionHandler(type, methodInfo);
-
-                        continue;
-                    }
-
-                    if (!methodInfo.IsDefined(typeof(GetJsonAttribute), false)) continue;
-                    {
-                        var url = methodInfo.GetCustomAttribute<GetJsonAttribute>(false).Url;
-
-                        if (string.IsNullOrWhiteSpace(url))
+                        if (!methodInfo.IsDefined(typeof(GetJsonAttribute), false)) continue;
                         {
-                            Log.Error($"class:{type.Name} method:{methodInfo.Name} PostAttribute Url not null");
-                            continue;
-                        }
+                            var url = methodInfo.GetCustomAttribute<GetJsonAttribute>(false).Url;
 
-                        _actionHandler[url] = new GetJsonActionHandler(type, methodInfo);
+                            if (string.IsNullOrWhiteSpace(url))
+                            {
+                                Log.Error($"class:{type.Name} method:{methodInfo.Name} PostAttribute Url not null");
+                                continue;
+                            }
+
+                            _actionHandler[url] = new GetJsonActionHandler(type, methodInfo);
+                        }
                     }
                 }
             }
 
             Instance = this;
         }
-
         public object Handler(Scene scene, HttpListenerContext context)
         {
             if (!_actionHandler.TryGetValue(context.Request.RawUrl.Split('?')[0], out var handler)) return null;
@@ -97,6 +97,11 @@ namespace Sining.Network
                 Log.Error(e);
                 return null;
             }
+        }
+        public void ReLoad()
+        {
+            _actionHandler.Clear();
+            Init();
         }
     }
 }

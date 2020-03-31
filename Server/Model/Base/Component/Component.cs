@@ -22,37 +22,48 @@ namespace Sining
         [SugarColumn(IsNullable =false ,IsPrimaryKey =true)]
         public long Id { get; set; }
         [BsonIgnore]
+        [JsonIgnore]
         [SugarColumn(IsIgnore =true)]
         public Scene Scene { get; set; }
         [BsonIgnore]
+        [JsonIgnore]
         [SugarColumn(IsIgnore =true)]
         private Dictionary<Type, Component> ComponentsDic { get; set; }
         [BsonIgnore]
+        [JsonIgnore]
         [SugarColumn(IsIgnore =true)]
         private Dictionary<long, Component> ChildrenDic { get; set; }
         [BsonIgnore]
+        [JsonIgnore]
         [SugarColumn(IsIgnore =true)]
         private Dictionary<Type, Component> Components =>
             ComponentsDic ??= ObjectPool<Dictionary<Type, Component>>.Rent();
         [BsonIgnore]
+        [JsonIgnore]
         [SugarColumn(IsIgnore =true)]
         protected Dictionary<long, Component> Children => ChildrenDic ??= ObjectPool<Dictionary<long, Component>>.Rent();
         [BsonIgnore]
+        [JsonIgnore]
         [SugarColumn(IsIgnore =true)]
         public bool IsDispose { get; private set; }
         [BsonIgnore]
+        [JsonIgnore]
         [SugarColumn(IsIgnore =true)]
         public long InstanceId { get; private set; }
         [BsonIgnore]
+        [JsonIgnore]
         [SugarColumn(IsIgnore =true)]
         public bool IsFromPool { get; private set; }
         [BsonIgnore]
+        [JsonIgnore]
         [SugarColumn(IsIgnore =true)]
         private bool IsChild { get; set; }
         [BsonIgnore]
+        [JsonIgnore]
         [SugarColumn(IsIgnore =true)]
         private Component ParentComponent { get; set; }
         [BsonIgnore]
+        [JsonIgnore]
         [SugarColumn(IsIgnore =true)]
         public Component Parent
         {
@@ -82,9 +93,11 @@ namespace Sining
         }
         [BsonElement("C")]
         [BsonIgnoreIfNull]
+        [JsonIgnore]
         [SugarColumn(IsIgnore =true)]
         private HashSet<Component> ComponentsDbHash { get; set; }
         [BsonIgnore]
+        [JsonIgnore]
         [SugarColumn(IsIgnore =true)]
         private Component ComponentParent
         {

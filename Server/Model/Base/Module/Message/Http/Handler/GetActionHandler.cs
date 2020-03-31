@@ -36,6 +36,10 @@ namespace Sining.Network
                 return MethodInfo.Invoke(HttpControllerBase,
                     objectArray.AsSpan(0, parametersLength).ToArray());
             }
+            catch
+            {
+                return null;
+            }
             finally
             {
                 ArrayPool<object>.Shared.Return(objectArray, true);

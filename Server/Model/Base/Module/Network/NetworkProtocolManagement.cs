@@ -11,54 +11,54 @@ namespace Server.Network
     public class NetworkProtocolManagement : Component
     {
         public static NetworkProtocolManagement Instance;
-        
         private readonly DoubleMapDictionary<ushort, Type> _messageEvents = new DoubleMapDictionary<ushort, Type>();
         private readonly DoubleMapDictionary<string, Type> _apiMessageEvents = new DoubleMapDictionary<string, Type>();
-
         public void Init()
         {
-            foreach (var type in AssemblyManagement.AllType.Where(d =>
-                d.IsDefined(typeof(MessageAttribute), true)))
+            foreach (var allTypes in AssemblyManagement.AllType.Values)
             {
-                var messageAttribute = type.GetCustomAttribute<MessageAttribute>();
-
-                _messageEvents.Add(messageAttribute.Opcode, type);
-
-                if (!string.IsNullOrWhiteSpace(messageAttribute.RawUrl))
+                foreach (var type in allTypes.Where(d =>
+                    d.IsDefined(typeof(MessageAttribute), true)))
                 {
-                    _apiMessageEvents.Add(messageAttribute.RawUrl, type);
+                    var messageAttribute = type.GetCustomAttribute<MessageAttribute>();
+
+                    _messageEvents.Add(messageAttribute.Opcode, type);
+
+                    if (!string.IsNullOrWhiteSpace(messageAttribute.RawUrl))
+                    {
+                        _apiMessageEvents.Add(messageAttribute.RawUrl, type);
+                    }
                 }
             }
 
             Instance = this;
         }
-
         public ushort GetOpCode(Type type)
         {
             return _messageEvents.GetKeyByValue(type);
         }
-        
         public string GetRawUrl(Type type)
         {
             return _apiMessageEvents.GetKeyByValue(type);
         }
-
         public Type GetType(ushort code)
         {
             return _messageEvents.GetValueByKey(code);
         }
-        
         public Type GetType(string rawUrl)
         {
             return _apiMessageEvents.GetValueByKey(rawUrl);
         }
-
-        public void Clear()
+        public void ReLoad()
+        {
+            Clear();
+            Init();
+        }
+        private void Clear()
         {
             _messageEvents.Clear();
             _apiMessageEvents.Clear();
         }
-
         public override void Dispose()
         {
             if (IsDispose) return;
