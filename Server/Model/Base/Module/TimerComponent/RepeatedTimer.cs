@@ -5,9 +5,9 @@ using Sining.Tools;
 namespace Sining.Module.TimerComponent
 {
     [ComponentSystem]
-    public class RepeatedTimerAwakeSystem : AwakeSystem<RepeatedTimer, long, Action<bool>>
+    public class RepeatedTimerAwakeSystem : AwakeSystem<RepeatedTimer, long, Action>
     {
-        protected override void Awake(RepeatedTimer self, long repeatedTime, Action<bool> callback)
+        protected override void Awake(RepeatedTimer self, long repeatedTime, Action callback)
         {
             self.Awake(repeatedTime, callback);
         }
@@ -18,9 +18,9 @@ namespace Sining.Module.TimerComponent
         private long _startTime;
         private long _repeatedTime;
         private int _count;
-        private Action<bool> _callback;
+        private Action _callback;
         
-        public void Awake(long repeatedTime, Action<bool> callback)
+        public void Awake(long repeatedTime, Action callback)
         {
             _startTime = TimeHelper.Now;
             _repeatedTime = repeatedTime;
@@ -36,7 +36,7 @@ namespace Sining.Module.TimerComponent
 
             try
             {
-                _callback.Invoke(isTimeout);
+                _callback();
             }
             catch (Exception e)
             {

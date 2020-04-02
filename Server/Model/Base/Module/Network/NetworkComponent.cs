@@ -17,6 +17,7 @@ namespace Sining.Module
     {
         public MessagePacker MessagePacker;
         private NetworkProtocol _networkProtocol;
+        public IMessageDispatcher MessageDispatcher;
         public int Count => Children.Count;
 
         public void Awake(NetworkProtocolType networkProtocolType, string address)

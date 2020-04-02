@@ -17,7 +17,7 @@ namespace Sining.Network
 
         public object Run(Scene scene, HttpListenerContext context)
         {
-            HttpControllerBase.SetContext(context);
+            HttpControllerBase.SetContext(context,scene);
             return Handler(scene, context);
         }
 

@@ -27,6 +27,9 @@ namespace Sining.Module
             _mongoDatabase = _mongoClient.GetDatabase(dbName);
         }
         public override void Init() { }
+        public override void BeginTran() { }
+        public override void RollbackTran() { }
+        public override void CommitTran() { }
         private IMongoCollection<T> GetCollection<T>(string collection=null)
         {
             return _mongoDatabase.GetCollection<T>(collection ?? typeof (T).Name);
@@ -61,6 +64,11 @@ namespace Sining.Module
         }
 
         #endregion
+        
+        public override STask<long> UpdateRange<T>(List<T> range)
+        {
+            throw new NotImplementedException();
+        }
 
         #region Query
 

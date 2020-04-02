@@ -47,6 +47,8 @@ namespace Sining.Tools
             SApp.Scene.AddComponent<TimerComponent>();
             // 控制台命令组件
             SApp.Scene.AddComponent<ConsoleComponent>();
+            // HTTP客户端组件
+            SApp.Scene.AddComponent<HttpClientComponent>();
         }
 
         public static void ReLoad()

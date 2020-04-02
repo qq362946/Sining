@@ -9,10 +9,12 @@ namespace Sining.Network
         protected HttpListenerRequest Request => Context?.Request;
         protected HttpListenerResponse Response  => Context?.Response;
         private string _contentType;
+        protected Scene Scene;
 
-        public void SetContext(HttpListenerContext context)
+        public void SetContext(HttpListenerContext context,Scene scene)
         {
             Context = context;
+            Scene = scene;
             _contentType = context.Request.ContentType;
         }
 

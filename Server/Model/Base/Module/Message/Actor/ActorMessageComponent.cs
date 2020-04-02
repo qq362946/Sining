@@ -18,12 +18,12 @@ namespace Sining.Network.Actor
 
     public class ActorMessageComponent : Component
     {
+        public static ActorMessageComponent Instance { get; private set; }
         private const int TimeOut = 30 * 1000;
         private int _rpcId;
         private Task _task;
         private readonly Dictionary<int, ActorTaskComponent> _requestCallback = new Dictionary<int, ActorTaskComponent>();
         private readonly List<int> _timeoutActors = new List<int>();
-
         public void Awake()
         {
             _task = Task.Factory.StartNew(() =>
@@ -55,8 +55,9 @@ namespace Sining.Network.Actor
                 _timeoutActors.Clear();
 
             }, TaskCreationOptions.LongRunning);
-        }
 
+            Instance = this;
+        }
         public void Send(IActorMessage actorMessage)
         {
             if (actorMessage.ActorId == 0)
@@ -68,7 +69,6 @@ namespace Sining.Network.Actor
 
             actorMessage.Send((int) appId);
         }
-
         public STask<TResponse> Call<TResponse>(IActorRequest request) where TResponse : IActorResponse
         {
             var rpcId = ++_rpcId;
@@ -94,7 +94,18 @@ namespace Sining.Network.Actor
 
             return tcs.Task;
         }
-
+        public void Receive(IActorResponse response)
+        {
+            if (!_requestCallback.TryGetValue(response.RpcId, out var actorTaskComponent))
+            {
+                Log.Error($"not found ActorRpc, maybe request timeout, response message: {response.ToJson()}");
+                return;
+            }
+            
+            _requestCallback.Remove(response.RpcId);
+            
+            actorTaskComponent.Callback(response);
+        }
         public override void Dispose()
         {
             if(IsDispose) return;
@@ -107,6 +118,7 @@ namespace Sining.Network.Actor
             }
             
             _requestCallback.Clear();
+            Instance = null;
             
             base.Dispose();
         }

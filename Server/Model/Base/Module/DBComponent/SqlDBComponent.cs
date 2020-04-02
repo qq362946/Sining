@@ -33,7 +33,7 @@ namespace Sining.Module
                     IsAutoCloseConnection = true,
                     InitKeyType = InitKeyType.Attribute
                 };
-
+                
                 _connection = new SqlSugarClient(_connectionConfig);
             }
             catch (Exception e)
@@ -48,7 +48,22 @@ namespace Sining.Module
             // [SugarColumn(IsNullable = true)]
             // [SugarColumn(IsIgnore =true)]
             // [SugarColumn(Length = 21)]
-            _connection.CodeFirst.InitTables<TestPostModel>();
+            //_connection.CodeFirst.InitTables<TestPostModel>();
+        }
+
+        public override void BeginTran()
+        {
+            _connection.BeginTran();
+        }
+
+        public override void RollbackTran()
+        {
+            _connection.RollbackTran();
+        }
+
+        public override void CommitTran()
+        {
+            _connection.CommitTran();
         }
 
         #region Count
@@ -77,6 +92,11 @@ namespace Sining.Module
         }
 
         #endregion
+        
+        public override async STask<long> UpdateRange<T>(List<T> range)
+        {
+            return await _connection.Updateable(range).ExecuteCommandAsync();
+        }
 
         #region Query
 

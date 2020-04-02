@@ -14,7 +14,6 @@ namespace Sining.Module
             self.Start().Coroutine();
         }
     }
-
     public class ConsoleComponent : Component
     {
         private CancellationTokenSource _cancellationTokenSource;

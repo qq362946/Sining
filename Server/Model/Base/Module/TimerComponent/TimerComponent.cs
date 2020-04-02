@@ -27,53 +27,72 @@ namespace Sining
         private readonly ConcurrentQueue<long> _timeOutTime = new ConcurrentQueue<long>();
         private readonly ConcurrentQueue<long> _timeOutTimerIds = new ConcurrentQueue<long>();
         private long _minTime;
+
         public void Awake()
         {
             Instance = this;
-            
+
             Task.Factory.StartNew(() =>
             {
-                Thread.Sleep(1);
-                
-                if (_timeId.Count == 0) return;
-                
-                var timeNow = TimeHelper.Now;
-
-                if (timeNow < _minTime) return;
-
-                foreach (var key in _timeId.Keys)
+                try
                 {
-                    if (key > timeNow)
+                    for (;;)
                     {
-                        _minTime = key;
-                        break;
+                        try
+                        {
+                            Thread.Sleep(1);
+
+                            if (_timeId.Count == 0) continue;
+
+                            var timeNow = TimeHelper.Now;
+
+                            if (timeNow < _minTime) continue;
+
+                            foreach (var key in _timeId.Keys)
+                            {
+                                if (key > timeNow)
+                                {
+                                    _minTime = key;
+                                    break;
+                                }
+
+                                _timeOutTime.Enqueue(key);
+                            }
+
+                            while (_timeOutTime.TryDequeue(out var time))
+                            {
+                                foreach (var timerId in _timeId[time])
+                                {
+                                    _timeOutTimerIds.Enqueue(timerId);
+                                }
+
+                                _timeId.RemoveKey(time);
+                            }
+
+                            while (_timeOutTimerIds.TryDequeue(out var timerId))
+                            {
+                                if (!_timers.TryGetValue(timerId, out var timer))
+                                {
+                                    continue;
+                                }
+
+                                OneThreadSynchronizationContext.Instance.Post(() => timer.Run(true));
+                            }
+
+                        }
+                        catch (Exception e)
+                        {
+                            Log.Error(e);
+                        }
                     }
-
-                    _timeOutTime.Enqueue(key);
                 }
-
-                while (_timeOutTime.TryDequeue(out var time))
+                catch (Exception e)
                 {
-                    foreach(var timerId in _timeId[time])
-                    {
-                        _timeOutTimerIds.Enqueue(timerId);	
-                    }
-                    _timeId.RemoveKey(time);
+                    Log.Error(e);
                 }
-
-                while (_timeOutTimerIds.TryDequeue(out var timerId))
-                {
-                    if (!_timers.TryGetValue(timerId, out var timer))
-                    {
-                        continue;
-                    }
-
-                    OneThreadSynchronizationContext.Instance.Post(() => timer.Run(true));
-                }
-
             }, TaskCreationOptions.LongRunning);
         }
-        
+
         public async STask<bool> WaitAsync(long time)
         {
             var tillTime = TimeHelper.Now + time;
@@ -132,11 +151,12 @@ namespace Sining
 
             (timer as IDisposable)?.Dispose();
         }
+
         public void AddToTimeId(long tillTime, long id)
         {
             _timeId.Add(tillTime, id);
-            
-            if (tillTime < _minTime)
+
+            if (tillTime < _minTime || _minTime == 0)
             {
                 _minTime = tillTime;
             }

@@ -1,8 +1,4 @@
-using System;
-using System.Reflection;
 using System.Threading;
-using System.Threading.Tasks;
-using MongoDB.Bson;
 using Sining;
 using Sining.Message;
 using Sining.Model;
@@ -16,7 +12,7 @@ namespace Server.Hotfix
     {
         [Post("/api/login1")]
         public ActionResult test1(string name, string test1)
-        {
+        {  
             return Success();
         }
         [PostJson("/api/login")]

@@ -11,12 +11,8 @@ namespace Sining
             switch (scene.SceneType)
             {
                 case SceneType.RealmAccount:
-                    break;
-                case SceneType.MessageForwarding:
-                    break;
-                case SceneType.Map:
-                    break;
-                case SceneType.Location:
+                    // // 释放锁仓组件
+                    // scene.AddComponent<ReleaseWarehouseComponent>();
                     break;
                 default:
                     throw new Exception($"No SceneType found for {(int) scene.SceneType}");
