@@ -148,9 +148,9 @@ namespace Sining.Module
             await _connection.Insertable(entity.Clone()).ExecuteCommandAsync();
         }
 
-        public override STask InsertBatch<T>(IEnumerable<T> list, string collection = null)
+        public override async STask InsertBatch<T>(IEnumerable<T> list, string collection = null)
         {
-            throw new NotImplementedException();
+            await _connection.Insertable<T>(list).ExecuteCommandAsync();
         }
 
         #endregion
@@ -168,15 +168,11 @@ namespace Sining.Module
 
             await _connection.Updateable(entity.Clone()).ExecuteCommandAsync();
         }
-        public override STask Save<T>(long taskId, T entity, string collection = null)
-        {
-            throw new NotImplementedException();
-        }
         public override STask Save(long id, List<Component> entities)
         {
             throw new NotImplementedException();
         }
-        public override async SVoid SaveNotWait<T>(T entity, long taskId = 0, string collection = null)
+        public override async SVoid SaveNotWait<T>(T entity, string collection = null)
         {
             await Save(entity);
         }
@@ -189,27 +185,14 @@ namespace Sining.Module
         {
             return await Remove<T>(d => d.Id == id);
         }
-
         public override async SVoid RemoveNoWait<T>(long id, string collection = null)
         {
             await Remove<T>(id);
         }
-
-        public override STask<long> Remove<T>(long taskId, long id, string collection = null)
-        {
-            throw new NotImplementedException();
-        }
-
         public override async STask<long> Remove<T>(Expression<Func<T, bool>> filter, string collection = null)
         {
             return await _connection.Deleteable<T>().Where(filter).ExecuteCommandAsync();
         }
-
-        public override STask<long> Remove<T>(long taskId, Expression<Func<T, bool>> filter, string collection = null)
-        {
-            throw new NotImplementedException();
-        }
-
         public override async SVoid RemoveNoWait<T>(Expression<Func<T, bool>> filter, string collection = null)
         {
             await Remove<T>(filter);

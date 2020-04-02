@@ -160,7 +160,7 @@ namespace Sining.Module
                 collection = typeof (T).Name;
             }
 
-            await GetCollection(collection).InsertManyAsync(list);
+            await GetCollection<T>(collection).InsertManyAsync(list);
         }
 
         #endregion
@@ -183,22 +183,6 @@ namespace Sining.Module
             await GetCollection(collection).ReplaceOneAsync(d => d.Id == cloneEntity.Id, cloneEntity,
                 new ReplaceOptions() {IsUpsert = true});
         }
-        public override async STask Save<T>(long taskId, T entity, string collection = null)
-        {
-            if (entity == null)
-            {
-                Log.Error($"save entity is null: {typeof(T).Name}");
-
-                return;
-            }
-
-            var cloneEntity = entity.Clone();
-
-            if (collection == null) collection = cloneEntity.GetType().Name;
-
-            await GetCollection(collection).ReplaceOneAsync(d => d.Id == cloneEntity.Id, cloneEntity,
-                new ReplaceOptions {IsUpsert = true});
-        }
         public override async STask Save(long id, List<Component> entities)
         {
             if (entities == null)
@@ -220,16 +204,9 @@ namespace Sining.Module
                     .ReplaceOneAsync(d => d.Id == entity.Id, entity, new ReplaceOptions {IsUpsert = true});
             }
         }
-        public override async SVoid SaveNotWait<T>(T entity, long taskId = 0, string collection = null)
+        public override async SVoid SaveNotWait<T>(T entity, string collection = null)
         {
-            if (taskId == 0)
-            {
-                await Save(entity, collection);
-
-                return;
-            }
-
-            await Save(taskId, entity, collection);
+            await Save(entity, collection);
         }
 
         #endregion
@@ -246,19 +223,7 @@ namespace Sining.Module
         {
             await Remove<T>(id, collection);
         }
-        public override async STask<long> Remove<T>(long taskId, long id, string collection = null)
-        {
-            var result = await GetCollection<T>(collection).DeleteOneAsync(d => d.Id == id);
-
-            return result.DeletedCount;
-        }
         public override async STask<long> Remove<T>(Expression<Func<T, bool>> filter, string collection = null)
-        {
-            var result = await GetCollection<T>(collection).DeleteManyAsync(filter);
-
-            return result.DeletedCount;
-        }
-        public override async STask<long> Remove<T>(long taskId, Expression<Func<T, bool>> filter, string collection = null)
         {
             var result = await GetCollection<T>(collection).DeleteManyAsync(filter);
 

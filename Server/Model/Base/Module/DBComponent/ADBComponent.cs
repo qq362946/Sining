@@ -43,24 +43,16 @@ namespace Sining.Module
         public abstract STask<List<T>> QueryJson<T>(long taskId, string json, string collection = null)
             where T : Component;
         public abstract STask Insert<T>(T entity, string collection = null) where T : Component, new();
-        public abstract STask InsertBatch<T>(IEnumerable<T> list, string collection = null) where T : Component;
+        public abstract STask InsertBatch<T>(IEnumerable<T> list, string collection = null) where T : class, new();
         public abstract STask Save<T>(T entity, string collection = null) where T : Component, new();
-        public abstract STask Save<T>(long taskId, T entity, string collection = null) where T : Component, new();
         public abstract STask Save(long id, List<Component> entities);
-
-        public abstract SVoid SaveNotWait<T>(T entity, long taskId = 0, string collection = null)
+        public abstract SVoid SaveNotWait<T>(T entity, string collection = null)
             where T : Component, new();
 
         public abstract STask<long> Remove<T>(long id, string collection = null) where T : Component, new();
         public abstract SVoid RemoveNoWait<T>(long id, string collection = null) where T : Component, new();
-        public abstract STask<long> Remove<T>(long taskId, long id, string collection = null) where T : Component, new();
-
         public abstract STask<long> Remove<T>(Expression<Func<T, bool>> filter, string collection = null)
             where T : Component, new();
-
-        public abstract STask<long> Remove<T>(long taskId, Expression<Func<T, bool>> filter, string collection = null)
-            where T : Component, new();
-
         public abstract SVoid RemoveNoWait<T>(Expression<Func<T, bool>> filter, string collection = null)
             where T : Component, new();
     }
