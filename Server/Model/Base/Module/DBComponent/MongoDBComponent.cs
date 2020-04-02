@@ -20,16 +20,27 @@ namespace Sining.Module
     {
         private MongoClient _mongoClient;
         private IMongoDatabase _mongoDatabase;
-
         public void Awake(string connectionString, string dbName)
         {
             _mongoClient = new MongoClient(connectionString);
             _mongoDatabase = _mongoClient.GetDatabase(dbName);
         }
         public override void Init() { }
-        public override void BeginTran() { }
-        public override void RollbackTran() { }
-        public override void CommitTran() { }
+        public override T GetConnection<T>() => _mongoClient as T;
+        public override void BeginTran(IClientSessionHandle clientSessionHandle = null)
+        {
+            clientSessionHandle?.StartTransaction(new TransactionOptions(
+                readConcern: ReadConcern.Snapshot,
+                writeConcern: WriteConcern.WMajority));
+        }
+        public override void RollbackTran(IClientSessionHandle clientSessionHandle = null)
+        {
+            clientSessionHandle?.AbortTransaction();
+        }
+        public override void CommitTran(IClientSessionHandle clientSessionHandle = null)
+        {
+            clientSessionHandle?.CommitTransaction();
+        }
         private IMongoCollection<T> GetCollection<T>(string collection=null)
         {
             return _mongoDatabase.GetCollection<T>(collection ?? typeof (T).Name);

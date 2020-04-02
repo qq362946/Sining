@@ -1,15 +1,17 @@
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
+using MongoDB.Driver;
 
 namespace Sining.Module
 {
     public abstract class ADBComponent : Component
     {
         public abstract void Init();
-        public abstract void BeginTran();
-        public abstract void RollbackTran();
-        public abstract void CommitTran();
+        public abstract T GetConnection<T>() where T : class;
+        public abstract void BeginTran(IClientSessionHandle clientSessionHandle = null);
+        public abstract void RollbackTran(IClientSessionHandle clientSessionHandle = null);
+        public abstract void CommitTran(IClientSessionHandle clientSessionHandle = null);
         public abstract STask<long> Count<T>(string collection = null) where T : class;
 
         public abstract STask<long> Count<T>(Expression<Func<T, bool>> filter, string collection = null)

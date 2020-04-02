@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
+using MongoDB.Driver;
 using Sining.Event;
 using Sining.Model;
 using Sining.Tools;
@@ -17,11 +18,10 @@ namespace Sining.Module
         }
     }
 
-    public class SqlDBComponent : ADBComponent
+    public class SqlDBComponent: ADBComponent
     {
         private SqlSugarClient _connection;
         private ConnectionConfig _connectionConfig;
-
         public void Awake(string connectionString, string dbType, string dbName)
         {
             try
@@ -41,7 +41,6 @@ namespace Sining.Module
                 throw new Exception($"{dbType} method is not currently supported {e}");
             }
         }
-
         public override void Init()
         {
             // [SugarColumn(IsNullable =false ,IsPrimaryKey =true,IsIdentity =true)]
@@ -50,18 +49,16 @@ namespace Sining.Module
             // [SugarColumn(Length = 21)]
             //_connection.CodeFirst.InitTables<TestPostModel>();
         }
-
-        public override void BeginTran()
+        public override T GetConnection<T>()=>_connection as T;
+        public override void BeginTran(IClientSessionHandle clientSessionHandle = null)
         {
             _connection.BeginTran();
         }
-
-        public override void RollbackTran()
+        public override void RollbackTran(IClientSessionHandle clientSessionHandle = null)
         {
             _connection.RollbackTran();
         }
-
-        public override void CommitTran()
+        public override void CommitTran(IClientSessionHandle clientSessionHandle = null)
         {
             _connection.CommitTran();
         }
