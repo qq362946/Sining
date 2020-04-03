@@ -50,7 +50,7 @@ namespace Sining.Network
                 throw new Exception(
                     $"Unable to connect to server url {(object) url} HttpStatusCode:{(object) response.StatusCode}");
             }
-       
+
             return (await response.Content.ReadAsStringAsync()).Deserialize<T>();
         }
         public override void Dispose()

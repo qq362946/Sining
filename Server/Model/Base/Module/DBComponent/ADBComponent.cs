@@ -13,33 +13,28 @@ namespace Sining.Module
         public abstract void RollbackTran(IClientSessionHandle clientSessionHandle = null);
         public abstract void CommitTran(IClientSessionHandle clientSessionHandle = null);
         public abstract STask<long> Count<T>(string collection = null) where T : class;
-
         public abstract STask<long> Count<T>(Expression<Func<T, bool>> filter, string collection = null)
             where T : class;
-
         public abstract STask<bool> Exist<T>(string collection = null) where T : class;
-
         public abstract STask<bool> Exist<T>(Expression<Func<T, bool>> filter, string collection = null)
             where T : class;
-
         public abstract STask<long> UpdateRange<T>(List<T> range) where T : class, new();
         public abstract STask<T> Query<T>(long id, string collection = null) where T : Component;
-
         public abstract STask<List<T>> QueryByPage<T>(Expression<Func<T, bool>> filter, int pageIndex, int pageSize,
             string collection = null) where T : class;
-
+        public abstract STask<List<T>> QueryByPageOrderBy<T>(Expression<Func<T, bool>> filter, int pageIndex,
+            int pageSize,
+            Expression<Func<T, object>> orderByExpression, bool isAsc = true, string collection = null);
         public abstract STask<T> First<T>(Expression<Func<T, bool>> filter, string collection = null)
             where T : class;
-
+        public abstract STask<List<T>> QueryOrderBy<T>(Expression<Func<T, bool>> filter,
+            Expression<Func<T, object>> orderByExpression, bool isAsc = true, string collection = null);
         public abstract STask<List<T>> Query<T>(Expression<Func<T, bool>> filter, string collection = null)
             where T : class;
-
         public abstract STask<List<T>> Query<T>(long taskId, Expression<Func<T, bool>> filter, string collection = null)
             where T : class;
-
         public abstract STask Query(long id, List<string> collectionNames, List<Component> result);
         public abstract STask<List<T>> QueryJson<T>(string json, string collection = null) where T : Component;
-
         public abstract STask<List<T>> QueryJson<T>(long taskId, string json, string collection = null)
             where T : Component;
         public abstract STask Insert<T>(T entity, string collection = null) where T : Component, new();

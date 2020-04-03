@@ -11,8 +11,7 @@ namespace Sining.Network
 
         protected override object Handler(Scene scene, HttpListenerContext context)
         {
-            if (context.Request.HttpMethod.ToLower() != "post" ||
-                context.Request.ContentType != "application/x-www-form-urlencoded")
+            if (context.Request.HttpMethod.ToLower() != "get")
             {
                 return null;
             }
@@ -27,10 +26,11 @@ namespace Sining.Network
                 {
                     return MethodInfo.Invoke(HttpControllerBase, null);
                 }
-                
+                var parameters = MethodInfo.GetParameters();
+
                 for (var i = 0; i < context.Request.QueryString.Count; i++)
                 {
-                    objectArray[i] = context.Request.QueryString[i];
+                    objectArray[i] = Convert.ChangeType(context.Request.QueryString[i], parameters[i].ParameterType);
                 }
 
                 return MethodInfo.Invoke(HttpControllerBase,

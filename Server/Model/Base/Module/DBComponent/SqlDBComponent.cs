@@ -107,9 +107,26 @@ namespace Sining.Module
             return await _connection.Queryable<T>().Where(filter).Skip((pageIndex - 1) * pageSize).Take(pageSize)
                 .ToListAsync();
         }
+
+        public override async STask<List<T>> QueryByPageOrderBy<T>(Expression<Func<T, bool>> filter, int pageIndex,
+            int pageSize,
+            Expression<Func<T, object>> orderByExpression, bool isAsc = true, string collection = null)
+        {
+            return await _connection.Queryable<T>().Where(filter)
+                .OrderBy(orderByExpression, isAsc ? OrderByType.Asc : OrderByType.Desc)
+                .Skip((pageIndex - 1) * pageSize).Take(pageSize)
+                .ToListAsync();
+        }
+
         public override async STask<T> First<T>(Expression<Func<T, bool>> filter, string collection = null)
         {
             return await _connection.Queryable<T>().Where(filter).FirstAsync();
+        }
+        public override async STask<List<T>> QueryOrderBy<T>(Expression<Func<T, bool>> filter,
+            Expression<Func<T, object>> orderByExpression, bool isAsc = true, string collection = null)
+        {
+            return await _connection.Queryable<T>().Where(filter)
+                .OrderBy(orderByExpression, isAsc ? OrderByType.Asc : OrderByType.Desc).ToListAsync();
         }
         public override async STask<List<T>> Query<T>(Expression<Func<T, bool>> filter, string collection = null)
         {

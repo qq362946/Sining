@@ -1,4 +1,5 @@
 ﻿using System.Net;
+using Sining.Module;
 using Sining.Tools;
 
 namespace Sining.Network
@@ -10,6 +11,7 @@ namespace Sining.Network
         protected HttpListenerResponse Response  => Context?.Response;
         private string _contentType;
         protected Scene Scene;
+        public ADBComponent DataBase => Scene.DataBase();
 
         public void SetContext(HttpListenerContext context,Scene scene)
         {

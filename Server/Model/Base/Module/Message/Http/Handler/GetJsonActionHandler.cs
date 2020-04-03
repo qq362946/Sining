@@ -30,9 +30,7 @@ namespace Sining.Network
 
         protected override object Handler(Scene scene, HttpListenerContext context)
         {
-            if (context.Request.HttpMethod.ToLower() != "get" ||
-                !context.Request.HasEntityBody ||
-                context.Request.ContentType != "application/x-www-form-urlencoded")
+            if (context.Request.HttpMethod.ToLower() != "get")
             {
                 return null;
             }

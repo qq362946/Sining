@@ -95,11 +95,35 @@ namespace Sining.Module
             return await GetCollection<T>(collection).Find(filter).Skip((pageIndex - 1) * pageSize).Limit(pageSize)
                 .ToListAsync();
         }
+        public override async STask<List<T>> QueryByPageOrderBy<T>(Expression<Func<T, bool>> filter, int pageIndex,
+            int pageSize,
+            Expression<Func<T, object>> orderByExpression, bool isAsc = true, string collection = null)
+        {
+            if (isAsc)
+            {
+                return await GetCollection<T>(collection).Find(filter).SortBy(orderByExpression).Skip((pageIndex - 1) * pageSize).Limit(pageSize)
+                    .ToListAsync();
+            }
+            
+            return await GetCollection<T>(collection).Find(filter).SortByDescending(orderByExpression).Skip((pageIndex - 1) * pageSize).Limit(pageSize)
+                .ToListAsync();
+        }
         public override async STask<T> First<T>(Expression<Func<T, bool>> filter, string collection = null)
         {
             var cursor = await GetCollection<T>(collection).FindAsync(filter);
 
             return await cursor.FirstOrDefaultAsync();
+        }
+        public override async STask<List<T>> QueryOrderBy<T>(Expression<Func<T, bool>> filter,
+            Expression<Func<T, object>> orderByExpression, bool isAsc = true, string collection = null)
+        {
+            if (isAsc)
+            {
+                return await GetCollection<T>(collection).Find(filter).SortBy(orderByExpression).ToListAsync();
+            }
+
+            return await GetCollection<T>(collection).Find(filter).SortByDescending(orderByExpression)
+                .ToListAsync();
         }
         public override async STask<List<T>> Query<T>(Expression<Func<T, bool>> filter, string collection = null)
         {
