@@ -21,6 +21,11 @@ namespace Sining.Module
 
         public void Awake(int serverId)
         {
+            AwakeAsync(serverId).Coroutine();
+        }
+
+        private async SVoid AwakeAsync(int serverId)
+        {
             // 单进程模式.
             // 所有服务器都运行在一个服务器里，方便调试时使用。
 
@@ -28,7 +33,7 @@ namespace Sining.Module
             {
                 Log.Info("[单进程模式]开始启动服务器，请稍等...");
 
-                StartUpServerAsync().Coroutine();
+                await StartUpServerAsync();
 
                 return;
             }
@@ -41,21 +46,21 @@ namespace Sining.Module
 
                 SApp.Scene.AddComponent<NetInnerComponent, string>(ManageServer);
 
-                StartUpServerAsync(true).Coroutine();
+                await StartUpServerAsync(true);
 
                 return;
             }
 
-            Create(SApp.ServerConfig, true);
+            await Create(SApp.ServerConfig, true);
         }
 
-        private async SVoid StartUpServerAsync(bool runProcess = false)
+        private async STask StartUpServerAsync(bool runProcess = false)
         {
             foreach (var serverConfig in ServerConfigData.Instance.GetAllConfig())
             {
                 if (!runProcess)
                 {
-                    Create(serverConfig);
+                    await Create(serverConfig);
 
                     continue;
                 }
@@ -68,11 +73,11 @@ namespace Sining.Module
         {
             STaskCompletionSource = new STaskCompletionSource();
 
-           var ppp = ProcessHelper.Run("dotnet", $"Server.App.dll --Server {serverConfig.Id}", "../Bin");
+            ProcessHelper.Run("dotnet", $"Server.App.dll --Server {serverConfig.Id}", "../Bin");
             return STaskCompletionSource.Task;
         }
 
-        private static void Create(ServerConfig serverConfig, bool runProcess = false)
+        private static async STask Create(ServerConfig serverConfig, bool runProcess = false)
         {
             if (!string.IsNullOrWhiteSpace(serverConfig.InnerIP) &&
                 serverConfig.InnerPort > 0)
@@ -87,7 +92,7 @@ namespace Sining.Module
 
             foreach (var sceneConfig in scenes)
             {
-                SceneManagementComponent.Instance.Create(serverConfig, sceneConfig);
+               await SceneManagementComponent.Instance.Create(serverConfig, sceneConfig);
             }
 
             if (runProcess)

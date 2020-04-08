@@ -20,7 +20,7 @@ namespace Sining
         public static SceneManagementComponent Instance;
         private readonly Dictionary<int, Scene> _scenes = new Dictionary<int, Scene>();
 
-        public void Create(ServerConfig serverConfig, SceneConfig sceneConfig)
+        public async STask Create(ServerConfig serverConfig, SceneConfig sceneConfig)
         {
             var sceneType = (SceneType) sceneConfig.Id;
             
@@ -55,7 +55,7 @@ namespace Sining
                     break;
             }
 
-            SceneFactory.Create(scene);
+            await SceneFactory.Create(scene);
         }
 
         public Scene GetScene(int sceneId)

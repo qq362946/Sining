@@ -5,7 +5,7 @@ namespace Sining
 {
     public static class SceneFactory
     {
-        public static void Create(Scene scene)
+        public static async STask Create(Scene scene)
         {
             switch (scene.SceneType)
             {
@@ -20,6 +20,8 @@ namespace Sining
                 default:
                     throw new Exception($"No SceneType found for {(int) scene.SceneType}");
             }
+
+            await STask.CompletedTask;
         }
     }
 }
