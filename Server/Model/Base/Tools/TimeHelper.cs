@@ -11,9 +11,17 @@ namespace Sining.Tools
         {   
             return (dateTime.ToUniversalTime().Ticks - Epoch) / 10000;
         }
-        public static DateTime Transition(long timespan)
+        public static long TransitionToSeconds(DateTime dateTime)
         {
-            return new DateTime(Epoch + timespan);
+            return (dateTime.ToUniversalTime().Ticks - Epoch) / 10000000;
+        }
+        public static DateTime Transition(long timespan)
+        {   
+            return new DateTime(Epoch + timespan * 10000).ToUniversalTime();
+        }
+        public static DateTime TransitionToSeconds(long timespan)
+        {
+            return new DateTime(Epoch + timespan * 10000000).ToUniversalTime();
         }
     }
 }
