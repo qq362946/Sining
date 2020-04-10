@@ -8,6 +8,10 @@
 /Tools/Excel2CS/bin
 /Tools/Export2Other/bin
 /Tools/ProtoBufTool/bin
+/Client/Bin
+/Client/App/bin
+/Client/Hotfix/bin
+/Client/Model/bin
 /Server/App/bin
 /Server/Core/bin
 /Server/Hotfix/bin
@@ -22,6 +26,9 @@
 /Tools/Excel2CS/obj
 /Tools/Export2Other/obj
 /Tools/ProtoBufTool/obj
+/Client/App/obj
+/Client/Hotfix/obj
+/Client/Model/obj
 /Server/App/obj
 /Server/Core/obj
 /Server/Hotfix/obj
