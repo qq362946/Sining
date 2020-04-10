@@ -31,7 +31,7 @@ namespace Sining.Network.Actor
                 }
             }
         }
-        public void Handle(Session session, Component component, object obj)
+        public async STask Handle(Session session, Component component, object obj)
         {
             var list = GetHandler(obj.GetType());
 
@@ -43,7 +43,7 @@ namespace Sining.Network.Actor
 
             foreach (var messageHandler in list)
             {
-                messageHandler.Handle(session, component, obj).GetAwaiter().GetResult();
+               await messageHandler.Handle(session, component, obj);
             }
         }
         public List<IActorMessageHandler> GetHandler(Type type)

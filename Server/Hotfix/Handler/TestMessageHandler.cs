@@ -1,9 +1,13 @@
+using System;
 using System.Threading;
 using Sining;
 using Sining.Message;
 using Sining.Model;
+using Sining.Model.Model;
 using Sining.Module;
 using Sining.Network;
+using Sining.Network.Actor;
+using Sining.Tools;
 
 namespace Server.Hotfix
 {
@@ -64,11 +68,39 @@ namespace Server.Hotfix
     [MessageSystem]
     public class GetNameRequestHandler : RPCMessageHandler<GetNameRequest, GetNameResponse>
     {
-        protected override async STask Run(Session session, GetNameRequest request, GetNameResponse response)
+        protected override async STask Run(Session session, GetNameRequest request, GetNameResponse response,
+            Action reply)
         {
             response.Name = request.Name + "1233444";
 
             Log.Debug($"接收到一个消息：GetNameRequest:{request.Name} ThreadId:{Thread.CurrentThread.ManagedThreadId}");
+
+            await STask.CompletedTask;
+        }
+    }
+
+    [ActorMessageSystem]
+    public class TestActorMessageHandler : ActorMessageMessageHandler<TestActrModelComponent, TestActorMessage>
+    {
+        protected override async STask Run(TestActrModelComponent testActrModelComponent, TestActorMessage message)
+        {
+            Log.Debug($"收到一个Actor消息:{message.ToJson()} TestActrModelComponent:{testActrModelComponent.ToJson()}");
+
+            await STask.CompletedTask;
+        }
+    }
+    
+    [ActorMessageSystem]
+    public class TestActorCallMessageHandler : ActorRPCMessageHandler<TestActrModelComponent,TestActorCallRequestMessage,TestActorCallResponseMessage>
+    {
+        protected override async STask Run(TestActrModelComponent testActrModelComponent,
+            TestActorCallRequestMessage actorRequest,
+            TestActorCallResponseMessage actorResponse, Action reply)
+        {
+            Log.Debug(
+                $"收到一个ActorCall消息:{actorRequest.ToJson()} TestActrModelComponent:{testActrModelComponent.ToJson()}");
+
+            actorResponse.Message = actorRequest.Name;
 
             await STask.CompletedTask;
         }

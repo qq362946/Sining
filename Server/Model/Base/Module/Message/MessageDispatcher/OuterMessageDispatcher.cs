@@ -1,3 +1,4 @@
+using System;
 using Sining.Module;
 using Sining.Network.Actor;
 
@@ -7,23 +8,21 @@ namespace Sining.Network
     {
         public async SVoid Dispatch(Session session, ushort code, object message)
         {
-            await STask.CompletedTask;
-            // switch (message)
-            // {
-            //     case IActorRequest actorRequest:  
-            //     {
-            //         ActorDispatcherComponent.Instance.Handle();
-            //         break;
-            //     }
-            //     case IActorMessage actorMessage:  
-            //     {
-            //         break;
-            //     }
-            //     default:
-            //     {
-            //         break;
-            //     }
-            // }
+            if (message is IActorMessage iActorMessage)
+            {
+                if (iActorMessage.ActorId == 0)
+                {
+                    throw new Exception("ActorId is 0");
+                }
+
+                var component = ComponentManagement.Instance.Get(iActorMessage.ActorId);
+
+                await ActorDispatcherComponent.Instance.Handle(session, component, message);
+
+                return;
+            }
+
+            await MessageDispatcherManagement.Instance.Handle(session, message);
         }
     }
 }

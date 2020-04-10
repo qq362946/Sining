@@ -336,8 +336,6 @@ namespace Sining.Network
         {
             if (IsDispose) return;
 
-            Log.Debug($"收到一个连接断开:{RemoteAddress}  ThreadId:{Thread.CurrentThread.ManagedThreadId}");
-
             base.Dispose();
 
             _innArgs.Completed -= OnComplete;

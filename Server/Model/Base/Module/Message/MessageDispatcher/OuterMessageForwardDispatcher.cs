@@ -7,7 +7,6 @@ namespace Sining.Network
     {
         public async SVoid Dispatch(Session session, ushort code, object message)
         {
-            await STask.CompletedTask;
             switch (message)
             {
                 case IActorRequest actorRequest:  

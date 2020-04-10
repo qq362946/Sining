@@ -101,17 +101,20 @@
       <Compile Include="..\..\Server\Model\Base\Module\Config\IConfig.cs">
         <Link>Base\Config\IConfig.cs</Link>
       </Compile>
+      <Compile Include="..\..\Server\Model\Base\Module\Message\Actor\IActorMessage.cs">
+        <Link>Base\Module\Message\Actor\IActorMessage.cs</Link>
+      </Compile>
       <Compile Include="..\..\Server\Model\Base\Module\Message\ErrorCode.cs">
         <Link>Base\Module\Message\ErrorCode.cs</Link>
       </Compile>
-      <Compile Include="..\..\Server\Model\Base\Module\Message\MessageDispatcherManagement.cs">
-        <Link>Base\Module\Message\MessageDispatcherManagement.cs</Link>
+      <Compile Include="..\..\Server\Model\Base\Module\Message\Handler\MessageSystemAttribute.cs">
+        <Link>Base\Module\Message\Handler\MessageSystemAttribute.cs</Link>
       </Compile>
-      <Compile Include="..\..\Server\Model\Base\Module\Message\MessageHandler.cs">
-        <Link>Base\Module\Message\MessageHandler.cs</Link>
+      <Compile Include="..\..\Server\Model\Base\Module\Message\MessageDispatcher\IMessageDispatcher.cs">
+        <Link>Base\Module\Message\MessageDispatcher\IMessageDispatcher.cs</Link>
       </Compile>
-      <Compile Include="..\..\Server\Model\Base\Module\Message\MessageSystemAttribute.cs">
-        <Link>Base\Module\Message\MessageSystemAttribute.cs</Link>
+      <Compile Include="..\..\Server\Model\Base\Module\Message\MessageDispatcher\MessageDispatcherManagement.cs">
+        <Link>Base\Module\Message\MessageDispatcher\MessageDispatcherManagement.cs</Link>
       </Compile>
       <Compile Include="..\..\Server\Model\Base\Module\Message\Opcode.cs">
         <Link>Base\Module\Message\Opcode.cs</Link>
@@ -140,17 +143,8 @@
       <Compile Include="..\..\Server\Model\Base\Module\Network\Base\NetworkProtocol.cs">
         <Link>Base\Module\Network\Base\NetworkProtocol.cs</Link>
       </Compile>
-      <Compile Include="..\..\Server\Model\Base\Module\Network\Http\HttpClientChannelComponent.cs">
-        <Link>Base\Module\Network\Http\HttpClientChannelComponent.cs</Link>
-      </Compile>
       <Compile Include="..\..\Server\Model\Base\Module\Network\Http\HttpClientComponent.cs">
         <Link>Base\Module\Network\Http\HttpClientComponent.cs</Link>
-      </Compile>
-      <Compile Include="..\..\Server\Model\Base\Module\Network\Http\HttpComponent.cs">
-        <Link>Base\Module\Network\Http\HttpComponent.cs</Link>
-      </Compile>
-      <Compile Include="..\..\Server\Model\Base\Module\Network\Http\HttpServerChannelComponent.cs">
-        <Link>Base\Module\Network\Http\HttpServerChannelComponent.cs</Link>
       </Compile>
       <Compile Include="..\..\Server\Model\Base\Module\Network\Interface\IMessage.cs">
         <Link>Base\Module\Network\Interface\IMessage.cs</Link>
@@ -199,13 +193,7 @@
       </Compile>
       <Compile Include="..\..\Server\Model\Base\Module\SystemEventComponent\SystemEventComponent.cs">
         <Link>Base\Module\SystemEventComponent\SystemEventComponent.cs</Link>
-      </Compile>
-      <Compile Include="..\..\Server\Model\Base\OneThreadSynchronizationContext.cs">
-        <Link>Base\OneThreadSynchronizationContext.cs</Link>
-      </Compile>
-      <Compile Include="..\..\Server\Model\Base\Task\TaskProcessingComponent.cs">
-        <Link>Base\Task\TaskProcessingComponent.cs</Link>
-      </Compile>
+      </Compile>      
       <Compile Include="..\..\Server\Model\Base\Tools\AssemblyManagement.cs">
         <Link>Base\Tools\AssemblyManagement.cs</Link>
       </Compile>
@@ -220,6 +208,9 @@
       </Compile>
       <Compile Include="..\..\Server\Model\Base\Tools\ObjectPool.cs">
         <Link>Base\Tools\ObjectPool.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Tools\OneThreadSynchronizationContext.cs">
+        <Link>Base\Tools\OneThreadSynchronizationContext.cs</Link>
       </Compile>
       <Compile Include="..\..\Server\Model\Base\Tools\RecyclableMemoryStream\Events.cs">
         <Link>Base\Tools\RecyclableMemoryStream\Events.cs</Link>
@@ -250,6 +241,11 @@
     <ItemGroup>
       <ProjectReference Include="..\..\Server\ThirdPartyPlugin\Google.Protobuf\Google.Protobuf.csproj" />
       <ProjectReference Include="..\..\Server\ThirdPartyPlugin\MongoDB\MongoDB.Bson\MongoDB.Bson.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+      <PackageReference Include="sqlSugarCore" Version="5.0.0.13" />
     </ItemGroup>
 
 </Project>

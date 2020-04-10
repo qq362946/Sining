@@ -7,3 +7,4 @@
 /Users/sining/Code/Sining/Client/Model/obj/Debug/Client.Model.csproj.CopyComplete
 /Users/sining/Code/Sining/Client/Model/obj/Debug/Client.Model.dll
 /Users/sining/Code/Sining/Client/Model/obj/Debug/Client.Model.pdb
+/Users/sining/Code/Sining/Client/Model/obj/Debug/Client.Model.csproj.CoreCompileInputs.cache

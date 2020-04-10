@@ -40,12 +40,14 @@ namespace Sining
                         ComponentFactory.Create<ProtobufMessagePacker>(scene),
                         $"{serverConfig.OuterIP}:{sceneConfig.OuterPort}",
                         sceneConfig.NetworkProtocol);
+                    scene.GetComponent<NetOuterComponent>().MessageDispatcher = new OuterMessageDispatcher();
                     break;
                 case "WebSocket" when sceneConfig.Urls.Length > 0:
                     scene.AddComponent<NetOuterComponent, MessagePacker, IEnumerable<string>, string>(
                         ComponentFactory.Create<ProtobufMessagePacker>(scene),
                         sceneConfig.Urls,
                         sceneConfig.NetworkProtocol);
+                    scene.GetComponent<NetOuterComponent>().MessageDispatcher = new OuterMessageDispatcher();
                     break;
                 case "HTTP" when sceneConfig.Urls.Length > 0:
                     scene.AddComponent<NetOuterComponent, MessagePacker, IEnumerable<string>, string>(

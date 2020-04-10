@@ -28,6 +28,24 @@ namespace Sining.Module
             _networkProtocol = AddComponent<TCPComponent, EndPoint>(NetworkHelper.ToIPEndPoint(address));
         }
 
+#if SiningClient
+        public void Awake(NetworkProtocolType networkProtocolType, IEnumerable<string> urls)
+        {
+            if (networkProtocolType == NetworkProtocolType.WebSocket)
+            {
+                AddComponent<WebSocketComponent, IEnumerable<string>>(urls);
+            }
+        }
+        public void Awake(NetworkProtocolType networkProtocolType)
+        {
+            _networkProtocol = networkProtocolType switch
+            {
+                NetworkProtocolType.TCP => AddComponent<TCPComponent>(),
+                NetworkProtocolType.WebSocket => AddComponent<WebSocketComponent>(),
+                _ => _networkProtocol
+            };
+        }
+        #else
         public void Awake(NetworkProtocolType networkProtocolType, IEnumerable<string> urls)
         {
             _networkProtocol = networkProtocolType switch
@@ -38,7 +56,6 @@ namespace Sining.Module
                 _ => _networkProtocol
             };
         }
-
         public void Awake(NetworkProtocolType networkProtocolType)
         {
             _networkProtocol = networkProtocolType switch
@@ -49,7 +66,7 @@ namespace Sining.Module
                 _ => _networkProtocol
             };
         }
-
+#endif
         public Session Create(string address)
         {
             var session = Create();

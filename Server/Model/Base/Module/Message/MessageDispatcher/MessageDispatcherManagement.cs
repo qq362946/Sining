@@ -43,7 +43,7 @@ namespace Sining.Network
         {
             _handlers.Add(type, message);
         }
-        public void Handle(Session session, object obj)
+        public async STask Handle(Session session, object obj)
         {
             if (!_handlers.TryGetValue(obj.GetType(), out var list))
             {
@@ -53,7 +53,7 @@ namespace Sining.Network
 
             foreach (var messageHandler in list)
             {
-                messageHandler.Handle(session, obj).GetAwaiter().GetResult();
+               await messageHandler.Handle(session, obj);
             }
         }
         public void ReLoad()

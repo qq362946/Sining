@@ -6,8 +6,6 @@ namespace Sining.Network
     [AttributeUsage(AttributeTargets.Class)]
     public class MessageSystemAttribute : BaseAttribute
     {
-        public MessageSystemAttribute()
-        {
-        }
+        public MessageSystemAttribute() { }
     }
 }

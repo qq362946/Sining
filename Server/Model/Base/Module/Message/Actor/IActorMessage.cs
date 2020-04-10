@@ -1,4 +1,4 @@
-namespace Sining.Network.Actor
+namespace Sining.Network
 {
     public interface IActorMessage: IMessage
     {

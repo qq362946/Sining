@@ -60,7 +60,7 @@ namespace Sining.DataStructure
             dic.Add(valueKey, value);
         }
 
-        public bool RemoveByValueKey(TKey key, TValueKey valueKey,out TValue value)
+        public bool RemoveByValueKey(TKey key, TValueKey valueKey, out TValue value)
         {
             if (!TryGetValue(key, out var dic))
             {

@@ -11,6 +11,6 @@ namespace Sining.Message
 {
 	public static partial class InnerOpcode
 	{
-		 public const ushort ServerStartFinished = 106;
+		 public const ushort ServerStartFinished = 109;
 	}
 }

@@ -2,7 +2,7 @@ syntax = "proto3";
 package Sining.Message;
 
 // 测试框架协议
-message TestMessage // IMessage | /Api/  
+message TestMessage // IMessage 
 {
 	string Name = 1;
 	int32 Number = 2;
@@ -21,7 +21,7 @@ message RegRequest // IMessage
 	string Date = 2;
 }
 // 获取一个值
-message GetNameRequest // IRequest | /Api/
+message GetNameRequest // IRequest
 {
 	int32 RpcId = 90;
 	string Name = 1;	
@@ -31,4 +31,24 @@ message GetNameResponse // IResponse
 	int32 RpcId = 90;
 	int32 ErrorCode = 91;
 	string Name = 1;
+}
+// 测试Actor协议
+message TestActorMessage // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 93;
+	string Name = 1;
+}
+// 测试ActorCall协议
+message TestActorCallRequestMessage // IActorRequest
+{
+	int32 RpcId = 90;
+	int64 ActorId = 93;
+	string Name = 1;
+}
+message TestActorCallResponseMessage // IActorResponse
+{
+	int32 RpcId = 90;
+    int32 ErrorCode = 91;
+    string Message = 92;
 }

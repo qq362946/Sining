@@ -26,10 +26,9 @@
 
     <ItemGroup>
       <PackageReference Include="CommandLineParser" Version="2.7.82" />
-      <PackageReference Include="Dapper" Version="2.0.30" />
       <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
-      <PackageReference Include="NLog" Version="4.6.8" />
-      <PackageReference Include="sqlSugarCore" Version="5.0.0.11" />
+      <PackageReference Include="NLog" Version="4.7.0" />
+      <PackageReference Include="sqlSugarCore" Version="5.0.0.13" />
     </ItemGroup>
 
     <ItemGroup>

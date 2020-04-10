@@ -19,7 +19,7 @@ namespace Sining.Module
             {
                 if (_scene != null) return _scene;
 
-                return _scene = ComponentFactory.CreateOnly<Scene>();
+                return _scene = new Scene();
             }
         }
     }

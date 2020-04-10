@@ -8,18 +8,9 @@ namespace Sining.Network
         where TRequest : class, IRequest
         where TResponse : class, IResponse
     {
-        private int _rpcId;
-        private long _sessionInstanceId;
-        private TResponse _response;
-        private Session _session;
-        /// <summary>
-        /// 是否自动回复RPC消息，如果为false需要手动调用Reply()方法
-        /// </summary>
-        private bool _isReply;
-        
         public Type Type() => typeof(TRequest);
 
-        protected abstract STask Run(Session session, TRequest request, TResponse response);
+        protected abstract STask Run(Session session, TRequest request, TResponse response,Action reply);
 
         public async STask Handle(Session session, object message)
         {
@@ -30,35 +21,36 @@ namespace Sining.Network
                 return;
             }
 
-            _rpcId = request.RpcId;
-            _session = session;
-            _sessionInstanceId = session.InstanceId;
-            _response = Activator.CreateInstance<TResponse>();
-            _isReply = true;
+            var rpcId = request.RpcId;
+            var sessionInstanceId = session.InstanceId;
+            var response = Activator.CreateInstance<TResponse>();
+            var isReply = false;
+
+            void Reply()
+            {
+                if (isReply) return;
+
+                isReply = true;
+
+                if (session.InstanceId != sessionInstanceId) return;
+
+                response.RpcId = rpcId;
+                session.Send(response);
+            }
 
             try
             {
-                await Run(session, request, _response);
+                await Run(session, request, response, Reply);
             }
             catch (Exception e)
             {
                 Log.Error(e);
-                _response.ErrorCode = ErrorCode.ErrRpcFail;
+                response.ErrorCode = ErrorCode.ErrRpcFail;
             }
             finally
             {
-                if (_isReply) Reply();
+                Reply();
             }
-        }
-
-        protected void Reply()
-        {
-            _isReply = false;
-            
-            if (_session.InstanceId != _sessionInstanceId) return;
-
-            _response.RpcId = _rpcId;
-            _session.Send(_response);
         }
     }
 }

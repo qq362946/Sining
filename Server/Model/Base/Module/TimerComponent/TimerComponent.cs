@@ -92,7 +92,6 @@ namespace Sining
                 }
             }, TaskCreationOptions.LongRunning);
         }
-
         public async STask<bool> WaitAsync(long time)
         {
             var tillTime = TimeHelper.Now + time;
@@ -151,7 +150,6 @@ namespace Sining
 
             (timer as IDisposable)?.Dispose();
         }
-
         public void AddToTimeId(long tillTime, long id)
         {
             _timeId.Add(tillTime, id);

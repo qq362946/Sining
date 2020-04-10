@@ -8,9 +8,7 @@ namespace Sining.DataStructure
 
         private readonly Queue<HashSet<TValue>> _queue = new Queue<HashSet<TValue>>();
 
-        public OneToManyHashSet()
-        {
-        }
+        public OneToManyHashSet() { }
 
         /// <summary>
         /// 设置最大缓存数量

@@ -45,6 +45,15 @@ namespace Sining.Module
                 _components.Add(component.InstanceId, component);
             }
         }
+        public Component Get(long instanceId)
+        {
+            lock (_lock)
+            {
+                _components.TryGetValue(instanceId, out var component);
+
+                return component;
+            }
+        }
         public T Get<T>(long instanceId) where T : Component
         {
             lock (_lock)

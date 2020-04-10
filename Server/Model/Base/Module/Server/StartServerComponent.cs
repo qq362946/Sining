@@ -74,6 +74,7 @@ namespace Sining.Module
             STaskCompletionSource = new STaskCompletionSource();
 
             ProcessHelper.Run("dotnet", $"Server.App.dll --Server {serverConfig.Id}", "../Bin");
+            
             return STaskCompletionSource.Task;
         }
 

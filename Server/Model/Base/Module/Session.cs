@@ -115,7 +115,7 @@ namespace Sining.Module
                 }
                 else
                 {
-                    MessageDispatcherManagement.Instance.Handle(this, message);
+                    Network.MessageDispatcher.Dispatch(this, code, message).Coroutine();
                 }
             }
             catch (Exception e)
