@@ -22,6 +22,8 @@ namespace Sining.Network
                     break;
                 }
             }
+
+            await STask.CompletedTask;
         }
     }
 }

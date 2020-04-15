@@ -33,6 +33,7 @@
 
     <ItemGroup>
       <Folder Include="Model\DB" />
+      <Folder Include="Module" />
     </ItemGroup>
 
 </Project>

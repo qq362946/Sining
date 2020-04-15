@@ -146,6 +146,12 @@
       <Compile Include="..\..\Server\Model\Base\Module\Network\Http\HttpClientComponent.cs">
         <Link>Base\Module\Network\Http\HttpClientComponent.cs</Link>
       </Compile>
+      <Compile Include="..\..\Server\Model\Base\Module\Network\Http\JsonRpc\JsonRpcRequest.cs">
+        <Link>Base\Module\Network\Http\JsonRpc\JsonRpcRequest.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Server\Model\Base\Module\Network\Http\JsonRpc\JsonRpcResult.cs">
+        <Link>Base\Module\Network\Http\JsonRpc\JsonRpcResult.cs</Link>
+      </Compile>
       <Compile Include="..\..\Server\Model\Base\Module\Network\Interface\IMessage.cs">
         <Link>Base\Module\Network\Interface\IMessage.cs</Link>
       </Compile>
