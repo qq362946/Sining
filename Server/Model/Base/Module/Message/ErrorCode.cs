@@ -1,4 +1,4 @@
-namespace Sining.Network
+namespace Sining
 {
     public partial class ErrorCode
     {

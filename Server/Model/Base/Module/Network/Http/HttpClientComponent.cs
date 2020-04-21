@@ -42,11 +42,14 @@ namespace Sining.Network
         {
             return await Deserialize<T>(url, await _client.SendAsync(new HttpRequestMessage(method, url)));
         }
-        public async STask<T> CallJsonRpc<T>(string url, int id, AuthenticationHeaderValue authentication,
+
+        public async STask<TResponse> CallJsonRpc<TRequest, TResponse>(string url, int id,
+            AuthenticationHeaderValue authentication,
             string method,
             params object[] @params)
+            where TRequest : class, IJsonRpcRequest, new()
         {
-            var request = ObjectPool<JsonRpcRequest>.Rent();
+            var request = ObjectPool<TRequest>.Rent();
 
             var client = new HttpClient();
 
@@ -58,9 +61,9 @@ namespace Sining.Network
 
                 var content = new StringContent(request.ToJson(), Encoding.UTF8, "application/json");
 
-                var response = await Deserialize<JsonRpcResponse<T>>(url, await client.PostAsync(url, content));
+                var response = await Deserialize<TResponse>(url, await client.PostAsync(url, content));
 
-                return response.Result;
+                return response;
             }
             catch (Exception e)
             {
@@ -68,7 +71,7 @@ namespace Sining.Network
             }
             finally
             {
-                ObjectPool<JsonRpcRequest>.Return(request);
+                ObjectPool<TRequest>.Return(request);
             }
 
             return default;
@@ -80,7 +83,7 @@ namespace Sining.Network
                 throw new Exception(
                     $"Unable to connect to server url {(object) url} HttpStatusCode:{(object) response.StatusCode}");
             }
-
+            
             return (await response.Content.ReadAsStringAsync()).Deserialize<T>();
         }
         public override void Dispose()
