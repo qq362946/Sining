@@ -14,6 +14,8 @@ namespace Sining.Tools
 
         public static void Return(T t)
         {
+            if (t == null) return;
+            
             Pool.Enqueue(t);
         }
 
