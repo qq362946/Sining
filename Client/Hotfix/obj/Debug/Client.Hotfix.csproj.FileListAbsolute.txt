@@ -1,9 +1,0 @@
-/Users/sining/Code/Sining/Client/Bin/Client.Hotfix.deps.json
-/Users/sining/Code/Sining/Client/Bin/Client.Hotfix.dll
-/Users/sining/Code/Sining/Client/Bin/Client.Hotfix.pdb
-/Users/sining/Code/Sining/Client/Hotfix/obj/Debug/Client.Hotfix.csprojAssemblyReference.cache
-/Users/sining/Code/Sining/Client/Hotfix/obj/Debug/Client.Hotfix.AssemblyInfoInputs.cache
-/Users/sining/Code/Sining/Client/Hotfix/obj/Debug/Client.Hotfix.AssemblyInfo.cs
-/Users/sining/Code/Sining/Client/Hotfix/obj/Debug/Client.Hotfix.dll
-/Users/sining/Code/Sining/Client/Hotfix/obj/Debug/Client.Hotfix.pdb
-/Users/sining/Code/Sining/Client/Hotfix/obj/Debug/Client.Hotfix.csproj.CoreCompileInputs.cache

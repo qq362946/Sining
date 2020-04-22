@@ -70,10 +70,13 @@ namespace Sining.Network
         {
             OnRecvCompleteAsync(obj).Coroutine();
         }
+
         private async SVoid OnRecvCompleteAsync(object obj)
         {
             var context = (HttpListenerContext) obj;
             var result = HttpMessageDispatcherManagement.Instance.Handler(Scene, context);
+
+            ActionResult actionResult = null;
 
             if (result == null)
             {
@@ -83,8 +86,6 @@ namespace Sining.Network
             {
                 try
                 {
-                    ActionResult actionResult;
-
                     if (result is STask<ActionResult> sTaskActionResult)
                     {
                         actionResult = await sTaskActionResult;
@@ -105,11 +106,15 @@ namespace Sining.Network
                 {
                     Log.Error(e);
                 }
+                finally
+                {
+                    ObjectPool<ActionResult>.Return(actionResult);
+                }
             }
 
             context.Response.Close();
         }
-        
+
         public override void Dispose()
         {
             if (IsDispose) return;
