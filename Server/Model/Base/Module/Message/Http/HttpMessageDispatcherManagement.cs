@@ -23,7 +23,7 @@ namespace Sining.Network
                     {
                         if (methodInfo.IsDefined(typeof(PostAttribute), false))
                         {
-                            var url = methodInfo.GetCustomAttribute<PostAttribute>(false).Url;
+                            var url = methodInfo.GetCustomAttribute<PostAttribute>(false)?.Url;
 
                             if (string.IsNullOrWhiteSpace(url))
                             {
@@ -38,7 +38,7 @@ namespace Sining.Network
 
                         if (methodInfo.IsDefined(typeof(GetAttribute), true))
                         {
-                            var url = methodInfo.GetCustomAttribute<GetAttribute>(true).Url;
+                            var url = methodInfo.GetCustomAttribute<GetAttribute>(true)?.Url;
 
                             if (string.IsNullOrWhiteSpace(url))
                             {
@@ -53,7 +53,7 @@ namespace Sining.Network
 
                         if (methodInfo.IsDefined(typeof(PostJsonAttribute), false))
                         {
-                            var url = methodInfo.GetCustomAttribute<PostJsonAttribute>(false).Url;
+                            var url = methodInfo.GetCustomAttribute<PostJsonAttribute>(false)?.Url;
 
                             if (string.IsNullOrWhiteSpace(url))
                             {
@@ -68,7 +68,7 @@ namespace Sining.Network
 
                         if (!methodInfo.IsDefined(typeof(GetJsonAttribute), false)) continue;
                         {
-                            var url = methodInfo.GetCustomAttribute<GetJsonAttribute>(false).Url;
+                            var url = methodInfo.GetCustomAttribute<GetJsonAttribute>(false)?.Url;
 
                             if (string.IsNullOrWhiteSpace(url))
                             {
@@ -90,7 +90,18 @@ namespace Sining.Network
             
             try
             {
-                return handler.Run(scene, context);
+                if (context.Request.HttpMethod.ToLower() != "options")
+                {
+                    return handler.Run(scene, context);
+                }
+                
+                context.Response.Headers.Add("Access-Control-Max-Age", "2592000");
+                context.Response.Headers.Add("Access-Control-Allow-Origin", "*");
+                context.Response.Headers.Add("Access-Control-Allow-Headers", "*");
+                context.Response.Headers.Add("Access-Control-Allow-Methods", "*");
+                context.Response.Headers.Add("Access-Control-Allow-Credentials", "true");
+                context.Response.Headers.Add("X-Powered-By", "Jetty");
+                return ObjectPool<ActionResult>.Rent().Init(204, context.Request.ContentType, null);
             }
             catch (Exception e)
             {
