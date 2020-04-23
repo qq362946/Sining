@@ -108,8 +108,6 @@ namespace Sining.Network
             StartRecvAsync();
 
             asyncEventArgs.RemoteEndPoint = null;
-
-            Log.Debug($"收到一个连接完成{RemoteAddress} ThreadId:{Thread.CurrentThread.ManagedThreadId}");
         }
 
         #endregion

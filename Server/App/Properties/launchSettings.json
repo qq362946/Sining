@@ -2,7 +2,7 @@
   "profiles": {
     "Server.App": {
       "commandName": "Project",
-      "commandLineArgs": "--Server -1",
+      "commandLineArgs": "--Server 1 --Single 0",
       "workingDirectory": ""
     }
   }

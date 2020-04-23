@@ -11,6 +11,7 @@ namespace Sining.Module
         protected override void Awake(NetInnerComponent self, string address)
         {
             self.MessagePacker = self.AddComponent<ProtobufMessagePacker>();
+            self.MessageDispatcher = new OuterMessageDispatcher();
             self.Awake(self.NetworkProtocolType, address);
             NetInnerComponent.Instance = self;
         }
@@ -21,7 +22,8 @@ namespace Sining.Module
     {
         protected override void Awake(NetInnerComponent self)
         {
-            self.MessagePacker = self.AddComponent<ProtobufMessagePacker>();;
+            self.MessagePacker = self.AddComponent<ProtobufMessagePacker>();
+            self.MessageDispatcher = new OuterMessageDispatcher();
             self.Awake(self.NetworkProtocolType);
             NetInnerComponent.Instance = self;
         }

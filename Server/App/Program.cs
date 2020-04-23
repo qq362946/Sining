@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Diagnostics;
 using System.Threading;
 using CommandLine;
-using MongoDB.Bson;
-using Server.Network;
-using Sining.Message;
-using Sining.Model.Model;
 using Sining.Module;
 using Sining.Tools;
 
@@ -30,9 +25,7 @@ namespace Sining
                 // 设置服务器ID
                 SApp.Id = options.Server < 0 ? 0 : options.Server;
                 // 启动服务器组件
-                SApp.Scene.AddComponent<StartServerComponent, int>(options.Server);
-               var ss = SApp.Scene.AddComponent<TestActrModelComponent>();
-               Log.Debug(ss.InstanceId);
+                SApp.Scene.AddComponent<StartServerComponent, Options>(options);
                 // 初始化数据库(Mongo数据库不需要)
                 // 这个方法会帮助创建数据库表，需要在SqlDBComponent.Init方法里添加需要创建的表类型
                 // DBHelper.Init();

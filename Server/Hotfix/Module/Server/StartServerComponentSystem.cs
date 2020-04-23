@@ -1,3 +1,4 @@
+using System;
 using Sining.Config;
 using Sining.Event;
 using Sining.Message;
@@ -6,44 +7,33 @@ using Sining.Tools;
 namespace Sining.Module.Server
 {
     [ComponentSystem]
-    public class StartServerComponentAwakeSystem : AwakeSystem<StartServerComponent, int>
+    public class StartServerComponentAwakeSystem : AwakeSystem<StartServerComponent, Options>
     {
-        protected override void Awake(StartServerComponent self, int serverId)
+        protected override void Awake(StartServerComponent self, Options options)
         {
-            self.AwakeAsync(serverId).Coroutine();
+            self.AwakeAsync(options).Coroutine();
         }
     }
     
     public static class StartServerComponentSystem
     {
-        public static async SVoid AwakeAsync(this StartServerComponent self, int serverId)
+        public static async SVoid AwakeAsync(this StartServerComponent self, Options options)
         {
-            // 单进程模式.
-            // 所有服务器都运行在一个服务器里，方便调试时使用。
-
-            if (serverId < 0)
+            switch (options.Server)
             {
-                Log.Info("[单进程模式]开始启动服务器，请稍等...");
-
-                await self.StartUpServerAsync();
-
-                return;
+                case -1:
+                    Log.Info("[单进程模式]开始启动服务器，请稍等...");
+                    await self.StartUpServerAsync();
+                    return;
+                case 0:
+                    Log.Info("[多进程模式]开始启动服务器，请稍等...");
+                    SApp.Scene.AddComponent<NetInnerComponent, string>(self.ManageServer);
+                    await self.StartUpServerAsync(true);
+                    return;
+                default:
+                    await self.Create(SApp.ServerConfig, Convert.ToBoolean(options.Single));
+                    break;
             }
-
-            // 多进程模式.
-
-            if (serverId == 0)
-            {
-                Log.Info("[多进程模式]开始启动服务器，请稍等...");
-
-                SApp.Scene.AddComponent<NetInnerComponent, string>(self.ManageServer);
-
-                await self.StartUpServerAsync(true);
-
-                return;
-            }
-
-            await self.Create(SApp.ServerConfig, true);
         }
 
         private static async STask StartUpServerAsync(this StartServerComponent self, bool runProcess = false)
@@ -65,7 +55,7 @@ namespace Sining.Module.Server
         {
             StartServerComponent.STaskCompletionSource = new STaskCompletionSource();
 
-            ProcessHelper.Run("dotnet", $"Server.App.dll --Server {serverConfig.Id}", "../Bin");
+            ProcessHelper.Run("dotnet", $"Server.App.dll --Server {serverConfig.Id} --Single 1", "../Bin");
             
             return StartServerComponent.STaskCompletionSource.Task;
         }
