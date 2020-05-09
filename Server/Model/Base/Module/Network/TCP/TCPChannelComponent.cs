@@ -84,16 +84,18 @@ namespace Sining.Network
 
         private void ConnectAsync(EndPoint ipEndPoint)
         {
-            _outArgs.RemoteEndPoint = ipEndPoint;
+            var outArgs = new SocketAsyncEventArgs {RemoteEndPoint = ipEndPoint};
+            
+            outArgs.Completed += OnComplete;
 
-            if (_socket.ConnectAsync(_outArgs))
+            if (_socket.ConnectAsync(outArgs))
             {
                 return;
             }
 
-            OnConnectComplete(_outArgs);
+            OnConnectComplete(outArgs);
         }
-        
+
         private void OnConnectComplete(object o)
         {
             if (IsDispose) return;
@@ -106,8 +108,6 @@ namespace Sining.Network
             }
 
             StartRecvAsync();
-
-            asyncEventArgs.RemoteEndPoint = null;
         }
 
         #endregion
@@ -216,13 +216,14 @@ namespace Sining.Network
         private void StartSend()
         {
             if (IsDispose || _isSending) return;
+            
+            _isSending = true;
 
             if (_sendBuffer.Length == 0)
             {
                 _isSending = false;
                 return;
             }
-            
             try
             {
                 var sendSize = _sendBuffer.ChunkSize - _sendBuffer.FirstIndex;
@@ -231,8 +232,6 @@ namespace Sining.Network
                     sendSize = (int) _sendBuffer.Length;
                 }
 
-                _isSending = true;
-
                 SendAsync(_sendBuffer.First, _sendBuffer.FirstIndex, sendSize);
             }
             catch (Exception e)
@@ -240,11 +239,11 @@ namespace Sining.Network
                 Log.Error(e);
             }
         }
-        
+
         private void SendAsync(byte[] buffer, int offset, int count)
         {
             if (IsDispose) return;
-        
+
             try
             {
                 _outArgs.SetBuffer(buffer, offset, count);
@@ -275,7 +274,7 @@ namespace Sining.Network
         {
             if (_socket == null || IsDispose) return;
 
-            SocketAsyncEventArgs asyncEventArgs = (SocketAsyncEventArgs) o;
+            var asyncEventArgs = (SocketAsyncEventArgs) o;
 
             if (asyncEventArgs.SocketError != SocketError.Success)
             {
@@ -338,7 +337,7 @@ namespace Sining.Network
 
             _innArgs.Completed -= OnComplete;
             _outArgs.Completed -= OnComplete;
-
+            
             _recvBuffer.Clear();
             _sendBuffer.Clear();
             _socket?.Dispose();
