@@ -8,8 +8,8 @@ namespace Export2Other
 {
     public static class SceneConfigToEnum
     {
-        private const string ConfigFile = "../../../../../Excel/Server/ServerConfig.xlsx";
-        private const string SaveConfigFile = "../../../../../Server/Model/Base/Module/Scene/SceneType.cs";
+        private const string ConfigFile = "../../../../../Excel/ServerConfig.xlsx";
+        private const string SaveConfigFile = "../../../../../Server/Hotfix/Base/Module/Scene/SceneType.cs";
 
         public static void Run()
         {
@@ -32,7 +32,8 @@ namespace Export2Other
 
                 for (var i = 4; i < table.Rows.Count; i++)
                 {
-                    strBuilder.AppendLine($"\t\t{table.Rows[i][2]} = {i - 3},");
+                    var row = table.Rows[i];
+                    strBuilder.AppendLine($"\t\t{row[2]} = {row[1]}, \t// {row[8]}");
                 }
                 
                 break;

@@ -132,7 +132,7 @@ namespace Sining.Module
 
             foreach (var action in _requestCallback.Values.ToArray())
             {
-                action(new ErrorResponse {ErrorCode = ErrorCode.ErrSessionDispose});
+                action(new ErrorResponse {ErrorCode = ModelErrorCode.ErrSessionDispose});
             }
 
             _requestCallback.Clear();

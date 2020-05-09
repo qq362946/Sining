@@ -17,7 +17,7 @@ namespace ExcelToCS
     {
         private const string ExcelDirectory = "../../../../../Excel/";
         public const string ConfigDirectory = "../../../../../Config/";
-        public const string CsFileDirectory = "../../../../../Server/Model/Base/Module/Config/";
+        public const string CsFileDirectory = "../../../../../Server/Hotfix/Base/Config/";
         private static Assembly __assembly;
 
         private static readonly ConcurrentQueue<(DataTable, Dictionary<string, string>)>
@@ -43,13 +43,17 @@ namespace ExcelToCS
         {
             foreach (var file in Directory.GetFiles(filePath).Where(d => Path.GetExtension(d) == ".xlsx"))
             {
+                var fileName = Path.GetFileName(file);
+
+                if (fileName.StartsWith("#") || fileName.StartsWith("~")) continue;
+
                 var excel = ExcelHelper.LoadExcel(file);
 
                 foreach (DataTable excelTable in excel.Tables)
                 {
                     if (excelTable.TableName.StartsWith("#") ||
                         excelTable.Rows.Count < 5 || excelTable.Columns.Count == 0) continue;
-                    
+
                     ToCsFile(excelTable);
                 }
             }
@@ -175,6 +179,9 @@ namespace ExcelToCS
                 case "int":
                     propertyInfo.SetValue(config, Convert.ToInt32(value));
                     break;
+                case "decimal":
+                    propertyInfo.SetValue(config, Convert.ToDecimal(value));
+                    break;
                 case "string":
                     propertyInfo.SetValue(config, value);
                     break;
@@ -225,6 +232,7 @@ namespace ExcelToCS
                 "double[]" => "new double[] { }",
                 "float[]" => "new float[] { }",
                 "int" => "0",
+                "decimal"=>"0",
                 "bool" => "false",
                 "uint" => "0",
                 "int32" => "0",

@@ -5,6 +5,7 @@ namespace Sining.Network
     public interface IRequest : IMessage
     {
         int RpcId { get; set; }
+        int SceneId { get; set; }
     }
 
     public interface IResponse : IMessage

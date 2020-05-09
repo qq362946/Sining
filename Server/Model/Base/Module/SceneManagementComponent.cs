@@ -19,14 +19,29 @@ namespace Sining
     {
         public static SceneManagementComponent Instance;
         public readonly Dictionary<int, Scene> Scenes = new Dictionary<int, Scene>();
+        public readonly Dictionary<int, Scene> ServerScenes = new Dictionary<int, Scene>();
         public Scene GetScene(int sceneId)
         {
             Scenes.TryGetValue(sceneId, out var scene);
             return scene;
         }
-        public void Remove(int sceneId)
+        public Scene GetServerScene(int serverId)
+        {
+            ServerScenes.TryGetValue(serverId, out var scene);
+            return scene;
+        }
+        public void RemoveScene(int sceneId)
         {
             if (!Scenes.Remove(sceneId, out var scene))
+            {
+                return;
+            }
+            
+            scene.Dispose();
+        }
+        public void RemoveServerScene(int serverId)
+        {
+            if (!ServerScenes.Remove(serverId, out var scene))
             {
                 return;
             }
@@ -38,6 +53,7 @@ namespace Sining
             if (IsDispose) return;
             
             Scenes.Clear();
+            ServerScenes.Clear();
             
             base.Dispose();
         }

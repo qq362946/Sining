@@ -1,35 +1,24 @@
 using Sining.Config;
 using Sining.Event;
+using Sining.Module;
 
 namespace Sining
 {
-    [ComponentSystem]
-    public class SceneAwakeSystem : AwakeSystem<Scene, SceneType, SceneConfig>
-    {
-        protected override void Awake(Scene self, SceneType sceneType, SceneConfig sceneConfig)
-        {
-            self.Awake(sceneType, sceneConfig);
-        }
-    }
-
     public class Scene : Component
     {
-        public SceneConfig SceneConfig { get; private set; }
-        public SceneType SceneType { get; private set; }
-
-        public void Awake(SceneType sceneType, SceneConfig sceneConfig)
-        {
-            SceneType = sceneType;
-            SceneConfig = sceneConfig;
-        }
+        public int ServerId;
+        public int SceneId;
+        public int Zone;
+        public NetInnerComponent NetInnerComponent;
 
         public override void Dispose()
         {
             if (IsDispose) return;
 
-            SceneType = SceneType.None;
-
             base.Dispose();
+
+            SceneId = 0;
+            NetInnerComponent = null;
         }
     }
 }

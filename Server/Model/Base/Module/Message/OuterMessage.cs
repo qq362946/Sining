@@ -28,24 +28,25 @@ namespace Sining.Message {
             "ZXNzYWdlEgwKBE5hbWUYASABKAkSDgoGTnVtYmVyGAIgASgFEgwKBFBhZ2UY",
             "AyABKAUiMgoMTG9naW5SZXF1ZXN0EhAKCFVzZXJOYW1lGAEgASgJEhAKCFBh",
             "c3NXb3JkGAIgASgJIisKClJlZ1JlcXVlc3QSDwoHQWNjb3VudBgBIAEoCRIM",
-            "CgREYXRlGAIgASgJIi0KDkdldE5hbWVSZXF1ZXN0Eg0KBVJwY0lkGFogASgF",
-            "EgwKBE5hbWUYASABKAkiQQoPR2V0TmFtZVJlc3BvbnNlEg0KBVJwY0lkGFog",
-            "ASgFEhEKCUVycm9yQ29kZRhbIAEoBRIMCgROYW1lGAEgASgJIkAKEFRlc3RB",
-            "Y3Rvck1lc3NhZ2USDQoFUnBjSWQYWiABKAUSDwoHQWN0b3JJZBhdIAEoAxIM",
-            "CgROYW1lGAEgASgJIksKG1Rlc3RBY3RvckNhbGxSZXF1ZXN0TWVzc2FnZRIN",
-            "CgVScGNJZBhaIAEoBRIPCgdBY3RvcklkGF0gASgDEgwKBE5hbWUYASABKAki",
-            "UQocVGVzdEFjdG9yQ2FsbFJlc3BvbnNlTWVzc2FnZRINCgVScGNJZBhaIAEo",
-            "BRIRCglFcnJvckNvZGUYWyABKAUSDwoHTWVzc2FnZRhcIAEoCWIGcHJvdG8z"));
+            "CgREYXRlGAIgASgJIj4KDkdldE5hbWVSZXF1ZXN0Eg0KBVJwY0lkGFogASgF",
+            "Eg8KB1NjZW5lSWQYWyABKAUSDAoETmFtZRgBIAEoCSJBCg9HZXROYW1lUmVz",
+            "cG9uc2USDQoFUnBjSWQYWiABKAUSEQoJRXJyb3JDb2RlGFsgASgFEgwKBE5h",
+            "bWUYASABKAkiQAoQVGVzdEFjdG9yTWVzc2FnZRINCgVScGNJZBhaIAEoBRIP",
+            "CgdBY3RvcklkGF0gASgDEgwKBE5hbWUYASABKAkiXAobVGVzdEFjdG9yQ2Fs",
+            "bFJlcXVlc3RNZXNzYWdlEg0KBVJwY0lkGFogASgFEg8KB1NjZW5lSWQYWyAB",
+            "KAUSDwoHQWN0b3JJZBhdIAEoAxIMCgROYW1lGAEgASgJIlEKHFRlc3RBY3Rv",
+            "ckNhbGxSZXNwb25zZU1lc3NhZ2USDQoFUnBjSWQYWiABKAUSEQoJRXJyb3JD",
+            "b2RlGFsgASgFEg8KB01lc3NhZ2UYXCABKAliBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Sining.Message.TestMessage), global::Sining.Message.TestMessage.Parser, new[]{ "Name", "Number", "Page" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Sining.Message.LoginRequest), global::Sining.Message.LoginRequest.Parser, new[]{ "UserName", "PassWord" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Sining.Message.RegRequest), global::Sining.Message.RegRequest.Parser, new[]{ "Account", "Date" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Sining.Message.GetNameRequest), global::Sining.Message.GetNameRequest.Parser, new[]{ "RpcId", "Name" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Sining.Message.GetNameRequest), global::Sining.Message.GetNameRequest.Parser, new[]{ "RpcId", "SceneId", "Name" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Sining.Message.GetNameResponse), global::Sining.Message.GetNameResponse.Parser, new[]{ "RpcId", "ErrorCode", "Name" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Sining.Message.TestActorMessage), global::Sining.Message.TestActorMessage.Parser, new[]{ "RpcId", "ActorId", "Name" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Sining.Message.TestActorCallRequestMessage), global::Sining.Message.TestActorCallRequestMessage.Parser, new[]{ "RpcId", "ActorId", "Name" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Sining.Message.TestActorCallRequestMessage), global::Sining.Message.TestActorCallRequestMessage.Parser, new[]{ "RpcId", "SceneId", "ActorId", "Name" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Sining.Message.TestActorCallResponseMessage), global::Sining.Message.TestActorCallResponseMessage.Parser, new[]{ "RpcId", "ErrorCode", "Message" }, null, null, null, null)
           }));
     }
@@ -590,6 +591,7 @@ namespace Sining.Message {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GetNameRequest(GetNameRequest other) : this() {
       rpcId_ = other.rpcId_;
+      sceneId_ = other.sceneId_;
       name_ = other.name_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -607,6 +609,17 @@ namespace Sining.Message {
       get { return rpcId_; }
       set {
         rpcId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "SceneId" field.</summary>
+    public const int SceneIdFieldNumber = 91;
+    private int sceneId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int SceneId {
+      get { return sceneId_; }
+      set {
+        sceneId_ = value;
       }
     }
 
@@ -635,6 +648,7 @@ namespace Sining.Message {
         return true;
       }
       if (RpcId != other.RpcId) return false;
+      if (SceneId != other.SceneId) return false;
       if (Name != other.Name) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -643,6 +657,7 @@ namespace Sining.Message {
     public override int GetHashCode() {
       int hash = 1;
       if (RpcId != 0) hash ^= RpcId.GetHashCode();
+      if (SceneId != 0) hash ^= SceneId.GetHashCode();
       if (Name.Length != 0) hash ^= Name.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -665,6 +680,10 @@ namespace Sining.Message {
         output.WriteRawTag(208, 5);
         output.WriteInt32(RpcId);
       }
+      if (SceneId != 0) {
+        output.WriteRawTag(216, 5);
+        output.WriteInt32(SceneId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -675,6 +694,9 @@ namespace Sining.Message {
       int size = 0;
       if (RpcId != 0) {
         size += 2 + pb::CodedOutputStream.ComputeInt32Size(RpcId);
+      }
+      if (SceneId != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeInt32Size(SceneId);
       }
       if (Name.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
@@ -692,6 +714,9 @@ namespace Sining.Message {
       }
       if (other.RpcId != 0) {
         RpcId = other.RpcId;
+      }
+      if (other.SceneId != 0) {
+        SceneId = other.SceneId;
       }
       if (other.Name.Length != 0) {
         Name = other.Name;
@@ -713,6 +738,10 @@ namespace Sining.Message {
           }
           case 720: {
             RpcId = input.ReadInt32();
+            break;
+          }
+          case 728: {
+            SceneId = input.ReadInt32();
             break;
           }
         }
@@ -1123,6 +1152,7 @@ namespace Sining.Message {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public TestActorCallRequestMessage(TestActorCallRequestMessage other) : this() {
       rpcId_ = other.rpcId_;
+      sceneId_ = other.sceneId_;
       actorId_ = other.actorId_;
       name_ = other.name_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -1141,6 +1171,17 @@ namespace Sining.Message {
       get { return rpcId_; }
       set {
         rpcId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "SceneId" field.</summary>
+    public const int SceneIdFieldNumber = 91;
+    private int sceneId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int SceneId {
+      get { return sceneId_; }
+      set {
+        sceneId_ = value;
       }
     }
 
@@ -1180,6 +1221,7 @@ namespace Sining.Message {
         return true;
       }
       if (RpcId != other.RpcId) return false;
+      if (SceneId != other.SceneId) return false;
       if (ActorId != other.ActorId) return false;
       if (Name != other.Name) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -1189,6 +1231,7 @@ namespace Sining.Message {
     public override int GetHashCode() {
       int hash = 1;
       if (RpcId != 0) hash ^= RpcId.GetHashCode();
+      if (SceneId != 0) hash ^= SceneId.GetHashCode();
       if (ActorId != 0L) hash ^= ActorId.GetHashCode();
       if (Name.Length != 0) hash ^= Name.GetHashCode();
       if (_unknownFields != null) {
@@ -1212,6 +1255,10 @@ namespace Sining.Message {
         output.WriteRawTag(208, 5);
         output.WriteInt32(RpcId);
       }
+      if (SceneId != 0) {
+        output.WriteRawTag(216, 5);
+        output.WriteInt32(SceneId);
+      }
       if (ActorId != 0L) {
         output.WriteRawTag(232, 5);
         output.WriteInt64(ActorId);
@@ -1226,6 +1273,9 @@ namespace Sining.Message {
       int size = 0;
       if (RpcId != 0) {
         size += 2 + pb::CodedOutputStream.ComputeInt32Size(RpcId);
+      }
+      if (SceneId != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeInt32Size(SceneId);
       }
       if (ActorId != 0L) {
         size += 2 + pb::CodedOutputStream.ComputeInt64Size(ActorId);
@@ -1246,6 +1296,9 @@ namespace Sining.Message {
       }
       if (other.RpcId != 0) {
         RpcId = other.RpcId;
+      }
+      if (other.SceneId != 0) {
+        SceneId = other.SceneId;
       }
       if (other.ActorId != 0L) {
         ActorId = other.ActorId;
@@ -1270,6 +1323,10 @@ namespace Sining.Message {
           }
           case 720: {
             RpcId = input.ReadInt32();
+            break;
+          }
+          case 728: {
+            SceneId = input.ReadInt32();
             break;
           }
           case 744: {

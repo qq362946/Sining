@@ -62,16 +62,131 @@ namespace Sining.ProtoBufTool
 
             Opcode(ref startOpcode, OuterMessageName, OuterOpcodeName, OuterOpcodeCsName);
 
-            ProcessHelper.Run(
-                Path.Combine(ProtoBufPath, protoToolName),
-                $"--proto_path=./ {InnerMessageName} --csharp_out={ServerPath}",
-                ProtoBufPath, true);
+            InnerMessage();
+            // ProcessHelper.Run(
+            //     Path.Combine(ProtoBufPath, protoToolName),
+            //     $"--proto_path=./ {InnerMessageName} --csharp_out={ServerPath}",
+            //     ProtoBufPath, true);
 
             Opcode(ref startOpcode, InnerMessageName, InnerOpcodeName, InnerOpcodeCsName);
 
             Console.WriteLine("proto2cs succeed!");
         }
 
+        private static void InnerMessage()
+        {
+            var proto = Path.Combine(ProtoBufPath, InnerMessageName);
+            
+            var protoFile = File.ReadAllText(proto);
+            
+            var file = new StringBuilder();
+            file.Append($"using Sining.Module;\n");
+            file.Append($"using Sining.Network;\n\n");
+            file.Append($"namespace Sining.Message\n");
+            file.Append("{\n");
+            
+            var isMsgStart = false;
+            
+            foreach (var line in protoFile.Split('\n'))
+            {
+                var newline = line.Trim();
+                
+                if (newline == "") continue;
+                
+                if (newline.StartsWith("//"))
+                {
+                    file.Append($"\t{newline}\n");
+
+                    continue;
+                }
+
+                if (newline.StartsWith("message"))
+                {
+                    isMsgStart = true;
+                    var className = line.Split(SplitChars, StringSplitOptions.RemoveEmptyEntries)[1];
+                    var parameter = line.Split(new[] {"//"}, StringSplitOptions.RemoveEmptyEntries)[1];
+                    var interfaceName = parameter.Trim();
+
+                    file.Append($"\tpublic partial class {className} ");
+                    file.Append($": {interfaceName} ");
+                    continue;
+                }
+
+                if (!isMsgStart) continue;
+                
+                switch (newline)
+                {
+                    case "{":
+                        file.Append("\n\t{\n");
+                        continue;
+                    case "}":
+                        isMsgStart = false;
+                        file.Append("\t}\n");
+                        continue;
+                }
+
+                if (newline.Trim().StartsWith("//"))
+                {
+                    file.AppendLine(newline);
+                    continue;
+                }
+
+                if (newline.Trim() == "" || newline == "}") continue;
+                
+                if (newline.StartsWith("repeated"))
+                {
+                    Repeated(file,newline);
+                }
+                else
+                {
+                    Members(file, newline, true);
+                }
+            }
+            
+            file.Append("}\n");
+            
+            using var sw = new StreamWriter($"../../../../{ServerPath}InnerMessage.cs");
+
+            sw.Write(file.ToString());
+        }
+        
+        private static void Repeated(StringBuilder sb,string newline)
+        {
+            try
+            {
+                var index = newline.IndexOf(";", StringComparison.Ordinal);
+                newline = newline.Remove(index);
+                var ss = newline.Split(SplitChars, StringSplitOptions.RemoveEmptyEntries);
+                var type = ss[1];
+                type = ConvertType(type);
+                var name = ss[2];
+
+                sb.Append($"\t\tpublic List<{type}> {name} = new List<{type}>();\n\n");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($"{newline}\n {e}");
+            }
+        }
+
+        private static void Members(StringBuilder sb, string newline, bool isRequired)
+        {
+            try
+            {
+                var index = newline.IndexOf(";", StringComparison.Ordinal);
+                newline = newline.Remove(index);
+                var ss = newline.Split(SplitChars, StringSplitOptions.RemoveEmptyEntries);
+                var type = ss[0];
+                var name = ss[1];
+                var typeCs = ConvertType(type);
+
+                sb.Append($"\t\tpublic {typeCs} {name} {{ get; set; }}\n");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($"{newline}\n {e}");
+            }
+        }
         private static void Opcode(ref int opcodeIndex, string messageName, string opcodeName, string opcodeCsName)
         {
             using var protoFile = new StreamReader(Path.Combine(ProtoBufPath, messageName));
@@ -133,6 +248,19 @@ namespace Sining.ProtoBufTool
             Opcodes.Clear();
             file.AppendLine("\t}");
             file.AppendLine("}");
+        }
+        
+        private static string ConvertType(string type)
+        {
+            return type switch
+            {
+                "int[]" => "int[] { }",
+                "int32[]" => "int[] { }",
+                "int64[]" => "long[] { }",
+                "int32" => "int",
+                "int64" => "long",
+                _ => type
+            };
         }
     }
 }

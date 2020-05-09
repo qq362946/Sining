@@ -11,9 +11,7 @@ namespace Sining.Network
         protected HttpListenerResponse Response  => Context?.Response;
         private string _contentType;
         protected Scene Scene;
-        public ADBComponent DataBase => Scene.DataBase();
-
-        public void SetContext(HttpListenerContext context,Scene scene)
+        public void SetContext(HttpListenerContext context, Scene scene)
         {
             Context = context;
             Scene = scene;

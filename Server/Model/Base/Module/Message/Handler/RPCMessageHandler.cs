@@ -45,7 +45,7 @@ namespace Sining.Network
             catch (Exception e)
             {
                 Log.Error(e);
-                response.ErrorCode = ErrorCode.ErrRpcFail;
+                response.ErrorCode = ModelErrorCode.ErrRpcFail;
             }
             finally
             {

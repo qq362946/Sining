@@ -51,7 +51,7 @@ namespace Sining.Network.Actor
             catch (Exception e)
             {
                 Log.Error(e);
-                actorResponse.ErrorCode = ErrorCode.ErrRpcFail;
+                actorResponse.ErrorCode = ModelErrorCode.ErrRpcFail;
             }
             finally
             {

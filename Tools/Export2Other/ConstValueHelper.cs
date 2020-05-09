@@ -9,7 +9,7 @@ namespace Export2Other
     public static class ConstValueHelper
     {
         private const string ConfigFile = "../../../../../Excel/#ConstValue.xlsx";
-        private const string SaveConfigFile = "../../../../../Server/Model/Base/ConstValue.cs";
+        private const string SaveConfigFile = "../../../../../Server/Hotfix/Base/ConstValue.cs";
         
         public static void Run()
         {
@@ -31,6 +31,8 @@ namespace Export2Other
 
                 for (var i = 3; i < table.Rows.Count; i++)
                 {
+                    if (!string.IsNullOrWhiteSpace(table.Rows[i][0].ToString())) continue;
+
                     var typeStr = table.Rows[i][2].ToString();
 
                     strBuilder.AppendLine(
@@ -63,6 +65,7 @@ namespace Export2Other
                 "long" => $"{value}",
                 "float" => $"{value}",
                 "double" => $"{value}",
+                "decimal" => $"{value}",
                 "string" => $"\"{value}\"",
                 _ => throw new Exception($"不支持此类型: {type}")
             };

@@ -26,14 +26,26 @@
 
     <ItemGroup>
       <PackageReference Include="CommandLineParser" Version="2.7.82" />
+      <PackageReference Include="Nethereum.ABI" Version="3.7.1" />
+      <PackageReference Include="Nethereum.Accounts" Version="3.7.1" />
+      <PackageReference Include="Nethereum.Contracts" Version="3.7.1" />
+      <PackageReference Include="Nethereum.Geth" Version="3.7.1" />
+      <PackageReference Include="Nethereum.Hex" Version="3.7.1" />
+      <PackageReference Include="Nethereum.JsonRpc.Client" Version="3.7.1" />
+      <PackageReference Include="Nethereum.JsonRpc.RpcClient" Version="3.7.1" />
+      <PackageReference Include="Nethereum.KeyStore" Version="3.7.1" />
+      <PackageReference Include="Nethereum.RLP" Version="3.7.1" />
+      <PackageReference Include="Nethereum.RPC" Version="3.7.1" />
+      <PackageReference Include="Nethereum.Signer" Version="3.7.1" />
+      <PackageReference Include="Nethereum.Util" Version="3.7.1" />
+      <PackageReference Include="Nethereum.Web3" Version="3.7.1" />
       <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
       <PackageReference Include="NLog" Version="4.7.0" />
       <PackageReference Include="sqlSugarCore" Version="5.0.0.13" />
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Model\DB" />
-      <Folder Include="Module" />
+      <Folder Include="Module\Coin\MoacCoin\DB" />
     </ItemGroup>
 
 </Project>

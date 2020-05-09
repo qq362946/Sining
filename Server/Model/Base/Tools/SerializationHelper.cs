@@ -58,6 +58,11 @@ namespace Sining.Tools
         {
             return BsonSerializer.Deserialize<T>(stream);
         }
+        
+        public static object Deserialize(this Stream stream,Type type)
+        {
+            return BsonSerializer.Deserialize(stream, type);
+        }
 
         public static T Clone<T>(this T t)
         {

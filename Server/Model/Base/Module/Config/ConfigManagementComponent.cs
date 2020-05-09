@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -11,7 +12,7 @@ namespace Sining.Module
     public class ConfigManagementComponent : Component
     {
         public static ConfigManagementComponent Instance;
-        private readonly Dictionary<Type, IAConfig> _configs = new Dictionary<Type, IAConfig>();
+        private readonly ConcurrentDictionary<Type, IAConfig> _configs = new ConcurrentDictionary<Type, IAConfig>();
         public void Init()
         {
             var list = new List<Task>();
@@ -62,7 +63,7 @@ namespace Sining.Module
 
             iAConfig.BeginInit();
             iAConfig.EndInit();
-            _configs.Add(type, iAConfig);
+            _configs.TryAdd(type, iAConfig);
         }
     }
 }

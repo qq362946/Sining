@@ -18,38 +18,38 @@ namespace Sining.Tools
             // 初始化Bson库
             SerializationHelper.Init();
             // 初始化组件事件
-            var componentManagement = ComponentFactory.CreateOnly<ComponentManagement>(SApp.Scene, eventSystem: false);
+            var componentManagement = ComponentFactory.CreateOnly<ComponentManagement>(MainScene.Scene, eventSystem: false);
             componentManagement.Init();
-            SApp.Scene.AddComponent(componentManagement);
+            MainScene.Scene.AddComponent(componentManagement);
 
             var tasks = new List<Task>
             {
                 // 初始化普通事件
-                Task.Run(() => SApp.Scene.AddComponent<SystemEventComponent>().Init()),
+                Task.Run(() => MainScene.Scene.AddComponent<SystemEventComponent>().Init()),
                 // 初始化网络协议
-                Task.Run(() => SApp.Scene.AddComponent<NetworkProtocolManagement>().Init()),
+                Task.Run(() => MainScene.Scene.AddComponent<NetworkProtocolManagement>().Init()),
                 // 初始化网络协议处理程序
-                Task.Run(() => SApp.Scene.AddComponent<MessageDispatcherManagement>().Init()),
+                Task.Run(() => MainScene.Scene.AddComponent<MessageDispatcherManagement>().Init()),
                 // 初始化Actor处理程序
-                Task.Run(() => SApp.Scene.AddComponent<ActorDispatcherComponent>().Init()),
+                Task.Run(() => MainScene.Scene.AddComponent<ActorDispatcherComponent>().Init()),
                 // 初始化配置文件
-                Task.Run(() => SApp.Scene.AddComponent<ConfigManagementComponent>().Init()),
+                Task.Run(() => MainScene.Scene.AddComponent<ConfigManagementComponent>().Init()),
                 // 初始化HTTP处理程序
-                Task.Run(() => SApp.Scene.AddComponent<HttpMessageDispatcherManagement>().Init())
+                Task.Run(() => MainScene.Scene.AddComponent<HttpMessageDispatcherManagement>().Init())
             };
             
             // 等待线程全部处理完毕
             Task.WaitAll(tasks.ToArray());
             // Actor消息组件
-            SApp.Scene.AddComponent<ActorMessageComponent>();
+            MainScene.Scene.AddComponent<ActorMessageComponent>();
             // 场景管理组件
-            SApp.Scene.AddComponent<SceneManagementComponent>();
+            MainScene.Scene.AddComponent<SceneManagementComponent>();
             // 时间调度处理组件
-            SApp.Scene.AddComponent<TimerComponent>();
+            MainScene.Scene.AddComponent<TimerComponent>();
             // 控制台命令组件
-            SApp.Scene.AddComponent<ConsoleComponent>();
+            MainScene.Scene.AddComponent<ConsoleComponent>();
             // HTTP客户端组件
-            SApp.Scene.AddComponent<HttpClientComponent>();
+            MainScene.Scene.AddComponent<HttpClientComponent>();
         }
 
         public static void ReLoad()

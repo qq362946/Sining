@@ -10,10 +10,9 @@ namespace Sining.Module
     {
         protected override void Awake(NetInnerComponent self, string address)
         {
-            self.MessagePacker = self.AddComponent<ProtobufMessagePacker>();
+            self.MessagePacker = self.AddComponent<BsonMessagePacker>();
             self.MessageDispatcher = new OuterMessageDispatcher();
             self.Awake(self.NetworkProtocolType, address);
-            NetInnerComponent.Instance = self;
         }
     }
 
@@ -22,16 +21,14 @@ namespace Sining.Module
     {
         protected override void Awake(NetInnerComponent self)
         {
-            self.MessagePacker = self.AddComponent<ProtobufMessagePacker>();
+            self.MessagePacker = self.AddComponent<BsonMessagePacker>();
             self.MessageDispatcher = new OuterMessageDispatcher();
             self.Awake(self.NetworkProtocolType);
-            NetInnerComponent.Instance = self;
         }
     }
 
     public class NetInnerComponent : NetworkComponent
     {
-        public static NetInnerComponent Instance;
         private readonly DoubleMapDictionary<string, Session> _sessions = new DoubleMapDictionary<string, Session>();
         public NetworkProtocolType NetworkProtocolType { get; } = NetworkProtocolType.TCP;
 
@@ -75,7 +72,6 @@ namespace Sining.Module
             }
 
             _sessions.Clear();
-            Instance = null;
 
             base.Dispose();
         }

@@ -23,4 +23,9 @@
       <ProjectReference Include="..\ThirdPartyPlugin\Google.Protobuf\Google.Protobuf.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Base\Config\Data" />
+      <Folder Include="Base\Config\Entity" />
+    </ItemGroup>
+
 </Project>

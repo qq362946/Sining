@@ -50,19 +50,12 @@ namespace Sining.Module
             //_connection.CodeFirst.InitTables<TestPostModel>();
         }
         public override T GetConnection<T>()=>_connection as T;
-        public override void BeginTran(IClientSessionHandle clientSessionHandle = null)
-        {
-            _connection.BeginTran();
-        }
-        public override void RollbackTran(IClientSessionHandle clientSessionHandle = null)
-        {
-            _connection.RollbackTran();
-        }
-        public override void CommitTran(IClientSessionHandle clientSessionHandle = null)
-        {
-            _connection.CommitTran();
-        }
 
+        public override T CreateConnection<T>() where T : class
+        {
+            return new SqlSugarClient(_connectionConfig) as T;
+        }
+        
         #region Count
 
         public override async STask<long> Count<T>(string collection = null)
@@ -86,6 +79,13 @@ namespace Sining.Module
         public override async STask<bool> Exist<T>(Expression<Func<T, bool>> filter, string collection = null)
         {
             return (await Count(filter, collection)) > 0;
+        }
+
+        public override async STask<long> UpdateRange<T>(object transactionSession, List<T> range)
+        {
+            var conn = (SqlSugarClient) transactionSession;
+            
+            return await conn.Updateable(range).ExecuteCommandAsync();
         }
 
         #endregion
@@ -168,9 +168,30 @@ namespace Sining.Module
             await _connection.Insertable<T>(list).ExecuteCommandAsync();
         }
 
+        public override async STask InsertBatch<T>(object transactionSession, IEnumerable<T> list, string collection = null)
+        {
+            var conn = (SqlSugarClient) transactionSession;
+            
+            await conn.Insertable<T>(list).ExecuteCommandAsync();
+        }
+
         #endregion
 
         #region Save
+
+        public override async STask Save<T>(object transactionSession, T entity, string collection = null)
+        {
+            var conn = (SqlSugarClient) transactionSession;
+
+            if (entity == null)
+            {
+                Log.Error($"save entity is null: {typeof(T).Name}");
+
+                return;
+            }
+
+            await conn.Updateable(entity.Clone()).ExecuteCommandAsync();
+        }
 
         public override async STask Save<T>(T entity, string collection = null)
         {
@@ -183,6 +204,7 @@ namespace Sining.Module
 
             await _connection.Updateable(entity.Clone()).ExecuteCommandAsync();
         }
+
         public override STask Save(long id, List<Component> entities)
         {
             throw new NotImplementedException();
@@ -196,14 +218,31 @@ namespace Sining.Module
 
         #region Remove
 
+        public override async STask<long> Remove<T>(object transactionSession, long id, string collection = null)
+        {
+            var conn = (SqlSugarClient) transactionSession;
+            
+            return await conn.Deleteable<T>().Where(d => d.Id == id).ExecuteCommandAsync();
+        }
+        
         public override async STask<long> Remove<T>(long id, string collection = null)
         {
             return await Remove<T>(d => d.Id == id);
         }
+        
         public override async SVoid RemoveNoWait<T>(long id, string collection = null)
         {
             await Remove<T>(id);
         }
+
+        public override async STask<long> Remove<T>(object transactionSession, Expression<Func<T, bool>> filter,
+            string collection = null)
+        {
+            var conn = (SqlSugarClient) transactionSession;
+
+            return await conn.Deleteable<T>().Where(filter).ExecuteCommandAsync();
+        }
+
         public override async STask<long> Remove<T>(Expression<Func<T, bool>> filter, string collection = null)
         {
             return await _connection.Deleteable<T>().Where(filter).ExecuteCommandAsync();

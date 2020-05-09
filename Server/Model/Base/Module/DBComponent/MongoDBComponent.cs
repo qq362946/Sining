@@ -19,37 +19,44 @@ namespace Sining.Module
     public class MongoDBComponent : ADBComponent
     {
         private MongoClient _mongoClient;
-        private IMongoDatabase _mongoDatabase;
+        public IMongoDatabase MongoDatabase;
         public void Awake(string connectionString, string dbName)
         {
+            ConnectionString = connectionString;
+            DbName = dbName;
+
             _mongoClient = new MongoClient(connectionString);
-            _mongoDatabase = _mongoClient.GetDatabase(dbName);
+            MongoDatabase = _mongoClient.GetDatabase(dbName);
+        }
+
+        public override void Dispose()
+        {
+            if (IsDispose)
+            {
+                return;
+            }
+            base.Dispose();
+            _mongoClient = null;
+            MongoDatabase = null;
+        }
+
+        public override T CreateConnection<T>() where T : class
+        {
+            return new MongoClient(ConnectionString) as T;
         }
         public override void Init() { }
         public override T GetConnection<T>() => _mongoClient as T;
-        public override void BeginTran(IClientSessionHandle clientSessionHandle = null)
+
+        private IMongoCollection<T> GetCollection<T>(string collection = null)
         {
-            clientSessionHandle?.StartTransaction(new TransactionOptions(
-                readConcern: ReadConcern.Snapshot,
-                writeConcern: WriteConcern.WMajority));
+            return MongoDatabase.GetCollection<T>(collection ?? typeof(T).Name);
         }
-        public override void RollbackTran(IClientSessionHandle clientSessionHandle = null)
-        {
-            clientSessionHandle?.AbortTransaction();
-        }
-        public override void CommitTran(IClientSessionHandle clientSessionHandle = null)
-        {
-            clientSessionHandle?.CommitTransaction();
-        }
-        private IMongoCollection<T> GetCollection<T>(string collection=null)
-        {
-            return _mongoDatabase.GetCollection<T>(collection ?? typeof (T).Name);
-        }
+
         private IMongoCollection<Component> GetCollection(string name)
         {
-            return _mongoDatabase.GetCollection<Component>(name);
+            return MongoDatabase.GetCollection<Component>(name);
         }
-        
+
         #region Count
 
         public override async STask<long> Count<T>(string collection = null)
@@ -77,6 +84,11 @@ namespace Sining.Module
         #endregion
         
         public override STask<long> UpdateRange<T>(List<T> range)
+        {
+            throw new NotImplementedException();
+        }
+        
+        public override STask<long> UpdateRange<T>(object transactionSession, List<T> range)
         {
             throw new NotImplementedException();
         }
@@ -177,19 +189,38 @@ namespace Sining.Module
             await Save(entity);
         }
 
-        public override async STask InsertBatch<T>(IEnumerable<T> list, string collection = null)
+        public override async STask InsertBatch<T>(IEnumerable<T> list,
+            string collection = null)
         {
-            if (collection == null)
-            {
-                collection = typeof (T).Name;
-            }
+            await GetCollection<T>(collection ?? typeof(T).Name).InsertManyAsync(list);
+        }
 
-            await GetCollection<T>(collection).InsertManyAsync(list);
+        public override async STask InsertBatch<T>(object transactionSession, IEnumerable<T> list,
+            string collection = null)
+        {
+            await GetCollection<T>(collection ?? typeof(T).Name)
+                .InsertManyAsync((IClientSessionHandle) transactionSession, list);
         }
 
         #endregion
-
+         
         #region Save
+
+        public override async STask Save<T>(object transactionSession, T entity, string collection = null)
+        {
+            if (entity == null)
+            {
+                Log.Error($"save entity is null: {typeof(T).Name}");
+
+                return;
+            }
+
+            var cloneEntity = entity.Clone();
+
+            await GetCollection(collection ?? cloneEntity.GetType().Name).ReplaceOneAsync(
+                (IClientSessionHandle) transactionSession, d => d.Id == cloneEntity.Id, cloneEntity,
+                new ReplaceOptions() {IsUpsert = true});
+        }
 
         public override async STask Save<T>(T entity, string collection = null)
         {
@@ -202,9 +233,7 @@ namespace Sining.Module
 
             var cloneEntity = entity.Clone();
 
-            if (collection == null) collection = cloneEntity.GetType().Name;
-
-            await GetCollection(collection).ReplaceOneAsync(d => d.Id == cloneEntity.Id, cloneEntity,
+            await GetCollection(collection ?? cloneEntity.GetType().Name).ReplaceOneAsync(d => d.Id == cloneEntity.Id, cloneEntity,
                 new ReplaceOptions() {IsUpsert = true});
         }
         public override async STask Save(long id, List<Component> entities)
@@ -237,6 +266,14 @@ namespace Sining.Module
 
         #region Remove
 
+        public override async STask<long> Remove<T>(object transactionSession, long id, string collection = null)
+        {
+            var result = await GetCollection<T>(collection)
+                .DeleteOneAsync((IClientSessionHandle) transactionSession, d => d.Id == id);
+
+            return result.DeletedCount;
+        }
+
         public override async STask<long> Remove<T>(long id, string collection = null)
         {
             var result = await GetCollection<T>(collection).DeleteOneAsync(d => d.Id == id);
@@ -247,6 +284,16 @@ namespace Sining.Module
         {
             await Remove<T>(id, collection);
         }
+
+        public override async STask<long> Remove<T>(object transactionSession, Expression<Func<T, bool>> filter,
+            string collection = null)
+        {
+            var result = await GetCollection<T>(collection)
+                .DeleteManyAsync((IClientSessionHandle) transactionSession, filter);
+
+            return result.DeletedCount;
+        }
+
         public override async STask<long> Remove<T>(Expression<Func<T, bool>> filter, string collection = null)
         {
             var result = await GetCollection<T>(collection).DeleteManyAsync(filter);
